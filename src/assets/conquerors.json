@@ -1,0 +1,81 @@
+{
+  "conquerors": [
+    {
+      "name": "lennygold",
+      "date": "2019-09-11",
+      "platform": "PC",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=BZsNg-8_xpw"
+    },
+    {
+      "name": "Eenox",
+      "date": "2019-09-16",
+      "platform": "PC",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=QUWEjHYgxZc"
+    },
+    {
+      "name": "Chaikitty",
+      "date": "2019-09-16",
+      "platform": "PC",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=0btxzsgFyNc"
+    },
+    {
+      "name": "Plush",
+      "date": "2019-09-18",
+      "platform": "PC",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=NDZhN11sFXQ"
+    },
+    {
+      "name": "Angrevol",
+      "date": "2019-09-23",
+      "platform": "PC",
+      "videoProof": true,
+      "url": "https://youtu.be/rlwlS1uaWEk"
+    },
+    {
+      "name": "Rjdimo",
+      "date": "2019-09-25",
+      "platform": "PC",
+      "videoProof": true,
+      "url": "https://m.bilibili.com/video/av69003044.html"
+    },
+    {
+      "name": "CyberGamer1539",
+      "date": "2019-09-28",
+      "platform": "PC",
+      "videoProof": true,
+      "url": "https://m.youtube.com/watch?v=lhxX9FmeUMc"
+    },
+    {
+      "name": "Blue42Reddits",
+      "date": "2019-09-28",
+      "platform": "PC",
+      "videoProof": false,
+      "url": "https://www.reddit.com/r/celestegame/comments/daqbkz/after_155_hours_i_have_finally_done_it_i_have/"
+    },
+    {
+      "name": "Yamard",
+      "date": "2019-10-01",
+      "platform": "PC",
+      "videoProof": true,
+      "url": "https://m.youtube.com/watch?feature=youtu.be&v=UqG8VBnANU8"
+    },
+    {
+      "name": "snifidy",
+      "date": "2019-10-11",
+      "platform": "PC",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=5_4AljC8wtM"
+    },
+    {
+      "name": "Kriog16",
+      "date": "2019-10-16",
+      "platform": "PC",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=ltWFNsIlpEk"
+    }
+  ]
+}
