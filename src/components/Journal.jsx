@@ -7,6 +7,7 @@ import { useScrollPosition } from './useScrollPosition'
 const Book = styled.div`
   position: relative;
   min-height: 800px;
+  margin-bottom: 3.5em;
   transform: rotate(-2deg);
 `
 
@@ -22,7 +23,7 @@ const Page = styled.div`
 
 const PageTitle = styled.h2`
   position: relative;
-  padding: 0 0 0.5em;
+  padding: 0 0 .5em;
   font-weight: normal;
   color: #5b4683;
 
@@ -39,9 +40,11 @@ const PageTitle = styled.h2`
 
 const Table = styled.table`
   width: 100%;
+  padding-bottom: .75em;
+  border-bottom: 3px solid #71335c60;
 
   td {
-    padding: 0.5em 1em;
+    padding: 0.4em 1em;
     text-align: center;
   }
 
