@@ -7,7 +7,7 @@ import { useScrollPosition } from './useScrollPosition'
 const Book = styled.div`
   position: relative;
   min-height: 800px;
-  margin-bottom: 3.5em;
+  padding-bottom: 3em;
   transform: rotate(-2deg);
 `
 
@@ -76,37 +76,31 @@ const Title = styled.h1`
 
 const Journal = () => {
   // State and Hooks
-  // State
-  const [state, setState] = useState({
-    journalPos: 0,                        // Position of the journal relative to the viewport
-    windowHeight: window.innerHeight,     // Window height
-    showJournal: false                    // Determine if the journal should open or not
-  })
   const journalRef = useRef()
+  const [journalPos, setJournalPos] = useState(0)
+  const [windowHeight, setWindowHeight] = useState(window.innerHeight)
+  const [openJournal, setOpenJournal] = useState(false)
 
-  // Hook for scroll position of journal
-  useScrollPosition(({ currPos: { y } }) => {
-    setState(prevState => ({
-      ...prevState,
-      journalPos: y,
-      showJournal: (y / prevState.windowHeight) < 0.4
-    }))
-  }, [], journalRef)
+  // Hook helper for determining opening journal
+  const openJournalHelper = () => {
+    setOpenJournal(journalPos / windowHeight < 0.4)
+  }
 
-  // Hook for window resizing
+  // Custom hook for determining position of journal relative to the viewport
+  useScrollPosition(({ currPos: { y }}) => {
+    setJournalPos(y)
+    openJournalHelper()
+  }, [journalPos], journalRef)
+
+  // Hook for determining window height
   useLayoutEffect(() => {
     const handleResize = () => {
-      const height = window.innerHeight
-      setState(prevState => ({
-          ...prevState,
-          windowHeight: height,
-        showJournal: (prevState.journalPos / height) < 0.4
-      }))
+      setWindowHeight(window.innerHeight)
+      openJournalHelper()
     }
     window.addEventListener('resize', handleResize)
-
     return () => window.removeEventListener('resize', handleResize)
-  }, [])
+  }, [windowHeight])
 
   // GraphQL
   const { assetsJson: { conquerors }} = useStaticQuery(graphql`
@@ -126,7 +120,7 @@ const Journal = () => {
 
   // React Spring
   const { transform } = useSpring({
-    transform: `scaleX(${state.showJournal ? -1 : 1})`,
+    transform: `scaleX(${openJournal ? -1 : 1})`,
     config: { mass: 1, tension: 195, friction: 28 }
   })
 
