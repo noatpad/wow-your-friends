@@ -1,8 +1,8 @@
-import React from 'react';
-import styled from '@emotion/styled';
+import React from 'react'
+import styled from '@emotion/styled'
 
-import Layout from "../components/Layout";
-import Journal from "../components/Journal";
+import Layout from "../components/Layout"
+import Journal from "../components/Journal"
 
 const Container = styled.div`
   width: 100%;
@@ -16,7 +16,7 @@ const Title = styled.h1`
   font-size: 4em;
   font-weight: normal;
   text-align: center;
-`;
+`
 
 const IndexPage = () => {
 
@@ -29,6 +29,6 @@ const IndexPage = () => {
       </Container>
     </Layout>
   )
-};
+}
 
-export default IndexPage;
+export default IndexPage

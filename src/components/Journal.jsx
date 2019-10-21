@@ -1,12 +1,14 @@
-import React from 'react';
-import { useStaticQuery, graphql } from 'gatsby';
-import styled from '@emotion/styled';
+import React, { useState, useLayoutEffect, useRef } from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import styled from '@emotion/styled'
+import { useSpring, animated } from 'react-spring'
+import { useScrollPosition } from './useScrollPosition'
 
 const Book = styled.div`
   position: relative;
   min-height: 800px;
   transform: rotate(-2deg);
-`;
+`
 
 const Page = styled.div`
   position: relative;
@@ -16,7 +18,7 @@ const Page = styled.div`
   border-radius: 0 1em 1em 0;
   background: #f4ebf5;
   color: #675883;
-`;
+`
 
 const PageTitle = styled.h2`
   position: relative;
@@ -33,7 +35,7 @@ const PageTitle = styled.h2`
     height: 3px;
     background: #c885ff20;
   }
-`;
+`
 
 const Table = styled.table`
   width: 100%;
@@ -46,10 +48,9 @@ const Table = styled.table`
   tr:nth-child(2n) {
     background: #c885ff20;
   }
-`;
+`
 
-const Cover = styled.div`
-  display: none;
+const Cover = styled(animated.div)`
   position: absolute;
   top: 0;
   left: 0;
@@ -58,7 +59,9 @@ const Cover = styled.div`
   background: #e07360;
   justify-content: center;
   border-radius: 0 1em 1em 0;
-`;
+  transform-origin: left;
+  transform: ${props => `${props.scale}`};
+`
 
 const Title = styled.h1`
   padding-top: 4em;
@@ -66,11 +69,46 @@ const Title = styled.h1`
   font-weight: normal;
   text-align: center;
   color: #71335c;
-`;
+`
 
 const Journal = () => {
+  // State and Hooks
+  // State
+  const [state, setState] = useState({
+    journalPos: 0,                        // Position of the journal relative to the viewport
+    windowHeight: window.innerHeight,     // Window height
+    showJournal: false                    // Determine if the journal should open or not
+  })
+  const journalRef = useRef()
+
+  // Hook for scroll position of journal
+  useScrollPosition(({ currPos: { y } }) => {
+    setState(prevState => ({
+      ...prevState,
+      journalPos: y,
+      showJournal: (y / prevState.windowHeight) < 0.4
+    }))
+  }, [], journalRef)
+
+  // Hook for window resizing
+  useLayoutEffect(() => {
+    const handleResize = () => {
+      const height = window.innerHeight
+      setState(prevState => ({
+          ...prevState,
+          windowHeight: height,
+        showJournal: (prevState.journalPos / height) < 0.4
+      }))
+    }
+    window.addEventListener('resize', handleResize)
+
+    return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
+  // GraphQL
   const { assetsJson: { conquerors }} = useStaticQuery(graphql`
-    {
+    # Get data of every "conqueror"
+    query {
       assetsJson {
         conquerors {
           name
@@ -81,20 +119,30 @@ const Journal = () => {
         }
       }
     }
-  `);
+  `)
 
-  conquerors.sort((a, b) => new Date(a.date) - new Date(b.date));
+  // React Spring
+  const { transform } = useSpring({
+    transform: `scaleX(${state.showJournal ? -1 : 1})`,
+    config: { mass: 1, tension: 195, friction: 28 }
+  })
 
-  const getPlacement = (place) => {
-    if (place >= 10 && place <= 19) { return `${place}th` }
-    if (place % 10 === 1) { return `${place}st` }
-    if (place % 10 === 2) { return `${place}nd` }
-    if (place % 10 === 3) { return `${place}rd` }
-    return `${place}th`
+  // Functions
+  // Format a placement string depending on rank
+  const getPlacement = rank => {
+    if (rank >= 10 && rank <= 19) { return `${rank}th` }
+    if (rank % 10 === 1) { return `${rank}st` }
+    if (rank % 10 === 2) { return `${rank}nd` }
+    if (rank % 10 === 3) { return `${rank}rd` }
+    return `${rank}th`
   }
 
+  // JSX
+  // Sort conquerors by date of achievement
+  conquerors.sort((a, b) => new Date(a.date) - new Date(b.date))
+
   return (
-    <Book>
+    <Book id="journal" ref={journalRef}>
       <Page>
         <PageTitle>CELESTE CONQUERORS</PageTitle>
         <Table>
@@ -109,12 +157,12 @@ const Journal = () => {
             ))}
           </tbody>
         </Table>
-        <Cover>
+        <Cover style={{transform}}>
           <Title>Madeline</Title>
         </Cover>
       </Page>
     </Book>
   )
-};
+}
 
-export default Journal;
+export default Journal

@@ -1,7 +1,7 @@
-import React from "react";
-import { useStaticQuery, graphql } from "gatsby";
-import Helmet from "react-helmet";
-import styled from "@emotion/styled";
+import React from "react"
+import { useStaticQuery, graphql } from "gatsby"
+import Helmet from "react-helmet"
+import styled from "@emotion/styled"
 
 import "./global.css"
 
@@ -20,7 +20,7 @@ const Layout = ({ children }) => {
          }
        }
     }
-  `);
+  `)
 
   return (
     <>
@@ -31,7 +31,7 @@ const Layout = ({ children }) => {
         {children}
       </Container>
     </>
-  );
-};
+  )
+}
 
-export default Layout;
+export default Layout
