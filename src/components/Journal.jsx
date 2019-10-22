@@ -2,12 +2,14 @@ import React, { useState, useLayoutEffect, useRef } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import styled from '@emotion/styled'
 import { useSpring, animated } from 'react-spring'
+
 import { useScrollPosition } from './useScrollPosition'
+import VideoModal from './VideoModal'
 
 const Book = styled.div`
   position: relative;
   min-height: 800px;
-  padding-bottom: 3em;
+  margin-bottom: 3em;
   transform: rotate(-2deg);
 `
 
@@ -44,13 +46,22 @@ const Table = styled.table`
   border-collapse: collapse;
   border-bottom: 3px solid #71335c60;
 
+  tr {
+    transition: background .4s;
+    cursor: pointer;
+
+    &:nth-child(2n) {
+      background: #c885ff20;
+    }
+
+    &:hover {
+      background: #c06be030;
+    }
+  }
+
   td {
     padding: 0.4em 1em;
     text-align: center;
-  }
-
-  tr:nth-child(2n) {
-    background: #c885ff20;
   }
 `
 
@@ -72,20 +83,26 @@ const SCText = styled.p`
   font-style: italic;
 `
 
-const Cover = styled(animated.div)`
+const CoverWrapper = styled(animated.div)`
   position: absolute;
   top: 0;
   left: 0;
   height: 100%;
   width: 100%;
-  background: #e07360;
-  justify-content: center;
-  border-radius: 0 1em 1em 0;
   transform-origin: left;
-  transform: ${props => `${props.scale}`};
 `
 
-const Title = styled.h1`
+const Cover = styled(animated.div)`
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: #e07360;
+  border-radius: 0 1em 1em 0;
+`
+
+const CoverTitle = styled.h1`
   padding-top: 4em;
   font-size: 2.5em;
   font-weight: normal;
@@ -101,6 +118,7 @@ const Journal = () => {
   const [windowHeight, setWindowHeight] = useState(window.innerHeight)
   const [openJournal, setOpenJournal] = useState(false)
   const [showScreenshotEntries, setShowScreenshotEntries] = useState(false)
+  const [currentURL, setCurrentURL] = useState("")
 
   // Hook helper for determining opening journal
   const openJournalHelper = () => {
@@ -139,6 +157,12 @@ const Journal = () => {
     }
   `)
 
+  // Sort conquerors by date of achievement
+  conquerors.sort((a, b) => new Date(a.date) - new Date(b.date))
+  if (showScreenshotEntries) {
+    conquerors = conquerors.filter(({ videoProof }) => videoProof)
+  }
+
   // React Spring
   const { transform } = useSpring({
     transform: `scaleX(${openJournal ? -1 : 1})`,
@@ -155,44 +179,44 @@ const Journal = () => {
     return `${rank}th`
   }
 
-  const getProofIcon = video => {
-    const className = video ? "fas fa-video" : "fas fa-image"
-    return <Icon className={className}/>
-  }
-
-  // JSX
-  // Sort conquerors by date of achievement
-  conquerors.sort((a, b) => new Date(a.date) - new Date(b.date))
-  if (showScreenshotEntries) {
-    conquerors = conquerors.filter(({ videoProof }) => videoProof)
-  }
+  // Get table of conquerors
+  const getConquerorTable = () => (
+    conquerors.map((c, i) => (
+      <tr key={i} onClick={() => c.videoProof ? setCurrentURL(c.url) : window.open(c.url, "_blank")}>
+        <td>{getPlacement(i + 1)}</td>
+        <td>{c.name}</td>
+        <td>{c.date}</td>
+        <td>{c.platform}</td>
+        <td><Icon className={c.videoProof ? "fas fa-video" : "fas fa-image"}/></td>
+      </tr>
+    ))
+  )
 
   return (
-    <Book id="journal" ref={journalRef}>
-      <Page>
-        <PageTitle>CELESTE CONQUERORS</PageTitle>
-        <Table>
-          <tbody>
-            {conquerors.map((c, i) => (
-              <tr key={i}>
-                <td>{getPlacement(i + 1)}</td>
-                <td>{c.name}</td>
-                <td>{c.date}</td>
-                <td>{c.platform}</td>
-                <td>{getProofIcon(c.videoProof)}</td>
-              </tr>
-            ))}
-          </tbody>
-        </Table>
-        <ScreenshotCheckbox>
-          <SCText>Show screenshot entries</SCText>
-          <input type="checkbox" defaultChecked={showScreenshotEntries} onChange={() => setShowScreenshotEntries(!showScreenshotEntries)}/>
-        </ScreenshotCheckbox>
-        <Cover style={{transform}}>
-          <Title>Madeline</Title>
-        </Cover>
-      </Page>
-    </Book>
+    <>
+      <Book id="journal" ref={journalRef}>
+        <Page>
+          <PageTitle>CELESTE CONQUERORS</PageTitle>
+          <Table>
+            <tbody>
+              {getConquerorTable()}
+            </tbody>
+          </Table>
+          {/* FIXME: Fix correct state usage of the 'showScreenshotEntries' checkbox */}
+          <ScreenshotCheckbox>
+            <SCText>Show screenshot entries</SCText>
+            <input type="checkbox" defaultChecked={showScreenshotEntries} onChange={() => setShowScreenshotEntries(!showScreenshotEntries)}/>
+          </ScreenshotCheckbox>
+        </Page>
+        <CoverWrapper style={{ transform }}>
+          <Cover className="back"/>
+          <Cover className="front">
+            <CoverTitle>Madeline</CoverTitle>
+          </Cover>
+        </CoverWrapper>
+      </Book>
+      <VideoModal url={currentURL} set={setCurrentURL}/>
+    </>
   )
 }
 
