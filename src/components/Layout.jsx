@@ -24,9 +24,10 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Helmet
-        title={site.siteMetadata.title}
-      />
+      <Helmet>
+        <title>{site.siteMetadata.title}</title>
+        <script src="https://kit.fontawesome.com/a35b219d74.js" crossorigin="anonymous"></script>
+      </Helmet>
       <Container>
         {children}
       </Container>

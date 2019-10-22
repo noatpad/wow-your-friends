@@ -41,6 +41,7 @@ const PageTitle = styled.h2`
 const Table = styled.table`
   width: 100%;
   padding-bottom: .75em;
+  border-collapse: collapse;
   border-bottom: 3px solid #71335c60;
 
   td {
@@ -51,6 +52,24 @@ const Table = styled.table`
   tr:nth-child(2n) {
     background: #c885ff20;
   }
+`
+
+const Icon = styled.i`
+  font-size: 1em;
+`
+
+const ScreenshotCheckbox = styled.div`
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 0 4rem 4rem 0;
+`
+
+const SCText = styled.p`
+  padding-right: 0.75em;
+  font-style: italic;
 `
 
 const Cover = styled(animated.div)`
@@ -74,12 +93,14 @@ const Title = styled.h1`
   color: #71335c;
 `
 
+
 const Journal = () => {
   // State and Hooks
   const journalRef = useRef()
   const [journalPos, setJournalPos] = useState(0)
   const [windowHeight, setWindowHeight] = useState(window.innerHeight)
   const [openJournal, setOpenJournal] = useState(false)
+  const [showScreenshotEntries, setShowScreenshotEntries] = useState(false)
 
   // Hook helper for determining opening journal
   const openJournalHelper = () => {
@@ -103,7 +124,7 @@ const Journal = () => {
   }, [windowHeight])
 
   // GraphQL
-  const { assetsJson: { conquerors }} = useStaticQuery(graphql`
+  let { assetsJson: { conquerors }} = useStaticQuery(graphql`
     # Get data of every "conqueror"
     query {
       assetsJson {
@@ -134,9 +155,17 @@ const Journal = () => {
     return `${rank}th`
   }
 
+  const getProofIcon = video => {
+    const className = video ? "fas fa-video" : "fas fa-image"
+    return <Icon className={className}/>
+  }
+
   // JSX
   // Sort conquerors by date of achievement
   conquerors.sort((a, b) => new Date(a.date) - new Date(b.date))
+  if (showScreenshotEntries) {
+    conquerors = conquerors.filter(({ videoProof }) => videoProof)
+  }
 
   return (
     <Book id="journal" ref={journalRef}>
@@ -150,10 +179,15 @@ const Journal = () => {
                 <td>{c.name}</td>
                 <td>{c.date}</td>
                 <td>{c.platform}</td>
+                <td>{getProofIcon(c.videoProof)}</td>
               </tr>
             ))}
           </tbody>
         </Table>
+        <ScreenshotCheckbox>
+          <SCText>Show screenshot entries</SCText>
+          <input type="checkbox" defaultChecked={showScreenshotEntries} onChange={() => setShowScreenshotEntries(!showScreenshotEntries)}/>
+        </ScreenshotCheckbox>
         <Cover style={{transform}}>
           <Title>Madeline</Title>
         </Cover>
