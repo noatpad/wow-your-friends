@@ -159,7 +159,7 @@ const Journal = () => {
 
   // Sort conquerors by date of achievement
   conquerors.sort((a, b) => new Date(a.date) - new Date(b.date))
-  if (showScreenshotEntries) {
+  if (!showScreenshotEntries) {
     conquerors = conquerors.filter(({ videoProof }) => videoProof)
   }
 
@@ -202,7 +202,6 @@ const Journal = () => {
               {getConquerorTable()}
             </tbody>
           </Table>
-          {/* FIXME: Fix correct state usage of the 'showScreenshotEntries' checkbox */}
           <ScreenshotCheckbox>
             <SCText>Show screenshot entries</SCText>
             <input type="checkbox" defaultChecked={showScreenshotEntries} onChange={() => setShowScreenshotEntries(!showScreenshotEntries)}/>
