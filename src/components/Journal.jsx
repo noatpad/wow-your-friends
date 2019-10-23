@@ -143,8 +143,8 @@ const Journal = () => {
 
   // GraphQL
   let { assetsJson: { conquerors }} = useStaticQuery(graphql`
-    # Get data of every "conqueror"
     query {
+      # Get data of every "conqueror"
       assetsJson {
         conquerors {
           name
