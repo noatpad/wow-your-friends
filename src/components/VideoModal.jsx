@@ -4,6 +4,7 @@ import { animated, useTrail } from 'react-spring'
 import ReactPlayer from 'react-player'
 
 const Container = styled(animated.div)`
+  display: flex;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -47,7 +48,10 @@ const VideoModal = ({ url, set }) => {
   })
 
   return (
-    <Container onClick={() => set("")} style={{ display: containerTrail.percent.interpolate(p => p === 0 ? 'none' : 'flex'), opacity: containerTrail.opacity }}>
+    <Container onClick={() => set("")} style={{
+      display: containerTrail.percent.interpolate(p => p > 0 ? 'flex' : 'none'),
+      opacity: containerTrail.opacity
+    }}>
       <PlayerWrapper style={{ transform: wrapperTrail.transform }}>
         <ReactPlayer className="video" url={url} playing controls height="100%" width="100%"/>
       </PlayerWrapper>
