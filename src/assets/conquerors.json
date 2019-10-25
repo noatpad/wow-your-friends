@@ -33,7 +33,7 @@
       "date": "2019-09-23",
       "platform": "PC",
       "videoProof": true,
-      "url": "https://youtu.be/rlwlS1uaWEk"
+      "url": "https://www.youtube.com/watch?v=rlwlS1uaWEk"
     },
     {
       "name": "Rjdimo",
@@ -47,7 +47,7 @@
       "date": "2019-09-28",
       "platform": "PC",
       "videoProof": true,
-      "url": "https://m.youtube.com/watch?v=lhxX9FmeUMc"
+      "url": "https://www.youtube.com/watch?v=lhxX9FmeUMc"
     },
     {
       "name": "Blue42Reddits",
@@ -61,7 +61,7 @@
       "date": "2019-10-01",
       "platform": "PC",
       "videoProof": true,
-      "url": "https://m.youtube.com/watch?feature=youtu.be&v=UqG8VBnANU8"
+      "url": "https://www.youtube.com/watch?v=UqG8VBnANU8"
     },
     {
       "name": "snifidy",
@@ -76,6 +76,13 @@
       "platform": "PC",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=ltWFNsIlpEk"
+    },
+    {
+      "name": "AkaraWa",
+      "date": "2019-10-20",
+      "platform": "PC",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=hJP-sx-krAU"
     }
   ]
 }
