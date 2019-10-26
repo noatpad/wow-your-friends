@@ -10,7 +10,19 @@ const SectionContainer = styled.div`
   margin: 4em 0;
 `
 
-const Header = styled.h2`
+const SectionHeader = styled(animated.div)`
+  display: inline-flex;
+  align-items: center;
+  padding-right: 1em;
+  cursor: pointer;
+`
+
+const Icon = styled(animated.i)`
+  font-size: 1.8em;
+  margin-right: 0.25rem;
+`
+
+const Header = styled(animated.h2)`
   padding: 0.25em 0;
 `
 
@@ -30,26 +42,38 @@ const YouCanDoThis = styled.img`
   width: 90%;
 `
 
+// TODO: Optimize to not re-render because of useMeasure()
 const Section = ({ header, postcards }) => {
   const [showSection, setShowSection] = useState(false)
 
   const measureRef = useRef()
-  const { height } = useMeasure(measureRef)
+  const { height: cardsHeight } = useMeasure(measureRef)
 
-  const spring = useSpring({
-    height: showSection ? height : 0,
+  const [headerSpring, setHeaderSpring] = useSpring(() => ({ x: 0 }))
+
+  const openSpring = useSpring({
+    height: showSection ? cardsHeight : 0,
+    rotate: showSection ? 90 : 0,
     delay: showSection ? 0 : 50
   })
 
   const trail = useTrail(postcards.length, {
+    percent: showSection ? 1 : 0,
     y: showSection ? 0 : -100,
-    percent: showSection ? 1 : 0
   })
 
   return (
     <SectionContainer>
-      <Header onClick={() => {setShowSection(!showSection)}}>{header}</Header>
-      <Cards style={{ height: spring.height }}>
+      <SectionHeader
+        onClick={() => setShowSection(!showSection)}
+        onMouseEnter={() => setHeaderSpring({ x: 20 })}
+        onMouseLeave={() => setHeaderSpring({ x: 0 })}
+        style={{ paddingLeft: headerSpring.x }}
+      >
+        <Icon className="fas fa-fw fa-angle-right" style={{ transform: openSpring.rotate.interpolate(r => `rotate(${r}deg)`) }}/>
+        <Header style={{ paddingLeft: headerSpring.x.interpolate(x => x / 2) }}>{header}</Header>
+      </SectionHeader>
+      <Cards style={{ height: openSpring.height }}>
         <animated.div ref={measureRef}>
           {trail.map(({ y, percent }, i) => {
             const postcardContent = postcards[i]
@@ -57,7 +81,8 @@ const Section = ({ header, postcards }) => {
               display: percent.interpolate(p => p > 0 ? 'inherit' : 'none'),
               transform: y.interpolate(y => `translateY(${y}%)`),
               margin: percent.interpolate(mh => `${mh}em 1em`),
-              opacity: percent
+              opacity: percent,
+              pointerEvents: percent.interpolate(p => p < 1 ? 'none' : 'all')
             }}>{postcardContent}</Postcard>
           })}
         </animated.div>
