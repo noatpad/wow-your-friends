@@ -1,7 +1,7 @@
 import React, { useState, useRef } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import styled from '@emotion/styled'
-import { animated, useSpring, useTrail } from 'react-spring'
+import { animated, useSpring, useTrail, interpolate } from 'react-spring'
 import useMeasure from 'use-measure'
 
 const Container = styled.div``
@@ -30,19 +30,26 @@ const Cards = styled(animated.div)`
   height: 0;
 `
 
+const GIF = styled.img`
+  width: 90%;
+`
+
 const Postcard = styled(animated.div)`
+  width: 70%;
   padding: 1em;
-  margin: 1em;
   background: #eeddd2;
   color: #4a453f;
   text-align: center;
 `
 
-const YouCanDoThis = styled.img`
+const StaticPostcard = styled(Postcard)`
   width: 90%;
+  padding: 0;
+  background: transparent;
 `
 
 // TODO: Optimize to not re-render because of useMeasure()
+// TODO: When at the bottom of the page, make closing sections smoother
 const Section = ({ header, postcards }) => {
   const [showSection, setShowSection] = useState(false)
 
@@ -59,7 +66,9 @@ const Section = ({ header, postcards }) => {
 
   const trail = useTrail(postcards.length, {
     percent: showSection ? 1 : 0,
+    margin: showSection ? 3 : 0,
     y: showSection ? 0 : -100,
+    rotate: showSection ? -2 : 4
   })
 
   return (
@@ -75,15 +84,25 @@ const Section = ({ header, postcards }) => {
       </SectionHeader>
       <Cards style={{ height: openSpring.height }}>
         <animated.div ref={measureRef}>
-          {trail.map(({ y, percent }, i) => {
+          {trail.map(({ percent, margin, y, rotate }, i) => {
             const postcardContent = postcards[i]
-            return <Postcard key={i} style={{
-              display: percent.interpolate(p => p > 0 ? 'inherit' : 'none'),
-              transform: y.interpolate(y => `translateY(${y}%)`),
-              margin: percent.interpolate(mh => `${mh}em 1em`),
-              opacity: percent,
-              pointerEvents: percent.interpolate(p => p < 1 ? 'none' : 'all')
-            }}>{postcardContent}</Postcard>
+            return (postcardContent.type === "p" ?
+              <Postcard key={i} style={{
+                display: percent.interpolate(p => p > 0 ? 'inherit' : 'none'),
+                transform: interpolate([y, rotate], (y, r) => `translateY(${y}%) rotate(${(i % 2 === 0 ? r : r * -1)}deg)`),
+                margin: margin.interpolate(mh => `${mh}em auto`),
+                opacity: percent,
+                pointerEvents: percent.interpolate(p => p < 1 ? 'none' : 'all')
+              }}>{postcardContent}</Postcard>
+            :
+              <StaticPostcard key={i} style={{
+                display: percent.interpolate(p => p > 0 ? 'inherit' : 'none'),
+                transform: y.interpolate(y => `translateY(${y}%)`),
+                margin: margin.interpolate(mh => `${mh}em auto`),
+                opacity: percent,
+                pointerEvents: percent.interpolate(p => p < 1 ? 'none' : 'all')
+              }}>{postcardContent}</StaticPostcard>
+            )
           })}
         </animated.div>
       </Cards>
@@ -134,12 +153,12 @@ const PostcardSections = () => {
     header: "This is really hard...",
     postcards: [
       (<p>
-        Yeah...I won't sugarcoat it, this <em>is</em> a really difficult challenge. There's a reason why I made this site, & it's to commemorate those who went above and beyond to complete Celeste to its entirety. It takes a lot of patience & effort to go so far.
+        Yeah...I won't sugarcoat it, this <em>is</em> a really difficult challenge. There's a reason why so few have managed to overcome it, & it's because of that difficulty that I wanted to commemorate those players. It takes a lot of patience & effort to go so far.
       </p>),
       (<p>
         But if you believe you can, then I will too. You're more capable than you think. In the words of Madeline at the base of the mountain:
       </p>),
-      (<YouCanDoThis src={GifURL} alt="You can do this"/>)
+      (<GIF src={GifURL} alt="You can do this"/>)
     ]
   }
 
