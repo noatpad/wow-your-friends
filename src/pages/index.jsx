@@ -4,6 +4,7 @@ import styled from '@emotion/styled'
 import Layout from "../components/Layout"
 import Journal from "../components/Journal"
 import PostcardSections from '../components/PostcardSections'
+import Footer from '../components/Footer'
 
 const Container = styled.div`
   width: 100%;
@@ -26,7 +27,9 @@ const IndexPage = () => {
         <Title>Project Strawberry</Title>
         <Journal/>
         <PostcardSections/>
+        {/* TODO: Add a credits or special thanks section */}
       </Container>
+      <Footer/>
     </Layout>
   )
 }
