@@ -45,6 +45,7 @@ const Wrapper = styled.div`
 `
 
 const Postcard = ({ style, children }) => {
+  // GraphQL
   const { postcardImage: { publicURL: postcardURL }} = useStaticQuery(graphql`
     query {
       # Get URL of postcard background image

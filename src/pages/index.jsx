@@ -21,6 +21,7 @@ const Title = styled.h1`
 `
 
 const IndexPage = () => {
+  // TODO: Add background image of the golden room
   return (
     <Layout>
       <Container>

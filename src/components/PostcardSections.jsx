@@ -45,20 +45,26 @@ const GIF = styled(animated.img)`
 
 // TODO: Optimize to not re-render because of useMeasure()
 // TODO: When at the bottom of the page, make closing sections smoother
+// Section sub-component
 const Section = ({ header, postcards }) => {
+  // State
   const [showSection, setShowSection] = useState(false)
 
+  // useMeasure() hook to animate 'auto'
   const measureRef = useRef()
   const { height: cardsHeight } = useMeasure(measureRef)
 
+  // Spring for header animations
   const [headerSpring, setHeaderSpring] = useSpring(() => ({ x: 0 }))
 
+  // Spring for toggling sections
   const openSpring = useSpring({
     height: showSection ? cardsHeight : 0,
     rotate: showSection ? 90 : 0,
     delay: showSection ? 0 : 130 + (postcards.length * 65)
   })
 
+  // Trail spring for postcards upon toggling sections
   const trail = useTrail(postcards.length, {
     percent: showSection ? 1 : 0,
     margin: showSection ? 1.5 : -1,
@@ -92,6 +98,7 @@ const Section = ({ header, postcards }) => {
   )
 }
 
+// Main component
 const PostcardSections = () => {
   // GraphQL
   const { gifImage: { publicURL: GifURL }} = useStaticQuery(graphql`
@@ -104,6 +111,8 @@ const PostcardSections = () => {
   `)
 
   // Postcard section content
+  // TODO: Add images where applicable
+  // About section content
   const aboutCards = {
     header: "What exactly is this list?",
     postcards: [
@@ -136,6 +145,7 @@ const PostcardSections = () => {
     ]
   }
 
+  // Participation section content
   const participateCards = {
     header: "I want to be a part of this list!",
     postcards: [
@@ -180,6 +190,7 @@ const PostcardSections = () => {
     ]
   }
 
+  // "This is really hard" section content
   const encouragementCards = {
     header: "This is really hard...",
     postcards: [
@@ -210,6 +221,7 @@ const PostcardSections = () => {
     ]
   }
 
+  // Special Thanks section content
   const thankYouCards = {
     header: "Special thanks",
     postcards: [

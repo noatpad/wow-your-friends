@@ -23,16 +23,17 @@ const Icon = styled.i`
   margin: .25em;
 `
 
-const Footer = () => {
-  return (
-    <Container>
-      <Icons>
-        <Icon className="fab fa-twitter"/>
-        <Icon className="fab fa-github"/>
-      </Icons>
-      <p>A website made by a clueless danny</p>
-    </Container>
-  )
-}
+// TODO: Style footer further
+// IDEA: Add strawberry GIF in the center of the icons
+// TODO: Add tiny footnote on the bottom saying where the repo is and where it's hosted
+const Footer = () => (
+  <Container>
+    <Icons>
+      <Icon className="fab fa-twitter"/>
+      <Icon className="fab fa-github"/>
+    </Icons>
+    <p>A website made by a clueless danny</p>
+  </Container>
+)
 
 export default Footer

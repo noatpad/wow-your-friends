@@ -192,6 +192,7 @@ const Journal = () => {
     ))
   )
 
+  // TODO: Style journal further
   return (
     <>
       <Book id="journal" ref={journalRef}>
