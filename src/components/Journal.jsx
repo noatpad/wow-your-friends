@@ -1,4 +1,4 @@
-import React, { useState, useLayoutEffect, useRef } from 'react'
+import React, { useState, useEffect, useLayoutEffect, useRef } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import styled from '@emotion/styled'
 import { useSpring, animated } from 'react-spring'
@@ -140,6 +140,11 @@ const Journal = () => {
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener('resize', handleResize)
   }, [windowHeight])
+
+  // Hook to toggle scrolling when the video player is open
+  useEffect(() => {
+    document.getElementsByTagName("body")[0].className = currentURL ? "modal_open" : ""
+  }, [currentURL])
 
   // GraphQL
   let { assetsJson: { conquerors }} = useStaticQuery(graphql`

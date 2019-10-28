@@ -38,7 +38,6 @@ const PlayerWrapper = styled(animated.div)`
 `
 // TODO: Optimize and improve video player
 // TODO: Add fallback when video player is unable to load a video
-// TODO: Disable body scrolling when modal is open
 const VideoModal = ({ url, set }) => {
   const openModal = url ? true : false
 
