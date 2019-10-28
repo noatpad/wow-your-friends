@@ -27,7 +27,6 @@ const IndexPage = () => {
         <Title>Project Strawberry</Title>
         <Journal/>
         <PostcardSections/>
-        {/* TODO: Add a credits or special thanks section */}
       </Container>
       <Footer/>
     </Layout>

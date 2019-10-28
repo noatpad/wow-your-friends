@@ -4,6 +4,8 @@ import styled from '@emotion/styled'
 import { animated, useSpring, useTrail, interpolate } from 'react-spring'
 import useMeasure from 'use-measure'
 
+import Postcard from './Postcard'
+
 const Container = styled.div``
 
 const SectionContainer = styled.div`
@@ -25,27 +27,20 @@ const Icon = styled(animated.i)`
 const Header = styled(animated.h2)`
   padding: 0.25em 0;
 `
-
 const Cards = styled(animated.div)`
   height: 0;
+  overflow: hidden;
 `
 
-const GIF = styled.img`
+const PostcardWrapper = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0 3em;
+`
+
+const GIF = styled(animated.img)`
   width: 90%;
-`
-
-const Postcard = styled(animated.div)`
-  width: 70%;
-  padding: 1em;
-  background: #eeddd2;
-  color: #4a453f;
-  text-align: center;
-`
-
-const StaticPostcard = styled(Postcard)`
-  width: 90%;
-  padding: 0;
-  background: transparent;
 `
 
 // TODO: Optimize to not re-render because of useMeasure()
@@ -61,14 +56,14 @@ const Section = ({ header, postcards }) => {
   const openSpring = useSpring({
     height: showSection ? cardsHeight : 0,
     rotate: showSection ? 90 : 0,
-    delay: showSection ? 0 : 50
+    delay: showSection ? 0 : 130 + (postcards.length * 65)
   })
 
   const trail = useTrail(postcards.length, {
     percent: showSection ? 1 : 0,
-    margin: showSection ? 3 : 0,
+    margin: showSection ? 1.5 : -1,
     y: showSection ? 0 : -100,
-    rotate: showSection ? -2 : 4
+    rotateOffset: showSection ? 5 : 0
   })
 
   return (
@@ -83,39 +78,26 @@ const Section = ({ header, postcards }) => {
         <Header style={{ paddingLeft: headerSpring.x.interpolate(x => x / 2) }}>{header}</Header>
       </SectionHeader>
       <Cards style={{ height: openSpring.height }}>
-        <animated.div ref={measureRef}>
-          {trail.map(({ percent, margin, y, rotate }, i) => {
-            const postcardContent = postcards[i]
-            return (postcardContent.type === "p" ?
-              <Postcard key={i} style={{
-                display: percent.interpolate(p => p > 0 ? 'inherit' : 'none'),
-                transform: interpolate([y, rotate], (y, r) => `translateY(${y}%) rotate(${(i % 2 === 0 ? r : r * -1)}deg)`),
-                margin: margin.interpolate(mh => `${mh}em auto`),
-                opacity: percent,
-                pointerEvents: percent.interpolate(p => p < 1 ? 'none' : 'all')
-              }}>{postcardContent}</Postcard>
-            :
-              <StaticPostcard key={i} style={{
-                display: percent.interpolate(p => p > 0 ? 'inherit' : 'none'),
-                transform: y.interpolate(y => `translateY(${y}%)`),
-                margin: margin.interpolate(mh => `${mh}em auto`),
-                opacity: percent,
-                pointerEvents: percent.interpolate(p => p < 1 ? 'none' : 'all')
-              }}>{postcardContent}</StaticPostcard>
-            )
+        <PostcardWrapper ref={measureRef}>
+          {trail.map(({ percent, margin, ...rest }, i) => {
+            const PostcardContent = postcards[i]
+            return <PostcardContent key={i} uniqueStyle={{ ...rest }} style={{
+              margin: margin.interpolate(mh => `${mh}em 0`),
+              opacity: percent
+            }}/>
           })}
-        </animated.div>
+        </PostcardWrapper>
       </Cards>
     </SectionContainer>
   )
 }
 
 const PostcardSections = () => {
-  // Gatsby
-  let { file: { publicURL: GifURL }} = useStaticQuery(graphql`
+  // GraphQL
+  const { gifImage: { publicURL: GifURL }} = useStaticQuery(graphql`
     query {
       # Get URL of "You can do this" GIF
-      file(name: {eq: "you-can-do-this"}) {
+      gifImage: file(name: {eq: "you-can-do-this"}) {
         publicURL
       }
     }
@@ -125,40 +107,124 @@ const PostcardSections = () => {
   const aboutCards = {
     header: "What exactly is this list?",
     postcards: [
-      (<p>
-        Celeste is a challenging game about climbing a mountain & overcoming the obstacles in your journey. One of, if not, the biggest challenge it offers is collecting every strawberry, which is a hefty task. And with the release of Chapter 9: Farewell, the game introduced the hardest berry to be collected: Farewell's golden strawberry.
-      </p>),
-      (<p>
-        This alone is most completionists' final hurdle to completing such a challenge, & it's quite the achievement for those who do. This list serves as a record for all those players who endured and gathered all of the strawberries.
-      </p>)
+      ({ style, uniqueStyle: { y, rotateOffset }}) => (
+        <Postcard style={{
+          ...style,
+          transform: interpolate([y, rotateOffset], (y, r) => `translateY(${y}%) rotate(${-2 + r}deg)`),
+          alignSelf: "start"
+        }}>
+          <p>Celeste is a challenging game about climbing a mountain & overcoming the obstacles in your journey. One of, if not, the biggest challenge it offers is collecting every strawberry.</p>
+        </Postcard>
+      ),
+      ({ style, uniqueStyle: { y, rotateOffset }}) => (
+        <Postcard style={{
+          ...style,
+          transform: interpolate([y, rotateOffset], (y, r) => `translateY(${y}%) rotate(${3 - r}deg)`),
+          alignSelf: "end"
+        }}>
+          <p>And with the release of Chapter 9: Farewell, the game introduced the hardest berry to be collected: Farewell's golden strawberry.</p>
+        </Postcard>
+      ),
+      ({ style, uniqueStyle: { y, rotateOffset }}) => (
+        <Postcard style={{
+          ...style,
+          transform: interpolate([y, rotateOffset], (y, r) => `translateY(${y}%) rotate(${-4 + r}deg)`)
+        }}>
+          <p>This alone is most completionists' final hurdle to completing such a challenge, & it's quite the achievement for those who do. This list serves as a record for all those players who endured and gathered all of the strawberries.</p>
+        </Postcard>
+      )
     ]
   }
 
   const participateCards = {
     header: "I want to be a part of this list!",
     postcards: [
-      (<p>
-        Well first of all, you're gonna need to collect all 202 berries, & I wish you the best of luck on that journey. But on the flipside that you did get all of them as you're reading this, congrats! Seriously, that's not an easy thing to do, but you pulled through and accomplished what very few have managed to do.
-      </p>),
-      (<p>
-        The only thing needed from you is proof of you collecting Farewell's golden berry in the form of a video. This video will show you obtain the berry from start to finish, with no Assist or Variants mode. If you're not able to record your whole run, you can also submit a picture or screenshot of your stats showing you collected every berry, but due to how this can be exploited, you'll be listed under a "screenshot" category. Players under this category will have their entries hidden by default on the list.
-      </p>),
-      (<p>
-        Once you have that, send me a message on Reddit, Twitter, or through GitHub Issues with a link to your proof, and I'll add you on there once I take a look at it!
-      </p>)
+      ({ style, uniqueStyle: { y, rotateOffset }}) => (
+        <Postcard style={{
+          ...style,
+          transform: interpolate([y, rotateOffset], (y, r) => `translateY(${y}%) rotate(${3 - r}deg)`),
+        }}>
+          <p>Well first of all, you're gonna need to collect all 202 berries, & I wish you the best of luck on that journey.</p>
+          <p>But on the flipside that you did get all of them as you're reading this, congrats!</p>
+          <p>Seriously, that ain't easy.</p>
+        </Postcard>
+      ),
+      ({ style, uniqueStyle: { y, rotateOffset }}) => (
+        <Postcard style={{
+          ...style,
+          transform: interpolate([y, rotateOffset], (y, r) => `translateY(${y}%) rotate(${-4 + r}deg)`),
+          alignSelf: "start"
+        }}>
+          <p>The only thing needed from you is proof of you collecting Farewell's golden strawberry in the form of a video. This video must show the whole run from start to finish, with no Assist or Variants mode.</p>
+        </Postcard>
+      ),
+      ({ style, uniqueStyle: { y, rotateOffset }}) => (
+        <Postcard style={{
+          ...style,
+          transform: interpolate([y, rotateOffset], (y, r) => `translateY(${y}%) rotate(${4 - r}deg)`),
+          alignSelf: "end"
+        }}>
+          <p>If you're not able to record your whole run, you can also submit a screenshot of your stats showing you collected every berry, but due to how this can be exploited, you'll be listed under a "screenshot" category.</p>
+          <p>Players under this category will have their entries hidden by default on the list.</p>
+        </Postcard>
+      ),
+      ({ style, uniqueStyle: { y, rotateOffset }}) => (
+        <Postcard style={{
+          ...style,
+          transform: interpolate([y, rotateOffset], (y, r) => `translateY(${y}%) rotate(${-5 + r}deg)`)
+        }}>
+          <p>Once you have that, send me a message on Reddit, Twitter, or through GitHub Issues with a link to your proof & a celebratory message!</p>
+          <p>I'll add you on there once I take a look at it!</p>
+        </Postcard>
+      )
     ]
   }
 
   const encouragementCards = {
     header: "This is really hard...",
     postcards: [
-      (<p>
-        Yeah...I won't sugarcoat it, this <em>is</em> a really difficult challenge. There's a reason why so few have managed to overcome it, & it's because of that difficulty that I wanted to commemorate those players. It takes a lot of patience & effort to go so far.
-      </p>),
-      (<p>
-        But if you believe you can, then I will too. You're more capable than you think. In the words of Madeline at the base of the mountain:
-      </p>),
-      (<GIF src={GifURL} alt="You can do this"/>)
+      ({ style, uniqueStyle: { y, rotateOffset }}) => (
+        <Postcard style={{
+          ...style,
+          transform: interpolate([y, rotateOffset], (y, r) => `translateY(${y}%) rotate(${-4 + r}deg)`)
+        }}>
+          <p>Yeah...I won't sugarcoat it, this <em>is</em> a really difficult challenge.</p>
+          <p>There's a reason why so few have managed to overcome it, & it's because of that difficulty that I wanted to commemorate those players. It takes a lot of patience & effort to go so far.</p>
+        </Postcard>
+      ),
+      ({ style, uniqueStyle: { y, rotateOffset }}) => (
+        <Postcard style={{
+          ...style,
+          transform: interpolate([y, rotateOffset], (y, r) => `translateY(${y}%) rotate(${4 - r}deg)`)
+        }}>
+          <p>But if you believe you can, then I will too. You're more capable than you think.</p>
+          <p>In the words of Madeline at the base of the mountain:</p>
+        </Postcard>
+      ),
+      ({ style, uniqueStyle: { y }}) => (
+        <GIF src={GifURL} alt="You can do this" style={{
+          ...style,
+          transform: y.interpolate(y => `translateY(${y}%)`)
+        }}/>
+      )
+    ]
+  }
+
+  const thankYouCards = {
+    header: "Special thanks",
+    postcards: [
+      ({ style, uniqueStyle: { y, rotateOffset }}) => (
+        <Postcard style={{
+          ...style,
+          transform: interpolate([y, rotateOffset], (y, r) => `translateY(${y}%) rotate(${4 - r}deg)`)
+        }}>
+          <ul>
+            <li>/u/DJTom3 for maintaining a record of this list <a href="https://twitter.com/aCluelessDanny/status/1188295050637262848" target="_blank" rel="noopener noreferrer">here</a>, as it was my primary source for that information.</li>
+            <li>The Celeste dev team for creating a fantastic game to play through.</li>
+            <li>All the players on this list for going above and beyond to complete such a task.</li>
+          </ul>
+        </Postcard>
+      )
     ]
   }
 
@@ -167,6 +233,7 @@ const PostcardSections = () => {
       <Section {...aboutCards}/>
       <Section {...participateCards}/>
       <Section {...encouragementCards}/>
+      <Section {...thankYouCards}/>
     </Container>
   )
 }
