@@ -19,6 +19,7 @@ const Title = styled.h1`
   font-size: 4em;
   font-weight: normal;
   text-align: center;
+  text-shadow: 0 3px #31315c;
 `
 
 const IndexPage = () => {

@@ -18,7 +18,7 @@ const HeaderBG = styled.img`
   right: 0;
   width: 100%;
   mask-image: linear-gradient(to top, transparent, #31315c);
-  filter: blur(3px);
+  filter: blur(4px);
 `
 
 const Layout = ({ children }) => {
