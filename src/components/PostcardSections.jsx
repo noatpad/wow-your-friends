@@ -229,7 +229,7 @@ const PostcardSections = () => {
           transform: interpolate([y, rotateOffset], (y, r) => `translateY(${y}%) rotate(${4 - r}deg)`)
         }}>
           <ul>
-            <li>/u/DJTom3 for maintaining a record of this list <a href="https://twitter.com/aCluelessDanny/status/1188295050637262848" target="_blank" rel="noopener noreferrer">here</a>, as it was my primary source for that information.</li>
+            <li>/u/DJTom3 for maintaining a record of this list <a href="https://www.reddit.com/r/celestegame/comments/dinrkb/with_their_amazing_achievement_of_getting_the/" target="_blank" rel="noopener noreferrer">here</a>, as it was my primary source for that information.</li>
             <li>The Celeste dev team for creating a fantastic game to play through.</li>
             <li>All the players on this list for going above and beyond to complete such a task.</li>
           </ul>
