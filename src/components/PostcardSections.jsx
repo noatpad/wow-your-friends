@@ -43,7 +43,6 @@ const GIF = styled(animated.img)`
   width: 90%;
 `
 
-// TODO: Optimize to not re-render because of useMeasure()
 // TODO: When at the bottom of the page, make closing sections smoother
 // Section sub-component
 const Section = ({ header, postcards }) => {
