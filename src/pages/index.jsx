@@ -7,6 +7,7 @@ import PostcardSections from '../components/PostcardSections'
 import Footer from '../components/Footer'
 
 const Container = styled.div`
+  position: relative;
   width: 100%;
   max-width: 900px;
   padding: 2em 4em;
@@ -21,7 +22,6 @@ const Title = styled.h1`
 `
 
 const IndexPage = () => {
-  // TODO: Add background image of the golden room
   return (
     <Layout>
       <Container>
