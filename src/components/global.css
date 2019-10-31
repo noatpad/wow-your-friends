@@ -23,3 +23,14 @@ html, body {
 body.modal_open {
   overflow: hidden;
 }
+
+img.pixelated {
+  /* Image renders more like pixel art (which is what I need) */
+  image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED */
+  image-rendering: -moz-crisp-edges;          /* Firefox */
+  image-rendering: -o-crisp-edges;            /* Opera */
+  image-rendering: -webkit-optimize-contrast; /* Chrome (and eventually Safari) */
+  image-rendering: pixelated;                 /* Chrome */
+  image-rendering: optimize-contrast;         /* CSS3 Proposed */
+  -ms-interpolation-mode: nearest-neighbor;   /* IE8+ */
+}
