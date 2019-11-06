@@ -20,6 +20,8 @@ const Page = styled.div`
   padding: 1.5em 4em 1.5em 2.5em;
   border-radius: 0 1em 1em 0;
   background: #f4ebf5;
+  background: url(${props => props.url}) no-repeat center center;
+  background-size: 100% 100%;
   color: #675883;
 `
 
@@ -99,15 +101,19 @@ const Cover = styled(animated.div)`
   bottom: 0;
   right: 0;
   background: #e07360;
+  background: url(${props => props.url}) no-repeat center center;
+  background-size: 100% 100%;
   border-radius: 0 1em 1em 0;
 `
 
 const CoverTitle = styled.h1`
-  padding-top: 4em;
+  padding: .75em 0;
+  margin-top: 3em;
   font-size: 2.5em;
   font-weight: normal;
   text-align: center;
-  color: #71335c;
+  color: #5f2a43;
+  background: url(${props => props.url}) no-repeat center center;
 `
 
 
@@ -147,7 +153,12 @@ const Journal = () => {
   }, [currentURL])
 
   // GraphQL
-  let { assetsJson: { conquerors }} = useStaticQuery(graphql`
+  let {
+    assetsJson: { conquerors },
+    journalImage: { publicURL: journalURL },
+    titleImage: { publicURL: titleURL },
+    pageImage: { publicURL: pageURL }
+  } = useStaticQuery(graphql`
     query {
       # Get data of every "conqueror"
       assetsJson {
@@ -159,6 +170,18 @@ const Journal = () => {
           url
         }
       }
+
+      journalImage: file(name: { eq: "journal" }) {
+        publicURL
+      }
+
+      titleImage: file(name: { eq: "title-smear" }) {
+        publicURL
+      }
+
+      pageImage: file(name: { eq: "page" }) {
+        publicURL
+      }
     }
   `)
 
@@ -169,7 +192,8 @@ const Journal = () => {
   }
 
   // React Spring
-  const { transform } = useSpring({
+  const { percent, transform } = useSpring({
+    percent: openJournal ? 0 : 1,
     transform: `scaleX(${openJournal ? -1 : 1})`,
     config: { mass: 1, tension: 195, friction: 28 }
   })
@@ -201,7 +225,7 @@ const Journal = () => {
   return (
     <>
       <Book id="journal" ref={journalRef}>
-        <Page>
+        <Page url={pageURL}>
           <PageTitle>CELESTE CONQUERORS</PageTitle>
           <Table>
             <tbody>
@@ -214,9 +238,9 @@ const Journal = () => {
           </ScreenshotCheckbox>
         </Page>
         <CoverWrapper style={{ transform }}>
-          <Cover className="back"/>
-          <Cover className="front">
-            <CoverTitle>Madeline</CoverTitle>
+          <Cover className="back" style={{ display: percent.interpolate(p => p < .5 ? 'block' : 'none') }} url={journalURL}/>
+          <Cover className="front" style={{ display: percent.interpolate(p => p >= .5 ? 'block' : 'none') }} url={journalURL}>
+            <CoverTitle url={titleURL}>Madeline</CoverTitle>
           </Cover>
         </CoverWrapper>
       </Book>

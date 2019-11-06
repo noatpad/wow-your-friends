@@ -50,7 +50,7 @@ const Footnote = styled.p`
   color: #999;
 `
 
-// IDEA: Use react-spring once lag issue is resolved
+// NOTE: Can't use react-spring as much here because of lag
 const Footer = () => {
   const { file } = useStaticQuery(graphql`
     query {
