@@ -28,7 +28,7 @@ const IndexPage = () => {
       <Container>
         <Title>Project Strawberry</Title>
         <Journal/>
-        <PostcardSections/>
+        {/* <PostcardSections/> */}
       </Container>
       <Footer/>
     </Layout>

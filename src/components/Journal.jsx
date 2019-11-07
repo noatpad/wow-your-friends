@@ -1,9 +1,9 @@
-import React, { useState, useEffect, useLayoutEffect, useRef } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import styled from '@emotion/styled'
-import { useSpring, animated } from 'react-spring'
+import VisibilitySensor from 'react-visibility-sensor'
+import anime from 'animejs'
 
-import { useScrollPosition } from './useScrollPosition'
 import VideoModal from './VideoModal'
 
 const Book = styled.div`
@@ -85,7 +85,7 @@ const SCText = styled.p`
   font-style: italic;
 `
 
-const CoverWrapper = styled(animated.div)`
+const CoverWrapper = styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -94,7 +94,7 @@ const CoverWrapper = styled(animated.div)`
   transform-origin: left;
 `
 
-const Cover = styled(animated.div)`
+const Cover = styled.div`
   position: absolute;
   top: 0;
   left: 0;
@@ -116,41 +116,50 @@ const CoverTitle = styled.h1`
   background: url(${props => props.url}) no-repeat center center;
 `
 
+const VSPlaceholder = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin-top: 11em;
+  height: 1em;
+  font-size: 2.5em;
+`
 
 const Journal = () => {
   // State and Hooks
-  const journalRef = useRef()
-  const [journalPos, setJournalPos] = useState(0)
-  const [windowHeight, setWindowHeight] = useState(window.innerHeight)
   const [openJournal, setOpenJournal] = useState(false)
   const [showScreenshotEntries, setShowScreenshotEntries] = useState(false)
   const [currentURL, setCurrentURL] = useState("")
-
-  // Hook helper for determining opening journal
-  const openJournalHelper = () => {
-    setOpenJournal(journalPos / windowHeight < 0.4)
-  }
-
-  // Custom hook for determining position of journal relative to the viewport
-  useScrollPosition(({ currPos: { y }}) => {
-    setJournalPos(y)
-    openJournalHelper()
-  }, [journalPos], journalRef)
-
-  // Hook for determining window height
-  useLayoutEffect(() => {
-    const handleResize = () => {
-      setWindowHeight(window.innerHeight)
-      openJournalHelper()
-    }
-    window.addEventListener('resize', handleResize)
-    return () => window.removeEventListener('resize', handleResize)
-  }, [windowHeight])
 
   // Hook to toggle scrolling when the video player is open
   useEffect(() => {
     document.getElementsByTagName("body")[0].className = currentURL ? "modal_open" : ""
   }, [currentURL])
+
+  // Hook to toggle journal open/close animation
+  useEffect(() => {
+    let timeline = anime.timeline({
+      easing: "easeInOutQuart",
+      duration: 500
+    })
+
+    timeline
+      .add({
+        targets: ".cover-wrapper",
+        scaleX: openJournal ? -1 : 1
+      })
+      .add({
+        targets: ".cover-wrapper .front",
+        opacity: openJournal ? 0 : 1,
+        duration: 1
+      }, 250)
+      .add({
+        targets: ".cover-wrapper .back",
+        opacity: openJournal ? 1 : 0,
+        duration: 1
+      }, 250)
+  }, [openJournal])
 
   // GraphQL
   let {
@@ -191,13 +200,6 @@ const Journal = () => {
     conquerors = conquerors.filter(({ videoProof }) => videoProof)
   }
 
-  // React Spring
-  const { percent, transform } = useSpring({
-    percent: openJournal ? 0 : 1,
-    transform: `scaleX(${openJournal ? -1 : 1})`,
-    config: { mass: 1, tension: 195, friction: 28 }
-  })
-
   // Functions
   // Format a placement string depending on rank
   const getPlacement = rank => {
@@ -224,7 +226,10 @@ const Journal = () => {
   // TODO: Style journal further
   return (
     <>
-      <Book id="journal" ref={journalRef}>
+      <Book id="journal">
+        <VisibilitySensor onChange={(isVisible) => setOpenJournal(isVisible)} active={!openJournal} delayedCall>
+          <VSPlaceholder/>
+        </VisibilitySensor>
         <Page url={pageURL}>
           <PageTitle>CELESTE CONQUERORS</PageTitle>
           <Table>
@@ -237,9 +242,9 @@ const Journal = () => {
             <input type="checkbox" defaultChecked={showScreenshotEntries} onChange={() => setShowScreenshotEntries(!showScreenshotEntries)}/>
           </ScreenshotCheckbox>
         </Page>
-        <CoverWrapper style={{ transform }}>
-          <Cover className="back" style={{ display: percent.interpolate(p => p < .5 ? 'block' : 'none') }} url={journalURL}/>
-          <Cover className="front" style={{ display: percent.interpolate(p => p >= .5 ? 'block' : 'none') }} url={journalURL}>
+        <CoverWrapper className="cover-wrapper">
+          <Cover className="back" url={journalURL}/>
+          <Cover className="front" url={journalURL}>
             <CoverTitle url={titleURL}>Madeline</CoverTitle>
           </Cover>
         </CoverWrapper>
