@@ -132,34 +132,35 @@ const Journal = () => {
   const [showScreenshotEntries, setShowScreenshotEntries] = useState(false)
   const [currentURL, setCurrentURL] = useState("")
 
+  // Timeline animation
+  let tl = anime.timeline({
+    duration: 500,
+    easing: "easeInOutQuart",
+    autoplay: false
+  })
+
+  tl.add({
+      targets: ".cover-wrapper",
+      scaleX: openJournal ? -1 : 1
+    })
+    .add({
+      targets: ".cover-wrapper .front",
+      duration: 1,
+      opacity: openJournal ? 0 : 1
+    }, 250)
+    .add({
+      targets: ".cover-wrapper .back",
+      duration: 1,
+      opacity: openJournal ? 1 : 0
+    }, 250)
+
   // Hook to toggle scrolling when the video player is open
   useEffect(() => {
     document.getElementsByTagName("body")[0].className = currentURL ? "modal_open" : ""
   }, [currentURL])
 
   // Hook to toggle journal open/close animation
-  useEffect(() => {
-    let timeline = anime.timeline({
-      easing: "easeInOutQuart",
-      duration: 500
-    })
-
-    timeline
-      .add({
-        targets: ".cover-wrapper",
-        scaleX: openJournal ? -1 : 1
-      })
-      .add({
-        targets: ".cover-wrapper .front",
-        opacity: openJournal ? 0 : 1,
-        duration: 1
-      }, 250)
-      .add({
-        targets: ".cover-wrapper .back",
-        opacity: openJournal ? 1 : 0,
-        duration: 1
-      }, 250)
-  }, [openJournal])
+  useEffect(() => { tl.play() }, [openJournal])
 
   // GraphQL
   let {
