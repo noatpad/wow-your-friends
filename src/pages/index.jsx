@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 
 import Layout from "../components/Layout"
 import Journal from "../components/Journal"
-import PostcardSections from '../components/PostcardSections'
+import QnA from '../components/QnA'
 import Footer from '../components/Footer'
 
 const Container = styled.div`
@@ -22,13 +22,14 @@ const Title = styled.h1`
   text-shadow: 0 3px #31315c;
 `
 
+// TODO: Optimize images with gatsby plugins
 const IndexPage = () => {
   return (
     <Layout>
       <Container>
         <Title>Project Strawberry</Title>
         <Journal/>
-        {/* <PostcardSections/> */}
+        <QnA/>
       </Container>
       <Footer/>
     </Layout>

@@ -132,7 +132,7 @@ const Journal = () => {
   const [showScreenshotEntries, setShowScreenshotEntries] = useState(false)
   const [currentURL, setCurrentURL] = useState("")
 
-  // Timeline animation
+  // Animation timeline
   let tl = anime.timeline({
     duration: 500,
     easing: "easeInOutQuart",

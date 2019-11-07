@@ -41,6 +41,7 @@ const Postcard = styled.div`
   width: 75%;
   padding: 1em;
   margin: 1.5em 0;
+  transform: translateY(-100%) rotate(0);
   background: #f2ebe8;
   background: url(${props => props.url}) no-repeat center center;
   background-size: contain;
@@ -78,7 +79,13 @@ const PostcardWrapper = styled.div`
   }
 `
 
-const Section = ({ header, postcards }) => {
+const StaticPostcard = styled(Postcard)`
+  width: 100%;
+  background: transparent;
+`
+
+// TODO: Replicate react-spring's animation with anime.js
+const Section = ({ className, header, postcards }) => {
   // State
   const [showSection, setShowSection] = useState(false)
 
@@ -86,36 +93,48 @@ const Section = ({ header, postcards }) => {
   const measureRef = useRef()
   const { height: cardsWrapperHeight } = useMeasure(measureRef)
 
-  //
+  // Toggleable animation for hovering headers
+  const hoverAnim = hover => {
+    const targets = `.${className} .headerContainer, .${className} .header`
+    anime.remove(targets)
+    anime({
+      targets: targets,
+      paddingLeft: hover ? 20 : 0,
+      easing: "spring(1, 80, 10, 0)"
+    })
+  }
+
+  // Animation timeline for toggling sections
+  let tl = anime.timeline({
+    easing: 'easeOutCubic',
+    duration: 750,
+    reverse: !showSection
+  })
+
+  tl.add({
+      targets: `.${className} .cards`,
+      height: showSection ? cardsWrapperHeight : 0
+    })
+    .add({
+      targets: `.${className} .caret`,
+      rotate: showSection ? 90 : 0
+    }, 0)
+    .add({
+      targets: `.${className} .postcard`,
+      easing: "easeOutExpo",
+      opacity: showSection ? 1 : 0,
+      translateY: showSection ? "0%" : "-100%",
+      rotate: (_, i) => {
+        const { stagnant = false, rotateOffset, clockwise = true } = postcards[i]
+        console.log(postcards[i])
+        if (stagnant) { return 0 }
+        return rotateOffset + (showSection ? 0 : (clockwise ? 5 : -5))
+      },
+      delay: anime.stagger(65)
+    }, 130)
 
   // Hook to toggle postcard animation
-  useEffect(() => {
-    let tl = anime.timeline({
-      easing: 'easeOutCubic',
-      duration: 750,
-    })
-
-    tl
-      .add({
-        targets: ".cards",
-        height: showSection ? cardsWrapperHeight : 0
-      })
-      .add({
-        targets: ".postcard",
-        easing: "easeOutExpo",
-        opacity: showSection ? 1 : 0,
-        translateY: showSection ? 0 : "-100%",
-        rotate: (_, i) => {
-          const { rotateOffset, clockwise = true } = postcards[i]
-          if (showSection) {
-            return rotateOffset
-          } else {
-            return rotateOffset + (clockwise ? 5 : -5)
-          }
-        },
-        delay: anime.stagger(65)
-      }, "130")
-  }, [showSection])
+  useEffect(() => { tl.play() }, [showSection])
 
   // GraphQL
   const { postcardImage: { publicURL: postcardURL }} = useStaticQuery(graphql`
@@ -128,22 +147,48 @@ const Section = ({ header, postcards }) => {
   `)
 
   return (
-    <Container>
+    <Container className={className}>
       <HeaderContainer
+        className="headerContainer"
         onClick={() => setShowSection(!showSection)}
+        onMouseEnter={() => hoverAnim(true)}
+        onMouseLeave={() => hoverAnim(false)}
       >
-        <Icon className="fas fa-fw fa-angle-right"/>
-        <Header>{header}</Header>
+        <Icon className="caret fas fa-fw fa-angle-right"/>
+        <Header className="header">{header}</Header>
       </HeaderContainer>
       <Cards className="cards">
         <CardsWrapper ref={measureRef}>
-          {postcards.map(({ content }) => (
-            <Postcard className="postcard" url={postcardURL}>
+          {postcards.map(({ stagnant = false, alignSelf, content }, i) =>
+            stagnant ? (
+              <StaticPostcard key={i} className="postcard">
+                {content}
+              </StaticPostcard>
+            ) : (
+              <Postcard
+                key={i}
+                className="postcard"
+                url={postcardURL}
+                style={{ alignSelf: alignSelf }}
+              >
+                <PostcardWrapper>
+                  {content}
+                </PostcardWrapper>
+              </Postcard>
+            )
+          )}
+          {/* {postcards.map(({ alignSelf, content }, i) => (
+            <Postcard
+              key={i}
+              className="postcard"
+              url={postcardURL}
+              style={{ alignSelf: alignSelf }}
+            >
               <PostcardWrapper>
                 {content}
               </PostcardWrapper>
             </Postcard>
-          ))}
+          ))} */}
         </CardsWrapper>
       </Cards>
     </Container>
