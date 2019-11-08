@@ -82,6 +82,10 @@ const PostcardWrapper = styled.div`
 const StaticPostcard = styled(Postcard)`
   width: 100%;
   background: transparent;
+
+  &::after {
+    display: none;
+  }
 `
 
 const Section = ({ className, header, postcards }) => {
@@ -145,7 +149,7 @@ const Section = ({ className, header, postcards }) => {
         height: 0
       }, 130)
     }
-  }, [showSection])
+  }, [showSection, cardsWrapperHeight])
 
   // Animations //
   // Toggleable animation for hovering headers
