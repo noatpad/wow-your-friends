@@ -24,6 +24,11 @@ body.modal_open {
   overflow: hidden;
 }
 
+a {
+  color: #428bca;
+  text-decoration: none;
+}
+
 img.pixelated {
   /* Image renders more like pixel art (which is what I need) */
   image-rendering: optimizeSpeed;             /* STOP SMOOTHING, GIVE ME SPEED */
@@ -34,5 +39,3 @@ img.pixelated {
   image-rendering: optimize-contrast;         /* CSS3 Proposed */
   -ms-interpolation-mode: nearest-neighbor;   /* IE8+ */
 }
-
-/* TODO: Color links in a different color */
