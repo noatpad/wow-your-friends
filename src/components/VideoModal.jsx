@@ -4,7 +4,7 @@ import anime from 'animejs'
 import ReactPlayer from 'react-player'
 
 const Overlay = styled.div`
-  display: flex;
+  display: none;
   justify-content: center;
   align-items: center;
   position: fixed;
@@ -132,7 +132,7 @@ const VideoModal = ({ url, set }) => {
     let tl = anime.timeline({
       easing: "spring(1, 100, 50, 0)",
       begin: () => {
-        anime.set(".overlay", { display: "flex" })
+        anime.set(".overlay", { display: (url || videoURL) ? "flex" : "none" })
         loadingDotAnim.restart()
       },
       complete: () => {
