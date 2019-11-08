@@ -1,7 +1,7 @@
 import React from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import styled from '@emotion/styled'
-import { keyframes } from '@emotion/core'
+import anime from 'animejs'
 
 const Container = styled.div`
   display: flex;
@@ -10,6 +10,7 @@ const Container = styled.div`
   justify-content: center;
   padding: 3em 2em;
   background: #000b;
+  color: white;
 
   a {
     color: inherit;
@@ -28,21 +29,14 @@ const Icon = styled.i`
   font-size: 1.7em;
   padding: .6em;
   margin: .2em;
-  transition: all .4s;
 
   &:hover {
-    transform: translateY(-20%);
     color: ${props => props.color};
   }
 `
 
-const float = keyframes`
-  to { transform: translateY(-20%); }
-`
-
 const GIF = styled.img`
   height: 2.5em;
-  animation: ${float} 1s alternate infinite ease-in-out;
 `
 
 const Footnote = styled.p`
@@ -50,7 +44,6 @@ const Footnote = styled.p`
   color: #999;
 `
 
-// NOTE: Can't use react-spring as much here because of lag
 const Footer = () => {
   const { file } = useStaticQuery(graphql`
     query {
@@ -60,15 +53,42 @@ const Footer = () => {
     }
   `)
 
+  const hoverAnim = (hover, className, color) => {
+    const target = `.${className}`
+    anime.remove(target)
+    anime({
+      targets: target,
+      easing: "spring(1, 100, 50, 0)",
+      translateY: hover ? "-10%" : "0%",
+      color: hover ? color : "#fff"
+    })
+  }
+
+  anime({
+    targets: "#footer-strawberry",
+    easing: "easeInOutQuad",
+    duration: 1000,
+    direction: "alternate",
+    loop: true,
+    translateY: "-20%"
+  })
+
   return (
-    <Container>
+    <Container className="footer">
       <IconsDiv>
-        <a href="https://twitter.com/aCluelessDanny" target="_blank" rel="noopener noreferrer">
-          <Icon color={"#38a1f3"} className="fab fa-twitter"/>
+        <a className="twitter-icon" href="https://twitter.com/aCluelessDanny" target="_blank" rel="noopener noreferrer"
+        >
+          <Icon
+            className="twitter-icon fab fa-twitter"
+            onMouseEnter={() => hoverAnim(true, "twitter-icon", "#38a1f3")}
+            onMouseLeave={() => hoverAnim(false, "twitter-icon", "#38a1f3")}/>
         </a>
-        <GIF className="pixelated" src={file.publicURL} alt="A floating strawberry"/>
-        <a href="?" target="_blank" rel="noopener noreferrer">
-          <Icon color={"#6e5494"} className="fab fa-github"/>
+        <GIF id="footer-strawberry" className="pixelated" src={file.publicURL} alt="A floating strawberry"/>
+        <a className="github-icon" href="?" target="_blank" rel="noopener noreferrer">
+          <Icon
+            className="github-icon fab fa-github"
+            onMouseEnter={() => hoverAnim(true, "github-icon", "#6e5494")}
+            onMouseLeave={() => hoverAnim(false, "github-icon", "#6e5494")}/>
         </a>
       </IconsDiv>
       <p>A website made by a clueless danny</p>
