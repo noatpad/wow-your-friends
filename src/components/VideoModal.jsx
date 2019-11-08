@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from 'react'
 import styled from '@emotion/styled'
-import { animated, useSpring, interpolate } from 'react-spring'
+import anime from 'animejs'
 import ReactPlayer from 'react-player'
 
-const Overlay = styled(animated.div)`
+const Overlay = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
@@ -16,7 +16,7 @@ const Overlay = styled(animated.div)`
   z-index: 10;
 `
 
-const PlayerWrapper = styled(animated.div)`
+const PlayerWrapper = styled.div`
   position: relative;
   width: 100%;
   max-width: 960px;
@@ -95,7 +95,7 @@ const ErrorHeader = styled.h3`
   font-size: 1.4em;
 `
 
-const LoadingDot = styled(animated.p)`
+const LoadingDot = styled.p`
   font-size: 3.5em;
 `
 
@@ -107,26 +107,51 @@ const VideoModal = ({ url, set }) => {
     setError(videoURL && !ReactPlayer.canPlay(videoURL))
   }, [videoURL])
 
-  const containerSpring = useSpring({
-    percent: url ? 1 : 0,
-  })
+  useEffect(() => {
+    const targets = ".overlay, .player"
+    anime.remove(targets)
 
-  const playerSpring = useSpring({
-    transform: `translateX(${url ? 0 : 100}%)`,
-    onRest: () => setVideoURL(url)
-  })
+    let loadingDotAnim = anime({
+      targets: ".loading-dot",
+      easing: "easeInOutCirc",
+      duration: 1000,
+      loop: true,
+      autoplay: false,
+      translateX: [
+        { value: ["400%", "-400%"] },
+        { value: "400%" }
+      ],
+      scale: [
+        { value: ["1, 1", "2.8, 0.5"] },
+        { value: "1, 1" },
+        { value: "2, 0.5" },
+        { value: "1, 1" }
+      ]
+    })
 
-  const loadingDotSpring = useSpring({
-    from: { x: 450, percent: 1 },
-    to: async next => {
-      while (!videoURL && !error) {
-        await next({ x: -450, percent: 0 })
-        await next({ x: 450, percent: 1 })
+    let tl = anime.timeline({
+      easing: "spring(1, 100, 50, 0)",
+      begin: () => {
+        anime.set(".overlay", { display: "flex" })
+        loadingDotAnim.restart()
+      },
+      complete: () => {
+        anime.set(".overlay", { display: url ? "flex" : "none" })
+        setVideoURL(url)
+        if (!url) { loadingDotAnim.pause() }
       }
-    },
-    config: { mass: 1, tension: 200, friction: 26, clamp: true },
-    reset: true
-  })
+    })
+
+    tl
+      .add({
+        targets: ".overlay",
+        opacity: url ? 1 : 0
+      })
+      .add({
+        targets: ".player",
+        translateX: url ? "0%" : "100%"
+      }, 0)
+  }, [url])
 
   const videoPlayer = () => {
     if (error === false && videoURL) {
@@ -141,20 +166,15 @@ const VideoModal = ({ url, set }) => {
     } else {
       return (
         <FullFlexCenter>
-          <LoadingDot style={{
-            transform: interpolate([loadingDotSpring.x, loadingDotSpring.percent.interpolate([0, .5, 1], ["1, 1", "2.8, 0.5", "1, 1"])], (x, s) => `translateX(${x}%) scale(${s})`)
-          }}>•</LoadingDot>
+          <LoadingDot className="loading-dot">•</LoadingDot>
         </FullFlexCenter>
       )
     }
   }
 
   return (
-    <Overlay onClick={() => set("")} style={{
-      display: containerSpring.percent.interpolate(p => p > 0 ? 'flex' : 'none'),
-      opacity: containerSpring.percent
-    }}>
-      <PlayerWrapper style={{ transform: playerSpring.transform }}>
+    <Overlay className="overlay" onClick={() => set("")}>
+      <PlayerWrapper className="player">
         {videoPlayer()}
         <PlayerDecor/>
       </PlayerWrapper>
