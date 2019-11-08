@@ -100,41 +100,61 @@ const Section = ({ className, header, postcards }) => {
     anime({
       targets: targets,
       paddingLeft: hover ? 20 : 0,
-      easing: "spring(1, 80, 10, 0)"
+      easing: "spring(1, 100, 50, 0)"
     })
   }
 
-  // Animation timeline for toggling sections
-  let tl = anime.timeline({
-    easing: 'easeOutCubic',
-    duration: 750,
-    reverse: !showSection
-  })
-
-  tl.add({
-      targets: `.${className} .cards`,
-      height: showSection ? cardsWrapperHeight : 0
-    })
-    .add({
-      targets: `.${className} .caret`,
-      rotate: showSection ? 90 : 0
-    }, 0)
-    .add({
-      targets: `.${className} .postcard`,
-      easing: "easeOutExpo",
-      opacity: showSection ? 1 : 0,
-      translateY: showSection ? "0%" : "-100%",
-      rotate: (_, i) => {
-        const { stagnant = false, rotateOffset, clockwise = true } = postcards[i]
-        console.log(postcards[i])
-        if (stagnant) { return 0 }
-        return rotateOffset + (showSection ? 0 : (clockwise ? 5 : -5))
-      },
-      delay: anime.stagger(65)
-    }, 130)
-
   // Hook to toggle postcard animation
-  useEffect(() => { tl.play() }, [showSection])
+  useEffect(() => {
+    anime.remove(`${className} *`)
+    let tl = anime.timeline({
+      easing: "spring(1, 100, 50, 0)"
+    })
+
+    if (showSection) {
+      tl
+        .add({
+          targets: `.${className} .cards`,
+          height: cardsWrapperHeight
+        })
+        .add({
+          targets: `.${className} .caret`,
+          rotate: 90
+        }, 0)
+        .add({
+          targets: `.${className} .postcard`,
+          delay: anime.stagger(65),
+          opacity: 1,
+          translateY: "0%",
+          rotate: (_, i) => {
+            const { stagnant = false, rotateOffset, clockwise = true } = postcards[i]
+            if (stagnant) { return 0 }
+            return rotateOffset + (clockwise ? 5 : -5)
+          }
+        }, 130)
+    } else {
+      tl
+        .add({
+          targets: `.${className} .postcard`,
+          delay: anime.stagger(65),
+          opacity: 0,
+          translateY: "-100%",
+          rotate: (_, i) => {
+            const { stagnant = false, rotateOffset } = postcards[i]
+            if (stagnant) { return 0 }
+            return rotateOffset
+          }
+        })
+        .add({
+          targets: `.${className} .caret`,
+          rotate: 0
+        }, 0)
+        .add({
+          targets: `.${className} .cards`,
+          height: 0
+        }, 130)
+    }
+  }, [showSection])
 
   // GraphQL
   const { postcardImage: { publicURL: postcardURL }} = useStaticQuery(graphql`
@@ -165,30 +185,13 @@ const Section = ({ className, header, postcards }) => {
                 {content}
               </StaticPostcard>
             ) : (
-              <Postcard
-                key={i}
-                className="postcard"
-                url={postcardURL}
-                style={{ alignSelf: alignSelf }}
-              >
+              <Postcard key={i} className="postcard" url={postcardURL} style={{ alignSelf: alignSelf }}>
                 <PostcardWrapper>
                   {content}
                 </PostcardWrapper>
               </Postcard>
             )
           )}
-          {/* {postcards.map(({ alignSelf, content }, i) => (
-            <Postcard
-              key={i}
-              className="postcard"
-              url={postcardURL}
-              style={{ alignSelf: alignSelf }}
-            >
-              <PostcardWrapper>
-                {content}
-              </PostcardWrapper>
-            </Postcard>
-          ))} */}
         </CardsWrapper>
       </Cards>
     </Container>

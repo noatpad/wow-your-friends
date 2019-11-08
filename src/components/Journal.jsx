@@ -139,7 +139,8 @@ const Journal = () => {
     autoplay: false
   })
 
-  tl.add({
+  tl
+    .add({
       targets: ".cover-wrapper",
       scaleX: openJournal ? -1 : 1
     })
