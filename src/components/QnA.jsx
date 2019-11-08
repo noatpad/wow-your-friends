@@ -9,7 +9,7 @@ const GIF = styled.img`
 `
 
 const QnA = () => {
-  // GraphQL
+  // GraphQL //
   const { gifImage: { publicURL: GifURL }} = useStaticQuery(graphql`
     query {
       # Get URL of "You can do this" GIF
@@ -19,7 +19,7 @@ const QnA = () => {
     }
   `)
 
-  // Postcard section content
+  // Postcard section content //
   // TODO: Add images where applicable
   // About section content
   const aboutCards = {

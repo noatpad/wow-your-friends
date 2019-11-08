@@ -45,14 +45,18 @@ const Footnote = styled.p`
 `
 
 const Footer = () => {
-  const { file } = useStaticQuery(graphql`
+  // GraphQL //
+  const { file: { publicURL: strawberryURL }} = useStaticQuery(graphql`
     query {
+      # Get strawberry GIF URL
       file(name: { eq: "strawberry" }) {
         publicURL
       }
     }
   `)
 
+  // Animations //
+  // Toggleable animation for hovering icons
   const hoverAnim = (hover, className, color) => {
     const target = `.${className}`
     anime.remove(target)
@@ -64,6 +68,7 @@ const Footer = () => {
     })
   }
 
+  // Auto-animation of floating strawberry GIF
   anime({
     targets: "#footer-strawberry",
     easing: "easeInOutQuad",
@@ -73,17 +78,17 @@ const Footer = () => {
     translateY: "-20%"
   })
 
+  // TODO: When published, add information & links to repo
   return (
     <Container className="footer">
       <IconsDiv>
-        <a className="twitter-icon" href="https://twitter.com/aCluelessDanny" target="_blank" rel="noopener noreferrer"
-        >
+        <a className="twitter-icon" href="https://twitter.com/aCluelessDanny" target="_blank" rel="noopener noreferrer">
           <Icon
             className="twitter-icon fab fa-twitter"
             onMouseEnter={() => hoverAnim(true, "twitter-icon", "#38a1f3")}
             onMouseLeave={() => hoverAnim(false, "twitter-icon", "#38a1f3")}/>
         </a>
-        <GIF id="footer-strawberry" className="pixelated" src={file.publicURL} alt="A floating strawberry"/>
+        <GIF id="footer-strawberry" className="pixelated" src={strawberryURL} alt="A floating strawberry"/>
         <a className="github-icon" href="?" target="_blank" rel="noopener noreferrer">
           <Icon
             className="github-icon fab fa-github"

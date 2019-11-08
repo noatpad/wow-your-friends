@@ -23,10 +23,12 @@ const Title = styled.h1`
 `
 
 // TODO: Optimize images with gatsby plugins
+// TODO: Work on responsive design
 const IndexPage = () => {
   return (
     <Layout>
       <Container>
+        {/* IDEA: Animate title like how Celeste does it */}
         <Title>Project Strawberry</Title>
         <Journal/>
         <QnA/>

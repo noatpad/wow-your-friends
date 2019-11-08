@@ -84,15 +84,70 @@ const StaticPostcard = styled(Postcard)`
   background: transparent;
 `
 
-// TODO: Replicate react-spring's animation with anime.js
 const Section = ({ className, header, postcards }) => {
-  // State
+  // State //
   const [showSection, setShowSection] = useState(false)
 
-  // useMeasure() hook to animate 'auto'
+  // Hooks //
+  // useMeasure() hook to later animate 'psuedo-auto'
   const measureRef = useRef()
   const { height: cardsWrapperHeight } = useMeasure(measureRef)
 
+  // Toggle postcard animation
+  useEffect(() => {
+    // Remove any current animation instance
+    anime.remove(`${className} *`)
+    let tl = anime.timeline({
+      easing: "spring(1, 100, 50, 0)"
+    })
+
+    // Run different animation timelines depending on the toggle
+    if (showSection) {    // Expand section, then show postcards
+      tl
+      .add({
+        targets: `.${className} .cards`,
+        height: cardsWrapperHeight
+      })
+      .add({
+        targets: `.${className} .caret`,
+        rotate: 90
+      }, 0)
+      .add({
+        targets: `.${className} .postcard`,
+        delay: anime.stagger(65),
+        opacity: 1,
+        translateY: "0%",
+        rotate: (_, i) => {
+          const { stagnant = false, rotateOffset, clockwise = true } = postcards[i]
+          if (stagnant) { return 0 }
+          return rotateOffset + (clockwise ? 5 : -5)
+        }
+      }, 130)
+    } else {    // Hide postcards first, then collapse section
+      tl
+      .add({
+        targets: `.${className} .postcard`,
+        delay: anime.stagger(65),
+        opacity: 0,
+        translateY: "-100%",
+        rotate: (_, i) => {
+          const { stagnant = false, rotateOffset } = postcards[i]
+          if (stagnant) { return 0 }
+          return rotateOffset
+        }
+      })
+      .add({
+        targets: `.${className} .caret`,
+        rotate: 0
+      }, 0)
+      .add({
+        targets: `.${className} .cards`,
+        height: 0
+      }, 130)
+    }
+  }, [showSection])
+
+  // Animations //
   // Toggleable animation for hovering headers
   const hoverAnim = hover => {
     const targets = `.${className} .headerContainer, .${className} .header`
@@ -104,59 +159,7 @@ const Section = ({ className, header, postcards }) => {
     })
   }
 
-  // Hook to toggle postcard animation
-  useEffect(() => {
-    anime.remove(`${className} *`)
-    let tl = anime.timeline({
-      easing: "spring(1, 100, 50, 0)"
-    })
-
-    if (showSection) {
-      tl
-        .add({
-          targets: `.${className} .cards`,
-          height: cardsWrapperHeight
-        })
-        .add({
-          targets: `.${className} .caret`,
-          rotate: 90
-        }, 0)
-        .add({
-          targets: `.${className} .postcard`,
-          delay: anime.stagger(65),
-          opacity: 1,
-          translateY: "0%",
-          rotate: (_, i) => {
-            const { stagnant = false, rotateOffset, clockwise = true } = postcards[i]
-            if (stagnant) { return 0 }
-            return rotateOffset + (clockwise ? 5 : -5)
-          }
-        }, 130)
-    } else {
-      tl
-        .add({
-          targets: `.${className} .postcard`,
-          delay: anime.stagger(65),
-          opacity: 0,
-          translateY: "-100%",
-          rotate: (_, i) => {
-            const { stagnant = false, rotateOffset } = postcards[i]
-            if (stagnant) { return 0 }
-            return rotateOffset
-          }
-        })
-        .add({
-          targets: `.${className} .caret`,
-          rotate: 0
-        }, 0)
-        .add({
-          targets: `.${className} .cards`,
-          height: 0
-        }, 130)
-    }
-  }, [showSection])
-
-  // GraphQL
+  // GraphQL //
   const { postcardImage: { publicURL: postcardURL }} = useStaticQuery(graphql`
     query {
       # Get URL of postcard background image

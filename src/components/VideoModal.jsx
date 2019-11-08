@@ -100,18 +100,24 @@ const LoadingDot = styled.p`
 `
 
 const VideoModal = ({ url, set }) => {
+  // State //
   const [videoURL, setVideoURL] = useState("")
   const [error, setError] = useState(false)
 
+  // Hooks //
+  // Set error if videoURL cannot be played for ReactPlayer
   useEffect(() => {
     setError(videoURL && !ReactPlayer.canPlay(videoURL))
   }, [videoURL])
 
+  // Toggle animations for video player
   useEffect(() => {
+    // Remove any current animation instance
     const targets = ".overlay, .player"
     anime.remove(targets)
 
-    let loadingDotAnim = anime({
+    // Animation for loading indicator
+    const loadingDotAnim = anime({
       targets: ".loading-dot",
       easing: "easeInOutCirc",
       duration: 1000,
@@ -129,7 +135,8 @@ const VideoModal = ({ url, set }) => {
       ]
     })
 
-    let tl = anime.timeline({
+    // Animation for displaying and hiding video player
+    const tl = anime.timeline({
       easing: "spring(1, 100, 50, 0)",
       begin: () => {
         anime.set(".overlay", { display: (url || videoURL) ? "flex" : "none" })
@@ -143,27 +150,27 @@ const VideoModal = ({ url, set }) => {
     })
 
     tl
-      .add({
-        targets: ".overlay",
-        opacity: url ? 1 : 0
-      })
-      .add({
-        targets: ".player",
-        translateX: url ? "0%" : "100%"
-      }, 0)
+    .add({
+      targets: ".overlay",
+      opacity: url ? 1 : 0
+    })
+    .add({
+      targets: ".player",
+      translateX: url ? "0%" : "100%"
+    }, 0)
   }, [url])
 
   const videoPlayer = () => {
-    if (error === false && videoURL) {
+    if (error === false && videoURL) {    // If nothing went wrong, display the video
       return <ReactPlayer className="video" url={videoURL} playing controls height="100%" width="100%"/>
-    } else if (error) {
+    } else if (error) {   // Else if the video is unable to be played, show a link instead
       return (
         <FullFlexCenter>
           <ErrorHeader>Well that's a problem...</ErrorHeader>
           <p>Looks like I can't play the video from here. But you can still access it through this <a href={videoURL} target="_blank" rel="noopener noreferrer">link</a>!</p>
         </FullFlexCenter>
       )
-    } else {
+    } else {    // Default case is that the animation is ongoing and loading
       return (
         <FullFlexCenter>
           <LoadingDot className="loading-dot">•</LoadingDot>

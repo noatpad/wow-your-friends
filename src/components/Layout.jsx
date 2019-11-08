@@ -22,14 +22,17 @@ const HeaderBG = styled.img`
 `
 
 const Layout = ({ children }) => {
-  const { site, bgImage } = useStaticQuery(graphql`
+  // GraphQL //
+  const { site, bgImage: { publicURL: imageURL }} = useStaticQuery(graphql`
     query {
+      # Get site title
       site {
         siteMetadata {
           title
         }
       }
 
+      # Get header background image URL
       bgImage: file(name: { eq: "header-bg" }) {
         publicURL
       }
@@ -43,7 +46,7 @@ const Layout = ({ children }) => {
         <script src="https://kit.fontawesome.com/a35b219d74.js" crossorigin="anonymous"></script>
       </Helmet>
       <Container>
-        <HeaderBG src={bgImage.publicURL} alt="An ethereal, golden background image"/>
+        <HeaderBG src={imageURL} alt="An ethereal, golden background image"/>
         {children}
       </Container>
     </>

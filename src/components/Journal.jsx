@@ -127,19 +127,25 @@ const VSPlaceholder = styled.div`
 `
 
 const Journal = () => {
-  // State and Hooks
+  // State //
   const [openJournal, setOpenJournal] = useState(false)
   const [showScreenshotEntries, setShowScreenshotEntries] = useState(false)
   const [currentURL, setCurrentURL] = useState("")
 
-  // Animation timeline
-  let tl = anime.timeline({
-    duration: 500,
-    easing: "easeInOutQuart",
-    autoplay: false
-  })
+  // Hooks //
+  // Toggle scrolling when the video player is open (className restricts scrolling)
+  useEffect(() => {
+    document.getElementsByTagName("body")[0].className = currentURL ? "modal_open" : ""
+  }, [currentURL])
 
-  tl
+  // Toggle journal open/close animation
+  useEffect(() => {
+    const tl = anime.timeline({
+      duration: 500,
+      easing: "easeInOutQuart"
+    })
+
+    tl
     .add({
       targets: ".cover-wrapper",
       scaleX: openJournal ? -1 : 1
@@ -154,16 +160,9 @@ const Journal = () => {
       duration: 1,
       opacity: openJournal ? 1 : 0
     }, 250)
+  }, [openJournal])
 
-  // Hook to toggle scrolling when the video player is open
-  useEffect(() => {
-    document.getElementsByTagName("body")[0].className = currentURL ? "modal_open" : ""
-  }, [currentURL])
-
-  // Hook to toggle journal open/close animation
-  useEffect(() => { tl.play() }, [openJournal])
-
-  // GraphQL
+  // GraphQL //
   let {
     assetsJson: { conquerors },
     journalImage: { publicURL: journalURL },
@@ -202,7 +201,7 @@ const Journal = () => {
     conquerors = conquerors.filter(({ videoProof }) => videoProof)
   }
 
-  // Functions
+  // Functions //
   // Format a placement string depending on rank
   const getPlacement = rank => {
     if (rank >= 10 && rank <= 19) { return `${rank}th` }
@@ -225,7 +224,7 @@ const Journal = () => {
     ))
   )
 
-  // TODO: Style journal further
+  // TODO: Style journal further (especially the checkbox)
   return (
     <>
       <Book id="journal">
@@ -237,6 +236,8 @@ const Journal = () => {
           <Table>
             <tbody>
               {getConquerorTable()}
+              {/* TODO: Take into account overflow possibility */}
+              {/* IDEA: Display total count */}
             </tbody>
           </Table>
           <ScreenshotCheckbox>
