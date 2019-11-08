@@ -82,21 +82,23 @@ const FullFlexCenter = styled.div`
   right: 0;
   padding: 2em;
 
-  * {
-    text-shadow: black 0 1px;
-  }
-
   * + * {
     margin-top: 0.25em;
   }
 `
 
+const Error = styled.p`
+  color: #333;
+`
+
 const ErrorHeader = styled.h3`
+  color: #222;
   font-size: 1.4em;
 `
 
 const LoadingDot = styled.p`
   font-size: 3.5em;
+  text-shadow: 0 1px #333;
 `
 
 const VideoModal = ({ url, set }) => {
@@ -167,7 +169,7 @@ const VideoModal = ({ url, set }) => {
       return (
         <FullFlexCenter>
           <ErrorHeader>Well that's a problem...</ErrorHeader>
-          <p>Looks like I can't play the video from here. But you can still access it through this <a href={videoURL} target="_blank" rel="noopener noreferrer">link</a>!</p>
+          <Error>Looks like I can't play the video from here. But you can still access it through this <a href={videoURL} target="_blank" rel="noopener noreferrer">link</a>!</Error>
         </FullFlexCenter>
       )
     } else {    // Default case is that the animation is ongoing and loading
