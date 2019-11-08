@@ -164,7 +164,7 @@ const VideoModal = ({ url, set }) => {
 
   const videoPlayer = () => {
     if (error === false && videoURL) {    // If nothing went wrong, display the video
-      return <ReactPlayer className="video" url={videoURL} playing controls height="100%" width="100%"/>
+      return <ReactPlayer className="video" url={videoURL} playing={url !== ""} controls height="100%" width="100%"/>
     } else if (error) {   // Else if the video is unable to be played, show a link instead
       return (
         <FullFlexCenter>
