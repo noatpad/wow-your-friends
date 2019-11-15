@@ -121,7 +121,6 @@ const QnA = () => {
   }
 
   // Special Thanks section content
-  // TODO: Add extra credit to /u/DJTom3 because of this post: https://www.reddit.com/r/celestegame/comments/dut721/in_the_wake_of_the_last_few_farewell_golden/
   const thankYouCards = {
     className: "thanks",
     header: "Special thanks",
@@ -131,7 +130,7 @@ const QnA = () => {
         clockwise: false,
         content: (
           <ul>
-            <li>/u/DJTom3 for maintaining a record of this list <a href="https://www.reddit.com/r/celestegame/comments/dinrkb/with_their_amazing_achievement_of_getting_the/" target="_blank" rel="noopener noreferrer">here</a>, as it was my primary source for that information.</li>
+            <li>/u/DJTom3 for maintaining a record of this list <a href="https://www.reddit.com/r/celestegame/comments/dinrkb/with_their_amazing_achievement_of_getting_the/" target="_blank" rel="noopener noreferrer">here</a> and <a href="https://www.reddit.com/r/celestegame/comments/dut721/in_the_wake_of_the_last_few_farewell_golden/" target="_blank" rel="noopener noreferrer">here</a>, as it was my primary source of information.</li>
             <li>The Celeste dev team for creating a fantastic game to play through.</li>
             <li>All the players on this list for going above and beyond to complete such a task.</li>
           </ul>
