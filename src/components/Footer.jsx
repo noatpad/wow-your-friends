@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import styled from '@emotion/styled'
 import anime from 'animejs'
@@ -35,8 +35,24 @@ const Icon = styled.i`
   }
 `
 
+const Strawberry = styled.div`
+  position: relative;
+`
+
 const GIF = styled.img`
   height: 2.5em;
+`
+
+const Glow = styled.div`
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  height: 1px;
+  width: 1px;
+  transform: translate(-50%, -50%);
+  box-shadow:
+    0 0 1.2em .5em #ff8088,
+    0 0 .6em .3em #ffa9ae50;
 `
 
 const Footnote = styled.p`
@@ -55,6 +71,28 @@ const Footer = () => {
     }
   `)
 
+  // Hooks //
+  // Auto-animation of floating strawberry GIF (one-time hook)
+  useEffect(() => {
+    anime({
+      targets: "#footer-strawberry",
+      easing: "easeInOutQuad",
+      duration: 1000,
+      direction: "alternate",
+      loop: true,
+      translateY: "-15%"
+    })
+
+    anime({
+      targets: "#strawberry-glow",
+      easing: "easeInOutQuad",
+      duration: 1000,
+      direction: "alternate",
+      loop: true,
+      top: ["50%", "35%"]
+    })
+  }, [])
+
   // Animations //
   // Toggleable animation for hovering icons
   const hoverAnim = (hover, className, color) => {
@@ -68,16 +106,6 @@ const Footer = () => {
     })
   }
 
-  // Auto-animation of floating strawberry GIF
-  anime({
-    targets: "#footer-strawberry",
-    easing: "easeInOutQuad",
-    duration: 1000,
-    direction: "alternate",
-    loop: true,
-    translateY: "-20%"
-  })
-
   // TODO: When published, add information & links to repo
   return (
     <Container className="footer">
@@ -88,7 +116,10 @@ const Footer = () => {
             onMouseEnter={() => hoverAnim(true, "twitter-icon", "#38a1f3")}
             onMouseLeave={() => hoverAnim(false, "twitter-icon", "#38a1f3")}/>
         </a>
-        <GIF id="footer-strawberry" className="pixelated" src={strawberryURL} alt="A floating strawberry"/>
+        <Strawberry>
+          <GIF id="footer-strawberry" className="pixelated" src={strawberryURL} alt="A floating strawberry"/>
+          <Glow id="strawberry-glow"/>
+        </Strawberry>
         <a className="github-icon" href="?" target="_blank" rel="noopener noreferrer">
           <Icon
             className="github-icon fab fa-github"
