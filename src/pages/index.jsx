@@ -29,7 +29,7 @@ const IndexPage = () => {
     <Layout>
       <Container>
         {/* IDEA: Animate title like how Celeste does it */}
-        <Title>Project Strawberry</Title>
+        <Title>Wow your friends</Title>
         <Journal/>
         <QnA/>
       </Container>

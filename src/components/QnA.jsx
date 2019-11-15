@@ -121,6 +121,7 @@ const QnA = () => {
   }
 
   // Special Thanks section content
+  // TODO: Add extra credit to /u/DJTom3 because of this post: https://www.reddit.com/r/celestegame/comments/dut721/in_the_wake_of_the_last_few_farewell_golden/
   const thankYouCards = {
     className: "thanks",
     header: "Special thanks",

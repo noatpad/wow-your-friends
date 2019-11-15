@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Project Strawberry`,
+    title: `Wow your friends`,
     description: `A small website serving as a record of all the skillful players who obtained all 202 Celeste's strawberries.`,
     author: `a clueless danny`,
   },
