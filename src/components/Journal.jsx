@@ -84,6 +84,20 @@ const Table = styled.table`
   }
 `
 
+const Rank = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const BerryMedal = styled.img`
+  height: 1.2em;
+`
+
+const Place = styled.span`
+  margin-left: .25em;
+`
+
 const Icon = styled.i`
   font-size: 1em;
 `
@@ -117,6 +131,7 @@ const ScreenshotCheckbox = styled.div`
     color: inherit;
     outline: none;
     font-family: 'Font Awesome 5 Pro';
+    cursor: pointer;
     transition: 300ms;
 
     &::after {
@@ -221,7 +236,10 @@ const Journal = () => {
     assetsJson: { conquerors },
     journalImage: { publicURL: journalURL },
     titleImage: { publicURL: titleURL },
-    pageImage: { publicURL: pageURL }
+    pageImage: { publicURL: pageURL },
+    goldberryImage: { publicURL: goldberryURL },
+    silverberryImage: { publicURL: silverberryURL },
+    bronzeberryImage: { publicURL: bronzeberryURL },
   } = useStaticQuery(graphql`
     query {
       # Get data of every "conqueror"
@@ -246,6 +264,17 @@ const Journal = () => {
       pageImage: file(name: { eq: "page" }) {
         publicURL
       }
+
+      goldberryImage: file(name: { eq: "goldberry" }) {
+        publicURL
+      }
+
+      silverberryImage: file(name: { eq: "silverberry" }) {
+        publicURL
+      }
+      bronzeberryImage: file(name: { eq: "bronzeberry" }) {
+        publicURL
+      }
     }
   `)
 
@@ -258,11 +287,36 @@ const Journal = () => {
   // Functions //
   // Format a placement string depending on rank
   const getPlacement = rank => {
-    if (rank >= 10 && rank <= 19) { return `${rank}th` }
-    if (rank % 10 === 1) { return `${rank}st` }
-    if (rank % 10 === 2) { return `${rank}nd` }
-    if (rank % 10 === 3) { return `${rank}rd` }
-    return `${rank}th`
+    let placement
+
+    if (rank >= 10 && rank <= 19) {
+      placement = <Place>{rank}th</Place>
+    } else if (rank % 10 === 1) {
+      placement = (
+        <>
+          {rank === 1 && <BerryMedal src={goldberryURL} alt="First place"/>}
+          <Place>{rank}st</Place>
+        </>
+      )
+    } else if (rank % 10 === 2) {
+      placement = (
+        <>
+          {rank === 2 && <BerryMedal src={silverberryURL} alt="Second place"/>}
+          <Place>{rank}nd</Place>
+        </>
+      )
+    } else if (rank % 10 === 3) {
+      placement = (
+        <>
+          {rank === 3 && <BerryMedal src={bronzeberryURL} alt="Third place"/>}
+          <Place>{rank}rd</Place>
+        </>
+      )
+    } else {
+      placement = <Place>{rank}th</Place>
+    }
+
+    return <Rank>{placement}</Rank>
   }
 
   // Get table of conquerors
