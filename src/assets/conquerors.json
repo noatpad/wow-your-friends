@@ -83,6 +83,20 @@
       "platform": "PC",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=hJP-sx-krAU"
+    },
+    {
+      "name": "TGH",
+      "date": "2019-11-07",
+      "platform": "PC",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=r1Sy9My2R6o"
+    },
+    {
+      "name": "Master_Sparky",
+      "date": "2019-11-10",
+      "platform": "PC",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=R7bLK4LFb6E"
     }
   ]
 }
