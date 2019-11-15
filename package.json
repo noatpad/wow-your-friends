@@ -24,6 +24,7 @@
     "react-helmet": "^5.2.1",
     "react-measure": "^2.3.0",
     "react-player": "^1.13.0",
+    "react-responsive": "^8.0.1",
     "react-visibility-sensor": "^5.1.1",
     "use-measure": "^0.2.2"
   },

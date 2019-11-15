@@ -1,19 +1,22 @@
 import React, { useState, useEffect } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import styled from '@emotion/styled'
-import VisibilitySensor from 'react-visibility-sensor'
 import anime from 'animejs'
+import VisibilitySensor from 'react-visibility-sensor'
+import { useMediaQuery } from 'react-responsive';
 
 import VideoModal from './VideoModal'
 
 const Book = styled.div`
   position: relative;
-  min-height: 800px;
+  height: 800px;
   margin-bottom: 3em;
   transform: rotate(-2deg);
 `
 
 const Page = styled.div`
+  display: flex;
+  flex-direction: column;
   position: relative;
   height: 100%;
   min-height: 800px;
@@ -42,11 +45,15 @@ const PageTitle = styled.h2`
   }
 `
 
+const TableWrapper = styled.div`
+  width: 100%;
+  padding: .75em 0;
+  overflow: scroll;
+`
+
 const Table = styled.table`
   width: 100%;
-  padding-bottom: .75em;
   border-collapse: collapse;
-  border-bottom: 3px solid #71335c60;
 
   tr {
     transition: background .4s;
@@ -71,18 +78,52 @@ const Icon = styled.i`
   font-size: 1em;
 `
 
+const Total = styled.div`
+  flex: 1;
+  padding: .5em 0;
+  border-top: 3px solid #71335c60;
+  font-size: 1.2em;
+  text-align: center;
+`
+
+// Checkbox by Jase from https://codepen.io/jasesmith/pen/EeVmWZ
 const ScreenshotCheckbox = styled.div`
   display: flex;
   align-items: center;
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  margin: 0 4rem 4rem 0;
-`
+  justify-content: flex-end;
+  margin-bottom: 2rem;
 
-const SCText = styled.p`
-  padding-right: 0.75em;
-  font-style: italic;
+  span {
+    padding-right: 0.75em;
+    font-style: italic;
+  }
+
+  input {
+    position: relative;
+    appearance: none;
+    font-size: inherit;
+    width: 1em;
+    margin: 0;
+    color: inherit;
+    outline: none;
+    font-family: 'Font Awesome 5 Pro';
+    transition: 300ms;
+
+    &::after {
+      content: '\f0c8';
+      display: inline-block;
+      text-align: center;
+      width: 1em;
+    }
+
+    &:checked::after {
+      content: '\f14a';
+      font-weight: 900;
+    }
+    &:active {
+      transform: scale(.8);
+    }
+  }
 `
 
 const CoverWrapper = styled.div`
@@ -133,6 +174,9 @@ const Journal = () => {
   const [currentURL, setCurrentURL] = useState("")
 
   // Hooks //
+  // Custom hook for responsive design
+  const isNarrow = useMediaQuery({ query: "(max-width: 800px)" })
+
   // Toggle scrolling when the video player is open (className restricts scrolling)
   useEffect(() => {
     document.getElementsByTagName("body")[0].className = currentURL ? "modal_open" : ""
@@ -174,7 +218,7 @@ const Journal = () => {
       assetsJson {
         conquerors {
           name
-          date(formatString: "MMMM DD, YYYY")
+          date(formatString: "MMM DD, YYYY")
           platform
           videoProof
           url
@@ -213,18 +257,27 @@ const Journal = () => {
 
   // Get table of conquerors
   const getConquerorTable = () => (
-    conquerors.map((c, i) => (
-      <tr key={i} onClick={() => c.videoProof ? setCurrentURL(c.url) : window.open(c.url, "_blank")}>
+    // TODO: Add a more visible distinction for screenshot entries
+    conquerors.map(({ name, date, platform, videoProof, url }, i) => (
+      <tr key={i} onClick={() => videoProof ? setCurrentURL(url) : window.open(url, "_blank")}>
         <td>{getPlacement(i + 1)}</td>
-        <td>{c.name}</td>
-        <td>{c.date}</td>
-        <td>{c.platform}</td>
-        <td><Icon className={c.videoProof ? "fas fa-video" : "fas fa-image"}/></td>
+        {isNarrow ? (
+          <td>
+            <p>{name} - <em>{platform}</em></p>
+            <p>{date}</p>
+          </td>
+        ) : (
+          <>
+            <td>{name}</td>
+            <td>{date}</td>
+            <td>{platform}</td>
+          </>
+        )}
+        <td><Icon className={videoProof ? "fas fa-video" : "fas fa-image"}/></td>
       </tr>
     ))
   )
 
-  // TODO: Style journal further (especially the checkbox)
   return (
     <>
       <Book id="journal">
@@ -233,15 +286,20 @@ const Journal = () => {
         </VisibilitySensor>
         <Page url={pageURL}>
           <PageTitle>CELESTE CONQUERORS</PageTitle>
-          <Table>
-            <tbody>
-              {getConquerorTable()}
-              {/* TODO: Take into account overflow possibility */}
-              {/* IDEA: Display total count */}
-            </tbody>
-          </Table>
+          <TableWrapper>
+            <Table>
+              <tbody>
+                {getConquerorTable()}
+              </tbody>
+            </Table>
+          </TableWrapper>
+          <Total>
+            {/* TODO: Add styling to number total */}
+            <p>To this day, only <b>{conquerors.length}</b> have conquered every strawberry{showScreenshotEntries && "*"}</p>
+            {showScreenshotEntries && <p style={{ fontSize: ".6em", fontStyle: "italic" }}>*(including screenshot entries)</p>}
+          </Total>
           <ScreenshotCheckbox>
-            <SCText>Show screenshot entries</SCText>
+            <span>Show screenshot entries</span>
             <input type="checkbox" defaultChecked={showScreenshotEntries} onChange={() => setShowScreenshotEntries(!showScreenshotEntries)}/>
           </ScreenshotCheckbox>
         </Page>
