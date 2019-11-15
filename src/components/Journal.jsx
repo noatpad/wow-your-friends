@@ -56,15 +56,25 @@ const Table = styled.table`
   border-collapse: collapse;
 
   tr {
-    transition: background .4s;
+    transition: background .3s;
     cursor: pointer;
 
     &:nth-child(2n) {
       background: #c885ff20;
     }
 
+    &.screenshot {
+      background: #9764c040;
+      color: #7e6f9d;
+      font-style: italic;
+    }
+
     &:hover {
-      background: #c06be030;
+      background: #c06be060;
+    }
+
+    &.screenshot:hover {
+      background: #754a9760;
     }
   }
 
@@ -257,9 +267,8 @@ const Journal = () => {
 
   // Get table of conquerors
   const getConquerorTable = () => (
-    // TODO: Add a more visible distinction for screenshot entries
     conquerors.map(({ name, date, platform, videoProof, url }, i) => (
-      <tr key={i} onClick={() => videoProof ? setCurrentURL(url) : window.open(url, "_blank")}>
+      <tr className={videoProof ? "video" : "screenshot"} key={i} onClick={() => videoProof ? setCurrentURL(url) : window.open(url, "_blank")}>
         <td>{getPlacement(i + 1)}</td>
         {isNarrow ? (
           <td>
