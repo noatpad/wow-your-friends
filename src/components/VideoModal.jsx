@@ -115,7 +115,7 @@ const VideoModal = ({ url, set }) => {
   // Toggle animations for video player
   useEffect(() => {
     // Remove any current animation instance
-    const targets = ".overlay, .player"
+    const targets = ".video-overlay, .player"
     anime.remove(targets)
 
     // Animation for loading indicator
@@ -141,11 +141,11 @@ const VideoModal = ({ url, set }) => {
     const tl = anime.timeline({
       easing: "spring(1, 100, 50, 0)",
       begin: () => {
-        anime.set(".overlay", { display: (url || videoURL) ? "flex" : "none" })
+        anime.set(".video-overlay", { display: (url || videoURL) ? "flex" : "none" })
         loadingDotAnim.restart()
       },
       complete: () => {
-        anime.set(".overlay", { display: url ? "flex" : "none" })
+        anime.set(".video-overlay", { display: url ? "flex" : "none" })
         setVideoURL(url)
         if (!url) { loadingDotAnim.pause() }
       }
@@ -153,7 +153,7 @@ const VideoModal = ({ url, set }) => {
 
     tl
     .add({
-      targets: ".overlay",
+      targets: ".video-overlay",
       opacity: url ? 1 : 0
     })
     .add({
@@ -182,7 +182,7 @@ const VideoModal = ({ url, set }) => {
   }
 
   return (
-    <Overlay className="overlay" onClick={() => set("")}>
+    <Overlay className="video-overlay" onClick={() => set("")}>
       <PlayerWrapper className="player">
         {videoPlayer()}
         <PlayerDecor/>

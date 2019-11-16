@@ -1,14 +1,22 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import styled from '@emotion/styled'
 
 import Section from './Section'
+import InfoModal from './InfoModal'
+
+const Container = styled.div`
+  margin: 4em 0;
+`
 
 const GIF = styled.img`
   width: 90%;
 `
 
 const QnA = () => {
+  // State //
+  const [showInfoModal, setShowInfoModal] = useState(false)
+
   // GraphQL //
   const { gifImage: { publicURL: GifURL }} = useStaticQuery(graphql`
     query {
@@ -68,16 +76,18 @@ const QnA = () => {
       {
         rotateOffset: -4,
         alignSelf: "flex-start",
-        content: (
+        content: (<>
           <p>The only thing needed from you is proof of you collecting Farewell's golden strawberry in the form of a video. This video must show the whole run from start to finish, with no Assist or Variants mode.</p>
-        )
+          <p><em>Can't record your whole run because you play on a Nintendo Switch?</em></p>
+          <p><span className="clickable" onClick={() => setShowInfoModal(true)}>There's an alternative!</span></p>
+        </>)
       },
       {
         rotateOffset: 4,
         clockwise: false,
         alignSelf: "flex-end",
         content: (<>
-          <p>If you're not able to record your whole run, you can also submit a screenshot of your stats showing you collected every berry, but due to how this can be exploited, you'll be listed under a "screenshot" category.</p>
+          <p>If you're not able to record your run, you can also submit a screenshot of your stats showing you collected every berry, but due to how this can be exploited, you'll be listed under a "screenshot" category.</p>
           <p>Players under this category will have their entries hidden by default on the list.</p>
         </>)
       },
@@ -140,12 +150,13 @@ const QnA = () => {
   }
 
   return (
-    <>
+    <Container>
       <Section {...aboutCards}/>
       <Section {...participateCards}/>
       <Section {...encouragementCards}/>
       <Section {...thankYouCards}/>
-    </>
+      <InfoModal show={showInfoModal} set={setShowInfoModal}/>
+    </Container>
   )
 }
 

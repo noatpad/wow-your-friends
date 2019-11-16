@@ -24,9 +24,10 @@ body.modal_open {
   overflow: hidden;
 }
 
-a {
+a, .clickable {
   color: #428bca;
   text-decoration: none;
+  cursor: pointer;
 }
 
 img.pixelated {
