@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React, { useState, useEffect } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import styled from '@emotion/styled'
 
@@ -16,6 +16,12 @@ const GIF = styled.img`
 const QnA = () => {
   // State //
   const [showInfoModal, setShowInfoModal] = useState(false)
+
+  // Hooks //
+  // Toggle scrolling when modal is open (className restricts scrolling)
+  useEffect(() => {
+    document.getElementsByTagName("body")[0].className = showInfoModal ? "modal_open" : ""
+  }, [showInfoModal])
 
   // GraphQL //
   const { gifImage: { publicURL: GifURL }} = useStaticQuery(graphql`

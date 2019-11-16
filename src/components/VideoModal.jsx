@@ -162,6 +162,12 @@ const VideoModal = ({ url, set }) => {
     }, 0)
   }, [url])
 
+  // Simulate modal close by "immediately moving to an open state first"
+  const closeModal = () => {
+    setVideoURL(url)
+    set("")
+  }
+
   const videoPlayer = () => {
     if (error === false && videoURL) {    // If nothing went wrong, display the video
       return <ReactPlayer className="video" url={videoURL} playing={url !== ""} controls height="100%" width="100%"/>
@@ -182,7 +188,7 @@ const VideoModal = ({ url, set }) => {
   }
 
   return (
-    <Overlay className="video-overlay" onClick={() => set("")}>
+    <Overlay className="video-overlay" onClick={closeModal}>
       <PlayerWrapper className="player">
         {videoPlayer()}
         <PlayerDecor/>

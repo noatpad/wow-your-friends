@@ -58,8 +58,14 @@ const InfoModal = ({ show, set }) => {
     }, 0)
   }, [show])
 
+  // Simulate modal close by "immediately moving to an open state first"
+  const closeModal = () => {
+    setCurrent(true)
+    set(false)
+  }
+
   return (
-    <Overlay className="info-overlay" onClick={() => set(false)}>
+    <Overlay className="info-overlay" onClick={closeModal}>
       <Container className="info-container">
         Hi there
       </Container>

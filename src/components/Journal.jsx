@@ -202,7 +202,7 @@ const Journal = () => {
   // Custom hook for responsive design
   const isNarrow = useMediaQuery({ query: "(max-width: 800px)" })
 
-  // Toggle scrolling when the video player is open (className restricts scrolling)
+  // Toggle scrolling when modal is open (className restricts scrolling)
   useEffect(() => {
     document.getElementsByTagName("body")[0].className = currentURL ? "modal_open" : ""
   }, [currentURL])
