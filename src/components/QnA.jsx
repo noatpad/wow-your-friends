@@ -65,7 +65,6 @@ const QnA = () => {
   }
 
   // Participation section content
-  // TODO: Add extra card for Switch users described here: https://www.reddit.com/r/celestegame/comments/dvgf79/wip_a_website_commemorating_all_the_players_who/f7cx4aq/?context=3
   const participateCards = {
     className: "participate",
     header: "I want to be a part of this list!",
