@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from '@emotion/styled'
 
+import { breakpoints } from '../components/design'
 import Layout from "../components/Layout"
 import Title from "../components/Title"
 import Journal from "../components/Journal"
@@ -13,10 +14,14 @@ const Container = styled.div`
   max-width: 900px;
   padding: 2em 4em;
   margin: 0 auto;
+
+  @media screen and (${breakpoints.mobile}) {
+    padding: .5em 1em;
+  }
 `
 
 // TODO: Optimize images with gatsby plugins
-// TODO: Work on responsive design
+// TODO: Add SEO
 const IndexPage = () => (
   <Layout>
     <Container>

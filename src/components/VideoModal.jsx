@@ -3,6 +3,8 @@ import styled from '@emotion/styled'
 import anime from 'animejs'
 import ReactPlayer from 'react-player'
 
+import { breakpoints } from './design'
+
 const Overlay = styled.div`
   display: none;
   justify-content: center;
@@ -37,6 +39,14 @@ const PlayerWrapper = styled.div`
     left: 0;
     padding: 1em;
   }
+
+  @media screen and (${breakpoints.mobile}) {
+    margin: 0 1em;
+
+    > .video {
+      padding: .5em;
+    }
+  }
 `
 
 const PlayerDecor = styled.div`
@@ -44,7 +54,7 @@ const PlayerDecor = styled.div`
   top: 100%;
   left: 0;
   right: 0;
-  height: 3em;
+  height: 10%;
   border-radius: 0 0 1.5em 1.5em;
   background: #bac1d6;
 
@@ -54,7 +64,7 @@ const PlayerDecor = styled.div`
     top: 0;
     left: 0;
     right: 0;
-    height: 20%;
+    height: 15%;
     background: #808ca9;
   }
 
@@ -62,11 +72,11 @@ const PlayerDecor = styled.div`
     content: "";
     position: absolute;
     top: 0;
-    left: 2.5em;
+    left: 8%;
     bottom: 0;
-    right: 2.5em;
-    border-left: .75em solid #808ca9;
-    border-right: .75em solid #808ca9;
+    right: 8%;
+    border-left: .25em solid #808ca9;
+    border-right: .25em solid #808ca9;
   }
 `
 
@@ -89,16 +99,30 @@ const FullFlexCenter = styled.div`
 
 const Error = styled.p`
   color: #333;
+  text-align: center;
+  font-size: 1.2em;
+
+  @media screen and (${breakpoints.mobile}) {
+    font-size: 1em;
+  }
 `
 
 const ErrorHeader = styled.h3`
   color: #222;
-  font-size: 1.4em;
+  font-size: 1.5em;
+
+  @media screen and (${breakpoints.mobile}) {
+    font-size: 1.2em;
+  }
 `
 
 const LoadingDot = styled.p`
   font-size: 3.5em;
   text-shadow: 0 1px #333;
+
+  @media screen and (${breakpoints.mobile}) {
+    font-size: 2.5em;
+  }
 `
 
 const VideoModal = ({ url, set }) => {

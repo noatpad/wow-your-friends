@@ -2,12 +2,16 @@ import React, { useState, useEffect } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import styled from '@emotion/styled'
 
-import { colors } from './design'
+import { breakpoints, colors } from './design'
 import Section from './Section'
 import InfoModal from './InfoModal'
 
 const Container = styled.div`
   margin: 4em 0;
+
+  @media screen and (${breakpoints.mobile}) {
+    margin: 3em 0;
+  }
 `
 
 const Span = styled.span`
@@ -17,6 +21,10 @@ const Span = styled.span`
 const Artwork = styled.img`
   height: 4em;
   margin-top: .5em;
+
+  @media screen and (${breakpoints.mobile}) {
+    height: 3em;
+  }
 `
 
 const FlexCenter = styled.div`
@@ -28,10 +36,14 @@ const Icon = styled.i`
   padding: .25em .5em 0;
   font-size: 2.5em;
   color: ${props => props.color};
+
+  @media screen and (${breakpoints.xsmall}) {
+    font-size: 2em;
+  }
 `
 
 const GIF = styled.img`
-  width: 90%;
+  width: 100%;
 `
 
 const QnA = () => {

@@ -10,7 +10,7 @@ const Container = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 3em 2em;
+  padding: 2em;
   background: #000b;
   color: white;
 
@@ -24,7 +24,7 @@ const IconsDiv = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  margin: .5em;
+  margin: 0 .5em .5em;
 `
 
 const Icon = styled.i`

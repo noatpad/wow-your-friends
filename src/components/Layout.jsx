@@ -4,21 +4,46 @@ import Helmet from "react-helmet"
 import styled from "@emotion/styled"
 
 import "./global.css"
+import { breakpoints } from './design';
 
 const Container = styled.div`
   position: relative;
   height: 100%;
   width: 100%;
+
+  @media screen and (${breakpoints.tablet}) {
+    font-size: .9em;
+  }
+
+  @media screen and (${breakpoints.mobile}) {
+    font-size: .8em;
+  }
 `
 
-const HeaderBG = styled.img`
+const Hero = styled.div`
+  display: flex;
+  justify-content: center;
   position: absolute;
   top: 0;
   left: 0;
   right: 0;
   width: 100%;
-  mask-image: linear-gradient(to top, transparent, #31315c);
+  overflow: hidden;
+`
+
+const HeaderBG = styled.img`
+  width: 100%;
+  min-width: 600px;
   filter: blur(4px);
+`
+
+const Gradient = styled.div`
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: -1em;
+  background: linear-gradient(to top, #291c47, transparent);
 `
 
 const Layout = ({ children }) => {
@@ -46,7 +71,10 @@ const Layout = ({ children }) => {
         <script src="https://kit.fontawesome.com/a35b219d74.js" crossorigin="anonymous"></script>
       </Helmet>
       <Container>
-        <HeaderBG src={imageURL} alt="An ethereal, golden background image"/>
+        <Hero>
+          <HeaderBG src={imageURL} alt="An ethereal, golden background image"/>
+          <Gradient/>
+        </Hero>
         {children}
       </Container>
     </>

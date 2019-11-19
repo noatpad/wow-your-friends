@@ -5,7 +5,7 @@ import anime from 'animejs'
 import VisibilitySensor from 'react-visibility-sensor'
 import { useMediaQuery } from 'react-responsive';
 
-import { colors } from './design'
+import { breakpoints, colors } from './design'
 import VideoModal from './VideoModal'
 
 const Book = styled.div`
@@ -13,6 +13,15 @@ const Book = styled.div`
   height: 800px;
   margin-bottom: 3em;
   transform: rotate(-2deg);
+
+  @media screen and (${breakpoints.mobile}) {
+    height: 550px;
+    transform: rotate(-1deg);
+  }
+
+  @media screen and (${breakpoints.xsmall}) {
+    height: 450px;
+  }
 `
 
 const Page = styled.div`
@@ -20,13 +29,16 @@ const Page = styled.div`
   flex-direction: column;
   position: relative;
   height: 100%;
-  min-height: 800px;
   padding: 1.5em 4em 1.5em 2.5em;
   border-radius: 0 1em 1em 0;
   background: #f4ebf5;
   background: url(${props => props.url}) no-repeat center center;
   background-size: 100% 100%;
   color: ${colors.purple};
+
+  @media screen and (${breakpoints.mobile}) {
+    padding: 1.2em;
+  }
 `
 
 const PageTitle = styled.h2`
@@ -43,6 +55,17 @@ const PageTitle = styled.h2`
     right: -4rem;
     height: 3px;
     background: #c885ff20;
+  }
+
+  @media screen and (${breakpoints.mobile}) {
+    &::after {
+      left: -1rem;
+      right: -1rem;
+    }
+  }
+
+  @media screen and (${breakpoints.xsmall}) {
+    font-size: 1.2em;
   }
 `
 
@@ -83,6 +106,16 @@ const Table = styled.table`
     padding: 0.4em 1em;
     text-align: center;
   }
+
+  @media screen and (${breakpoints.mobile}) {
+    td {
+      padding: .3em .6em;
+    }
+  }
+
+  @media screen and (${breakpoints.xsmall}) {
+    font-size: .9em;
+  }
 `
 
 const Rank = styled.div`
@@ -109,6 +142,11 @@ const Total = styled.div`
   border-top: 3px solid #71335c60;
   font-size: 1.2em;
   text-align: center;
+
+  @media screen and (${breakpoints.xsmall}) {
+    font-size: 1em;
+    /* margin-right: .5em; */
+  }
 `
 
 // Checkbox by Jase from https://codepen.io/jasesmith/pen/EeVmWZ
@@ -150,6 +188,11 @@ const ScreenshotCheckbox = styled.div`
       transform: scale(.8);
     }
   }
+
+  @media screen and (${breakpoints.xsmall}) {
+    font-size: .85em;
+    margin-bottom: .75rem;
+  }
 `
 
 const CoverWrapper = styled.div`
@@ -181,6 +224,10 @@ const CoverTitle = styled.h1`
   text-align: center;
   color: #5f2a43;
   background: url(${props => props.url}) no-repeat center center;
+
+  @media screen and (${breakpoints.xsmall}) {
+    font-size: 1.75em;
+  }
 `
 
 const VSPlaceholder = styled.div`
@@ -201,7 +248,7 @@ const Journal = () => {
 
   // Hooks //
   // Custom hook for responsive design
-  const isNarrow = useMediaQuery({ query: "(max-width: 800px)" })
+  const isTablet = useMediaQuery({ query: `(${breakpoints.tablet})` })
 
   // Toggle scrolling when modal is open (className restricts scrolling)
   useEffect(() => {
@@ -325,7 +372,7 @@ const Journal = () => {
     conquerors.map(({ name, date, platform, videoProof, url }, i) => (
       <tr className={videoProof ? "video" : "screenshot"} key={i} onClick={() => videoProof ? setCurrentURL(url) : window.open(url, "_blank")}>
         <td>{getPlacement(i + 1)}</td>
-        {isNarrow ? (
+        {isTablet ? (
           <td>
             <p>{name} - <em>{platform}</em></p>
             <p>{date}</p>

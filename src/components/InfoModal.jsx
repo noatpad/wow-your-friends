@@ -2,6 +2,8 @@ import React, { useState, useEffect, useRef } from 'react'
 import styled from '@emotion/styled'
 import anime from 'animejs'
 
+import { breakpoints, colors } from './design'
+
 const Overlay = styled.div`
   display: none;
   justify-content: center;
@@ -14,6 +16,27 @@ const Overlay = styled.div`
   padding: 4em;
   background: #0009;
   z-index: 10;
+
+  @media screen and (${breakpoints.tablet}) {
+    &::after {
+      content: "(click outside the box to close)";
+      position: absolute;
+      bottom: 2em;
+      font-size: 1em;
+      font-style: italic;
+      color: ${colors.grey};
+      text-shadow: 0 0 4px black;
+      opacity: .8;
+    }
+  }
+
+  @media screen and (${breakpoints.mobile}) {
+    padding: 4em 1em;
+
+    &::after {
+      font-size: .5em;
+    }
+  }
 `
 
 const Container = styled.div`
@@ -41,6 +64,14 @@ const Container = styled.div`
 
   ul {
     padding-left: 1em;
+  }
+
+  @media screen and (${breakpoints.mobile}) {
+    padding: 1.5em;
+  }
+
+  @media screen and (${breakpoints.xsmall}) {
+    font-size: .9em;
   }
 `
 

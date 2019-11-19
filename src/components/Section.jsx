@@ -4,8 +4,14 @@ import styled from '@emotion/styled'
 import anime from 'animejs'
 import useMeasure from 'use-measure'
 
+import { breakpoints } from './design'
+
 const Container = styled.div`
   margin: 4em 0;
+
+  @media screen and (${breakpoints.xsmall}) {
+    margin: 3em 0;
+  }
 `
 
 const HeaderContainer = styled.div`
@@ -13,20 +19,37 @@ const HeaderContainer = styled.div`
   align-items: center;
   padding-right: 1em;
   cursor: pointer;
+
+  @media screen and (${breakpoints.mobile}) {
+    padding-left: 0 !important;
+  }
+
+  @media screen and (${breakpoints.xsmall}) {
+    font-size: .9em;
+  }
 `
 
-const Icon = styled.i`
+const Caret = styled.i`
   font-size: 1.8em;
   margin-right: .25rem;
 `
 
 const Header = styled.h2`
   padding: .25em 0;
+
+  @media screen and (${breakpoints.mobile}) {
+    padding-left: 0 !important;
+  }
 `
 
 const Cards = styled.div`
   height: 0;
   overflow: hidden;
+
+  @media screen and (${breakpoints.mobile}) {
+    margin: 0 -1em;
+    padding: 0 1em;
+  }
 `
 
 const CardsWrapper = styled.div`
@@ -34,6 +57,10 @@ const CardsWrapper = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 0 3em;
+
+  @media screen and (${breakpoints.mobile}) {
+    padding: 0;
+  }
 `
 
 const Postcard = styled.div`
@@ -42,6 +69,7 @@ const Postcard = styled.div`
   padding: 1em;
   margin: 1.5em 0;
   transform: translateY(-100%) rotate(0);
+  align-self: ${props => props.align ? props.align : "center"};
   background: #f2ebe8;
   background: url(${props => props.url}) no-repeat center center;
   background-size: contain;
@@ -53,6 +81,15 @@ const Postcard = styled.div`
     content: "";
     width: 100%;
     padding-top: calc(553 / 859 * 100%);
+  }
+
+  @media screen and (${breakpoints.tablet}) {
+    width: 85%;
+  }
+
+  @media screen and (${breakpoints.mobile}) {
+    width: 100%;
+    align-self: center;
   }
 `
 
@@ -76,6 +113,20 @@ const PostcardWrapper = styled.div`
 
   & > * + * {
     margin-top: .4em;
+  }
+
+  @media screen and (${breakpoints.mobile}) {
+    padding: 1.5em;
+    font-size: 1em;
+
+    ul, ol {
+      padding: 0 1.5em;
+    }
+  }
+
+  @media screen and (${breakpoints.xsmall}) {
+    padding: 1.2em;
+    font-size: .85em;
   }
 `
 
@@ -149,6 +200,9 @@ const Section = ({ className, header, postcards }) => {
         height: 0
       }, 130)
     }
+
+    // For touch devices, toggle hover animation on click
+    hoverAnim(showSection)
   }, [showSection, cardsWrapperHeight])
 
   // Animations //
@@ -181,7 +235,7 @@ const Section = ({ className, header, postcards }) => {
         onMouseEnter={() => hoverAnim(true)}
         onMouseLeave={() => hoverAnim(false)}
       >
-        <Icon className="caret fas fa-fw fa-angle-right"/>
+        <Caret className="caret fas fa-fw fa-angle-right"/>
         <Header className="header">{header}</Header>
       </HeaderContainer>
       <Cards className="cards">
@@ -192,7 +246,7 @@ const Section = ({ className, header, postcards }) => {
                 {content}
               </StaticPostcard>
             ) : (
-              <Postcard key={i} className="postcard" url={postcardURL} style={{ alignSelf: alignSelf }}>
+              <Postcard key={i} className="postcard" url={postcardURL} align={alignSelf}>
                 <PostcardWrapper>
                   {content}
                 </PostcardWrapper>
