@@ -5,6 +5,7 @@ import anime from 'animejs'
 import VisibilitySensor from 'react-visibility-sensor'
 import { useMediaQuery } from 'react-responsive';
 
+import colors from './colors'
 import VideoModal from './VideoModal'
 
 const Book = styled.div`
@@ -25,14 +26,14 @@ const Page = styled.div`
   background: #f4ebf5;
   background: url(${props => props.url}) no-repeat center center;
   background-size: 100% 100%;
-  color: #675883;
+  color: ${colors.purple};
 `
 
 const PageTitle = styled.h2`
   position: relative;
   padding: 0 0 .5em;
   font-weight: normal;
-  color: #5b4683;
+  color: ${colors.purple2};
 
   &::after {
     content: "";
@@ -357,9 +358,8 @@ const Journal = () => {
             </Table>
           </TableWrapper>
           <Total>
-            {/* TODO: Add styling to number total */}
-            <p>To this day, only <b>{conquerors.length}</b> have conquered every strawberry{showScreenshotEntries && "*"}</p>
-            {showScreenshotEntries && <p style={{ fontSize: ".6em", fontStyle: "italic" }}>*(including screenshot entries)</p>}
+            <p>To this day, only <b style={{ color: colors.red }}>{conquerors.length}</b> have conquered every strawberry{showScreenshotEntries && "*"}</p>
+            {showScreenshotEntries && <p style={{ fontSize: ".6em", fontStyle: "italic", opacity: .8 }}>*(including screenshot entries)</p>}
           </Total>
           <ScreenshotCheckbox>
             <span>Show screenshot entries</span>

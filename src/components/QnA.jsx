@@ -2,11 +2,32 @@ import React, { useState, useEffect } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import styled from '@emotion/styled'
 
+import colors from './colors'
 import Section from './Section'
 import InfoModal from './InfoModal'
 
 const Container = styled.div`
   margin: 4em 0;
+`
+
+const Span = styled.span`
+  color: ${props => props.color};
+`
+
+const Artwork = styled.img`
+  height: 4em;
+  margin-top: .5em;
+`
+
+const FlexCenter = styled.div`
+  display: flex;
+  justify-content: center;
+`
+
+const Icon = styled.i`
+  padding: .25em .5em 0;
+  font-size: 2.5em;
+  color: ${props => props.color};
 `
 
 const GIF = styled.img`
@@ -24,17 +45,24 @@ const QnA = () => {
   }, [showInfoModal])
 
   // GraphQL //
-  const { gifImage: { publicURL: GifURL }} = useStaticQuery(graphql`
+  const {
+    goldenberry: { publicURL: goldberryURL },
+    gifImage: { publicURL: GifURL }
+  } = useStaticQuery(graphql`
     query {
+      # Golden strawberry artwork
+      goldenberry: file(name: { eq: "golden-strawberry" }) {
+        publicURL
+      }
+
       # Get URL of "You can do this" GIF
-      gifImage: file(name: {eq: "you-can-do-this"}) {
+      gifImage: file(name: { eq: "you-can-do-this" }) {
         publicURL
       }
     }
   `)
 
   // Postcard section content //
-  // TODO: Add images where applicable
   // About section content
   const aboutCards = {
     className: "about",
@@ -44,22 +72,24 @@ const QnA = () => {
         rotateOffset: -2,
         alignSelf: "flex-start",
         content: (
-          <p>Celeste is a challenging game about climbing a mountain & overcoming the obstacles in your journey. One of, if not, the biggest challenge it offers is collecting every strawberry.</p>
+          <p><Span color={colors.skyblue2}>Celeste</Span> is a challenging game about climbing a mountain & overcoming the obstacles in your journey. One of, if not, the biggest challenge it offers is collecting every strawberry.</p>
         )
       },
       {
         rotateOffset: 3,
         clockwise: false,
         alignSelf: "flex-end",
-        content: (
-          <p>And with the release of Chapter 9: Farewell, the game introduced the hardest berry to be collected: Farewell's golden strawberry.</p>
-        )
+        content: (<>
+          <p>And with the release of <Span color={colors.periwinkle}>Chapter 9: Farewell</Span>, the game introduced the hardest berry to be collected: Farewell's <Span color={colors.yelloworange}>golden strawberry</Span>.</p>
+          <Artwork src={goldberryURL} alt="Golden strawberry artwork"/>
+        </>)
       },
       {
         rotateOffset: -4,
-        content: (
-          <p>This alone is most completionists' final hurdle to completing such a challenge, & it's quite the achievement for those who do. This list serves as a record for all those players who endured and gathered all of the strawberries.</p>
-        )
+        content: (<>
+          <p>This alone is most completionists' final hurdle to completing such a challenge, & it's quite the achievement for those who do.</p>
+          <p>This list serves as a record for all those players who persevered and gathered all of the strawberries.</p>
+        </>)
       },
     ]
   }
@@ -82,9 +112,9 @@ const QnA = () => {
         rotateOffset: -4,
         alignSelf: "flex-start",
         content: (<>
-          <p>The only thing needed from you is proof of you collecting Farewell's golden strawberry in the form of a video. This video must show the whole run from start to finish, with no Assist or Variants mode.</p>
+          <p>The only thing needed from you is proof of you collecting Farewell's <Span color={colors.yelloworange}>golden strawberry</Span> in the form of a video. This video must show the whole run from start to finish, with no Assist or Variants mode.</p>
           <p><em>Can't record your whole run because you play on a Nintendo Switch?</em></p>
-          <p><span className="clickable" onClick={() => setShowInfoModal(true)}>There's an alternative!</span></p>
+          <p><Span className="clickable" onClick={() => setShowInfoModal(true)} color={colors.blue}>There's an alternative!</Span></p>
         </>)
       },
       {
@@ -92,15 +122,22 @@ const QnA = () => {
         clockwise: false,
         alignSelf: "flex-end",
         content: (<>
-          <p>If you're not able to record your run, you can also submit a screenshot of your stats showing you collected every berry, but due to how this can be exploited, you'll be listed under a "screenshot" category.</p>
+          <p>If you're not able to record your run, you can also submit a screenshot of your stats showing you collected every berry, but due to how this can be exploited, you'll be listed under a <Span color={colors.purple}>"screenshot"</Span> category.</p>
           <p>Players under this category will have their entries hidden by default on the list.</p>
         </>)
       },
       {
         rotateOffset: -5,
+        // TODO: Add GitHub info once repo is up
         content: (<>
-          <p>Once you have that, send me a message on Reddit, Twitter, or through GitHub Issues with a link to your proof & a celebratory message!</p>
+          <p>Once you have that, upload your proof to a public space like <Span color={colors.red}>YouTube</Span>.</p>
+          <p>Then send me a message on <Span color={colors.reddit}><a href="https://www.reddit.com/message/compose/?to=TammyDanny&subject=I%20got%20the%20golden%20berry!" target="_blank" rel="noopener noreferrer" style={{ color: "inherit"}}>Reddit</a></Span>, <Span color={colors.twitter}><a href="https://twitter.com/aCluelessDanny" target="_blank" rel="noopener noreferrer" style={{ color: "inherit"}}>Twitter</a></Span>, or through <Span color={colors.github}><a href="https://github.com/" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>GitHub Issues</a></Span> with a link to your proof & a celebratory message!</p>
           <p>I'll add you on there once I take a look at it!</p>
+          <FlexCenter>
+            <a href="https://www.reddit.com/message/compose/?to=TammyDanny&subject=I%20got%20the%20golden%20berry!" target="_blank" rel="noopener noreferrer"><Icon className="fab fa-reddit" color={colors.reddit}/></a>
+            <a href="https://twitter.com/aCluelessDanny" target="_blank" rel="noopener noreferrer"><Icon className="fab fa-twitter" color={colors.twitter}/></a>
+            <a href="https://github.com/" target="_blank" rel="noopener noreferrer"><Icon className="fab fa-github" color={colors.github}/></a>
+          </FlexCenter>
         </>)
       }
     ]
@@ -122,7 +159,7 @@ const QnA = () => {
         rotateOffset: 4,
         clockwise: false,
         content: (<>
-          <p>But if you believe you can, then I will too. You're more capable than you think.</p>
+          <p>But if you believe you can, then I will too. <Span color={colors.marmalade}>You're more capable than you think.</Span></p>
           <p>In the words of Madeline at the base of the mountain:</p>
         </>)
       },
@@ -145,8 +182,8 @@ const QnA = () => {
         clockwise: false,
         content: (
           <ul>
-            <li>/u/DJTom3 for maintaining a record of this list <a href="https://www.reddit.com/r/celestegame/comments/dinrkb/with_their_amazing_achievement_of_getting_the/" target="_blank" rel="noopener noreferrer">here</a> and <a href="https://www.reddit.com/r/celestegame/comments/dut721/in_the_wake_of_the_last_few_farewell_golden/" target="_blank" rel="noopener noreferrer">here</a>, as it was my primary source of information.</li>
-            <li>The Celeste dev team for creating a fantastic game to play through.</li>
+            <li><Span color={colors.reddit}>/u/DJTom3</Span> for maintaining a record of this list <a href="https://www.reddit.com/r/celestegame/comments/dinrkb/with_their_amazing_achievement_of_getting_the/" target="_blank" rel="noopener noreferrer">here</a> and <a href="https://www.reddit.com/r/celestegame/comments/dut721/in_the_wake_of_the_last_few_farewell_golden/" target="_blank" rel="noopener noreferrer">here</a>, as it was my primary source of information.</li>
+            <li>The <Span color={colors.skyblue2}>Celeste dev team</Span> for creating a fantastic game to play through.</li>
             <li>All the players on this list for going above and beyond to complete such a task.</li>
           </ul>
         )
