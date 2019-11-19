@@ -3,7 +3,7 @@ import { useStaticQuery, graphql } from 'gatsby'
 import styled from '@emotion/styled'
 import anime from 'animejs'
 
-import colors from './colors'
+import { colors } from './design'
 
 const Container = styled.div`
   display: flex;

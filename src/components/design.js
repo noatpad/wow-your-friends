@@ -1,5 +1,9 @@
 
-const colors = {
+export const breakpoints = {
+
+}
+
+export const colors = {
   white: "#fcfefe",
   grey: "#d6d3d6",
   darkpurple: "#504250",
@@ -21,7 +25,4 @@ const colors = {
   reddit: "#ff4301",
   twitter: "#38a1f3",
   github: "#6e5494"
-
 }
-
-export default colors

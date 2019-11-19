@@ -5,7 +5,7 @@ import anime from 'animejs'
 import VisibilitySensor from 'react-visibility-sensor'
 import { useMediaQuery } from 'react-responsive';
 
-import colors from './colors'
+import { colors } from './design'
 import VideoModal from './VideoModal'
 
 const Book = styled.div`

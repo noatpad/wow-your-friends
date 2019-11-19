@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import styled from '@emotion/styled'
 
-import colors from './colors'
+import { colors } from './design'
 import Section from './Section'
 import InfoModal from './InfoModal'
 
