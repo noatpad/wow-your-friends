@@ -116,19 +116,19 @@ const Footer = () => {
         <Glow id="strawberry-glow"/>
       </Strawberry>
       <IconsDiv>
-        <a className="reddit-icon" href="https://www.reddit.com/user/TammyDanny" target="_blank" rel="noopener noreferrer">
+        <a className="reddit-icon" href="https://www.reddit.com/user/TammyDanny" target="_blank" rel="noopener noreferrer" aria-label="Visit /u/TammyDanny on Reddit">
           <Icon
             className="reddit-icon fab fa-reddit-alien"
             onMouseEnter={() => hoverAnim(true, "reddit-icon", colors.reddit)}
             onMouseLeave={() => hoverAnim(false, "reddit-icon", colors.reddit)}/>
         </a>
-        <a className="twitter-icon" href="https://twitter.com/aCluelessDanny" target="_blank" rel="noopener noreferrer">
+        <a className="twitter-icon" href="https://twitter.com/aCluelessDanny" target="_blank" rel="noopener noreferrer" aria-label="Visit @aCluelessDanny on Twitter">
           <Icon
             className="twitter-icon fab fa-twitter"
             onMouseEnter={() => hoverAnim(true, "twitter-icon", colors.twitter)}
             onMouseLeave={() => hoverAnim(false, "twitter-icon", colors.twitter)}/>
         </a>
-        <a className="github-icon" href="https://github.com" target="_blank" rel="noopener noreferrer">
+        <a className="github-icon" href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="Visit the GitHub repository">
           <Icon
             className="github-icon fab fa-github"
             onMouseEnter={() => hoverAnim(true, "github-icon", colors.github)}

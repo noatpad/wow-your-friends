@@ -49,12 +49,20 @@ const Gradient = styled.div`
 
 const Layout = ({ children }) => {
   // GraphQL //
-  const { site, bgImage: { childImageSharp: { fluid } }} = useStaticQuery(graphql`
+  const {
+    site: { siteMetadata: { title, description, author, image, siteUrl, twitterHandle }},
+    bgImage: { childImageSharp: { fluid } }
+  } = useStaticQuery(graphql`
     query {
       # Get site title
       site {
         siteMetadata {
           title
+          description
+          author
+          siteUrl
+          image
+          twitterHandle
         }
       }
 
@@ -71,8 +79,20 @@ const Layout = ({ children }) => {
 
   return (
     <>
-      <Helmet>
-        <title>{site.siteMetadata.title}</title>
+      <Helmet htmlAttributes={{ lang: "en" }}>
+        <title>{title}</title>
+        <meta name="description" content={description}/>
+        <meta name="author" content={author}/>
+        <meta name="image" content={image}/>
+        <meta property="og:title" content={title}/>
+        <meta property="og:description" content={description}/>
+        <meta property="og:image" content={image}/>
+        <meta property="og:url" content={siteUrl}/>
+        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:creator" content={twitterHandle}/>
+        <meta name="twitter:title" content={title}/>
+        <meta name="twitter:description" content={description}/>
+        <meta name="twitter:image" content={image}/>
         <script src="https://kit.fontawesome.com/a35b219d74.js" crossorigin="anonymous"></script>
       </Helmet>
       <Container>

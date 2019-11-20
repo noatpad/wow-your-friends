@@ -20,7 +20,6 @@ const Container = styled.div`
   }
 `
 
-// TODO: Add SEO
 const IndexPage = () => (
   <Layout>
     <Container>

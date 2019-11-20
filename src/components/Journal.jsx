@@ -156,9 +156,10 @@ const ScreenshotCheckbox = styled.div`
   justify-content: flex-end;
   margin-bottom: 2rem;
 
-  span {
+  label {
     padding-right: 0.75em;
     font-style: italic;
+    cursor: pointer;
   }
 
   input {
@@ -409,8 +410,8 @@ const Journal = () => {
             {showScreenshotEntries && <p style={{ fontSize: ".6em", fontStyle: "italic", opacity: .8 }}>*(including screenshot entries)</p>}
           </Total>
           <ScreenshotCheckbox>
-            <span>Show screenshot entries</span>
-            <input type="checkbox" defaultChecked={showScreenshotEntries} onChange={() => setShowScreenshotEntries(!showScreenshotEntries)}/>
+            <label for="show">Show screenshot entries</label>
+            <input id="show" type="checkbox" defaultChecked={showScreenshotEntries} onChange={() => setShowScreenshotEntries(!showScreenshotEntries)}/>
           </ScreenshotCheckbox>
         </Page>
         <CoverWrapper className="cover-wrapper">
