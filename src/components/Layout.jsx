@@ -1,5 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
+import Img from 'gatsby-image'
 import Helmet from "react-helmet"
 import styled from "@emotion/styled"
 
@@ -31,7 +32,7 @@ const Hero = styled.div`
   overflow: hidden;
 `
 
-const HeaderBG = styled.img`
+const Image = styled(Img)`
   width: 100%;
   min-width: 600px;
   filter: blur(4px);
@@ -48,7 +49,7 @@ const Gradient = styled.div`
 
 const Layout = ({ children }) => {
   // GraphQL //
-  const { site, bgImage: { publicURL: imageURL }} = useStaticQuery(graphql`
+  const { site, bgImage: { childImageSharp: { fluid } }} = useStaticQuery(graphql`
     query {
       # Get site title
       site {
@@ -59,7 +60,11 @@ const Layout = ({ children }) => {
 
       # Get header background image URL
       bgImage: file(name: { eq: "header-bg" }) {
-        publicURL
+        childImageSharp {
+          fluid {
+            ...GatsbyImageSharpFluid
+          }
+        }
       }
     }
   `)
@@ -72,7 +77,7 @@ const Layout = ({ children }) => {
       </Helmet>
       <Container>
         <Hero>
-          <HeaderBG src={imageURL} alt="An ethereal, golden background image"/>
+          <Image fluid={fluid} alt="An ethereal, golden background image"/>
           <Gradient/>
         </Hero>
         {children}

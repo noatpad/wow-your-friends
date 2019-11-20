@@ -20,7 +20,6 @@ const Container = styled.div`
   }
 `
 
-// TODO: Optimize images with gatsby plugins
 // TODO: Add SEO
 const IndexPage = () => (
   <Layout>
