@@ -410,7 +410,7 @@ const Journal = () => {
             {showScreenshotEntries && <p style={{ fontSize: ".6em", fontStyle: "italic", opacity: .8 }}>*(including screenshot entries)</p>}
           </Total>
           <ScreenshotCheckbox>
-            <label for="show">Show screenshot entries</label>
+            <label htmlFor="show">Show screenshot entries</label>
             <input id="show" type="checkbox" defaultChecked={showScreenshotEntries} onChange={() => setShowScreenshotEntries(!showScreenshotEntries)}/>
           </ScreenshotCheckbox>
         </Page>

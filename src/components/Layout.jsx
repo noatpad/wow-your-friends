@@ -47,7 +47,7 @@ const Gradient = styled.div`
   background: linear-gradient(to top, #291c47, transparent);
 `
 
-const Layout = ({ children }) => {
+const Layout = ({ set, children }) => {
   // GraphQL //
   const {
     site: { siteMetadata: { title, description, author, image, siteUrl, twitterHandle }},
@@ -97,7 +97,7 @@ const Layout = ({ children }) => {
       </Helmet>
       <Container>
         <Hero>
-          <Image fluid={fluid} alt="An ethereal, golden background image"/>
+          <Image fluid={fluid} alt="An ethereal, golden background image" onLoad={() => set(true)}/>
           <Gradient/>
         </Hero>
         {children}

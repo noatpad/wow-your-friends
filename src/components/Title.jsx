@@ -28,9 +28,10 @@ const Word = styled.span`
 const Letter = styled.span`
   display: inline-block;
   white-space: pre;
+  opacity: 0;
 `
 
-const Title = () => {
+const Title = ({ loaded }) => {
   // GraphQL //
   const { site: { siteMetadata: { title }}} = useStaticQuery(graphql`
     query {
@@ -45,27 +46,23 @@ const Title = () => {
   // Hooks //
   // Animate each letter of title
   useEffect(() => {
+    if (!loaded) { return; }
+
     anime({
       targets: ".title .letter",
-      easing: "easeOutBack",
+      easing: "easeOutQuart",
       duration: 700,
       delay: anime.stagger(50, { start: 150 }),
       translateY: ["-1.1em", 0],
       opacity: [0, 1]
     })
-  }, [])
-
-  // Split title into an array of characters
-  // const letters = [...title]
+  }, [loaded])
 
   // Split title into words
   const words = title.split(' ')
 
   return (
     <Header className="title">
-      {/* {letters.map((letter, i) => (
-        <span key={i}>{letter}</span>
-      ))} */}
       {words.map((word, i) => {
         const letters = [...word]
         return (

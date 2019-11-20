@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import styled from '@emotion/styled'
 
 import { breakpoints } from '../components/design'
@@ -20,15 +20,20 @@ const Container = styled.div`
   }
 `
 
-const IndexPage = () => (
-  <Layout>
-    <Container>
-      <Title/>
-      <Journal/>
-      <QnA/>
-    </Container>
-    <Footer/>
-  </Layout>
-)
+const IndexPage = () => {
+  // State //
+  const [heroLoaded, setHeroLoaded] = useState(false)
+
+  return (
+    <Layout set={setHeroLoaded}>
+      <Container>
+        <Title loaded={heroLoaded}/>
+        <Journal/>
+        <QnA/>
+      </Container>
+      <Footer/>
+    </Layout>
+  )
+}
 
 export default IndexPage
