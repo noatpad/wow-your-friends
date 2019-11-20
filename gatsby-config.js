@@ -5,6 +5,7 @@ module.exports = {
     author: `a clueless danny`,
     siteUrl: 'https://wowyourfriends.netlify.com',
     image: '/card-image.png',
+    icon: '/icon.png',
     twitterHandle: '@aCluelessDanny'
   },
   plugins: [
@@ -17,7 +18,7 @@ module.exports = {
         background_color: '#281b46',
         theme_color: '#5b4684',
         display: 'standalone',
-        icon: 'src/assets/golden-strawberry.png'
+        icon: 'static/icon.png'
       }
     },
     `gatsby-plugin-react-helmet`,

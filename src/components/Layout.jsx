@@ -50,7 +50,7 @@ const Gradient = styled.div`
 const Layout = ({ set, children }) => {
   // GraphQL //
   const {
-    site: { siteMetadata: { title, description, author, image, siteUrl, twitterHandle }},
+    site: { siteMetadata: { title, description, author, siteUrl, image, icon, twitterHandle }},
     bgImage: { childImageSharp: { fluid } }
   } = useStaticQuery(graphql`
     query {
@@ -62,6 +62,7 @@ const Layout = ({ set, children }) => {
           author
           siteUrl
           image
+          icon
           twitterHandle
         }
       }
@@ -88,11 +89,12 @@ const Layout = ({ set, children }) => {
         <meta property="og:description" content={description}/>
         <meta property="og:image" content={image}/>
         <meta property="og:url" content={siteUrl}/>
-        <meta name="twitter:card" content="summary_large_image"/>
+        <meta name="twitter:card" content="summary"/>
+        <meta name="twitter:site" content={twitterHandle}/>
         <meta name="twitter:creator" content={twitterHandle}/>
         <meta name="twitter:title" content={title}/>
         <meta name="twitter:description" content={description}/>
-        <meta name="twitter:image" content={image}/>
+        <meta name="twitter:image" content={icon}/>
         <script src="https://kit.fontawesome.com/a35b219d74.js" crossorigin="anonymous"></script>
       </Helmet>
       <Container>
