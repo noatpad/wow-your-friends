@@ -9,6 +9,18 @@ module.exports = {
     twitterHandle: '@aCluelessDanny'
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: 'Wow Your Friends',
+        short_name: 'Wow Your Friends',
+        start_url: '/',
+        background_color: '#281b46',
+        theme_color: '#5b4684',
+        display: 'standalone',
+        icon: 'src/assets/golden-strawberry.png'
+      }
+    },
     `gatsby-plugin-react-helmet`,
     'gatsby-plugin-emotion',
     `gatsby-transformer-json`,
