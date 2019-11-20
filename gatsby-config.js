@@ -38,6 +38,12 @@ module.exports = {
       options: {
         policy: [{ userAgent: '*', allow: '/' }]
       }
+    },
+    {
+      resolve: `gatsby-plugin-gtag`,
+      options: {
+        trackingId: 'UA-152954702-1'
+      }
     }
   ],
 }
