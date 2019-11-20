@@ -140,15 +140,14 @@ const QnA = () => {
       },
       {
         rotateOffset: -5,
-        // TODO: Add GitHub info once repo is up
         content: (<>
           <p>Once you have that, upload your proof to a public space like <Span color={colors.red}>YouTube</Span>.</p>
-          <p>Then send me a message on <Span color={colors.reddit}><a href="https://www.reddit.com/message/compose/?to=TammyDanny&subject=I%20got%20the%20golden%20berry!" target="_blank" rel="noopener noreferrer" style={{ color: "inherit"}}>Reddit</a></Span>, <Span color={colors.twitter}><a href="https://twitter.com/aCluelessDanny" target="_blank" rel="noopener noreferrer" style={{ color: "inherit"}}>Twitter</a></Span>, or through <Span color={colors.github}><a href="https://github.com/" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>GitHub Issues</a></Span> with a link to your proof & a celebratory message!</p>
+          <p>Then send me a message on <Span color={colors.reddit}><a href="https://www.reddit.com/message/compose/?to=TammyDanny&subject=I%20got%20the%20golden%20berry!" target="_blank" rel="noopener noreferrer" style={{ color: "inherit"}}>Reddit</a></Span>, <Span color={colors.twitter}><a href="https://twitter.com/aCluelessDanny" target="_blank" rel="noopener noreferrer" style={{ color: "inherit"}}>Twitter</a></Span>, or through <Span color={colors.github}><a href="https://github.com/aCluelessDanny/wow-your-friends/issues" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>GitHub Issues</a></Span> with a link to your proof & a celebratory message!</p>
           <p>I'll add you on there once I take a look at it!</p>
           <FlexCenter>
             <a href="https://www.reddit.com/message/compose/?to=TammyDanny&subject=I%20got%20the%20golden%20berry!" target="_blank" rel="noopener noreferrer" aria-label="Compose a reddit private message to /u/TammyDanny"><Icon className="fab fa-reddit" color={colors.reddit}/></a>
             <a href="https://twitter.com/aCluelessDanny" target="_blank" rel="noopener noreferrer" aria-label="Visit @aCluelessDanny on Twitter"><Icon className="fab fa-twitter" color={colors.twitter}/></a>
-            <a href="https://github.com/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Issues section of the repository in GitHub"><Icon className="fab fa-github" color={colors.github}/></a>
+            <a href="https://github.com/aCluelessDanny/wow-your-friends/issues" target="_blank" rel="noopener noreferrer" aria-label="Visit the Issues section of the repository in GitHub"><Icon className="fab fa-github" color={colors.github}/></a>
           </FlexCenter>
         </>)
       }

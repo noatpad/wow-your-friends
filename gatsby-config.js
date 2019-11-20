@@ -3,8 +3,7 @@ module.exports = {
     title: `Wow Your Friends`,
     description: `A small website serving as a record of all the skillful players who obtained all 202 Celeste's strawberries.`,
     author: `a clueless danny`,
-    // TODO: Add URL when publishing
-    siteUrl: 'https://example.com',
+    siteUrl: 'https://wowyourfriends.netlify.com',
     image: '/card-image.png',
     twitterHandle: '@aCluelessDanny'
   },

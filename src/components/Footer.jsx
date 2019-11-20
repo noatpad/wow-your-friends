@@ -108,7 +108,6 @@ const Footer = () => {
     })
   }
 
-  // TODO: When published, add information & links to repo
   return (
     <Container className="footer">
       <Strawberry>
@@ -128,7 +127,7 @@ const Footer = () => {
             onMouseEnter={() => hoverAnim(true, "twitter-icon", colors.twitter)}
             onMouseLeave={() => hoverAnim(false, "twitter-icon", colors.twitter)}/>
         </a>
-        <a className="github-icon" href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="Visit the GitHub repository">
+        <a className="github-icon" href="https://github.com/aCluelessDanny/wow-your-friends" target="_blank" rel="noopener noreferrer" aria-label="Visit the GitHub repository">
           <Icon
             className="github-icon fab fa-github"
             onMouseEnter={() => hoverAnim(true, "github-icon", colors.github)}
@@ -136,7 +135,7 @@ const Footer = () => {
         </a>
       </IconsDiv>
       <p>A website made by a clueless danny</p>
-      <Footnote>Open sourced on GitHub | Hosted on ?</Footnote>
+      <Footnote>Open sourced on GitHub | Hosted on Netlify</Footnote>
     </Container>
   )
 }
