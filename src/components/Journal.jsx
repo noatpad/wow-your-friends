@@ -369,6 +369,7 @@ const Journal = () => {
   }
 
   // Get table of conquerors
+  // IDEA: Add flags for "no key skip" & "double golden"
   const getConquerorTable = () => (
     conquerors.map(({ name, date, platform, videoProof, url }, i) => (
       <tr className={videoProof ? "video" : "screenshot"} key={i} onClick={() => videoProof ? setCurrentURL(url) : window.open(url, "_blank")}>
