@@ -94,7 +94,7 @@ const Layout = ({ set, children }) => {
         <meta name="twitter:creator" content={twitterHandle}/>
         <meta name="twitter:title" content={title}/>
         <meta name="twitter:description" content={description}/>
-        <meta name="twitter:image" content={icon}/>
+        <meta name="twitter:image" content={`${siteUrl}${icon}`}/>
         <script src="https://kit.fontawesome.com/a35b219d74.js" crossorigin="anonymous"></script>
       </Helmet>
       <Container>
