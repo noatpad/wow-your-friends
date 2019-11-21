@@ -5,7 +5,7 @@ module.exports = {
     author: `a clueless danny`,
     siteUrl: 'https://wowyourfriends.netlify.com',
     image: '/card-image.png',
-    icon: '/icon.png',
+    icon: '/card-icon.png',
     twitterHandle: '@aCluelessDanny'
   },
   plugins: [
