@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Wow Your Friends`,
-    description: `A small website serving as a record of all the skillful players who obtained all 202 Celeste's strawberries.`,
+    description: `A small website serving as a record of all the skillful players who obtained all 202 Celeste's strawberries`,
     author: `a clueless danny`,
     siteUrl: 'https://wowyourfriends.netlify.com',
     image: '/card-image.png',

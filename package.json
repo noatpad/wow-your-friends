@@ -1,9 +1,10 @@
 {
-  "name": "gatsby-starter-default",
+  "name": "wow-your-friends",
   "private": true,
-  "description": "A simple starter to get up and developing quickly with Gatsby",
-  "version": "0.1.0",
-  "author": "Kyle Mathews <mathews.kyle@gmail.com>",
+  "description": "A small website serving as a record of all the skillful players who obtained all 202 Celeste's strawberries",
+  "version": "1.0.0",
+  "author": "a clueless danny <tamdannyhdz@gmail.com>",
+  "homepage": "https://wowyourfriends.netlify.com",
   "dependencies": {
     "@emotion/core": "^10.0.21",
     "@emotion/styled": "^10.0.17",
@@ -37,7 +38,7 @@
     "prettier": "^1.18.2"
   },
   "keywords": [
-    "gatsby"
+    "celeste"
   ],
   "license": "MIT",
   "scripts": {
@@ -50,9 +51,9 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/gatsbyjs/gatsby-starter-default"
+    "url": "https://github.com/aCluelessDanny/wow-your-friends.git"
   },
   "bugs": {
-    "url": "https://github.com/gatsbyjs/gatsby/issues"
+    "url": "https://github.com/aCluelessDanny/wow-your-friends/issues"
   }
 }
