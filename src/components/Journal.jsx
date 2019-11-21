@@ -283,6 +283,7 @@ const Journal = () => {
   // GraphQL //
   let {
     assetsJson: { conquerors },
+    screenshots: { nodes: screenshotData },
     journalImage: { publicURL: journalURL },
     titleImage: { publicURL: titleURL },
     pageImage: { publicURL: pageURL },
@@ -302,6 +303,15 @@ const Journal = () => {
         }
       }
 
+      # Get all local proof screenshots
+      screenshots: allFile(filter: { relativeDirectory: { eq: "screenshots" }}) {
+        nodes {
+          name
+          publicURL
+        }
+      }
+
+      # Get image URLs
       journalImage: file(name: { eq: "journal" }) {
         publicURL
       }
@@ -321,6 +331,7 @@ const Journal = () => {
       silverberryImage: file(name: { eq: "silverberry" }) {
         publicURL
       }
+
       bronzeberryImage: file(name: { eq: "bronzeberry" }) {
         publicURL
       }
@@ -334,6 +345,30 @@ const Journal = () => {
   }
 
   // Functions //
+  // Open screenshot, whether it'd be an online link or a local image
+  // NOTE: For the case of local screenshot images, they must be in the src/assets/screenshots/ directory, and have the same name as the "conqueror" in question
+  const openScreenshot = (url, name) => {
+    // If the url is set to "local", that means it's a local image rather than an online link
+    if (url === "local") {
+      // Iterate through all the screenshots to find the right one, then replace url with that
+      for (const { name: sName, publicURL } of screenshotData) {
+        if (name === sName) {
+          url = publicURL
+          break
+        }
+      }
+
+      // If url is still "local" (no image file was found), then throw an error alert
+      if (url === "local") {
+        window.alert("Couldn't locate the image file! Danny probably messed up on something, and he oughta fix it soon...")
+        return
+      }
+    }
+
+    // Open the link in a new tab
+    window.open(url, "_blank")
+  }
+
   // Format a placement string depending on rank
   const getPlacement = rank => {
     let placement
@@ -372,7 +407,7 @@ const Journal = () => {
   // IDEA: Add flags for "no key skip" & "double golden"
   const getConquerorTable = () => (
     conquerors.map(({ name, date, platform, videoProof, url }, i) => (
-      <tr className={videoProof ? "video" : "screenshot"} key={i} onClick={() => videoProof ? setCurrentURL(url) : window.open(url, "_blank")}>
+      <tr className={videoProof ? "video" : "screenshot"} key={i} onClick={() => videoProof ? setCurrentURL(url) : openScreenshot(url, name)}>
         <td>{getPlacement(i + 1)}</td>
         {isTablet ? (
           <td>
