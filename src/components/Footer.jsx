@@ -110,7 +110,6 @@ const Footer = () => {
 
   return (
     <Container className="footer">
-      {/* TODO: Recreate strawberry GIF at a larger scale to avoid blurring for Edge and other incompatible browsers */}
       <Strawberry>
         <GIF id="footer-strawberry" className="pixelated" src={strawberryURL} alt="A floating strawberry"/>
         <Glow id="strawberry-glow"/>
