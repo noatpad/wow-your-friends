@@ -155,6 +155,7 @@ const ScreenshotCheckbox = styled.div`
   align-items: center;
   justify-content: flex-end;
   margin-bottom: 2rem;
+  font-size: 1.1em;
 
   label {
     padding-right: 0.75em;
@@ -185,6 +186,7 @@ const ScreenshotCheckbox = styled.div`
       content: '\f14a';
       font-weight: 900;
     }
+
     &:active {
       transform: scale(.8);
     }
