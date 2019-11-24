@@ -111,6 +111,13 @@
       "platform": "PC",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=wSocbDzgYg8&t=36s"
+    },
+    {
+      "name": "BV502",
+      "date": "2019-11-24",
+      "platform": "PC",
+      "videoProof": false,
+      "url": "local"
     }
   ]
 }
