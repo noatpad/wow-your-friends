@@ -520,7 +520,7 @@ const Journal = () => {
                 </tr>
                 <tr>
                   <td><Medal src={eenoxURL} alt="Meme run"/></td>
-                  <td><p>= Meme run <em>(Eenox, why)</em></p></td>
+                  <td><p>= Meme run <em>(Eenox, <span className="clickable" style={{ color: colors.blue }} onClick={() => setCurrentURL("https://www.youtube.com/watch?v=O6GHZ3Sd410")}>why</span>)</em></p></td>
                 </tr>
               </tbody>
             </Legend>
