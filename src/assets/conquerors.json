@@ -5,119 +5,170 @@
       "date": "2019-09-11",
       "platform": "PC",
       "videoProof": true,
-      "url": "https://www.youtube.com/watch?v=BZsNg-8_xpw"
+      "url": "https://www.youtube.com/watch?v=BZsNg-8_xpw",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false
     },
     {
       "name": "Eenox",
       "date": "2019-09-16",
       "platform": "PC",
       "videoProof": true,
-      "url": "https://www.youtube.com/watch?v=QUWEjHYgxZc"
+      "url": "https://www.youtube.com/watch?v=QUWEjHYgxZc",
+      "keySkip": false,
+      "doubleGolden": true,
+      "memeRun": true
     },
     {
       "name": "Chaikitty",
       "date": "2019-09-16",
       "platform": "PC",
       "videoProof": true,
-      "url": "https://www.youtube.com/watch?v=0btxzsgFyNc"
+      "url": "https://www.youtube.com/watch?v=0btxzsgFyNc",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false
     },
     {
       "name": "Plush",
       "date": "2019-09-18",
       "platform": "PC",
       "videoProof": true,
-      "url": "https://www.youtube.com/watch?v=NDZhN11sFXQ"
+      "url": "https://www.youtube.com/watch?v=NDZhN11sFXQ",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false
     },
     {
       "name": "Angrevol",
       "date": "2019-09-23",
       "platform": "PC",
       "videoProof": true,
-      "url": "https://www.youtube.com/watch?v=rlwlS1uaWEk"
+      "url": "https://www.youtube.com/watch?v=rlwlS1uaWEk",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false
     },
     {
       "name": "Rjdimo",
       "date": "2019-09-25",
       "platform": "PC",
       "videoProof": true,
-      "url": "https://m.bilibili.com/video/av69003044.html"
+      "url": "https://m.bilibili.com/video/av69003044.html",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false
     },
     {
       "name": "CyberGamer1539",
       "date": "2019-09-28",
       "platform": "PC",
       "videoProof": true,
-      "url": "https://www.youtube.com/watch?v=lhxX9FmeUMc"
+      "url": "https://www.youtube.com/watch?v=lhxX9FmeUMc",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false
     },
     {
       "name": "Starshadow",
       "date": "2019-09-28",
       "platform": "PC",
       "videoProof": false,
-      "url": "https://www.reddit.com/r/celestegame/comments/daqbkz/after_155_hours_i_have_finally_done_it_i_have/"
+      "url": "https://www.reddit.com/r/celestegame/comments/daqbkz/after_155_hours_i_have_finally_done_it_i_have/",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false
     },
     {
       "name": "Yamard",
       "date": "2019-10-01",
       "platform": "PC",
       "videoProof": true,
-      "url": "https://www.youtube.com/watch?v=UqG8VBnANU8"
+      "url": "https://www.youtube.com/watch?v=UqG8VBnANU8",
+      "keySkip": false,
+      "doubleGolden": false,
+      "memeRun": false
     },
     {
       "name": "snifidy",
       "date": "2019-10-11",
       "platform": "PC",
       "videoProof": true,
-      "url": "https://www.youtube.com/watch?v=5_4AljC8wtM"
+      "url": "https://www.youtube.com/watch?v=5_4AljC8wtM",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false
     },
     {
       "name": "Kriog16",
       "date": "2019-10-16",
       "platform": "PC",
       "videoProof": true,
-      "url": "https://www.youtube.com/watch?v=ltWFNsIlpEk"
+      "url": "https://www.youtube.com/watch?v=ltWFNsIlpEk",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false
     },
     {
       "name": "AkaraWa",
       "date": "2019-10-20",
       "platform": "PC",
       "videoProof": true,
-      "url": "https://www.youtube.com/watch?v=hJP-sx-krAU"
+      "url": "https://www.youtube.com/watch?v=hJP-sx-krAU",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false
     },
     {
       "name": "TGH",
       "date": "2019-11-07",
       "platform": "PC",
       "videoProof": true,
-      "url": "https://www.youtube.com/watch?v=r1Sy9My2R6o"
+      "url": "https://www.youtube.com/watch?v=r1Sy9My2R6o",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false
     },
     {
       "name": "Albcat",
       "date": "2019-11-08",
       "platform": "PC",
       "videoProof": false,
-      "url": "local"
+      "url": "local",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false
     },
     {
       "name": "Master_Sparky",
       "date": "2019-11-10",
       "platform": "PC",
       "videoProof": true,
-      "url": "https://www.youtube.com/watch?v=R7bLK4LFb6E"
+      "url": "https://www.youtube.com/watch?v=R7bLK4LFb6E",
+      "keySkip": true,
+      "doubleGolden": true,
+      "memeRun": false
     },
     {
       "name": "WoofWoofDoggo",
       "date": "2019-11-17",
       "platform": "PC",
       "videoProof": true,
-      "url": "https://www.youtube.com/watch?v=wSocbDzgYg8&t=36s"
+      "url": "https://www.youtube.com/watch?v=wSocbDzgYg8&t=36s",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false
     },
     {
       "name": "BV502",
       "date": "2019-11-24",
       "platform": "PC",
       "videoProof": false,
-      "url": "local"
+      "url": "local",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false
     }
   ]
 }

@@ -124,16 +124,40 @@ const Rank = styled.div`
   align-items: center;
 `
 
-const BerryMedal = styled.img`
+const MedalsWrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+`
+
+const Medal = styled.img`
   height: 1.2em;
 `
 
 const Place = styled.span`
-  margin-left: .25em;
+  padding: 0 .25em;
+
+  @media screen and (${breakpoints.tablet}) {
+    padding: 0 .125em;
+  }
 `
 
-const Icon = styled.i`
-  font-size: 1em;
+const IconsWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  @media screen and (${breakpoints.tablet}) {
+    flex-direction: column-reverse;
+
+    & > * {
+      padding: .125em 0;
+    }
+  }
+`
+
+const ProofIcon = styled.i`
+  padding: 0 .25em;
 `
 
 const Total = styled.div`
@@ -145,17 +169,32 @@ const Total = styled.div`
 
   @media screen and (${breakpoints.xsmall}) {
     font-size: 1em;
-    /* margin-right: .5em; */
+  }
+`
+
+const Footnote = styled.div`
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+
+  @media screen and (${breakpoints.xsmall}) {
+    font-size: .85em;
+    margin-bottom: .75rem;
+  }
+`
+
+const Legend = styled.table`
+  font-size: .8em;
+
+  td {
+    vertical-align: top;
   }
 `
 
 // Checkbox by Jase from https://codepen.io/jasesmith/pen/EeVmWZ
 const ScreenshotCheckbox = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  margin-bottom: 2rem;
-  font-size: 1.1em;
+  text-align: right;
 
   label {
     padding-right: 0.75em;
@@ -190,11 +229,6 @@ const ScreenshotCheckbox = styled.div`
     &:active {
       transform: scale(.8);
     }
-  }
-
-  @media screen and (${breakpoints.xsmall}) {
-    font-size: .85em;
-    margin-bottom: .75rem;
   }
 `
 
@@ -292,6 +326,9 @@ const Journal = () => {
     goldberryImage: { publicURL: goldberryURL },
     silverberryImage: { publicURL: silverberryURL },
     bronzeberryImage: { publicURL: bronzeberryURL },
+    keyImage: { publicURL: keyURL },
+    moonberryImage: { publicURL: moonberryURL },
+    eenoxImage: { publicURL: eenoxURL }
   } = useStaticQuery(graphql`
     query {
       # Get data of every "conqueror"
@@ -302,6 +339,9 @@ const Journal = () => {
           platform
           videoProof
           url
+          keySkip
+          doubleGolden
+          memeRun
         }
       }
 
@@ -335,6 +375,18 @@ const Journal = () => {
       }
 
       bronzeberryImage: file(name: { eq: "bronzeberry" }) {
+        publicURL
+      }
+
+      keyImage: file(name: { eq: "key" }) {
+        publicURL
+      }
+
+      moonberryImage: file(name: { eq: "moonberry" }) {
+        publicURL
+      }
+
+      eenoxImage: file(name: { eq: "eenox" }) {
         publicURL
       }
     }
@@ -380,21 +432,21 @@ const Journal = () => {
     } else if (rank % 10 === 1) {
       placement = (
         <>
-          {rank === 1 && <BerryMedal src={goldberryURL} alt="First place"/>}
+          {rank === 1 && <Medal src={goldberryURL} alt="First place"/>}
           <Place>{rank}st</Place>
         </>
       )
     } else if (rank % 10 === 2) {
       placement = (
         <>
-          {rank === 2 && <BerryMedal src={silverberryURL} alt="Second place"/>}
+          {rank === 2 && <Medal src={silverberryURL} alt="Second place"/>}
           <Place>{rank}nd</Place>
         </>
       )
     } else if (rank % 10 === 3) {
       placement = (
         <>
-          {rank === 3 && <BerryMedal src={bronzeberryURL} alt="Third place"/>}
+          {rank === 3 && <Medal src={bronzeberryURL} alt="Third place"/>}
           <Place>{rank}rd</Place>
         </>
       )
@@ -406,9 +458,8 @@ const Journal = () => {
   }
 
   // Get table of conquerors
-  // IDEA: Add flags for "no key skip" & "double golden"
   const getConquerorTable = () => (
-    conquerors.map(({ name, date, platform, videoProof, url }, i) => (
+    conquerors.map(({ name, date, platform, videoProof, url, keySkip, doubleGolden, memeRun }, i) => (
       <tr className={videoProof ? "video" : "screenshot"} key={i} onClick={() => videoProof ? setCurrentURL(url) : openScreenshot(url, name)}>
         <td>{getPlacement(i + 1)}</td>
         {isTablet ? (
@@ -423,7 +474,16 @@ const Journal = () => {
             <td>{platform}</td>
           </>
         )}
-        <td><Icon className={videoProof ? "fas fa-video" : "fas fa-image"}/></td>
+        <td>
+          <IconsWrapper>
+            <MedalsWrapper>
+              {!keySkip && <Medal src={keyURL} alt="No key skip!"/>}
+              {doubleGolden && <Medal src={moonberryURL} alt="Double golden!"/>}
+              {memeRun && <Medal src={eenoxURL} alt="Meme run...why"/>}
+            </MedalsWrapper>
+            <ProofIcon className={videoProof ? "fas fa-video" : "fas fa-image"}/>
+          </IconsWrapper>
+        </td>
       </tr>
     ))
   )
@@ -447,10 +507,28 @@ const Journal = () => {
             <p>To this day, only <b style={{ color: colors.red }}>{conquerors.length}</b> have conquered every strawberry{showScreenshotEntries && "*"}</p>
             {showScreenshotEntries && <p style={{ fontSize: ".6em", fontStyle: "italic", opacity: .8 }}>*(including screenshot entries)</p>}
           </Total>
-          <ScreenshotCheckbox>
-            <label htmlFor="show">Show screenshot entries</label>
-            <input id="show" type="checkbox" defaultChecked={showScreenshotEntries} onChange={() => setShowScreenshotEntries(!showScreenshotEntries)}/>
-          </ScreenshotCheckbox>
+          <Footnote>
+            <Legend>
+              <tbody>
+                <tr>
+                  <td><Medal src={keyURL} alt="No key skip"/></td>
+                  <td><p>= No key skip</p></td>
+                </tr>
+                <tr>
+                  <td><Medal src={moonberryURL} alt="Double golden"/></td>
+                  <td><p>= Double golden</p></td>
+                </tr>
+                <tr>
+                  <td><Medal src={eenoxURL} alt="Meme run"/></td>
+                  <td><p>= Meme run <em>(Eenox, why)</em></p></td>
+                </tr>
+              </tbody>
+            </Legend>
+            <ScreenshotCheckbox>
+              <label htmlFor="show">Show screenshot entries</label>
+              <input id="show" type="checkbox" defaultChecked={showScreenshotEntries} onChange={() => setShowScreenshotEntries(!showScreenshotEntries)}/>
+            </ScreenshotCheckbox>
+          </Footnote>
         </Page>
         <CoverWrapper className="cover-wrapper">
           <Cover className="back" url={journalURL}/>

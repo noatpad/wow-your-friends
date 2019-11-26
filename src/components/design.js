@@ -2,7 +2,7 @@
 export const breakpoints = {
   xsmall: "max-width: 320px",
   mobile: "max-width: 425px",
-  tablet: "max-width: 800px"
+  tablet: "max-width: 850px"
 }
 
 export const colors = {
