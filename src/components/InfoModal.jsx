@@ -18,6 +18,7 @@ const Overlay = styled.div`
   z-index: 10;
 
   @media screen and (${breakpoints.tablet}) {
+    padding: 5em 2em;
     &::after {
       content: "(click outside the box to close)";
       position: absolute;
@@ -31,10 +32,10 @@ const Overlay = styled.div`
   }
 
   @media screen and (${breakpoints.mobile}) {
-    padding: 4em 1em;
+    padding: 6em 1em;
 
     &::after {
-      font-size: .5em;
+      font-size: .8em;
     }
   }
 `
