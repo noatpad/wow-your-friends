@@ -197,6 +197,17 @@
       "doubleGolden": false,
       "memeRun": false,
       "non202": true
+    },
+    {
+      "name": "gareth_maxwell",
+      "date": "2019-12-05",
+      "platform": "PC",
+      "videoProof": false,
+      "url": "https://www.reddit.com/r/celestegame/comments/e6ecc2/after_150_hours_and_9000_deaths_i_finally_got_the/",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
     }
   ]
 }
