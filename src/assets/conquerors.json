@@ -186,6 +186,17 @@
       "doubleGolden": false,
       "memeRun": false,
       "non202": false
+    },
+    {
+      "name": "apollo",
+      "date": "2019-12-01",
+      "platform": "PC",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=Hp9__Y-JWtc",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": true
     }
   ]
 }
