@@ -15,7 +15,7 @@ const Overlay = styled.div`
   height: 100%;
   width: 100%;
   background: #0009;
-  z-index: 10;
+  z-index: 20;
 `
 
 const PlayerWrapper = styled.div`

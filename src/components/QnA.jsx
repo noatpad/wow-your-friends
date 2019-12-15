@@ -4,7 +4,7 @@ import styled from '@emotion/styled'
 
 import { breakpoints, colors } from './design'
 import Section from './Section'
-import InfoModal from './InfoModal'
+import SwitchInfoModal from './SwitchInfoModal'
 
 const Container = styled.div`
   margin: 4em 0;
@@ -208,7 +208,7 @@ const QnA = () => {
       <Section {...participateCards}/>
       <Section {...encouragementCards}/>
       <Section {...thankYouCards}/>
-      <InfoModal show={showInfoModal} set={setShowInfoModal}/>
+      <SwitchInfoModal set={setShowInfoModal} show={showInfoModal}/>
     </Container>
   )
 }

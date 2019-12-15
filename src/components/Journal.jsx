@@ -7,6 +7,7 @@ import { useMediaQuery } from 'react-responsive';
 
 import { breakpoints, colors } from './design'
 import VideoModal from './VideoModal'
+import LegendInfoModal from './LegendInfoModal'
 
 const Book = styled.div`
   position: relative;
@@ -184,12 +185,8 @@ const Footnote = styled.div`
   }
 `
 
-const Legend = styled.table`
-  font-size: .8em;
-
-  td {
-    vertical-align: top;
-  }
+const Span = styled.span`
+  color: ${props => props.color};
 `
 
 // Checkbox by Jase from https://codepen.io/jasesmith/pen/EeVmWZ
@@ -280,6 +277,7 @@ const VSPlaceholder = styled.div`
 const Journal = () => {
   // State //
   const [openJournal, setOpenJournal] = useState(false)
+  const [showLegendModal, setShowLegendModal] = useState(false)
   const [showScreenshotEntries, setShowScreenshotEntries] = useState(false)
   const [currentURL, setCurrentURL] = useState("")
 
@@ -508,22 +506,7 @@ const Journal = () => {
             {showScreenshotEntries && <p style={{ fontSize: ".6em", fontStyle: "italic", opacity: .8 }}>*(including screenshot entries)</p>}
           </Total>
           <Footnote>
-            <Legend>
-              <tbody>
-                <tr>
-                  <td><Medal src={keyURL} alt="No key skip"/></td>
-                  <td><p>= No key skip</p></td>
-                </tr>
-                <tr>
-                  <td><Medal src={moonberryURL} alt="Double golden"/></td>
-                  <td><p>= Double golden</p></td>
-                </tr>
-                <tr>
-                  <td><Medal src={eenoxURL} alt="Meme run"/></td>
-                  <td><p>= Meme run <em>(Eenox, <span className="clickable" style={{ color: colors.blue }} onClick={() => setCurrentURL("https://www.youtube.com/watch?v=O6GHZ3Sd410")}>why</span>)</em></p></td>
-                </tr>
-              </tbody>
-            </Legend>
+            <Span className="clickable" onClick={() => setShowLegendModal(true)} color={colors.blue}>What do those icons mean?</Span>
             <ScreenshotCheckbox>
               <label htmlFor="show">Show screenshot entries</label>
               <input id="show" type="checkbox" defaultChecked={showScreenshotEntries} onChange={() => setShowScreenshotEntries(!showScreenshotEntries)}/>
@@ -538,6 +521,7 @@ const Journal = () => {
         </CoverWrapper>
       </Book>
       <VideoModal url={currentURL} set={setCurrentURL}/>
+      <LegendInfoModal set={setShowLegendModal} show={showLegendModal} setCurrentURL={setCurrentURL}/>
     </>
   )
 }

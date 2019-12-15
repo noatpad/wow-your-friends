@@ -42,7 +42,6 @@ const Overlay = styled.div`
 
 const Container = styled.div`
   position: relative;
-  width: 100%;
   max-height: 100%;
   max-width: 800px;
   padding: 2em 3em;
@@ -54,19 +53,6 @@ const Container = styled.div`
     margin-top: .4em;
   }
 
-  h3 {
-    text-align: center;
-    padding-bottom: .5em;
-  }
-
-  b {
-    text-decoration: underline;
-  }
-
-  ul {
-    padding-left: 1em;
-  }
-
   @media screen and (${breakpoints.mobile}) {
     padding: 1.5em;
   }
@@ -76,7 +62,11 @@ const Container = styled.div`
   }
 `
 
-const InfoModal = ({ show, set }) => {
+const InfoModal = ({ set, show, className, children }) => {
+  // Global vars //
+  const overlayClassName = `${className}-modal-overlay`
+  const containerClassName = `${className}-modal-container`
+
   // State //
   const [current, setCurrent] = useState(false)
   const modalNode = useRef()
@@ -84,29 +74,33 @@ const InfoModal = ({ show, set }) => {
   // Hooks //
   // Toggle animation for info modal
   useEffect(() => {
+    // Generate targets
+    const overlayTarget = `.${overlayClassName}`
+    const containerTarget = `.${containerClassName}`
+
     // Remove any current animation instance
-    const targets = ".info-overlay, .info-container"
+    const targets = [overlayTarget, containerTarget]
     anime.remove(targets)
 
     // Animation for displaying and hiding info modal
     const tl = anime.timeline({
       easing: "spring(1, 100, 50, 0)",
       begin: () => {
-        anime.set(".info-overlay", { display: (show || current) ? "flex" : "none" })
+        anime.set(overlayTarget, { display: (show || current) ? "flex" : "none" })
       },
       complete: () => {
-        anime.set(".info-overlay", { display: show ? "flex" : "none" })
+        anime.set(overlayTarget, { display: show ? "flex" : "none" })
         setCurrent(show)
       }
     })
 
     tl
     .add({
-      targets: ".info-overlay",
+      targets: overlayTarget,
       opacity: show ? 1 : 0
     })
     .add({
-      targets: ".info-container",
+      targets: containerTarget,
       translateX: show ? "0%" : "100%"
     }, 0)
   }, [show])
@@ -127,29 +121,9 @@ const InfoModal = ({ show, set }) => {
 
   // Info taken from https://www.reddit.com/r/celestegame/comments/dvgf79/wip_a_website_commemorating_all_the_players_who/f7cx4aq/?context=3
   return (
-    <Overlay className="info-overlay">
-      <Container className="info-container" ref={modalNode}>
-        <h3>Don't have a capture card for the Switch? Listen up!</h3>
-        <p>
-          While you can easily record and/or stream on every other platform, the Switch has no native streaming capabilities & only allows you to record up to 30 seconds at a time. But fortunately, we can still work with that! There are just a few extra requirements:
-        </p>
-        <ul>
-          <li>
-            If you're unable to record your whole run with a capture card or camera, you can instead submit a partial recording made through the Switch's Share button.
-          </li>
-          <li>
-            For this case, the recording must capture the moment of obtaining the golden strawberry. Preferably hold the Share button right after the screen fades to white.
-          </li>
-          <li>
-            Before collecting the berry, <b>open and close the pause menu for at least a second</b>. This is important since this will prove that neither Assist nor Variants Mode were used throughout your run.
-          </li>
-          <li>
-            <b>A second video is required as proof</b>. This video will simply show your Switch playing the recording mentioned above from the Album applet from the HOME menu. This is to verify the run was indeed done on a Switch.
-          </li>
-        </ul>
-        <p>
-          With these extra rules in mind, I can verify that the run when the recording was made was a legitimate, golden berry run!
-        </p>
+    <Overlay className={overlayClassName}>
+      <Container className={containerClassName} ref={modalNode}>
+        {children}
       </Container>
     </Overlay>
   )
