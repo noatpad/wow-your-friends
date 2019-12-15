@@ -36,7 +36,8 @@ const LegendInfoModal = ({ setCurrentURL, ...rest }) => {
   let {
     keyImage: { publicURL: keyURL },
     moonberryImage: { publicURL: moonberryURL },
-    eenoxImage: { publicURL: eenoxURL }
+    eenoxImage: { publicURL: eenoxURL },
+    non202Image: { publicURL: non202URL }
   } = useStaticQuery(graphql`
     query {
       keyImage: file(name: { eq: "key" }) {
@@ -48,6 +49,10 @@ const LegendInfoModal = ({ setCurrentURL, ...rest }) => {
       }
 
       eenoxImage: file(name: { eq: "eenox" }) {
+        publicURL
+      }
+
+      non202Image: file(name: { eq: "non202" }) {
         publicURL
       }
     }
@@ -65,6 +70,10 @@ const LegendInfoModal = ({ setCurrentURL, ...rest }) => {
           <tr>
             <td className="icon"><ProofIcon className="fas fa-image"/></td>
             <td><p>Screenshot proof</p></td>
+          </tr>
+          <tr>
+            <td className="icon"><Medal src={non202URL} alt="Non-202"/></td>
+            <td><p>Non-202 (Farewell golden berry wasn't the final berry)</p></td>
           </tr>
           <tr>
             <td className="icon"><Medal src={keyURL} alt="No key skip"/></td>

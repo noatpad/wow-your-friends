@@ -177,7 +177,11 @@ const Footnote = styled.div`
   display: flex;
   align-items: flex-end;
   justify-content: space-between;
-  margin-bottom: 2rem;
+  margin: .5rem 0 2rem;
+
+  @media screen and (${breakpoints.mobile}) {
+    font-size: .9em;
+  }
 
   @media screen and (${breakpoints.xsmall}) {
     font-size: .85em;
@@ -190,8 +194,12 @@ const Span = styled.span`
 `
 
 // Checkbox by Jase from https://codepen.io/jasesmith/pen/EeVmWZ
-const ScreenshotCheckbox = styled.div`
+const Checkbox = styled.div`
   text-align: right;
+
+  & + & {
+    margin-top: .25em;
+  }
 
   label {
     padding-right: 0.75em;
@@ -278,6 +286,7 @@ const Journal = () => {
   // State //
   const [openJournal, setOpenJournal] = useState(false)
   const [showLegendModal, setShowLegendModal] = useState(false)
+  const [showNon202Entries, setShowNon202Entries] = useState(false)
   const [showScreenshotEntries, setShowScreenshotEntries] = useState(false)
   const [currentURL, setCurrentURL] = useState("")
 
@@ -326,7 +335,8 @@ const Journal = () => {
     bronzeberryImage: { publicURL: bronzeberryURL },
     keyImage: { publicURL: keyURL },
     moonberryImage: { publicURL: moonberryURL },
-    eenoxImage: { publicURL: eenoxURL }
+    eenoxImage: { publicURL: eenoxURL },
+    non202Image: { publicURL: non202URL }
   } = useStaticQuery(graphql`
     query {
       # Get data of every "conqueror"
@@ -340,6 +350,7 @@ const Journal = () => {
           keySkip
           doubleGolden
           memeRun
+          non202
         }
       }
 
@@ -387,13 +398,24 @@ const Journal = () => {
       eenoxImage: file(name: { eq: "eenox" }) {
         publicURL
       }
+
+      non202Image: file(name: { eq: "non202" }) {
+        publicURL
+      }
     }
   `)
 
   // Sort conquerors by date of achievement
   conquerors.sort((a, b) => new Date(a.date) - new Date(b.date))
+
+  // Filter out screenshot entries when necessary
   if (!showScreenshotEntries) {
     conquerors = conquerors.filter(({ videoProof }) => videoProof)
+  }
+
+  // Filter out non-202 entries when necessary
+  if (!showNon202Entries) {
+    conquerors = conquerors.filter(({ non202 }) => !non202)
   }
 
   // Functions //
@@ -456,35 +478,50 @@ const Journal = () => {
   }
 
   // Get table of conquerors
-  const getConquerorTable = () => (
-    conquerors.map(({ name, date, platform, videoProof, url, keySkip, doubleGolden, memeRun }, i) => (
-      <tr className={videoProof ? "video" : "screenshot"} key={i} onClick={() => videoProof ? setCurrentURL(url) : openScreenshot(url, name)}>
-        <td>{getPlacement(i + 1)}</td>
-        {isTablet ? (
-          <td>
-            <p>{name} - <em>{platform}</em></p>
-            <p>{date}</p>
-          </td>
-        ) : (
-          <>
-            <td>{name}</td>
-            <td>{date}</td>
-            <td>{platform}</td>
-          </>
-        )}
-        <td>
-          <IconsWrapper>
-            <MedalsWrapper>
-              {!keySkip && <Medal src={keyURL} alt="No key skip!"/>}
-              {doubleGolden && <Medal src={moonberryURL} alt="Double golden!"/>}
-              {memeRun && <Medal src={eenoxURL} alt="Meme run...why"/>}
-            </MedalsWrapper>
-            <ProofIcon className={videoProof ? "fas fa-video" : "fas fa-image"}/>
-          </IconsWrapper>
-        </td>
-      </tr>
-    ))
-  )
+  const getConquerorTable = () => {
+    let count = 0
+
+    return (
+      conquerors.map(({ name, date, platform, videoProof, url, keySkip, doubleGolden, memeRun, non202 }, i) => {
+        let placement
+        if (non202) {
+          placement = <Place>-</Place>
+        } else {
+          count++
+          placement = getPlacement(count)
+        }
+
+        return (
+          <tr className={videoProof ? "video" : "screenshot"} key={i} onClick={() => videoProof ? setCurrentURL(url) : openScreenshot(url, name)}>
+            <td>{placement}</td>
+            {isTablet ? (
+              <td>
+                <p>{name} - <em>{platform}</em></p>
+                <p>{date}</p>
+              </td>
+            ) : (
+              <>
+                <td>{name}</td>
+                <td>{date}</td>
+                <td>{platform}</td>
+              </>
+            )}
+            <td>
+              <IconsWrapper>
+                <MedalsWrapper>
+                  {!keySkip && <Medal src={keyURL} alt="No key skip!"/>}
+                  {doubleGolden && <Medal src={moonberryURL} alt="Double golden!"/>}
+                  {memeRun && <Medal src={eenoxURL} alt="Meme run...why"/>}
+                  {non202 && <Medal src={non202URL} alt="Non-202 run"/>}
+                </MedalsWrapper>
+                <ProofIcon className={videoProof ? "fas fa-video" : "fas fa-image"}/>
+              </IconsWrapper>
+            </td>
+          </tr>
+        )
+      })
+    )
+  }
 
   return (
     <>
@@ -502,15 +539,21 @@ const Journal = () => {
             </Table>
           </TableWrapper>
           <Total>
-            <p>To this day, only <b style={{ color: colors.red }}>{conquerors.length}</b> have conquered every strawberry{showScreenshotEntries && "*"}</p>
+            <p>To this day, only <b style={{ color: colors.red }}>{conquerors.filter(({ non202 }) => !non202).length}</b> have conquered every strawberry{showScreenshotEntries && "*"}</p>
             {showScreenshotEntries && <p style={{ fontSize: ".6em", fontStyle: "italic", opacity: .8 }}>*(including screenshot entries)</p>}
           </Total>
           <Footnote>
             <Span className="clickable" onClick={() => setShowLegendModal(true)} color={colors.blue}>What do those icons mean?</Span>
-            <ScreenshotCheckbox>
-              <label htmlFor="show">Show screenshot entries</label>
-              <input id="show" type="checkbox" defaultChecked={showScreenshotEntries} onChange={() => setShowScreenshotEntries(!showScreenshotEntries)}/>
-            </ScreenshotCheckbox>
+            <div>
+              <Checkbox>
+                <label htmlFor="showNon202">Show non-202 entries</label>
+                <input id="showNon202" type="checkbox" defaultChecked={showNon202Entries} onChange={() => setShowNon202Entries(!showNon202Entries)}/>
+              </Checkbox>
+              <Checkbox>
+                <label htmlFor="showScreenshots">Show screenshot entries</label>
+                <input id="showScreenshots" type="checkbox" defaultChecked={showScreenshotEntries} onChange={() => setShowScreenshotEntries(!showScreenshotEntries)}/>
+              </Checkbox>
+            </div>
           </Footnote>
         </Page>
         <CoverWrapper className="cover-wrapper">
