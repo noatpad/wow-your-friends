@@ -2,7 +2,7 @@
   "name": "wow-your-friends",
   "private": true,
   "description": "A small website serving as a record of all the skillful players who obtained all 202 Celeste's strawberries",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "author": "a clueless danny <tamdannyhdz@gmail.com>",
   "homepage": "https://wowyourfriends.netlify.com",
   "dependencies": {
