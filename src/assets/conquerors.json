@@ -208,6 +208,17 @@
       "doubleGolden": false,
       "memeRun": false,
       "non202": false
+    },
+    {
+      "name": "DrDimentio",
+      "date": "2019-12-14",
+      "platform": "Mac",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=mDFdXz6FvZc",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
     }
   ]
 }
