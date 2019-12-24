@@ -178,10 +178,10 @@
     },
     {
       "name": "BV502",
-      "date": "2019-11-24",
+      "date": "2019-12-23",
       "platform": "PC",
-      "videoProof": false,
-      "url": "local",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=RdYurkC9IoM",
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
