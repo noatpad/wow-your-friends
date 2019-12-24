@@ -219,6 +219,17 @@
       "doubleGolden": false,
       "memeRun": false,
       "non202": false
+    },
+    {
+      "name": "touhoe",
+      "date": "2019-12-22",
+      "platform": "PC",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=xE1h71JyLsA",
+      "keySkip": true,
+      "doubleGolden": true,
+      "memeRun": false,
+      "non202": false
     }
   ]
 }
