@@ -9,6 +9,10 @@ import { breakpoints, colors } from './design'
 import VideoModal from './VideoModal'
 import LegendInfoModal from './LegendInfoModal'
 
+const Span = styled.span`
+  color: ${props => props.color ? props.color : "inherit"};
+`
+
 const Book = styled.div`
   position: relative;
   height: 800px;
@@ -88,7 +92,7 @@ const Table = styled.table`
       background: #c885ff20;
     }
 
-    &.screenshot {
+    &.non-verified {
       background: #9764c040;
       color: #7e6f9d;
       font-style: italic;
@@ -98,7 +102,7 @@ const Table = styled.table`
       background: #c06be060;
     }
 
-    &.screenshot:hover {
+    &.non-verified:hover {
       background: #754a9760;
     }
   }
@@ -117,6 +121,10 @@ const Table = styled.table`
   @media screen and (${breakpoints.xsmall}) {
     font-size: .9em;
   }
+`
+
+const Name = styled(Span)`
+  border-bottom: ${({ underline }) => underline ? "2px dashed" : "none"};
 `
 
 const Rank = styled.div`
@@ -187,10 +195,6 @@ const Footnote = styled.div`
     font-size: .85em;
     margin-bottom: .75rem;
   }
-`
-
-const Span = styled.span`
-  color: ${props => props.color};
 `
 
 // Checkbox by Jase from https://codepen.io/jasesmith/pen/EeVmWZ
@@ -287,7 +291,7 @@ const Journal = () => {
   const [openJournal, setOpenJournal] = useState(false)
   const [showLegendModal, setShowLegendModal] = useState(false)
   const [showNon202Entries, setShowNon202Entries] = useState(false)
-  const [showScreenshotEntries, setShowScreenshotEntries] = useState(false)
+  const [showVerifiedEntries, setShowVerifiedEntries] = useState(false)
   const [currentURL, setCurrentURL] = useState("")
 
   // Hooks //
@@ -345,6 +349,7 @@ const Journal = () => {
           name
           date(formatString: "MMM DD, YYYY")
           platform
+          verified
           videoProof
           url
           keySkip
@@ -409,8 +414,8 @@ const Journal = () => {
   conquerors.sort((a, b) => new Date(a.date) - new Date(b.date))
 
   // Filter out screenshot entries when necessary
-  if (!showScreenshotEntries) {
-    conquerors = conquerors.filter(({ videoProof }) => videoProof)
+  if (!showVerifiedEntries) {
+    conquerors = conquerors.filter(({ verified }) => verified)
   }
 
   // Filter out non-202 entries when necessary
@@ -482,7 +487,7 @@ const Journal = () => {
     let count = 0
 
     return (
-      conquerors.map(({ name, date, platform, videoProof, url, keySkip, doubleGolden, memeRun, non202 }, i) => {
+      conquerors.map(({ name, date, platform, verified, videoProof, url, keySkip, doubleGolden, memeRun, non202 }, i) => {
         let placement
         if (non202) {
           placement = <Place>-</Place>
@@ -492,16 +497,16 @@ const Journal = () => {
         }
 
         return (
-          <tr className={videoProof ? "video" : "screenshot"} key={i} onClick={() => videoProof ? setCurrentURL(url) : openScreenshot(url, name)}>
+          <tr className={verified ? "" : "non-verified"} key={i} onClick={() => videoProof ? setCurrentURL(url) : openScreenshot(url, name)}>
             <td>{placement}</td>
             {isTablet ? (
               <td>
-                <p>{name} - <em>{platform}</em></p>
+                <p><Name underline={!verified}>{name}</Name> - <em>{platform}</em></p>
                 <p>{date}</p>
               </td>
             ) : (
               <>
-                <td>{name}</td>
+                <td><Name underline={!verified}>{name}</Name></td>
                 <td>{date}</td>
                 <td>{platform}</td>
               </>
@@ -539,8 +544,8 @@ const Journal = () => {
             </Table>
           </TableWrapper>
           <Total>
-            <p>To this day, only <b style={{ color: colors.red }}>{conquerors.filter(({ non202 }) => !non202).length}</b> have conquered every strawberry{showScreenshotEntries && "*"}</p>
-            {showScreenshotEntries && <p style={{ fontSize: ".6em", fontStyle: "italic", opacity: .8 }}>*(including screenshot entries)</p>}
+            <p>To this day, only <b style={{ color: colors.red }}>{conquerors.filter(({ non202 }) => !non202).length}</b> have conquered every strawberry{showVerifiedEntries && "*"}</p>
+            {showVerifiedEntries && <p style={{ fontSize: ".6em", fontStyle: "italic", opacity: .8 }}>*(including non-verified entries)</p>}
           </Total>
           <Footnote>
             <Span className="clickable" onClick={() => setShowLegendModal(true)} color={colors.blue}>What do those icons mean?</Span>
@@ -550,8 +555,8 @@ const Journal = () => {
                 <input id="showNon202" type="checkbox" defaultChecked={showNon202Entries} onChange={() => setShowNon202Entries(!showNon202Entries)}/>
               </Checkbox>
               <Checkbox>
-                <label htmlFor="showScreenshots">Show screenshot entries</label>
-                <input id="showScreenshots" type="checkbox" defaultChecked={showScreenshotEntries} onChange={() => setShowScreenshotEntries(!showScreenshotEntries)}/>
+                <label htmlFor="showScreenshots">Show non-verified entries</label>
+                <input id="showScreenshots" type="checkbox" defaultChecked={showVerifiedEntries} onChange={() => setShowVerifiedEntries(!showVerifiedEntries)}/>
               </Checkbox>
             </div>
           </Footnote>
