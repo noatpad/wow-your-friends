@@ -220,6 +220,18 @@
       "memeRun": false,
       "non202": false
     },
+
+    {
+      "name": "Aquatex",
+      "date": "2019-12-22",
+      "platform": "Xbox One",
+      "videoProof": false,
+      "url": "https://twitter.com/traquatex/status/1208697282222268418?s=21",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
+    },
     {
       "name": "touhoe",
       "date": "2019-12-22",
@@ -228,6 +240,39 @@
       "url": "https://www.youtube.com/watch?v=xE1h71JyLsA",
       "keySkip": true,
       "doubleGolden": true,
+      "memeRun": false,
+      "non202": false
+    },
+    {
+      "name": "Nathan5190",
+      "date": "2019-12-24",
+      "platform": "Switch",
+      "videoProof": true,
+      "url": "https://www.reddit.com/r/celestegame/comments/ef8r1i/i_finally_hit_202_berries_almost_exactly_a_year/",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
+    },
+    {
+      "name": "DeathKontrol",
+      "date": "2019-12-25",
+      "platform": "PC",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=i0wN8dRAd7c",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
+    },
+    {
+      "name": "Mozkovic",
+      "date": "2019-12-28",
+      "platform": "Switch",
+      "videoProof": true,
+      "url": "https://twitter.com/mozkovic1/status/1210950246832001026?s=21",
+      "keySkip": true,
+      "doubleGolden": false,
       "memeRun": false,
       "non202": false
     }
