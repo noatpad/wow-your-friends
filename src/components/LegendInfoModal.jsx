@@ -64,6 +64,10 @@ const LegendInfoModal = ({ setCurrentURL, ...rest }) => {
       <Legend>
         <tbody>
           <tr>
+            <td><span style={{ borderBottom: "2px dashed", fontStyle: "italic" }}>abc</span></td>
+            <td><p>Hover over the text to see reasoning for non-verification</p></td>
+          </tr>
+          <tr>
             <td className="icon"><ProofIcon className="fas fa-video"/></td>
             <td><p>Video proof</p></td>
           </tr>

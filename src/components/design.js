@@ -26,5 +26,6 @@ export const colors = {
   skyblue2: "#5abee5",
   reddit: "#ff4301",
   twitter: "#38a1f3",
-  github: "#6e5494"
+  github: "#6e5494",
+  background: "#291c47"
 }

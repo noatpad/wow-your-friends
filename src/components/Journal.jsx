@@ -124,7 +124,45 @@ const Table = styled.table`
 `
 
 const Name = styled(Span)`
-  border-bottom: ${({ underline }) => underline ? "2px dashed" : "none"};
+  position: relative;
+
+  .non-verified & {
+    border-bottom: 2px dashed;
+  }
+`
+
+const Tooltip = styled.div`
+  content: "Reason: ";
+  position: absolute;
+  width: 180px;
+  bottom: 130%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: .5em;
+  border-radius: .4em;
+  font-size: .7em;
+  font-style: normal;
+  background: ${colors.purple2};
+  color: ${colors.white};
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+  &::before {
+    content: "";
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: calc(100% + 6px);
+    left: calc(50% - 3px);
+    transform: translateY(-50%);
+    border: 6px solid transparent;
+    border-top-color: ${colors.purple2};
+  }
+
+  ${Name}:hover &:not(:hover) {
+    opacity: 1;
+  }
 `
 
 const Rank = styled.div`
@@ -350,6 +388,7 @@ const Journal = () => {
           date(formatString: "MMM DD, YYYY")
           platform
           verified
+          reasonForNonVerified
           videoProof
           url
           keySkip
@@ -487,7 +526,19 @@ const Journal = () => {
     let count = 0
 
     return (
-      conquerors.map(({ name, date, platform, verified, videoProof, url, keySkip, doubleGolden, memeRun, non202 }, i) => {
+      conquerors.map(({
+        name,
+        date,
+        platform,
+        verified,
+        reasonForNonVerified,
+        videoProof,
+        url,
+        keySkip,
+        doubleGolden,
+        memeRun,
+        non202
+      }, i) => {
         let placement
         if (non202) {
           placement = <Place>-</Place>
@@ -501,12 +552,12 @@ const Journal = () => {
             <td>{placement}</td>
             {isTablet ? (
               <td>
-                <p><Name underline={!verified}>{name}</Name> - <em>{platform}</em></p>
+                <p><Name>{name}{!verified && <Tooltip><b>Reason:</b> {reasonForNonVerified}</Tooltip>}</Name> - <em>{platform}</em></p>
                 <p>{date}</p>
               </td>
             ) : (
               <>
-                <td><Name underline={!verified}>{name}</Name></td>
+                <td><Name>{name}{!verified && <Tooltip><b>Reason:</b> {reasonForNonVerified}</Tooltip>}</Name></td>
                 <td>{date}</td>
                 <td>{platform}</td>
               </>
