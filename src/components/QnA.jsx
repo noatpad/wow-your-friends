@@ -193,7 +193,7 @@ const QnA = () => {
         clockwise: false,
         content: (
           <ul>
-            <li><Span color={colors.reddit}>/u/DJTom3</Span> for maintaining a record of this list <a href="https://www.reddit.com/r/celestegame/comments/dinrkb/with_their_amazing_achievement_of_getting_the/" target="_blank" rel="noopener noreferrer">here</a> and <a href="https://www.reddit.com/r/celestegame/comments/dut721/in_the_wake_of_the_last_few_farewell_golden/" target="_blank" rel="noopener noreferrer">here</a>, as it was my primary source of information.</li>
+            <li><Span color={colors.reddit}>/u/DJTom3</Span> for maintaining a similar infographic of this list <a href="https://www.reddit.com/user/DJTom3/comments/efpft2/celeste_farewell_golden_strawberry_hall_of_fame/" target="_blank" rel="noopener noreferrer">here</a>, as it's my primary source of information.</li>
             <li>The <Span color={colors.skyblue2}>Celeste dev team</Span> for creating a fantastic game to play through.</li>
             <li>All the players on this list for going above and beyond to complete such a task.</li>
           </ul>
