@@ -76,7 +76,8 @@ const PageTitle = styled.h2`
 
 const TableWrapper = styled.div`
   width: 100%;
-  padding: .75em 0;
+  padding: .75em 0 .5em;
+  border-bottom: 3px solid #71335c60;
   overflow: scroll;
 `
 
@@ -210,7 +211,6 @@ const ProofIcon = styled.i`
 const Total = styled.div`
   flex: 1;
   padding: .5em 0;
-  border-top: 3px solid #71335c60;
   font-size: 1.2em;
   text-align: center;
 
@@ -235,16 +235,25 @@ const Footnote = styled.div`
   }
 `
 
+const FootnoteDiv = styled.div`
+  padding-right: .5em;
+
+  & + & {
+    padding-right: 0;
+    padding-left: .5em;
+  }
+`
+
 // Checkbox by Jase from https://codepen.io/jasesmith/pen/EeVmWZ
 const Checkbox = styled.div`
-  text-align: right;
+  /* text-align: right; */
 
   & + & {
     margin-top: .25em;
   }
 
   label {
-    padding-right: 0.75em;
+    padding-left: 0.5em;
     font-style: italic;
     cursor: pointer;
   }
@@ -599,17 +608,19 @@ const Journal = () => {
             {showVerifiedEntries && <p style={{ fontSize: ".6em", fontStyle: "italic", opacity: .8 }}>*(including non-verified entries)</p>}
           </Total>
           <Footnote>
-            <Span className="clickable" onClick={() => setShowLegendModal(true)} color={colors.blue}>What do those icons mean?</Span>
-            <div>
+            <FootnoteDiv>
               <Checkbox>
-                <label htmlFor="showNon202">Show non-202 entries</label>
                 <input id="showNon202" type="checkbox" defaultChecked={showNon202Entries} onChange={() => setShowNon202Entries(!showNon202Entries)}/>
+                <label htmlFor="showNon202">Show non-202 entries</label>
               </Checkbox>
               <Checkbox>
-                <label htmlFor="showScreenshots">Show non-verified entries</label>
                 <input id="showScreenshots" type="checkbox" defaultChecked={showVerifiedEntries} onChange={() => setShowVerifiedEntries(!showVerifiedEntries)}/>
+                <label htmlFor="showScreenshots">Show non-verified entries</label>
               </Checkbox>
-            </div>
+            </FootnoteDiv>
+            <FootnoteDiv style={{ textAlign: "right" }}>
+              <Span className="clickable" onClick={() => setShowLegendModal(true)} color={colors.blue}>What do those icons mean?</Span>
+            </FootnoteDiv>
           </Footnote>
         </Page>
         <CoverWrapper className="cover-wrapper">
