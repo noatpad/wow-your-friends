@@ -134,7 +134,7 @@ const QnA = () => {
         clockwise: false,
         alignSelf: "flex-end",
         content: (<>
-          <p>If you're not able to record your run, you can also submit a screenshot of your stats showing you collected every berry, but due to how this can be exploited, you'll be listed under a <Span color={colors.purple}>"screenshot"</Span> category.</p>
+          <p>If you're not able to record your run, you can also submit a screenshot of your stats showing you collected every berry, but due to how this can be exploited, you'll be listed under a <Span color={colors.purple}>"non-verified"</Span> category.</p>
           <p>Players under this category will have their entries hidden by default on the list.</p>
         </>)
       },
