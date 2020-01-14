@@ -139,7 +139,7 @@
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=ltWFNsIlpEk",
       "keySkip": true,
-      "doubleGolden": false,
+      "doubleGolden": true,
       "memeRun": false,
       "non202": false
     },
@@ -275,7 +275,7 @@
       "non202": false
     },
     {
-      "name": "touhoe",
+      "name": "BarkingDoggy9",
       "date": "2019-12-22",
       "platform": "PC",
       "verified": true,
@@ -314,6 +314,32 @@
       "non202": false
     },
     {
+      "name": "Cr33pyCat",
+      "date": "2019-12-25",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=FkE_5gnaBUE",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
+    },
+    {
+      "name": "SystemGlitch",
+      "date": "2019-12-27",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=J-_5rOn4rJk",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
+    },
+    {
       "name": "Mozkovic",
       "date": "2019-12-28",
       "platform": "Switch",
@@ -322,6 +348,32 @@
       "videoProof": true,
       "url": "https://twitter.com/mozkovic1/status/1210950246832001026?s=21",
       "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
+    },
+    {
+      "name": "Habbedaz",
+      "date": "2020-01-11",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=gu4342-tOqw",
+      "keySkip": true,
+      "doubleGolden": true,
+      "memeRun": false,
+      "non202": false
+    },
+    {
+      "name": "mt_steve",
+      "date": "2020-01-11",
+      "platform": "Xbox One",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=cfUno0GVD64",
+      "keySkip": false,
       "doubleGolden": false,
       "memeRun": false,
       "non202": false
