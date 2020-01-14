@@ -376,7 +376,7 @@
       "keySkip": false,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "non202": true
     }
   ]
 }
