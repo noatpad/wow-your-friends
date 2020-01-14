@@ -364,6 +364,19 @@
       "doubleGolden": true,
       "memeRun": false,
       "non202": false
+    },
+    {
+      "name": "mt_steve",
+      "date": "2020-01-11",
+      "platform": "Xbox One",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=cfUno0GVD64",
+      "keySkip": false,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
     }
   ]
 }
