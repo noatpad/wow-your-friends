@@ -32,6 +32,19 @@ const Medal = styled.img`
   height: 1.5em;
 `
 
+const PS = styled.div`
+  display: flex;
+  text-align: center;
+  font-size: .7em;
+  font-style: italic;
+  color: ${colors.purple};
+
+  p {
+    flex-grow: 1;
+    width: 0;
+  }
+`
+
 const LegendInfoModal = ({ setCurrentURL, ...rest }) => {
   let {
     keyImage: { publicURL: keyURL },
@@ -93,6 +106,13 @@ const LegendInfoModal = ({ setCurrentURL, ...rest }) => {
           </tr>
         </tbody>
       </Legend>
+      <PS>
+        <p>
+          Some icons (primarily the double golden one) may not be reflected in the run referenced in their entry.
+          <br/>
+          This may be fixed in the future.
+        </p>
+      </PS>
     </InfoModal>
   )
 }
