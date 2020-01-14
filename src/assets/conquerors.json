@@ -139,7 +139,7 @@
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=ltWFNsIlpEk",
       "keySkip": true,
-      "doubleGolden": false,
+      "doubleGolden": true,
       "memeRun": false,
       "non202": false
     },
