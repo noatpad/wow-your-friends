@@ -377,6 +377,19 @@
       "doubleGolden": false,
       "memeRun": false,
       "non202": false
+    },
+    {
+      "name": "Rickfernello",
+      "date": "2020-01-30",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=HdIMIJ-To_M&t=75",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
     }
   ]
 }
