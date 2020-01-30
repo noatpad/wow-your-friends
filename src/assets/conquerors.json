@@ -367,7 +367,7 @@
     },
     {
       "name": "mt_steve",
-      "date": "2020-01-11",
+      "date": "2020-01-25",
       "platform": "Xbox One",
       "verified": true,
       "reasonForNonVerified": "",
@@ -376,7 +376,7 @@
       "keySkip": false,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": true
+      "non202": false
     }
   ]
 }
