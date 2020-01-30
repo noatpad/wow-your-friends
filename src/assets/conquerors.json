@@ -367,7 +367,7 @@
     },
     {
       "name": "mt_steve",
-      "date": "2020-01-11",
+      "date": "2020-01-25",
       "platform": "Xbox One",
       "verified": true,
       "reasonForNonVerified": "",
@@ -376,7 +376,20 @@
       "keySkip": false,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": true
+      "non202": false
+    },
+    {
+      "name": "Rickfernello",
+      "date": "2020-01-30",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=HdIMIJ-To_M&t=75",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
     }
   ]
 }
