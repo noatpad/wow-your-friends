@@ -377,6 +377,32 @@
       "doubleGolden": false,
       "memeRun": false,
       "non202": false
+    },
+    {
+      "name": "Clantis",
+      "date": "2020-02-03",
+      "platform": "PC",
+      "verified": false,
+      "reasonForNonVerified": "No video, just screenshot of stats.",
+      "videoProof": false,
+      "url": "local",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
+    },
+    {
+      "name": "Piper1618",
+      "date": "2020-02-14",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=lSFeRg5Uo5o",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
     }
   ]
 }
