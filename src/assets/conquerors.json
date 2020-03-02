@@ -429,6 +429,19 @@
       "doubleGolden": false,
       "memeRun": false,
       "non202": false
+    },
+    {
+      "name": "cordovia",
+      "date": "2020-02-22",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=y8QcIMMrvJo",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
     }
   ]
 }
