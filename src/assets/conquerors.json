@@ -403,6 +403,97 @@
       "doubleGolden": false,
       "memeRun": false,
       "non202": false
+    },
+    {
+      "name": "DemoJameson",
+      "date": "2020-02-15",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=xkJe_vEhTB0",
+      "keySkip": true,
+      "doubleGolden": true,
+      "memeRun": false,
+      "non202": false
+    },
+    {
+      "name": "Evansfight",
+      "date": "2020-02-15",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.twitch.tv/videos/552508828?t=10h02m08s",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
+    },
+    {
+      "name": "cordovia",
+      "date": "2020-02-22",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=y8QcIMMrvJo",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
+    },
+    {
+      "name": "MattressWorld",
+      "date": "2020-02-24",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=63-EUnxsWxk",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
+    },
+    {
+      "name": "YY kun",
+      "date": "2020-02-25",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=BE_QTFbeCfE",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
+    },
+    {
+      "name": "Kay",
+      "date": "2020-02-28",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=OFkNHvr9ZDU",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
+    },
+    {
+      "name": "Benjamanian",
+      "date": "2020-02-29",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.twitch.tv/videos/559611347",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
     }
   ]
 }
