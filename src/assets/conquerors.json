@@ -87,7 +87,7 @@
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=lhxX9FmeUMc",
       "keySkip": true,
-      "doubleGolden": false,
+      "doubleGolden": true,
       "memeRun": false,
       "non202": false
     },
@@ -296,7 +296,7 @@
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=i0wN8dRAd7c",
       "keySkip": true,
-      "doubleGolden": false,
+      "doubleGolden": true,
       "memeRun": false,
       "non202": false
     },
@@ -309,7 +309,7 @@
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=FkE_5gnaBUE",
       "keySkip": true,
-      "doubleGolden": false,
+      "doubleGolden": true,
       "memeRun": false,
       "non202": false
     },
