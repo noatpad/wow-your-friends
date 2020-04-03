@@ -533,6 +533,19 @@
       "doubleGolden": false,
       "memeRun": false,
       "non202": false
+    },
+    {
+      "name": "wishcresp",
+      "date": "2020-04-01",
+      "platform": "Switch",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=q7HsVafp0ps",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
     }
   ]
 }
