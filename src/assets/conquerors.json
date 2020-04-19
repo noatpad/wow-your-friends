@@ -535,6 +535,19 @@
       "non202": false
     },
     {
+      "name": "DonTonberry",
+      "date": "2020-03-28",
+      "platform": "PS4",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.twitch.tv/videos/577635523",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
+    },
+    {
       "name": "wishcresp",
       "date": "2020-04-01",
       "platform": "Switch",
@@ -542,6 +555,32 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=q7HsVafp0ps",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
+    },
+    {
+      "name": "wandrewni",
+      "date": "2020-04-14",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.twitch.tv/videos/592377913",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
+    },
+    {
+      "name": "SergeantSnivy243",
+      "date": "2020-04-18",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.twitch.tv/videos/596102526",
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
