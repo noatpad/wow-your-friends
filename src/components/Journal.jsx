@@ -109,7 +109,7 @@ const Table = styled.table`
   }
 
   td {
-    padding: 0.4em 1em;
+    padding: .4em .5em;
     text-align: center;
   }
 
