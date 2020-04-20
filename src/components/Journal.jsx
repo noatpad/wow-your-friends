@@ -288,6 +288,12 @@ const Checkbox = styled.div`
   }
 `
 
+const UpdateDate = styled.div`
+  font-size: .9em;
+  font-style: italic;
+  opacity: .7;
+`
+
 const CoverWrapper = styled.div`
   position: absolute;
   top: 0;
@@ -376,6 +382,7 @@ const Journal = () => {
 
   // GraphQL //
   let {
+    site: { siteMetadata: { lastUpdated }},
     assetsJson: { conquerors },
     screenshots: { nodes: screenshotData },
     journalImage: { publicURL: journalURL },
@@ -390,11 +397,18 @@ const Journal = () => {
     non202Image: { publicURL: non202URL }
   } = useStaticQuery(graphql`
     query {
+      # Get last updated date
+      site {
+        siteMetadata {
+          lastUpdated
+        }
+      }
+
       # Get data of every "conqueror"
       assetsJson {
         conquerors {
           name
-          date(formatString: "MMM DD, YYYY")
+          date(formatString: "MMM D, YYYY")
           platform
           verified
           reasonForNonVerified
@@ -620,6 +634,9 @@ const Journal = () => {
             </FootnoteDiv>
             <FootnoteDiv style={{ textAlign: "right" }}>
               <Span className="clickable" onClick={() => setShowLegendModal(true)} color={colors.blue}>What do those icons mean?</Span>
+              <UpdateDate>
+                <Span>Updated as of {lastUpdated}</Span>
+              </UpdateDate>
             </FootnoteDiv>
           </Footnote>
         </Page>

@@ -1,8 +1,11 @@
+let moment = require('moment');
+
 module.exports = {
   siteMetadata: {
     title: `Wow Your Friends`,
     description: `A small website serving as a record of all the skillful players who obtained all 202 Celeste's strawberries`,
     author: `a clueless danny`,
+    lastUpdated: moment().format('MMM D, YYYY'),
     siteUrl: 'https://wowyourfriends.netlify.com',
     image: '/card-image.png',
     icon: '/card-icon.png',
