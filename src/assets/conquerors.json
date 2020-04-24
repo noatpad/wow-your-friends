@@ -517,7 +517,7 @@
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=8lLhuWkC2Hg",
       "keySkip": true,
-      "doubleGolden": false,
+      "doubleGolden": true,
       "memeRun": false,
       "non202": false
     },
@@ -583,6 +583,19 @@
       "url": "https://www.twitch.tv/videos/595287126",
       "keySkip": true,
       "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
+    },
+    {
+      "name": "the_herobrian",
+      "date": "2020-04-19",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.twitch.tv/videos/597040930",
+      "keySkip": false,
+      "doubleGolden": true,
       "memeRun": false,
       "non202": false
     }
