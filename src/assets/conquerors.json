@@ -585,6 +585,19 @@
       "doubleGolden": false,
       "memeRun": false,
       "non202": false
+    },
+    {
+      "name": "the_herobrian",
+      "date": "2020-04-19",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.twitch.tv/videos/597040930",
+      "keySkip": false,
+      "doubleGolden": true,
+      "memeRun": false,
+      "non202": false
     }
   ]
 }
