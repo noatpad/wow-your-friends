@@ -1027,6 +1027,19 @@
       "doubleGolden": false,
       "memeRun": false,
       "non202": false
+    },
+    {
+      "name": "0mengyi0",
+      "date": "2020-07-28",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.bilibili.com/video/BV1b54y197tY?p=26",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
     }
   ]
 }
