@@ -1014,6 +1014,19 @@
       "doubleGolden": true,
       "memeRun": false,
       "non202": false
+    },
+    {
+      "name": "Joe Po",
+      "date": "2020-07-24",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=BmSk5vK6plI",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
     }
   ]
 }
