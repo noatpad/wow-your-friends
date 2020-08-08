@@ -1053,6 +1053,19 @@
       "doubleGolden": false,
       "memeRun": false,
       "non202": false
+    },
+    {
+      "name": "TyKim",
+      "date": "2020-08-07",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=3i7094qW90w",
+      "keySkip": true,
+      "doubleGolden": true,
+      "memeRun": false,
+      "non202": false
     }
   ]
 }
