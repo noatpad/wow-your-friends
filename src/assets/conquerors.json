@@ -832,6 +832,19 @@
       "doubleGolden": true,
       "memeRun": false,
       "non202": false
+    },
+    {
+      "name": "Jin_Gaster",
+      "date": "2020-05-28",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=mRRzpG_uUgA",
+      "keySkip": false,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
     }
   ]
 }
