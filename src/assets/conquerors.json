@@ -715,6 +715,19 @@
       "doubleGolden": false,
       "memeRun": false,
       "non202": false
+    },
+    {
+      "name": "Ploist",
+      "date": "2020-05-08",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=m1_g6nrEw5w",
+      "keySkip": false,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
     }
   ]
 }
