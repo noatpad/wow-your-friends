@@ -975,6 +975,19 @@
       "doubleGolden": false,
       "memeRun": false,
       "non202": false
+    },
+    {
+      "name": "Sow",
+      "date": "2020-07-15",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=7Fw_epBDys4",
+      "keySkip": false,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
     }
   ]
 }
