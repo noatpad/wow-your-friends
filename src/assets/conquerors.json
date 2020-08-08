@@ -894,7 +894,20 @@
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1bv41167Lc",
       "keySkip": true,
-      "doubleGolden": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
+    },
+    {
+      "name": "执着owo",
+      "date": "2020-06-22",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.bilibili.com/video/BV1XK411p7Qx",
+      "keySkip": true,
+      "doubleGolden": false,
       "memeRun": false,
       "non202": false
     }
