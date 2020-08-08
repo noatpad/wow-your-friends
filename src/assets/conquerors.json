@@ -676,6 +676,19 @@
       "doubleGolden": true,
       "memeRun": false,
       "non202": false
+    },
+    {
+      "name": "cxz0618",
+      "date": "2020-04-22",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.bilibili.com/video/BV16g4y187s1",
+      "keySkip": false,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
     }
   ]
 }
