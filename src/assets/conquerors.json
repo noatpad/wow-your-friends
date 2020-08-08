@@ -754,6 +754,19 @@
       "doubleGolden": false,
       "memeRun": false,
       "non202": false
+    },
+    {
+      "name": "6.28",
+      "date": "2020-05-17",
+      "platform": "Switch",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/playlist?list=PLJKuDs25qokNoJ_NY3IzoUCDZ6UfgR50l",
+      "keySkip": true,
+      "doubleGolden": true,
+      "memeRun": false,
+      "non202": false
     }
   ]
 }
