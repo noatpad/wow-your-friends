@@ -209,6 +209,19 @@
       "non202": false
     },
     {
+      "name": "CloudsMind",
+      "date": "2019-11-23",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.bilibili.com/video/BV1PJ411o7ZY",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
+    },
+    {
       "name": "BV502",
       "date": "2019-12-23",
       "platform": "PC",
