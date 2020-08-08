@@ -884,6 +884,19 @@
       "doubleGolden": true,
       "memeRun": false,
       "non202": false
+    },
+    {
+      "name": "CC-ss",
+      "date": "2020-06-13",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.bilibili.com/video/BV1bv41167Lc",
+      "keySkip": true,
+      "doubleGolden": true,
+      "memeRun": false,
+      "non202": false
     }
   ]
 }
