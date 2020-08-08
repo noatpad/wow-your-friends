@@ -845,6 +845,20 @@
       "doubleGolden": false,
       "memeRun": false,
       "non202": false
+    },
+    {
+      "name": "Aroxon",
+      "date": "2020-06-01",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=wfihP2-zcO8",
+      "keySkip": false,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
+    },
     }
   ]
 }
