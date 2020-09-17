@@ -221,9 +221,10 @@ const Total = styled.div`
 
 const Footnote = styled.div`
   display: flex;
+  height: 17em;
   align-items: flex-end;
   justify-content: space-between;
-  margin: .5rem 0 2rem;
+  margin: .5em 0 1em;
 
   @media screen and (${breakpoints.mobile}) {
     font-size: .9em;
