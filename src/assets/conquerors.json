@@ -2,7 +2,7 @@
   "conquerors": [
     {
       "name": "lennygold",
-      "date": "2019-09-11",
+      "date": "2019-09-12",
       "platform": "PC",
       "verified": true,
       "reasonForNonVerified": "",
@@ -15,7 +15,7 @@
     },
     {
       "name": "Eenox",
-      "date": "2019-09-16",
+      "date": "2019-09-17",
       "platform": "PC",
       "verified": true,
       "reasonForNonVerified": "",
@@ -28,7 +28,7 @@
     },
     {
       "name": "Chaikitty",
-      "date": "2019-09-16",
+      "date": "2019-09-17",
       "platform": "PC",
       "verified": true,
       "reasonForNonVerified": "",
@@ -67,7 +67,7 @@
     },
     {
       "name": "rjdimo",
-      "date": "2019-09-25",
+      "date": "2019-09-26",
       "platform": "PC",
       "verified": true,
       "reasonForNonVerified": "",
@@ -106,7 +106,7 @@
     },
     {
       "name": "Yamard",
-      "date": "2019-10-01",
+      "date": "2019-09-30",
       "platform": "PC",
       "verified": true,
       "reasonForNonVerified": "",
@@ -152,7 +152,7 @@
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1CE411k7c2",
       "keySkip": true,
-      "doubleGolden": true,
+      "doubleGolden": false,
       "memeRun": false,
       "non202": false
     },
@@ -171,7 +171,7 @@
     },
     {
       "name": "TGH",
-      "date": "2019-11-07",
+      "date": "2019-11-06",
       "platform": "PC",
       "verified": true,
       "reasonForNonVerified": "",
@@ -216,19 +216,6 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1PJ411o7ZY",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "non202": false
-    },
-    {
-      "name": "BV502",
-      "date": "2019-12-23",
-      "platform": "PC",
-      "verified": true,
-      "reasonForNonVerified": "",
-      "videoProof": true,
-      "url": "https://www.youtube.com/watch?v=RdYurkC9IoM",
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
@@ -289,7 +276,7 @@
     },
     {
       "name": "BarkingDoggy9",
-      "date": "2019-12-22",
+      "date": "2019-12-23",
       "platform": "PC",
       "verified": true,
       "reasonForNonVerified": "",
@@ -297,6 +284,19 @@
       "url": "https://www.youtube.com/watch?v=xE1h71JyLsA",
       "keySkip": true,
       "doubleGolden": true,
+      "memeRun": false,
+      "non202": false
+    },
+    {
+      "name": "BV502",
+      "date": "2019-12-23",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=RdYurkC9IoM",
+      "keySkip": true,
+      "doubleGolden": false,
       "memeRun": false,
       "non202": false
     },
@@ -393,7 +393,7 @@
     },
     {
       "name": "mt_steve",
-      "date": "2020-01-25",
+      "date": "2020-01-12",
       "platform": "Xbox One",
       "verified": true,
       "reasonForNonVerified": "",
@@ -406,7 +406,7 @@
     },
     {
       "name": "Rickfernello",
-      "date": "2020-01-29",
+      "date": "2020-01-30",
       "platform": "PC",
       "verified": true,
       "reasonForNonVerified": "",
@@ -418,21 +418,8 @@
       "non202": false
     },
     {
-      "name": "Clantis",
-      "date": "2020-02-03",
-      "platform": "PC",
-      "verified": true,
-      "reasonForNonVerified": "",
-      "videoProof": true,
-      "url": "https://www.youtube.com/watch?v=nZIkxLvDL6s",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "non202": false
-    },
-    {
       "name": "Piper1618",
-      "date": "2020-02-14",
+      "date": "2020-02-15",
       "platform": "PC",
       "verified": true,
       "reasonForNonVerified": "",
@@ -458,7 +445,7 @@
     },
     {
       "name": "Evansfight",
-      "date": "2020-02-15",
+      "date": "2020-02-16",
       "platform": "PC",
       "verified": true,
       "reasonForNonVerified": "",
@@ -536,7 +523,7 @@
     },
     {
       "name": "Evermar314159",
-      "date": "2020-03-15",
+      "date": "2020-03-16",
       "platform": "Switch",
       "verified": true,
       "reasonForNonVerified": "",
@@ -561,8 +548,21 @@
       "non202": false
     },
     {
+      "name": "DonTonberry",
+      "date": "2020-03-28",
+      "platform": "PS4",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.twitch.tv/videos/577635523",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "non202": false
+    },
+    {
       "name": "ClemGeek",
-      "date": "2020-03-18",
+      "date": "2020-03-28",
       "platform": "Switch",
       "verified": true,
       "reasonForNonVerified": "",
@@ -575,7 +575,7 @@
     },
     {
       "name": "爬山姗",
-      "date": "2020-03-28",
+      "date": "2020-03-29",
       "platform": "PC",
       "verified": true,
       "reasonForNonVerified": "",
@@ -587,13 +587,13 @@
       "non202": false
     },
     {
-      "name": "DonTonberry",
-      "date": "2020-03-28",
-      "platform": "PS4",
+      "name": "Clantis",
+      "date": "2020-03-29",
+      "platform": "PC",
       "verified": true,
       "reasonForNonVerified": "",
       "videoProof": true,
-      "url": "https://www.twitch.tv/videos/577635523",
+      "url": "https://www.youtube.com/watch?v=nZIkxLvDL6s",
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
@@ -627,7 +627,7 @@
     },
     {
       "name": "wandrewni",
-      "date": "2020-04-14",
+      "date": "2020-04-15",
       "platform": "PC",
       "verified": true,
       "reasonForNonVerified": "",
@@ -854,7 +854,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=wfihP2-zcO8",
-      "keySkip": false,
+      "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
       "non202": false
@@ -999,19 +999,6 @@
       "url": "https://www.twitch.tv/videos/682438883",
       "keySkip": true,
       "doubleGolden": false,
-      "memeRun": false,
-      "non202": false
-    },
-    {
-      "name": "Shiyu",
-      "date": "2020-07-19",
-      "platform": "PC",
-      "verified": true,
-      "reasonForNonVerified": "",
-      "videoProof": true,
-      "url": "https://www.bilibili.com/video/BV1Fk4y1m7hM",
-      "keySkip": true,
-      "doubleGolden": true,
       "memeRun": false,
       "non202": false
     },
