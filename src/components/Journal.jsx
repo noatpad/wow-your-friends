@@ -647,7 +647,7 @@ const Journal = () => {
           </TableWrapper>
           <Total>
             <p>To this day, only <b style={{ color: colors.red }}>{conquerors.filter(({ got202 }) => got202).length}</b> have conquered every strawberry{showVerifiedEntries && "*"}</p>
-            {showVerifiedEntries && <p style={{ fontSize: ".6em", fontStyle: "italic", opacity: .8 }}>*(including non-verified entries)</p>}
+            {showVerifiedEntries && <p style={{ fontSize: ".6em", fontStyle: "italic", opacity: .8 }}>*(including unverified entries)</p>}
           </Total>
           <Footnote>
             <FootnoteDiv>
@@ -657,7 +657,7 @@ const Journal = () => {
               </Checkbox>
               <Checkbox>
                 <input id="showScreenshots" type="checkbox" defaultChecked={showVerifiedEntries} onChange={() => setShowVerifiedEntries(!showVerifiedEntries)}/>
-                <label htmlFor="showScreenshots">Show non-verified entries</label>
+                <label htmlFor="showScreenshots">Show unverified entries</label>
               </Checkbox>
             </FootnoteDiv>
             <FootnoteDiv style={{ textAlign: "right" }}>
