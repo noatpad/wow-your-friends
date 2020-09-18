@@ -1079,6 +1079,19 @@
       "doubleGolden": false,
       "memeRun": false,
       "got202": 2
+    },
+    {
+      "name": "Kiiview",
+      "date": "2020-09-11",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://youtu.be/i3V3rUyGaug",
+      "keySkip": true,
+      "doubleGolden": true,
+      "memeRun": false,
+      "got202": 2
     }
   ]
 }
