@@ -609,11 +609,11 @@ const Journal = () => {
             <td>
               <IconsWrapper>
                 <MedalsWrapper>
-                  {!keySkip && <Medal src={keyURL} alt="No key skip!"/>}
+                  {got202 === 1 && <Medal src={ghostberryURL} alt="Pre-202 run"/>}
                   {doubleGolden && <Medal src={moonberryURL} alt="Double golden!"/>}
+                  {!keySkip && <Medal src={keyURL} alt="No key skip!"/>}
                   {memeRun && <Medal src={eenoxURL} alt="Meme run...why"/>}
                   {got202 === 0 && <Medal src={non202URL} alt="Non-202 run"/>}
-                  {got202 === 1 && <Medal src={ghostberryURL} alt="Pre-202 run"/>}
                 </MedalsWrapper>
                 <ProofIcon className={videoProof ? "fas fa-video" : "fas fa-image"}/>
               </IconsWrapper>

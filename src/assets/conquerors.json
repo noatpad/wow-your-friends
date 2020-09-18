@@ -393,7 +393,7 @@
     },
     {
       "name": "mt_steve",
-      "date": "2020-01-12",
+      "date": "2020-01-25",
       "platform": "Xbox One",
       "verified": true,
       "reasonForNonVerified": "",
@@ -402,7 +402,7 @@
       "keySkip": false,
       "doubleGolden": false,
       "memeRun": false,
-      "got202": 2
+      "got202": 1
     },
     {
       "name": "Rickfernello",
@@ -874,7 +874,7 @@
     },
     {
       "name": "EldritchBerry",
-      "date": "2020-06-11",
+      "date": "2020-06-12",
       "platform": "PC",
       "verified": true,
       "reasonForNonVerified": "",
@@ -883,20 +883,7 @@
       "keySkip": true,
       "doubleGolden": true,
       "memeRun": false,
-      "got202": 2
-    },
-    {
-      "name": "CC-ss",
-      "date": "2020-06-13",
-      "platform": "PC",
-      "verified": true,
-      "reasonForNonVerified": "",
-      "videoProof": true,
-      "url": "https://www.bilibili.com/video/BV1bv41167Lc",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "got202": 1
     },
     {
       "name": "执着owo",
@@ -977,19 +964,6 @@
       "got202": 2
     },
     {
-      "name": "Sow",
-      "date": "2020-07-15",
-      "platform": "PC",
-      "verified": true,
-      "reasonForNonVerified": "",
-      "videoProof": true,
-      "url": "https://www.youtube.com/watch?v=7Fw_epBDys4",
-      "keySkip": false,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
-    },
-    {
       "name": "F4697",
       "date": "2020-07-17",
       "platform": "PC",
@@ -1001,6 +975,19 @@
       "doubleGolden": false,
       "memeRun": false,
       "got202": 2
+    },
+    {
+      "name": "Sow",
+      "date": "2020-07-22",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=7Fw_epBDys4",
+      "keySkip": false,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 1
     },
     {
       "name": "Joe Po",
@@ -1040,6 +1027,19 @@
       "doubleGolden": false,
       "memeRun": false,
       "got202": 2
+    },
+    {
+      "name": "CC-ss",
+      "date": "2020-08-04",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.bilibili.com/video/BV1bv41167Lc",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 1
     },
     {
       "name": "TyKim",
