@@ -11,7 +11,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Eenox",
@@ -24,7 +24,7 @@
       "keySkip": false,
       "doubleGolden": true,
       "memeRun": true,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Chaikitty",
@@ -37,7 +37,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Plush",
@@ -50,7 +50,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Angrevol",
@@ -63,7 +63,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "rjdimo",
@@ -76,7 +76,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "CyberGamer1539",
@@ -89,7 +89,7 @@
       "keySkip": true,
       "doubleGolden": true,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Starshadow",
@@ -102,7 +102,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Yamard",
@@ -115,7 +115,7 @@
       "keySkip": false,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "snifidy",
@@ -128,7 +128,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Kriog16",
@@ -141,7 +141,7 @@
       "keySkip": true,
       "doubleGolden": true,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Zangetsx",
@@ -154,7 +154,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "AkaraWa",
@@ -167,7 +167,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "TGH",
@@ -180,7 +180,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Master_Sparky",
@@ -193,7 +193,7 @@
       "keySkip": true,
       "doubleGolden": true,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "WoofWoofDoggo",
@@ -206,7 +206,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "CloudsMind",
@@ -219,7 +219,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "apollo",
@@ -232,7 +232,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": true
+      "got202": 0
     },
     {
       "name": "gareth_maxwell",
@@ -245,7 +245,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "DrDimentio",
@@ -258,7 +258,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
 
     {
@@ -272,7 +272,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "BarkingDoggy9",
@@ -285,7 +285,7 @@
       "keySkip": true,
       "doubleGolden": true,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "BV502",
@@ -298,7 +298,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Nathan5190",
@@ -311,7 +311,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "没事儿爱唱歌",
@@ -324,7 +324,7 @@
       "keySkip": false,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "DeathKontrol",
@@ -337,7 +337,7 @@
       "keySkip": true,
       "doubleGolden": true,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Cr33pyCat",
@@ -350,7 +350,7 @@
       "keySkip": true,
       "doubleGolden": true,
       "memeRun": true,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "SystemGlitch",
@@ -363,7 +363,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Mozkovic",
@@ -376,7 +376,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Habbedaz",
@@ -389,7 +389,7 @@
       "keySkip": true,
       "doubleGolden": true,
       "memeRun": true,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "mt_steve",
@@ -402,7 +402,7 @@
       "keySkip": false,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Rickfernello",
@@ -415,7 +415,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Piper1618",
@@ -428,7 +428,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "DemoJameson",
@@ -441,7 +441,7 @@
       "keySkip": true,
       "doubleGolden": true,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Evansfight",
@@ -454,7 +454,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "cordovia",
@@ -467,7 +467,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "MattressWorld",
@@ -480,7 +480,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "YY kun",
@@ -493,7 +493,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Cay",
@@ -506,7 +506,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Benjamanian",
@@ -519,7 +519,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Evermar314159",
@@ -532,7 +532,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "NPH",
@@ -545,7 +545,7 @@
       "keySkip": true,
       "doubleGolden": true,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "DonTonberry",
@@ -558,7 +558,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "ClemGeek",
@@ -571,7 +571,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "爬山姗",
@@ -584,7 +584,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Clantis",
@@ -597,7 +597,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "wishcresp",
@@ -610,7 +610,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "erictran0",
@@ -623,7 +623,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "wandrewni",
@@ -636,7 +636,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "天府2234",
@@ -649,7 +649,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "SergeantSnivy243",
@@ -662,7 +662,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "the_herobrian",
@@ -675,7 +675,7 @@
       "keySkip": false,
       "doubleGolden": true,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "cxz0618",
@@ -688,7 +688,7 @@
       "keySkip": false,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Kyohei",
@@ -701,7 +701,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Monika",
@@ -714,7 +714,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Ploist",
@@ -727,7 +727,7 @@
       "keySkip": false,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Novennial",
@@ -740,7 +740,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "pisgood",
@@ -753,7 +753,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "6.28",
@@ -766,7 +766,7 @@
       "keySkip": true,
       "doubleGolden": true,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "quadratic97",
@@ -779,7 +779,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Bossman",
@@ -792,7 +792,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "danesky",
@@ -805,7 +805,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Slons",
@@ -818,7 +818,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Soapi",
@@ -831,7 +831,7 @@
       "keySkip": true,
       "doubleGolden": true,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Jin_Gaster",
@@ -844,7 +844,7 @@
       "keySkip": false,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Aroxon",
@@ -857,7 +857,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Vamp",
@@ -870,7 +870,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "EldritchBerry",
@@ -883,7 +883,7 @@
       "keySkip": true,
       "doubleGolden": true,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "CC-ss",
@@ -896,7 +896,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "执着owo",
@@ -909,7 +909,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "KC",
@@ -922,7 +922,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Norah",
@@ -935,7 +935,7 @@
       "keySkip": true,
       "doubleGolden": true,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "JayJay",
@@ -948,7 +948,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Aegis_1",
@@ -961,7 +961,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "无情的1up机器",
@@ -974,7 +974,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Sow",
@@ -987,7 +987,7 @@
       "keySkip": false,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "F4697",
@@ -1000,7 +1000,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Joe Po",
@@ -1013,7 +1013,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "0mengyi0",
@@ -1026,7 +1026,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "wantarou",
@@ -1039,7 +1039,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "TyKim",
@@ -1052,7 +1052,7 @@
       "keySkip": true,
       "doubleGolden": true,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     },
     {
       "name": "Xplosives",
@@ -1065,7 +1065,7 @@
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
-      "non202": false
+      "got202": 2
     }
   ]
 }

@@ -93,8 +93,12 @@ const Table = styled.table`
       background: #c885ff20;
     }
 
+    &.alt {
+      background: #cbaae070;
+    }
+
     &.non-verified {
-      background: #9764c040;
+      background: #8a6ea040;
       color: #7e6f9d;
       font-style: italic;
     }
@@ -103,8 +107,12 @@ const Table = styled.table`
       background: #c06be060;
     }
 
+    &.alt:hover {
+      background: #cbaae0;
+    }
+
     &.non-verified:hover {
-      background: #754a9760;
+      background: #8a6ea070;
     }
   }
 
@@ -247,8 +255,6 @@ const FootnoteDiv = styled.div`
 
 // Checkbox by Jase from https://codepen.io/jasesmith/pen/EeVmWZ
 const Checkbox = styled.div`
-  /* text-align: right; */
-
   & + & {
     margin-top: .25em;
   }
@@ -395,7 +401,8 @@ const Journal = () => {
     keyImage: { publicURL: keyURL },
     moonberryImage: { publicURL: moonberryURL },
     eenoxImage: { publicURL: eenoxURL },
-    non202Image: { publicURL: non202URL }
+    non202Image: { publicURL: non202URL },
+    ghostberryImage: { publicURL: ghostberryURL }
   } = useStaticQuery(graphql`
     query {
       # Get last updated date
@@ -418,7 +425,7 @@ const Journal = () => {
           keySkip
           doubleGolden
           memeRun
-          non202
+          got202
         }
       }
 
@@ -470,6 +477,10 @@ const Journal = () => {
       non202Image: file(name: { eq: "non202" }) {
         publicURL
       }
+
+      ghostberryImage: file(name: { eq: "ghostberry" }) {
+        publicURL
+      }
     }
   `)
 
@@ -483,7 +494,7 @@ const Journal = () => {
 
   // Filter out non-202 entries when necessary
   if (!showNon202Entries) {
-    conquerors = conquerors.filter(({ non202 }) => !non202)
+    conquerors = conquerors.filter(({ got202 }) => got202)
   }
 
   // Functions //
@@ -561,18 +572,27 @@ const Journal = () => {
         keySkip,
         doubleGolden,
         memeRun,
-        non202
+        got202
       }, i) => {
         let placement
-        if (non202) {
-          placement = <Place>-</Place>
-        } else {
+        if (got202) {
           count++
           placement = getPlacement(count)
+        } else {
+          placement = <Place>-</Place>
+        }
+
+        let rowClassName;
+        if (!verified) {
+          rowClassName = 'non-verified';
+        } else if (!got202) {
+          rowClassName = 'alt';
+        } else {
+          rowClassName = '';
         }
 
         return (
-          <tr className={verified ? "" : "non-verified"} key={i} onClick={() => videoProof ? setCurrentURL(url) : openScreenshot(url, name)}>
+          <tr className={rowClassName} key={i} onClick={() => videoProof ? setCurrentURL(url) : openScreenshot(url, name)}>
             <td>{placement}</td>
             {isTablet ? (
               <td>
@@ -592,7 +612,8 @@ const Journal = () => {
                   {!keySkip && <Medal src={keyURL} alt="No key skip!"/>}
                   {doubleGolden && <Medal src={moonberryURL} alt="Double golden!"/>}
                   {memeRun && <Medal src={eenoxURL} alt="Meme run...why"/>}
-                  {non202 && <Medal src={non202URL} alt="Non-202 run"/>}
+                  {got202 === 0 && <Medal src={non202URL} alt="Non-202 run"/>}
+                  {got202 === 1 && <Medal src={ghostberryURL} alt="Pre-202 run"/>}
                 </MedalsWrapper>
                 <ProofIcon className={videoProof ? "fas fa-video" : "fas fa-image"}/>
               </IconsWrapper>
@@ -619,7 +640,7 @@ const Journal = () => {
             </Table>
           </TableWrapper>
           <Total>
-            <p>To this day, only <b style={{ color: colors.red }}>{conquerors.filter(({ non202 }) => !non202).length}</b> have conquered every strawberry{showVerifiedEntries && "*"}</p>
+            <p>To this day, only <b style={{ color: colors.red }}>{conquerors.filter(({ got202 }) => got202).length}</b> have conquered every strawberry{showVerifiedEntries && "*"}</p>
             {showVerifiedEntries && <p style={{ fontSize: ".6em", fontStyle: "italic", opacity: .8 }}>*(including non-verified entries)</p>}
           </Total>
           <Footnote>
