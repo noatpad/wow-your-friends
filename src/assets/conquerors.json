@@ -1105,6 +1105,19 @@
       "doubleGolden": true,
       "memeRun": false,
       "got202": 2
+    },
+    {
+      "name": "Plandiss",
+      "date": "2020-09-13",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=swx-ogInyh0",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
     }
   ]
 }
