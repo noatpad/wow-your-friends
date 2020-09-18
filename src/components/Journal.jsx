@@ -401,7 +401,6 @@ const Journal = () => {
     keyImage: { publicURL: keyURL },
     moonberryImage: { publicURL: moonberryURL },
     eenoxImage: { publicURL: eenoxURL },
-    non202Image: { publicURL: non202URL },
     ghostberryImage: { publicURL: ghostberryURL }
   } = useStaticQuery(graphql`
     query {
@@ -471,10 +470,6 @@ const Journal = () => {
       }
 
       eenoxImage: file(name: { eq: "eenox" }) {
-        publicURL
-      }
-
-      non202Image: file(name: { eq: "non202" }) {
         publicURL
       }
 
@@ -612,7 +607,6 @@ const Journal = () => {
                   {!keySkip && <Medal src={keyURL} alt="No key skip!"/>}
                   {doubleGolden && <Medal src={moonberryURL} alt="Double golden!"/>}
                   {memeRun && <Medal src={eenoxURL} alt="Meme run...why"/>}
-                  {got202 === 0 && <Medal src={non202URL} alt="Non-202 run"/>}
                   {got202 === 1 && <Medal src={ghostberryURL} alt="Pre-202 run"/>}
                 </MedalsWrapper>
                 <ProofIcon className={videoProof ? "fas fa-video" : "fas fa-image"}/>
