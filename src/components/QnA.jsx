@@ -100,7 +100,7 @@ const QnA = () => {
         rotateOffset: -4,
         content: (<>
           <p>This alone is most completionists' final hurdle to completing such a challenge, & it's quite the achievement for those who do.</p>
-          <p>This list serves as a record for all those players who persevered and gathered all of the strawberries.</p>
+          <p><em>Wow Your Friends</em> serves as a record for all those players who persevered and gathered all of the strawberries.</p>
         </>)
       },
     ]
@@ -115,7 +115,7 @@ const QnA = () => {
         rotateOffset: 3,
         clockwise: false,
         content: (<>
-          <p>Well first of all, you're gonna need to collect all 202 berries, & I wish you the best of luck on that journey.</p>
+          <p>Well first, you're gonna need to collect all 202 berries, & I wish you the best of luck on that journey.</p>
           <p>But on the flipside that you did get all of them as you're reading this, congrats!</p>
           <p>Seriously, that ain't easy.</p>
         </>)
@@ -134,7 +134,7 @@ const QnA = () => {
         clockwise: false,
         alignSelf: "flex-end",
         content: (<>
-          <p>If you're not able to record your run, you can also submit a screenshot of your stats showing you collected every berry, but due to how this can be exploited, you'll be listed as an <Span color={colors.purple}>unverified</Span> entry.</p>
+          <p>If you're unable to record your run, you can also submit a screenshot of your stats as proof, but due to how this can be exploited, you'll be listed as an <Span color={colors.purple}>unverified</Span> entry.</p>
           <p>Players under this category will have their entries hidden by default on the list.</p>
         </>)
       },
@@ -143,7 +143,7 @@ const QnA = () => {
         content: (<>
           <p>Once you have that, upload your proof to a public space like <Span color={colors.red}>YouTube</Span>.</p>
           <p>Then send me a message on <Span color={colors.reddit}><a href="https://www.reddit.com/message/compose/?to=TammyDanny&subject=I%20got%20the%20golden%20berry!" target="_blank" rel="noopener noreferrer" style={{ color: "inherit"}}>Reddit</a></Span>, <Span color={colors.twitter}><a href="https://twitter.com/aCluelessDanny" target="_blank" rel="noopener noreferrer" style={{ color: "inherit"}}>Twitter</a></Span>, or through <Span color={colors.github}><a href="https://github.com/aCluelessDanny/wow-your-friends/issues" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>GitHub Issues</a></Span> with a link to your proof & a celebratory message!</p>
-          <p>I'll add you on there once I take a look at it!</p>
+          <p>If everything checks out, welcome to the list~</p>
           <FlexCenter>
             <a href="https://www.reddit.com/message/compose/?to=TammyDanny&subject=I%20got%20the%20golden%20berry!" target="_blank" rel="noopener noreferrer" aria-label="Compose a reddit private message to /u/TammyDanny"><Icon className="fab fa-reddit" color={colors.reddit}/></a>
             <a href="https://twitter.com/aCluelessDanny" target="_blank" rel="noopener noreferrer" aria-label="Visit @aCluelessDanny on Twitter"><Icon className="fab fa-twitter" color={colors.twitter}/></a>
@@ -193,8 +193,8 @@ const QnA = () => {
         clockwise: false,
         content: (
           <ul>
-            <li><Span color={colors.reddit}>/u/DJTom3</Span> for maintaining a similar infographic of this list <a href="https://www.reddit.com/user/DJTom3/comments/efpft2/celeste_farewell_golden_strawberry_hall_of_fame/" target="_blank" rel="noopener noreferrer">here</a>, as it's my primary source of information.</li>
-            <li>The <Span color={colors.skyblue2}>Celeste dev team</Span> for creating a fantastic game to play through.</li>
+            <li><Span color={colors.reddit}>/u/DJTom3</Span> for maintaining an insanely detailed record of these players <a href="https://docs.google.com/spreadsheets/d/1FesTb6qkgMz-dCn7YdioRydToWSQNTg1axFEIHU4FF8/edit#gid=0" target="_blank" rel="noopener noreferrer">here</a>, as it's my primary source of information.</li>
+            <li>The <Span color={colors.skyblue2}>Celeste dev team</Span> for creating such a fantastic game to play through.</li>
             <li>All the players on this list for going above and beyond to complete such a task.</li>
           </ul>
         )

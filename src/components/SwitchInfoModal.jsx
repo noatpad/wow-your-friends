@@ -30,7 +30,7 @@ const SwitchInfoModal = (props) => (
           If you're unable to record your whole run with a capture card or camera, you can instead submit a partial recording made through the Switch's Share button.
         </li>
         <li>
-          For this case, the recording must capture the moment of obtaining the golden strawberry. Preferably hold the Share button right after the screen fades to white.
+          This recording must capture the moment of obtaining the golden strawberry. Preferably hold the Share button right after the screen fades to white.
         </li>
         <li>
           Before collecting the berry, <b>open and close the pause menu for at least a second</b>. This is important since this will prove that neither Assist nor Variants Mode were used throughout your run.
