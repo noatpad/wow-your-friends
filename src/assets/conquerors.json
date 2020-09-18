@@ -1066,6 +1066,19 @@
       "doubleGolden": false,
       "memeRun": false,
       "got202": 2
+    },
+    {
+      "name": "soc0609",
+      "date": "2020-09-09",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=8Ttm3sHklQw",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
     }
   ]
 }
