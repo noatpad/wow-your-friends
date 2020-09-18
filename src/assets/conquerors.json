@@ -1092,6 +1092,19 @@
       "doubleGolden": true,
       "memeRun": false,
       "got202": 2
+    },
+    {
+      "name": "Pyrolescent",
+      "date": "2020-09-12",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://youtu.be/yZhzmq53sXQ",
+      "keySkip": true,
+      "doubleGolden": true,
+      "memeRun": false,
+      "got202": 2
     }
   ]
 }
