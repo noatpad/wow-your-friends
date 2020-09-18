@@ -7,20 +7,26 @@ import InfoModal from './InfoModal'
 
 const Header = styled.h3`
   text-align: center;
-  padding-bottom: .5em;
 `
 
 const Legend = styled.table`
+  border-spacing: 8px 3px;
+
   td {
-    vertical-align: top;
+    vertical-align: middle;
 
     &.icon {
       text-align: center;
     }
+
+    &.details {
+      font-size: .9em;
+      opacity: .8;
+    }
   }
 
-  p::before {
-    content: "= ";
+  td + td {
+    margin-left: 8px;
   }
 `
 
@@ -49,7 +55,8 @@ const LegendInfoModal = ({ setCurrentURL, ...rest }) => {
   let {
     keyImage: { publicURL: keyURL },
     moonberryImage: { publicURL: moonberryURL },
-    eenoxImage: { publicURL: eenoxURL }
+    eenoxImage: { publicURL: eenoxURL },
+    ghostberryImage: { publicURL: ghostberryURL }
   } = useStaticQuery(graphql`
     query {
       keyImage: file(name: { eq: "key" }) {
@@ -63,45 +70,58 @@ const LegendInfoModal = ({ setCurrentURL, ...rest }) => {
       eenoxImage: file(name: { eq: "eenox" }) {
         publicURL
       }
+
+      ghostberryImage: file(name: { eq: "ghostberry" }) {
+        publicURL
+      }
     }
   `)
 
   return (
     <InfoModal {...rest} className="legend">
       <Header>Legend</Header>
+      <div style={{ textAlign: 'center' }}>
+        <p><b>Non-202</b>: Obtained Farewell golden berry, but has not collected every berry</p>
+        <p><b>Unverified</b>: 202 achievers with doubtful evidence (hover over name for reasoning)</p>
+      </div>
+      <hr style={{ margin: '.4em 0', borderTop: '1px solid', opacity: .5 }}/>
       <Legend>
         <tbody>
           <tr>
-            <td><span style={{ borderBottom: "2px dashed", fontStyle: "italic" }}>abc</span></td>
-            <td><p>Hover over the text to see reasoning for non-verification</p></td>
-          </tr>
-          <tr>
             <td className="icon"><ProofIcon className="fas fa-video"/></td>
-            <td><p>Video proof</p></td>
+            <td><p>Video</p></td>
+            <td className="details"><p>Contains video proof</p></td>
           </tr>
           <tr>
             <td className="icon"><ProofIcon className="fas fa-image"/></td>
-            <td><p>Screenshot proof</p></td>
+            <td><p>Screenshot</p></td>
+            <td className="details"><p>Contains screenshot proof</p></td>
           </tr>
           <tr>
             <td className="icon"><Medal src={keyURL} alt="No key skip"/></td>
-            <td><p>No key skip (complete Power Source without skipping)</p></td>
+            <td><p>No key skip</p></td>
+            <td className="details"><p>Complete Power Source without skipping</p></td>
           </tr>
           <tr>
             <td className="icon"><Medal src={moonberryURL} alt="Double golden"/></td>
-            <td><p>Double golden (collect the moonberry on the same run)</p></td>
+            <td><p>Double golden</p></td>
+            <td className="details"><p>Collect the moonberry on the same run</p></td>
+          </tr>
+          <tr>
+            <td className="icon"><Medal src={ghostberryURL} alt="Pre-202"/></td>
+            <td><p>Pre-202</p></td>
+            <td className="details"><p>Referenced run was not the last berry, but obtained 202 at the mentioned date</p></td>
           </tr>
           <tr>
             <td className="icon"><Medal src={eenoxURL} alt="Meme run"/></td>
-            <td><p>Meme run <em>(Eenox, <span className="clickable" style={{ color: colors.blue }} onClick={() => setCurrentURL("https://www.youtube.com/watch?v=O6GHZ3Sd410")}>why</span>)</em></p></td>
+            <td><p>Meme run</p></td>
+            <td className="details"><p><em>"Eenox, <span className="clickable" style={{ color: colors.blue }} onClick={() => setCurrentURL("https://www.youtube.com/watch?v=O6GHZ3Sd410")}>why?</span>"</em></p></td>
           </tr>
         </tbody>
       </Legend>
       <PS>
         <p>
-          Some icons (primarily the double golden one) may not be reflected in the run referenced in their entry.
-          <br/>
-          This may be fixed in the future.
+          <b>Note</b>: Some icons (primarily the double golden one) may not be reflected in the run referenced in their entry.
         </p>
       </PS>
     </InfoModal>
