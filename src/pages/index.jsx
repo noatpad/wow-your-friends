@@ -15,6 +15,14 @@ const Container = styled.div`
   padding: 2em 4em;
   margin: 0 auto;
 
+  @media screen and (${breakpoints.large}) {
+    padding: 1em 1.5em;
+  }
+
+  @media screen and (${breakpoints.mid}) {
+    padding: 1em;
+  }
+
   @media screen and (${breakpoints.mobile}) {
     padding: .5em 1em;
   }

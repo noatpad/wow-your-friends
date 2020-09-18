@@ -58,6 +58,14 @@ const CardsWrapper = styled.div`
   align-items: center;
   padding: 0 3em;
 
+  @media screen and (${breakpoints.large}) {
+    padding: 0 2em;
+  }
+
+  @media screen and (${breakpoints.mid}) {
+    padding: 0 1em;
+  }
+
   @media screen and (${breakpoints.mobile}) {
     padding: 0;
   }
@@ -85,6 +93,10 @@ const Postcard = styled.div`
 
   @media screen and (${breakpoints.tablet}) {
     width: 85%;
+  }
+
+  @media screen and (${breakpoints.large}) {
+    width: 90%;
   }
 
   @media screen and (${breakpoints.mobile}) {
@@ -115,10 +127,15 @@ const PostcardWrapper = styled.div`
     margin-top: .4em;
   }
 
-  @media screen and (${breakpoints.mobile}) {
+  @media screen and (${breakpoints.large}) {
     padding: 1.5em;
-    font-size: 1em;
+  }
 
+  @media screen and (${breakpoints.mid}) {
+    font-size: 1em;
+  }
+
+  @media screen and (${breakpoints.mobile}) {
     ul, ol {
       padding: 0 1.5em;
     }
@@ -126,7 +143,7 @@ const PostcardWrapper = styled.div`
 
   @media screen and (${breakpoints.xsmall}) {
     padding: 1.2em;
-    font-size: .85em;
+    font-size: .9em;
   }
 `
 

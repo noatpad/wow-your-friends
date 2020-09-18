@@ -2,6 +2,8 @@
 export const breakpoints = {
   xsmall: "max-width: 320px",
   mobile: "max-width: 425px",
+  mid: "max-width: 550px",
+  large: "max-width: 700px",
   tablet: "max-width: 850px"
 }
 
