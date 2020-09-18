@@ -30,10 +30,6 @@ const Legend = styled.table`
   }
 `
 
-const ProofIcon = styled.i`
-  height: 1.5em;
-`
-
 const Medal = styled.img`
   height: 1.5em;
 `
@@ -53,12 +49,22 @@ const PS = styled.div`
 
 const LegendInfoModal = ({ setCurrentURL, ...rest }) => {
   let {
+    videoImage: { publicURL: videoURL },
+    screenshotImage: { publicURL: screenshotURL },
     keyImage: { publicURL: keyURL },
     moonberryImage: { publicURL: moonberryURL },
     eenoxImage: { publicURL: eenoxURL },
     ghostberryImage: { publicURL: ghostberryURL }
   } = useStaticQuery(graphql`
     query {
+      videoImage: file(name: { eq: "video" }) {
+        publicURL
+      }
+
+      screenshotImage: file(name: { eq: "screenshot" }) {
+        publicURL
+      }
+
       keyImage: file(name: { eq: "key" }) {
         publicURL
       }
@@ -88,12 +94,12 @@ const LegendInfoModal = ({ setCurrentURL, ...rest }) => {
       <Legend>
         <tbody>
           <tr>
-            <td className="icon"><ProofIcon className="fas fa-video"/></td>
+            <td className="icon"><Medal src={videoURL} alt="Video proof"/></td>
             <td><p>Video</p></td>
             <td className="details"><p>Contains video proof</p></td>
           </tr>
           <tr>
-            <td className="icon"><ProofIcon className="fas fa-image"/></td>
+            <td className="icon"><Medal src={screenshotURL} alt="Screenshot proof"/></td>
             <td><p>Screenshot</p></td>
             <td className="details"><p>Contains screenshot proof</p></td>
           </tr>

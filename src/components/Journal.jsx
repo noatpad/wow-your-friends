@@ -188,6 +188,8 @@ const MedalsWrapper = styled.div`
 
 const Medal = styled.img`
   height: 1.2em;
+  image-rendering: pixelated;
+  image-rendering: crisp-edges;
 `
 
 const Place = styled.span`
@@ -210,10 +212,6 @@ const IconsWrapper = styled.div`
       padding: .125em 0;
     }
   }
-`
-
-const ProofIcon = styled.i`
-  padding: 0 .25em;
 `
 
 const Total = styled.div`
@@ -398,6 +396,8 @@ const Journal = () => {
     goldberryImage: { publicURL: goldberryURL },
     silverberryImage: { publicURL: silverberryURL },
     bronzeberryImage: { publicURL: bronzeberryURL },
+    videoImage: { publicURL: videoURL },
+    screenshotImage: { publicURL: screenshotURL },
     keyImage: { publicURL: keyURL },
     moonberryImage: { publicURL: moonberryURL },
     eenoxImage: { publicURL: eenoxURL },
@@ -458,6 +458,14 @@ const Journal = () => {
       }
 
       bronzeberryImage: file(name: { eq: "bronzeberry" }) {
+        publicURL
+      }
+
+      videoImage: file(name: { eq: "video" }) {
+        publicURL
+      }
+
+      screenshotImage: file(name: { eq: "screenshot" }) {
         publicURL
       }
 
@@ -609,7 +617,11 @@ const Journal = () => {
                   {memeRun && <Medal src={eenoxURL} alt="Meme run...why"/>}
                   {got202 === 1 && <Medal src={ghostberryURL} alt="Pre-202 run"/>}
                 </MedalsWrapper>
-                <ProofIcon className={videoProof ? "fas fa-video" : "fas fa-image"}/>
+                {videoProof ? (
+                  <Medal src={videoURL} alt="Video proof"/>
+                ) : (
+                  <Medal src={screenshotURL} alt="Screenshot proof"/>
+                )}
               </IconsWrapper>
             </td>
           </tr>
