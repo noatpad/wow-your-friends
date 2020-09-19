@@ -1223,7 +1223,20 @@
       "memeRun": false,
       "got202": 0
     },
-    }
+    {
+      "name": "Jellopuff",
+      "date": "2020-09-01",
+      "platform": "Switch",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://twitter.com/LiquidJellopuff/status/1300822700118536194",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
+    },
+    {
       "name": "JTF98",
       "date": "2020-09-09",
       "platform": "Linux",
