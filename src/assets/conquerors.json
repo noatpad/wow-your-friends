@@ -1131,6 +1131,19 @@
       "doubleGolden": false,
       "memeRun": false,
       "got202": 2
+    },
+    {
+      "name": "Yoshi",
+      "date": "2020-09-18",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://youtu.be/UdwwJy-2ymM",
+      "keySkip": false,
+      "doubleGolden": true,
+      "memeRun": false,
+      "got202": 2
     }
   ]
 }
