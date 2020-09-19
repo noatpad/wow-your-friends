@@ -1055,6 +1055,19 @@
       "got202": 2
     },
     {
+      "name": "DollyDeKuva",
+      "date": "2020-07-31",
+      "platform": "PC",
+      "verified": false,
+      "reasonForNonVerified": "No video, just screenshot of stats. Claims to have 180+ hours on a different save.",
+      "videoProof": false,
+      "url": "https://www.reddit.com/r/celestegame/comments/i1gs7a/i_did_it_i_completed_the_game/",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
+    },
+    {
       "name": "CC-ss",
       "date": "2020-08-04",
       "platform": "PC",
