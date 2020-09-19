@@ -1185,6 +1185,19 @@
       "got202": 2
     },
     {
+      "name": "椋45",
+      "date": "2020-08-30",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.bilibili.com/video/BV1Ry4y1C7qt",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 0
+    },
+    }
       "name": "JTF98",
       "date": "2020-09-09",
       "platform": "Linux",
