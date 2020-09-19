@@ -2,7 +2,7 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import styled from '@emotion/styled';
 
-import { colors } from './design';
+import { colors, breakpoints } from './design';
 
 const Span = styled.span`
   color: ${props => props.color ? props.color : 'inherit'};
@@ -15,6 +15,18 @@ const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and (${breakpoints.tablet}) {
+    padding: 0;
+  }
+
+  @media screen and (${breakpoints.large}) {
+    margin: 3em 2em;
+  }
+
+  @media screen and (${breakpoints.mid}) {
+    margin: 3em 0;
+  }
 `
 
 const Notebook = styled.div`
@@ -69,6 +81,14 @@ const History = styled.div`
   border-top: 2px solid #71333360;
   margin-top: -2em;
   overflow: scroll;
+
+  @media screen and (${breakpoints.tablet}) {
+    padding: .5em 2em 2em;
+  }
+
+  @media screen and (${breakpoints.mobile}) {
+    padding: .5em 1em 2em;
+  }
 `
 
 const Table = styled.div`
