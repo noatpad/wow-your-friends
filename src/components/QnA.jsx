@@ -16,6 +16,7 @@ const Container = styled.div`
 
 const Span = styled.span`
   color: ${props => props.color};
+  font-weight: ${props => props.bold ? 'bold' : 'normal'};
 `
 
 const Artwork = styled.img`
@@ -100,7 +101,7 @@ const QnA = () => {
         rotateOffset: -4,
         content: (<>
           <p>This alone is most completionists' final hurdle to completing such a challenge, & it's quite the achievement for those who do.</p>
-          <p><em>Wow Your Friends</em> serves as a record for all those players who persevered and gathered all of the strawberries.</p>
+          <p><Span color={colors.purple} bold>Wow Your Friends</Span> serves as a record for all those players who persevered and gathered all of the strawberries.</p>
         </>)
       },
     ]

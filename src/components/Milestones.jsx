@@ -2,6 +2,13 @@ import React from 'react';
 import { useStaticQuery, graphql } from 'gatsby';
 import styled from '@emotion/styled';
 
+import { colors } from './design';
+
+const Span = styled.span`
+  color: ${props => props.color ? props.color : 'inherit'};
+  font-weight: ${props => props.bold ? 'bold' : 'normal'};
+`
+
 const Container = styled.div`
   padding: 0 2em;
   margin: 3em;
@@ -82,9 +89,9 @@ const Table = styled.div`
 
   .message {
     width: 100%;
-    font-size: .8em;
+    font-size: .75em;
     font-style: italic;
-    color: #84719c;
+    color: #9c717d;
     text-align: center;
   }
 `
@@ -97,11 +104,11 @@ const milestoneHistory = [
   },
   {
     date: 'Sep 12, 2019',
-    milestone: <p>The first ever 202 was achieved!</p>
+    milestone: <p>The <Span color={colors.orange}>first</Span> ever 202 was achieved!</p>
   },
   {
     date: 'Oct 16, 2019',
-    milestone: <p>10 players have achieved 202!</p>,
+    milestone: <p><Span color={colors.orange} bold>10</Span> players have achieved 202!</p>,
     message: <p>We got a streak going!</p>
   },
   {
@@ -110,7 +117,7 @@ const milestoneHistory = [
   },
   {
     date: 'Nov 11, 2019',
-    milestone: <p>Wow Your Friends launched!</p>
+    milestone: <p><Span color={colors.purple}>Wow Your Friends</Span> launched!</p>
   },
   {
     date: 'Dec 14, 2019',
@@ -127,7 +134,7 @@ const milestoneHistory = [
   },
   {
     date: 'Jan 25, 2020',
-    milestone: <p>25 players have achieved 202!</p>,
+    milestone: <p><Span color={colors.orange} bold>25</Span> players have achieved 202!</p>,
     message: <p>Such perseverance in those first months...</p>
   },
   {
@@ -136,7 +143,7 @@ const milestoneHistory = [
   },
   {
     date: 'May 1, 2020',
-    milestone: <p>50 players have achieved 202!</p>,
+    milestone: <p><Span color={colors.orange} bold>50</Span> players have achieved 202!</p>,
     message: <p>Half to a hundred, keep it up!</p>
   },
   {
@@ -145,7 +152,7 @@ const milestoneHistory = [
   },
   {
     date: 'Aug 4, 2020',
-    milestone: <p>75 players have achieved 202!</p>
+    milestone: <p><Span color={colors.orange} bold>75</Span> players have achieved 202!</p>
   },
   {
     date: 'Sep 5, 2020',
@@ -158,7 +165,7 @@ const milestoneHistory = [
   },
   {
     date: 'Sep 16, 2020',
-    milestone: <p>100 players have achieved 202!</p>,
+    milestone: <p><Span color={colors.yelloworange} bold>100</Span> players have achieved 202!</p>,
     message: <p>What a wild rush of determination to behold.<br/>Y'all are amazing, & I commend you for your efforts~</p>
   }
 ]
