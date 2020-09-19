@@ -400,7 +400,7 @@
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=cfUno0GVD64",
       "keySkip": false,
-      "doubleGolden": false,
+      "doubleGolden": true,
       "memeRun": false,
       "got202": 1
     },
@@ -712,7 +712,7 @@
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=IOvLtpN-JhM",
       "keySkip": true,
-      "doubleGolden": false,
+      "doubleGolden": true,
       "memeRun": false,
       "got202": 2
     },
@@ -842,7 +842,7 @@
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=mRRzpG_uUgA",
       "keySkip": false,
-      "doubleGolden": false,
+      "doubleGolden": true,
       "memeRun": false,
       "got202": 2
     },
