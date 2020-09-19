@@ -88,7 +88,7 @@ const LegendInfoModal = ({ setCurrentURL, ...rest }) => {
       <Header>Legend</Header>
       <div style={{ textAlign: 'center' }}>
         <p><b>Non-202</b>: Obtained Farewell golden berry, but has not collected every berry</p>
-        <p><b>Unverified</b>: 202 achievers with doubtful evidence (hover over name for reasoning)</p>
+        <p><b>Unverified</b>: Entries with doubtful evidence (hover over name for reasoning)</p>
       </div>
       <hr style={{ margin: '.4em 0', borderTop: '1px solid', opacity: .5 }}/>
       <Legend>
