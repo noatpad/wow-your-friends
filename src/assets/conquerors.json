@@ -730,6 +730,19 @@
       "got202": 2
     },
     {
+      "name": "ぶらすと",
+      "date": "2020-05-07",
+      "platform": "PC",
+      "verified": false,
+      "reasonForNonVerified": "Incomplete video (missing 14:00-15:22)",
+      "videoProof": true,
+      "url": "https://www.youtube.com/playlist?list=PLEKY4s8jbJ3UFb5p8ln6jQUG-6-aUcU4g",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
+    },
+    {
       "name": "Ploist",
       "date": "2020-05-08",
       "platform": "PC",
