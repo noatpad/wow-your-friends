@@ -1302,6 +1302,19 @@
       "got202": 2
     },
     {
+      "name": "Superkell",
+      "date": "2020-09-05",
+      "platform": "Switch",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/playlist?list=PLdS53eIT_QOtRCObt71IFxOkokr-YBVdn",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
+    },
+    {
       "name": "JTF98",
       "date": "2020-09-09",
       "platform": "Linux",
