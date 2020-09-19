@@ -104,9 +104,9 @@ const LegendInfoModal = ({ setCurrentURL, ...rest }) => {
             <td className="details"><p>Contains screenshot proof</p></td>
           </tr>
           <tr>
-            <td className="icon"><Medal src={keyURL} alt="No key skip"/></td>
-            <td><p>No key skip</p></td>
-            <td className="details"><p>Complete Power Source without skipping</p></td>
+            <td className="icon"><Medal src={ghostberryURL} alt="Pre-202"/></td>
+            <td><p>Pre-202</p></td>
+            <td className="details"><p>Referenced run was not the last berry, but obtained 202 at the mentioned date</p></td>
           </tr>
           <tr>
             <td className="icon"><Medal src={moonberryURL} alt="Double golden"/></td>
@@ -114,9 +114,9 @@ const LegendInfoModal = ({ setCurrentURL, ...rest }) => {
             <td className="details"><p>Collect the moonberry on the same run</p></td>
           </tr>
           <tr>
-            <td className="icon"><Medal src={ghostberryURL} alt="Pre-202"/></td>
-            <td><p>Pre-202</p></td>
-            <td className="details"><p>Referenced run was not the last berry, but obtained 202 at the mentioned date</p></td>
+            <td className="icon"><Medal src={keyURL} alt="No key skip"/></td>
+            <td><p>No key skip</p></td>
+            <td className="details"><p>Complete Power Source without skipping</p></td>
           </tr>
           <tr>
             <td className="icon"><Medal src={eenoxURL} alt="Meme run"/></td>
