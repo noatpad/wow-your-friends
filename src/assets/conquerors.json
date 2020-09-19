@@ -1339,6 +1339,19 @@
       "doubleGolden": false,
       "memeRun": false,
       "got202": 1
+    },
+    {
+      "name": "Monkey D. Link",
+      "date": "2020-09-11",
+      "platform": "Switch",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=QRbQ7-JIick",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
     }
   ]
 }
