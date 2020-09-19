@@ -612,10 +612,10 @@ const Journal = () => {
             <td>
               <IconsWrapper>
                 <MedalsWrapper>
-                  {!keySkip && <Medal src={keyURL} alt="No key skip!"/>}
-                  {doubleGolden && <Medal src={moonberryURL} alt="Double golden!"/>}
-                  {memeRun && <Medal src={eenoxURL} alt="Meme run...why"/>}
                   {got202 === 1 && <Medal src={ghostberryURL} alt="Pre-202 run"/>}
+                  {doubleGolden && <Medal src={moonberryURL} alt="Double golden!"/>}
+                  {!keySkip && <Medal src={keyURL} alt="No key skip!"/>}
+                  {memeRun && <Medal src={eenoxURL} alt="Meme run...why"/>}
                 </MedalsWrapper>
                 {videoProof ? (
                   <Medal src={videoURL} alt="Video proof"/>
