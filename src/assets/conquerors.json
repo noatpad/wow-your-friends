@@ -1276,6 +1276,19 @@
       "got202": 2
     },
     {
+      "name": "CANADIAN",
+      "date": "2020-09-05",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=96AOQC7a-3E",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 0
+    },
+    {
       "name": "JTF98",
       "date": "2020-09-09",
       "platform": "Linux",
