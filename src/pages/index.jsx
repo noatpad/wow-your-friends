@@ -5,6 +5,7 @@ import { breakpoints } from '../components/design'
 import Layout from "../components/Layout"
 import Title from "../components/Title"
 import Journal from "../components/Journal"
+import Milestones from '../components/Milestones';
 import QnA from '../components/QnA'
 import Footer from '../components/Footer'
 
@@ -37,6 +38,7 @@ const IndexPage = () => {
       <Container>
         <Title loaded={heroLoaded}/>
         <Journal/>
+        <Milestones/>
         <QnA/>
       </Container>
       <Footer/>
