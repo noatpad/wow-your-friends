@@ -1140,7 +1140,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtu.be/UdwwJy-2ymM",
-      "keySkip": false,
+      "keySkip": true,
       "doubleGolden": true,
       "memeRun": false,
       "got202": 2
