@@ -1289,6 +1289,19 @@
       "got202": 0
     },
     {
+      "name": "Ambrosiagong",
+      "date": "2020-09-05",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.twitch.tv/videos/732303128",
+      "keySkip": false,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
+    },
+    {
       "name": "JTF98",
       "date": "2020-09-09",
       "platform": "Linux",
