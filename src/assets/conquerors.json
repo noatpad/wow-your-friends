@@ -626,6 +626,19 @@
       "got202": 2
     },
     {
+      "name": "unfandemcmillen",
+      "date": "2020-04-14",
+      "platform": "PC",
+      "verified": false,
+      "reasonForNonVerified": "Screenshot of file select, but has streamed before",
+      "videoProof": false,
+      "url": "local",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
+    },
+    {
       "name": "wandrewni",
       "date": "2020-04-15",
       "platform": "PC",
