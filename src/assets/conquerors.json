@@ -1374,7 +1374,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/737768618",
-      "keySkip": true,
+      "keySkip": false,
       "doubleGolden": false,
       "memeRun": false,
       "got202": 2
