@@ -1250,6 +1250,19 @@
       "got202": 2
     },
     {
+      "name": "minecire",
+      "date": "2020-09-02",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://mne.cx/Videos/farewell%20golden.mp4",
+      "keySkip": true,
+      "doubleGolden": true,
+      "memeRun": false,
+      "got202": 2
+    },
+    {
       "name": "JTF98",
       "date": "2020-09-09",
       "platform": "Linux",
