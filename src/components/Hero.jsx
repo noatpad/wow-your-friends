@@ -2,18 +2,23 @@ import React, { useEffect } from 'react'
 import { useStaticQuery, graphql } from 'gatsby'
 import styled from '@emotion/styled'
 import anime from 'animejs'
+import { useMediaQuery } from 'react-responsive'
 
 import { breakpoints } from './design'
 
-const Header = styled.h1`
+const Title = styled.h1`
   margin: 3em 0;
   font-size: 4em;
   font-weight: normal;
   text-align: center;
   text-shadow: 0 3px #31315c;
 
-  @media screen and (${breakpoints.mobile}) {
-    font-size: 3em;
+  @media screen and (${breakpoints.large}) {
+    font-size: 3.5em;
+  }
+
+  @media screen and (${breakpoints.mid}) {
+    font-size: 2.8em;
   }
 `
 
@@ -31,7 +36,7 @@ const Letter = styled.span`
   opacity: 0;
 `
 
-const Title = ({ loaded }) => {
+const Hero = ({ loaded }) => {
   // GraphQL //
   const { site: { siteMetadata: { title }}} = useStaticQuery(graphql`
     query {
@@ -44,6 +49,9 @@ const Title = ({ loaded }) => {
   `)
 
   // Hooks //
+  // Custom hook for repsonsive design
+  const isMobile = useMediaQuery({ query: `(${breakpoints.mobile})` });
+
   // Animate each letter of title
   useEffect(() => {
     if (!loaded) { return; }
@@ -62,19 +70,22 @@ const Title = ({ loaded }) => {
   const words = title.split(' ')
 
   return (
-    <Header className="title">
+    <Title className="title">
       {words.map((word, i) => {
         const letters = [...word]
         return (
-          <Word key={i}>
-            {letters.map((letter, j) => (
-              <Letter className="letter" key={j}>{letter}</Letter>
-            ))}
-          </Word>
+          <React.Fragment key={i}>
+            <Word>
+              {letters.map((letter, j) => (
+                <Letter className="letter" key={`${i} ${j}`}>{letter}</Letter>
+              ))}
+            </Word>
+            {isMobile && i === 1 && <br/>}
+          </React.Fragment>
         )
       })}
-    </Header>
+    </Title>
   )
 }
 
-export default Title
+export default Hero

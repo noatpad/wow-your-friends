@@ -3,7 +3,7 @@ import styled from '@emotion/styled'
 
 import { breakpoints } from '../components/design'
 import Layout from "../components/Layout"
-import Title from "../components/Title"
+import Hero from "../components/Hero"
 import Journal from "../components/Journal"
 import Milestones from '../components/Milestones';
 import QnA from '../components/QnA'
@@ -36,7 +36,7 @@ const IndexPage = () => {
   return (
     <Layout set={setHeroLoaded}>
       <Container>
-        <Title loaded={heroLoaded}/>
+        <Hero loaded={heroLoaded}/>
         <Journal/>
         <Milestones/>
         <QnA/>
