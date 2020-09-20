@@ -93,6 +93,7 @@ const History = styled.div`
 
 const Table = styled.div`
   width: 100%;
+  padding-bottom: 1em;
   table-layout: fixed;
   border-spacing: 12px 9px;
 
@@ -176,7 +177,7 @@ const milestoneHistory = [
   },
   {
     date: 'Sep 5, 2020',
-    milestone: <p>4 players collected Farewell's golden on the same day, 3 achieving 202!</p>
+    milestone: <p>4 players collected Farewell's golden on the same day, 3 of them achieving 202!</p>
   },
   {
     date: 'Sep 9, 2020',
