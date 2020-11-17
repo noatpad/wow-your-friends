@@ -1456,6 +1456,19 @@
       "doubleGolden": true,
       "memeRun": false,
       "got202": 2
+    },
+    {
+      "name": "jelloknifee",
+      "date": "2020-09-21",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=f4HUeV5BqVU",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
     }
   ]
 }
