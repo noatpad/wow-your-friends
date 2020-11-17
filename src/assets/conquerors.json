@@ -1469,6 +1469,19 @@
       "doubleGolden": false,
       "memeRun": false,
       "got202": 2
+    },
+    {
+      "name": "AprilSR",
+      "date": "2020-09-23",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=z_n7yPqYPhY",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
     }
   ]
 }
