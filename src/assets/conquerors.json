@@ -1573,6 +1573,19 @@
       "doubleGolden": true,
       "memeRun": false,
       "got202": 2
+    },
+    {
+      "name": "Klice",
+      "date": "2020-11-11",
+      "platform": "Windows",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=9mO6fcopJR0",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 0
     }
   ]
 }
