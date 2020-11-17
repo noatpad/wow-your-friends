@@ -607,8 +607,8 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=q7HsVafp0ps",
-      "keySkip": true,
-      "doubleGolden": false,
+      "keySkip": false,
+      "doubleGolden": true,
       "memeRun": false,
       "got202": 2
     },
