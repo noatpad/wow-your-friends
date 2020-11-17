@@ -1586,6 +1586,19 @@
       "doubleGolden": false,
       "memeRun": false,
       "got202": 0
+    },
+    {
+      "name": "FlyinPoulpus",
+      "date": "2020-11-11",
+      "platform": "Windows",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=UWzTUUupheM",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
     }
   ]
 }
