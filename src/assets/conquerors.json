@@ -1443,6 +1443,19 @@
       "doubleGolden": false,
       "memeRun": false,
       "got202": 2
+    },
+    {
+      "name": "Desereder",
+      "date": "2020-09-20",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=JxcQstEsoVY",
+      "keySkip": true,
+      "doubleGolden": true,
+      "memeRun": false,
+      "got202": 2
     }
   ]
 }
