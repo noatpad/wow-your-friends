@@ -1638,6 +1638,19 @@
       "doubleGolden": false,
       "memeRun": false,
       "got202": 1
+    },
+    {
+      "name": "TrueGreen",
+      "date": "2020-11-26",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=1qFRCrXZr2g",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
     }
   ]
 }
