@@ -1224,19 +1224,6 @@
       "got202": 2
     },
     {
-      "name": "椋45",
-      "date": "2020-08-30",
-      "platform": "PC",
-      "verified": true,
-      "reasonForNonVerified": "",
-      "videoProof": true,
-      "url": "https://www.bilibili.com/video/BV1Ry4y1C7qt",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 0
-    },
-    {
       "name": "Ezel",
       "date": "2020-08-30",
       "platform": "PC",
@@ -1597,6 +1584,19 @@
       "url": "https://www.youtube.com/watch?v=9mO6fcopJR0",
       "keySkip": true,
       "doubleGolden": true,
+      "memeRun": false,
+      "got202": 1
+    },
+    {
+      "name": "椋45",
+      "date": "2020-11-25",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.bilibili.com/video/BV1Ry4y1C7qt",
+      "keySkip": true,
+      "doubleGolden": false,
       "memeRun": false,
       "got202": 1
     }
