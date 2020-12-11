@@ -1601,6 +1601,19 @@
       "got202": 2
     },
     {
+      "name": "Ecl1psed",
+      "date": "2020-11-23",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.twitch.tv/videos/812891179",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
+    },
+    {
       "name": "椋45",
       "date": "2020-11-25",
       "platform": "PC",
