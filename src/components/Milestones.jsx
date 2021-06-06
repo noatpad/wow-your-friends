@@ -188,6 +188,23 @@ const milestoneHistory = [
     date: 'Sep 16, 2020',
     milestone: <p><Span color={colors.yelloworange} bold>100</Span> players have achieved 202!</p>,
     message: <p>What a wild rush of determination to behold.<br/>Y'all are amazing, & I commend you for your efforts~</p>
+  },
+  {
+    date: 'Dec 23, 2020',
+    milestone: <p><Span color={colors.yelloworange} bold>125</Span> players have achieved 202!</p>
+  },
+  {
+    date: 'March 12, 2021',
+    milestone: <p><Span color={colors.yelloworange} bold>150</Span> players have achieved 202!</p>
+  },
+  {
+    date: 'May 24, 2021',
+    milestone: <p>5 people got 202 within 24 hours!</p>,
+  },
+  {
+    date: 'May 29, 2021',
+    milestone: <p>5 hours got 202 within <Span bold>16</Span> hours!</p>,
+    message: <p>Y'all are determined, hot dang</p>
   }
 ]
 
