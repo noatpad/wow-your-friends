@@ -4,7 +4,7 @@
   "description": "A small website serving as a record of all the skillful players who obtained all 202 Celeste's strawberries",
   "version": "2.0.4",
   "author": "a clueless danny <tamdannyhdz@gmail.com>",
-  "homepage": "https://wowyourfriends.netlify.com",
+  "homepage": "https://wowyourfriends.netlify.app",
   "dependencies": {
     "@emotion/core": "^10.0.21",
     "@emotion/styled": "^10.0.17",

@@ -53,6 +53,19 @@
       "got202": 2
     },
     {
+      "name": "Hydro",
+      "date": "2019-09-20",
+      "platform": "PC",
+      "verified": false,
+      "reasonForNonVerified": "No video, just screenshots of stats.",
+      "videoProof": false,
+      "url": "https://www.youtube.com/watch?v=NDZhN11sFXQ",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
+    },
+    {
       "name": "Angrevol",
       "date": "2019-09-23",
       "platform": "PC",
@@ -730,6 +743,19 @@
       "got202": 2
     },
     {
+      "name": "桐815",
+      "date": "2020-05-03",
+      "platform": "PC",
+      "verified": false,
+      "reasonForNonVerified": "Video only starts at the end of the golden room.",
+      "videoProof": true,
+      "url": "https://www.bilibili.com/video/BV1FK411L7Y8",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
+    },
+    {
       "name": "ぶらすと",
       "date": "2020-05-07",
       "platform": "PC",
@@ -1224,6 +1250,19 @@
       "got202": 2
     },
     {
+      "name": "七海椋",
+      "date": "2020-08-30",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.bilibili.com/video/BV1Ry4y1C7qt",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 0
+    },
+    {
       "name": "Ezel",
       "date": "2020-08-30",
       "platform": "PC",
@@ -1409,8 +1448,8 @@
       "name": "ぽけさめ",
       "date": "2020-09-15",
       "platform": "PC",
-      "verified": true,
-      "reasonForNonVerified": "",
+      "verified": false,
+      "reasonForNonVerified": "Video once existed, but has been removed for unknown reasons.",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=Wuzkx-2CPwk",
       "keySkip": true,
@@ -1679,6 +1718,19 @@
       "got202": 2
     },
     {
+      "name": "yawaworhtnb",
+      "date": "2020-12-04",
+      "platform": "Switch",
+      "verified": false,
+      "reasonForNonVerified": "Cannot verify if Variants/Assist was used, neither show a recording of the Switch itself playing back the footage.",
+      "videoProof": true,
+      "url": "https://www.reddit.com/r/celestegame/comments/k6kjha/that_close_call_at_the_start_made_me_scream_so/",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 1
+    },
+    {
       "name": "Kostucha",
       "date": "2020-12-07",
       "platform": "PC",
@@ -1712,6 +1764,19 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=tO3hVy3U7cU",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
+    },
+    {
+      "name": "rafix",
+      "date": "2020-12-12",
+      "platform": "PC",
+      "verified": false,
+      "reasonForNonVerified": "Video only shows recording from the Farewell room and onward. Though there were witnesses present via CelesteNet",
+      "videoProof": true,
+      "url": "https://streamable.com/pou8u9",
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
@@ -1887,6 +1952,32 @@
       "got202": 2
     },
     {
+      "name": "Kingarthur",
+      "date": "2021-02-02",
+      "platform": "PC",
+      "verified": false,
+      "reasonForNonVerified": "No video, just screenshot of stats.",
+      "videoProof": false,
+      "url": "local",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
+    },
+    {
+      "name": "PixelBlitz",
+      "date": "2021-02-02",
+      "platform": "PC",
+      "verified": false,
+      "reasonForNonVerified": "No video, just screenshot of stats.",
+      "videoProof": false,
+      "url": "local",
+      "keySkip": true,
+      "doubleGolden": true,
+      "memeRun": false,
+      "got202": 2
+    },
+    {
       "name": "Tayashie",
       "date": "2021-02-07",
       "platform": "PC",
@@ -2004,6 +2095,19 @@
       "got202": 2
     },
     {
+      "name": "AntiTerrestrial",
+      "date": "2021-02-28",
+      "platform": "PC",
+      "verified": false,
+      "reasonForNonVerified": "No video, just screenshot of stats.",
+      "videoProof": false,
+      "url": "local",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
+    },
+    {
       "name": "ねりな",
       "date": "2021-02-28",
       "platform": "PC",
@@ -2108,6 +2212,19 @@
       "got202": 2
     },
     {
+      "name": "marz",
+      "date": "2021-03-24",
+      "platform": "PC",
+      "verified": false,
+      "reasonForNonVerified": "Video only starts at the beginning of the golden room.",
+      "videoProof": true,
+      "url": "https://youtube.com/watch?v=MtrzM0n2yfY",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
+    },
+    {
       "name": "Wasp",
       "date": "2021-03-25",
       "platform": "PC",
@@ -2115,6 +2232,32 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtu.be/GBdIO4U4Enc",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
+    },
+    {
+      "name": "NotPhobos",
+      "date": "2021-03-27",
+      "platform": "PC",
+      "verified": false,
+      "reasonForNonVerified": "Video only starts at the beginning of the golden room.",
+      "videoProof": true,
+      "url": "https://yewtu.be/watch?v=7vMvzTwOfn8",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
+    },
+    {
+      "name": "mats the cat",
+      "date": "2021-04-05",
+      "platform": "Switch",
+      "verified": false,
+      "reasonForNonVerified": "No video, just picture of Switch at the end of the golden room.",
+      "videoProof": true,
+      "url": "local",
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
@@ -2342,13 +2485,13 @@
       "got202": 2
     },
     {
-      "name": "sansi201",
+      "name": "三思UwU",
       "date": "2021-05-29",
       "platform": "PC",
       "verified": true,
       "reasonForNonVerified": "",
       "videoProof": true,
-      "url": "https://www.youtube.com/watch?v=qDDpo1NQFhM",
+      "url": "https://www.bilibili.com/video/BV1sU4y1L7nR",
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
@@ -2379,6 +2522,45 @@
       "doubleGolden": false,
       "memeRun": false,
       "got202": 2
+    },
+    {
+      "name": "Thalant",
+      "date": "2021-06-07",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://youtube.com/watch?v=F12nTLjGVsw",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
+    },
+    {
+      "name": "Handsome计数君",
+      "date": "2021-06-22",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.bilibili.com/video/BV1vf4y1t7Xa",
+      "keySkip": false,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
+    },
+    {
+      "name": "Nanashi",
+      "date": "2021-06-27",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.bilibili.com/video/BV1Ph411h7qs",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 0
     }
   ]
 }
