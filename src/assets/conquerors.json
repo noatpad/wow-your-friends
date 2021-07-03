@@ -2256,7 +2256,7 @@
       "platform": "Switch",
       "verified": false,
       "reasonForNonVerified": "No video, just picture of Switch at the end of the golden room.",
-      "videoProof": true,
+      "videoProof": false,
       "url": "local",
       "keySkip": true,
       "doubleGolden": false,
