@@ -2561,6 +2561,71 @@
       "doubleGolden": false,
       "memeRun": false,
       "got202": 0
+    },
+    {
+      "name": "Edvin",
+      "date": "2021-07-05",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://youtu.be/6gfmitJh_ZI",
+      "keySkip": true,
+      "doubleGolden": true,
+      "memeRun": false,
+      "got202": 0
+    },
+    {
+      "name": "NotPhobos",
+      "date": "2021-07-06",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://youtu.be/lBlO7NFcsIA",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
+    },
+    {
+      "name": "Lyly",
+      "date": "2021-07-06",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=k8YI3puSTFs",
+      "keySkip": true,
+      "doubleGolden": true,
+      "memeRun": false,
+      "got202": 2
+    },
+    {
+      "name": "te",
+      "date": "2021-07-09",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=YuZxcBvmbaQ",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
+    },
+    {
+      "name": "DJTom3",
+      "date": "2021-07-11",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://youtu.be/kZOwI_6z528",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
     }
   ]
 }

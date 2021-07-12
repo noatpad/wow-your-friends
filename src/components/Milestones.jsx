@@ -205,6 +205,11 @@ const milestoneHistory = [
     date: 'May 29, 2021',
     milestone: <p>5 hours got 202 within <Span bold>16</Span> hours!</p>,
     message: <p>Y'all are determined, hot dang</p>
+  },
+  {
+    date: 'July 11, 2021',
+    milestone: <p><Span bold>DJTom3</Span>, the original Farewell golden list maintainer before Wow Your Friends, had at long last gotten 202!</p>,
+    message: <p>How wild to finally see this journey reach its end. Mad props to ya, man! Now wait for me so I can join the club too ;)</p>
   }
 ]
 
