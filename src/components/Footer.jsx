@@ -121,13 +121,13 @@ const Footer = () => {
             onMouseEnter={() => hoverAnim(true, "reddit-icon", colors.reddit)}
             onMouseLeave={() => hoverAnim(false, "reddit-icon", colors.reddit)}/>
         </a>
-        <a className="twitter-icon" href="https://twitter.com/aCluelessDanny" target="_blank" rel="noopener noreferrer" aria-label="Visit @aCluelessDanny on Twitter">
+        <a className="twitter-icon" href="https://twitter.com/noatpad" target="_blank" rel="noopener noreferrer" aria-label="Visit @noatpad on Twitter">
           <Icon
             className="twitter-icon fab fa-twitter"
             onMouseEnter={() => hoverAnim(true, "twitter-icon", colors.twitter)}
             onMouseLeave={() => hoverAnim(false, "twitter-icon", colors.twitter)}/>
         </a>
-        <a className="github-icon" href="https://github.com/aCluelessDanny/wow-your-friends" target="_blank" rel="noopener noreferrer" aria-label="Visit the GitHub repository">
+        <a className="github-icon" href="https://github.com/noatpad/wow-your-friends" target="_blank" rel="noopener noreferrer" aria-label="Visit the GitHub repository">
           <Icon
             className="github-icon fab fa-github"
             onMouseEnter={() => hoverAnim(true, "github-icon", colors.github)}

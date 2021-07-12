@@ -25,7 +25,7 @@ To submit yourself into the journal, you must provide proof of you collecting Fa
 
 If you aren't able to record your run, you can instead submit a screenshot of your stats as proof. But due to how this can be abused, you'll be listed under a *screenshot* category. Entries under this caregory will be hidden by default.
 
-Once you have your proof, upload it to a public site like YouTube, and then send me a message through [Reddit](https://www.reddit.com/message/compose/?to=TammyDanny&subject=I%20got%20the%20golden%20berry!), [Twitter](https://twitter.com/aCluelessDanny), or this repo's [Issues section](https://github.com/aCluelessDanny/wow-your-friends/issues) with a link to your proof and a celebratory message. I'll add you once I check and verify it!
+Once you have your proof, upload it to a public site like YouTube, and then send me a message through [Reddit](https://www.reddit.com/message/compose/?to=TammyDanny&subject=I%20got%20the%20golden%20berry!), [Twitter](https://twitter.com/noatpad), or this repo's [Issues section](https://github.com/noatpad/wow-your-friends/issues) with a link to your proof and a celebratory message. I'll add you once I check and verify it!
 
 #### Don't have a capture card for the Switch?
 

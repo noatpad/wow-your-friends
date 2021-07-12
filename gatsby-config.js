@@ -9,7 +9,7 @@ module.exports = {
     siteUrl: 'https://wowyourfriends.netlify.com',
     image: '/card-image.png',
     icon: '/card-icon.png',
-    twitterHandle: '@aCluelessDanny'
+    twitterHandle: '@noatpad'
   },
   plugins: [
     {
