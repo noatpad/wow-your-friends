@@ -207,10 +207,14 @@ const milestoneHistory = [
     message: <p>Y'all are determined, hot dang</p>
   },
   {
+    date: 'July 4, 2021',
+    milestone: <p><Span color={colors.yelloworange} bold>175</Span> players have achieved 202!</p>
+  },
+  {
     date: 'July 11, 2021',
     milestone: <p><Span bold>DJTom3</Span>, the original Farewell golden list maintainer before Wow Your Friends, had at long last gotten 202!</p>,
     message: <p>How wild to finally see this journey reach its end. Mad props to ya, man! Now wait for me so I can join the club too ;)</p>
-  }
+  },
 ]
 
 const Milestones = () => {
