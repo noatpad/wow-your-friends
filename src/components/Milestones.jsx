@@ -150,7 +150,7 @@ const milestoneHistory = [
     message: <p>Now that's a Christmas miracle if I ever saw one.</p>
   },
   {
-    date: 'Dec 28, 2020',
+    date: 'Dec 28, 2019',
     milestone: <p>The first 202 on Switch was achieved!</p>
   },
   {
