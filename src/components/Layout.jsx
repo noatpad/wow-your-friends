@@ -1,6 +1,6 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
-import Img from 'gatsby-image'
+import { StaticImage } from 'gatsby-plugin-image';
 import Helmet from "react-helmet"
 import styled from "@emotion/styled"
 
@@ -28,14 +28,9 @@ const Hero = styled.div`
   top: 0;
   left: 0;
   right: 0;
+  height: 600px;
   width: 100%;
   overflow: hidden;
-`
-
-const Image = styled(Img)`
-  width: 100%;
-  min-width: 600px;
-  filter: blur(4px);
 `
 
 const Gradient = styled.div`
@@ -44,14 +39,14 @@ const Gradient = styled.div`
   left: 0;
   right: 0;
   bottom: -1em;
-  background: linear-gradient(to top, #291c47, transparent);
+  background: linear-gradient(to top, #291c47, transparent 75%);
 `
 
 const Layout = ({ set, children }) => {
   // GraphQL //
   const {
-    site: { siteMetadata: { title, description, author, siteUrl, image, icon, twitterHandle }},
-    bgImage: { childImageSharp: { fluid } }
+    site: { siteMetadata: { title, description, author, siteUrl, image, icon, twitterHandle }}
+    // headerImage: { publicURL: headerURL }
   } = useStaticQuery(graphql`
     query {
       # Get site title
@@ -64,15 +59,6 @@ const Layout = ({ set, children }) => {
           image
           icon
           twitterHandle
-        }
-      }
-
-      # Get header background image URL
-      bgImage: file(name: { eq: "header-bg" }) {
-        childImageSharp {
-          fluid {
-            ...GatsbyImageSharpFluid
-          }
         }
       }
     }
@@ -99,7 +85,15 @@ const Layout = ({ set, children }) => {
       </Helmet>
       <Container>
         <Hero>
-          <Image fluid={fluid} alt="An ethereal, golden background image" onLoad={() => set(true)}/>
+          <StaticImage
+            src="../assets/header-bg.jpg"
+            alt="An ethereal, golden background image"
+            layout="fullWidth"
+            objectPosition="center top"
+            style={{ height: '100%', width: '100%' }}
+            imgStyle={{ maskImage: 'linear-gradient(#000f 50%, #0008)' }}
+            onLoad={() => set(true)}
+          />
           <Gradient/>
         </Hero>
         {children}

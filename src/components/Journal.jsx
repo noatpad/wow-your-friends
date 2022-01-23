@@ -253,43 +253,18 @@ const FootnoteDiv = styled.div`
 
 // Checkbox by Jase from https://codepen.io/jasesmith/pen/EeVmWZ
 const Checkbox = styled.div`
-  & + & {
-    margin-top: .25em;
-  }
+  & + & { margin-top: .25em; }
+  input { display: none; }
 
   label {
-    padding-left: 0.5em;
     font-style: italic;
     cursor: pointer;
-  }
 
-  input {
-    position: relative;
-    appearance: none;
-    font-size: inherit;
-    width: 1em;
-    margin: 0;
-    color: inherit;
-    outline: none;
-    font-family: 'Font Awesome 5 Pro';
-    cursor: pointer;
-    transition: 300ms;
-
-    &::after {
-      content: '\f0c8';
-      display: inline-block;
-      text-align: center;
-      width: 1em;
+    i {
+      font-size: 1.1em;
+      transition: 300ms;
     }
-
-    &:checked::after {
-      content: '\f14a';
-      font-weight: 900;
-    }
-
-    &:active {
-      transform: scale(.8);
-    }
+    &:active i { transform: scale(0.9); }
   }
 `
 
@@ -652,12 +627,18 @@ const Journal = () => {
           <Footnote>
             <FootnoteDiv>
               <Checkbox>
-                <input id="showNon202" type="checkbox" defaultChecked={showNon202Entries} onChange={() => setShowNon202Entries(!showNon202Entries)}/>
-                <label htmlFor="showNon202">Show non-202 entries</label>
+                <input id="showNon202" type="checkbox" checked={showNon202Entries} onChange={() => setShowNon202Entries(!showNon202Entries)}/>
+                <label htmlFor="showNon202">
+                  <i className={showNon202Entries ? 'fas fa-check-square' : 'far fa-square'} style={{ marginRight: '0.5em' }}></i>
+                  <span>Show non-202 entries</span>
+                </label>
               </Checkbox>
               <Checkbox>
-                <input id="showScreenshots" type="checkbox" defaultChecked={showVerifiedEntries} onChange={() => setShowVerifiedEntries(!showVerifiedEntries)}/>
-                <label htmlFor="showScreenshots">Show unverified entries</label>
+                <input id="showScreenshots" type="checkbox" checked={showVerifiedEntries} onChange={() => setShowVerifiedEntries(!showVerifiedEntries)}/>
+                <label htmlFor="showScreenshots">
+                  <i className={showVerifiedEntries ? 'fas fa-check-square' : 'far fa-square'} style={{ marginRight: '0.5em' }}></i>
+                  <span>Show unverified entries</span>
+                </label>
               </Checkbox>
             </FootnoteDiv>
             <FootnoteDiv style={{ textAlign: "right" }}>

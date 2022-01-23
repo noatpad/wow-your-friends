@@ -2,9 +2,9 @@ let moment = require('moment');
 
 module.exports = {
   siteMetadata: {
-    title: `Wow Your Friends`,
-    description: `A small website serving as a record of all the skillful players who obtained all 202 Celeste's strawberries`,
-    author: `a clueless danny`,
+    title: 'Wow Your Friends',
+    description: 'A small website serving as a record of all the skillful players who obtained all 202 Celeste\'s strawberries',
+    author: 'a clueless danny',
     lastUpdated: moment().format('MMM D, YYYY'),
     siteUrl: 'https://wowyourfriends.netlify.com',
     image: '/card-image.png',
@@ -13,7 +13,7 @@ module.exports = {
   },
   plugins: [
     {
-      resolve: `gatsby-plugin-manifest`,
+      resolve: 'gatsby-plugin-manifest',
       options: {
         name: 'Wow Your Friends',
         short_name: 'Wow Your Friends',
@@ -24,30 +24,28 @@ module.exports = {
         icon: 'static/icon.png'
       }
     },
-    `gatsby-plugin-react-helmet`,
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-emotion',
-    `gatsby-transformer-json`,
+    'gatsby-transformer-json',
     {
-      resolve: `gatsby-source-filesystem`,
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: `data`,
+        name: 'data',
         path: `${__dirname}/src/assets`,
       },
     },
-    `gatsby-transformer-sharp`,
-    `gatsby-plugin-sharp`,
-    `gatsby-plugin-sitemap`,
+    'gatsby-plugin-image',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
-      resolve: `gatsby-plugin-robots-txt`,
+      resolve: 'gatsby-plugin-robots-txt',
       options: {
         policy: [{ userAgent: '*', allow: '/' }]
       }
     },
     {
-      resolve: `gatsby-plugin-gtag`,
-      options: {
-        trackingId: 'UA-152954702-1'
-      }
+      resolve: 'gatsby-plugin-gtag',
+      options: { trackingId: 'UA-152954702-1' }
     }
   ],
 }

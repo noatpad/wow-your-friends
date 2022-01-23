@@ -225,7 +225,7 @@ const milestoneHistory = [
     message: 'How poetic that we got one player for each berry right before the 2nd anniversary...'
   },
   {
-    date: 'Sep 9, 2020',
+    date: 'Sep 9, 2021',
     milestone: <p>Farewell's 2nd anniversary!</p>,
     message: <p>Last year, we were just shy of 100 players. Now we beat even the 202-mark by the second year. Wild.</p>
   },
