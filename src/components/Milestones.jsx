@@ -194,7 +194,7 @@ const milestoneHistory = [
     milestone: <p><Span color={colors.yelloworange} bold>125</Span> players have achieved 202!</p>
   },
   {
-    date: 'March 12, 2021',
+    date: 'Mar 12, 2021',
     milestone: <p><Span color={colors.yelloworange} bold>150</Span> players have achieved 202!</p>
   },
   {
@@ -214,6 +214,24 @@ const milestoneHistory = [
     date: 'July 11, 2021',
     milestone: <p><Span bold>DJTom3</Span>, the original Farewell golden list maintainer before Wow Your Friends, had at long last gotten 202!</p>,
     message: <p>How wild to finally see this journey reach its end. Mad props to ya, man! Now wait for me so I can join the club too ;)</p>
+  },
+  {
+    date: 'Sep 5, 2021',
+    milestone: <p><Span color={colors.yelloworange} bold>200</Span> players have achieved 202!</p>
+  },
+  {
+    date: 'Sep 5, 2021',
+    milestone: <p><Span color={colors.marmalade} bold>202</Span> players have achieved 202!</p>,
+    message: 'How poetic that we got one player for each berry right before the 2nd anniversary...'
+  },
+  {
+    date: 'Sep 9, 2020',
+    milestone: <p>Farewell's 2nd anniversary!</p>,
+    message: <p>Last year, we were just shy of 100 players. Now we beat even the 202-mark by the second year. Wild.</p>
+  },
+  {
+    date: 'Nov 28, 2021',
+    milestone: <p><Span color={colors.yelloworange} bold>225</Span> players have achieved 202!</p>
   },
 ]
 
