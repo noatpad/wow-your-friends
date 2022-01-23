@@ -3458,6 +3458,32 @@
       "doubleGolden": false,
       "memeRun": false,
       "got202": 2
+    },
+    {
+      "name": "Kokasgui",
+      "date": "2022-01-16",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": false,
+      "url": "local",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
+    },
+    {
+      "name": "Vicksy",
+      "date": "2022-01-23",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.twitch.tv/videos/1273839408",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
     }
   ]
 }
