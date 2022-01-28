@@ -203,7 +203,7 @@ const milestoneHistory = [
   },
   {
     date: 'May 29, 2021',
-    milestone: <p>5 hours got 202 within <Span bold>16</Span> hours!</p>,
+    milestone: <p>5 people got 202 within <Span bold>16</Span> hours!</p>,
     message: <p>Y'all are determined, hot dang</p>
   },
   {

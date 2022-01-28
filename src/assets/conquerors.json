@@ -3096,19 +3096,6 @@
       "got202": 2
     },
     {
-      "name": "Solba1",
-      "date": "2021-10-24",
-      "platform": "Switch",
-      "verified": true,
-      "reasonForNonVerified": "",
-      "videoProof": true,
-      "url": "https://twitter.com/Solba1_S1/status/1452297900747280384",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 0
-    },
-    {
       "name": "weklx",
       "date": "2021-10-25",
       "platform": "PC",
@@ -3172,6 +3159,19 @@
       "doubleGolden": true,
       "memeRun": false,
       "got202": 2
+    },
+    {
+      "name": "Solba1",
+      "date": "2021-10-31",
+      "platform": "Switch",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://twitter.com/Solba1_S1/status/1452297900747280384",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 1
     },
     {
       "name": "オリ",
@@ -3434,6 +3434,19 @@
       "got202": 2
     },
     {
+      "name": "FirefanLP",
+      "date": "2022-01-08",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=C3hLNCKY3xA",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
+    },
+    {
       "name": "Maddo",
       "date": "2022-01-08",
       "platform": "Switch",
@@ -3447,13 +3460,26 @@
       "got202": 2
     },
     {
-      "name": "FirefanLP",
-      "date": "2022-01-08",
+      "name": "RandomEevee",
+      "date": "2022-01-20",
       "platform": "PC",
       "verified": true,
       "reasonForNonVerified": "",
       "videoProof": true,
-      "url": "https://www.youtube.com/watch?v=C3hLNCKY3xA",
+      "url": "https://www.youtube.com/watch?v=IKUOkcLI3VQ",
+      "keySkip": true,
+      "doubleGolden": false,
+      "memeRun": false,
+      "got202": 2
+    },
+    {
+      "name": "蓝天白云XYZ",
+      "date": "2022-01-23",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.bilibili.com/video/BV1mq4y1c7xi?spm_id_from=333.999.0.0",
       "keySkip": true,
       "doubleGolden": false,
       "memeRun": false,
