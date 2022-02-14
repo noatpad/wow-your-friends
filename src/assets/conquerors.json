@@ -8,10 +8,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=BZsNg-8_xpw",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Eenox",
@@ -21,10 +18,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=QUWEjHYgxZc",
-      "keySkip": false,
-      "doubleGolden": true,
-      "memeRun": true,
-      "got202": 2
+      "flags": ["nks", "double", "meme"]
     },
     {
       "name": "Chaikitty",
@@ -34,10 +28,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=0btxzsgFyNc",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Plush",
@@ -47,10 +38,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=NDZhN11sFXQ",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Hydro",
@@ -60,10 +48,7 @@
       "reasonForNonVerified": "No video, just screenshots of stats.",
       "videoProof": false,
       "url": "https://www.youtube.com/watch?v=NDZhN11sFXQ",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Angrevol",
@@ -73,10 +58,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=rlwlS1uaWEk",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "rjdimo",
@@ -86,10 +68,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=2VshmzJTBS8",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "CyberGamer1539",
@@ -99,10 +78,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=lhxX9FmeUMc",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "Starshadow",
@@ -112,10 +88,7 @@
       "reasonForNonVerified": "No video, just screenshot of stats.",
       "videoProof": false,
       "url": "https://www.reddit.com/r/celestegame/comments/daqbkz/after_155_hours_i_have_finally_done_it_i_have/",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Yamard",
@@ -125,10 +98,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=UqG8VBnANU8",
-      "keySkip": false,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["nks"]
     },
     {
       "name": "snifidy",
@@ -138,10 +108,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=5_4AljC8wtM",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Kriog16",
@@ -151,10 +118,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=ltWFNsIlpEk",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "Zangetsx",
@@ -164,10 +128,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1CE411k7c2",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "AkaraWa",
@@ -177,10 +138,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=hJP-sx-krAU",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "TGH",
@@ -190,10 +148,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=r1Sy9My2R6o",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Master_Sparky",
@@ -203,10 +158,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=R7bLK4LFb6E",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "WoofWoofDoggo",
@@ -216,10 +168,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=wSocbDzgYg8",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "CloudsMind",
@@ -229,10 +178,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1PJ411o7ZY",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "apollo",
@@ -242,10 +188,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=Hp9__Y-JWtc",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 0
+      "flags": ["not202"]
     },
     {
       "name": "gareth_maxwell",
@@ -255,10 +198,7 @@
       "reasonForNonVerified": "No video, just screenshot of stats.",
       "videoProof": false,
       "url": "https://www.reddit.com/r/celestegame/comments/e6ecc2/after_150_hours_and_9000_deaths_i_finally_got_the/",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "DrDimentio",
@@ -268,10 +208,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=mDFdXz6FvZc",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
 
     {
@@ -282,10 +219,7 @@
       "reasonForNonVerified": "No video, just screenshot of stats. Also has dubious stats (and a second, deleted file was used for pracice)",
       "videoProof": false,
       "url": "https://twitter.com/traquatex/status/1208697282222268418?s=21",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "touhoe",
@@ -295,10 +229,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=xE1h71JyLsA",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "BV502",
@@ -308,10 +239,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=RdYurkC9IoM",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Nathan5190",
@@ -321,10 +249,7 @@
       "reasonForNonVerified": "Video clip shows Variants mode was enabled, even if all Variants were supposedly turned off.",
       "videoProof": true,
       "url": "https://www.reddit.com/r/celestegame/comments/ef8r1i/i_finally_hit_202_berries_almost_exactly_a_year/",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "没事儿爱唱歌",
@@ -334,10 +259,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1mJ411W7sV",
-      "keySkip": false,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["nks"]
     },
     {
       "name": "DeathKontrol",
@@ -347,10 +269,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=i0wN8dRAd7c",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "Cr33pyCat",
@@ -360,10 +279,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=FkE_5gnaBUE",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": true,
-      "got202": 2
+      "flags": ["double", "meme"]
     },
     {
       "name": "SystemGlitch",
@@ -373,10 +289,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=J-_5rOn4rJk",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Mozkovic",
@@ -386,10 +299,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://twitter.com/mozkovic1/status/1210950246832001026?s=21",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Habbedaz",
@@ -399,10 +309,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=gu4342-tOqw",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": true,
-      "got202": 2
+      "flags": ["double", "meme"]
     },
     {
       "name": "mt_steve",
@@ -412,10 +319,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=cfUno0GVD64",
-      "keySkip": false,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 1
+      "flags": ["pre202", "double", "nks"]
     },
     {
       "name": "Rickfernello",
@@ -425,10 +329,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=HdIMIJ-To_M&t=75",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Piper1618",
@@ -438,10 +339,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=lSFeRg5Uo5o",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "DemoJameson",
@@ -451,10 +349,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=xkJe_vEhTB0",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "Evansfight",
@@ -464,10 +359,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/552508828?t=10h02m08s",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "cordovia",
@@ -477,10 +369,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=y8QcIMMrvJo",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "MattressWorld",
@@ -490,10 +379,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=63-EUnxsWxk",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "YY kun",
@@ -503,10 +389,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=BE_QTFbeCfE",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Cay",
@@ -516,10 +399,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=OFkNHvr9ZDU",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Benjamanian",
@@ -529,10 +409,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/559611347",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Evermar314159",
@@ -542,10 +419,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=fcgqfbOrFfY",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "NPH",
@@ -555,10 +429,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=8lLhuWkC2Hg",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "DonTonberry",
@@ -568,10 +439,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/577635523",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "ClemGeek",
@@ -581,10 +449,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://twitter.com/clemGEEK16/status/1244324238271668228",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "爬山姗",
@@ -594,10 +459,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1Hp4y1C7Jn",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Clantis",
@@ -607,10 +469,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=nZIkxLvDL6s",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "wishcresp",
@@ -620,10 +479,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=q7HsVafp0ps",
-      "keySkip": false,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double", "nks"]
     },
     {
       "name": "erictran0",
@@ -633,10 +489,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/590780156",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "unfandemcmillen",
@@ -646,10 +499,7 @@
       "reasonForNonVerified": "Screenshot of file select, but has streamed before",
       "videoProof": false,
       "url": "local",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "wandrewni",
@@ -659,10 +509,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/592377913",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "天府2234",
@@ -672,10 +519,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1m64y1T742",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "SergeantSnivy243",
@@ -685,10 +529,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/595287126",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "the_herobrian",
@@ -698,10 +539,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/597040930",
-      "keySkip": false,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double", "nks"]
     },
     {
       "name": "cxz0618",
@@ -711,10 +549,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV16g4y187s1",
-      "keySkip": false,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["nks"]
     },
     {
       "name": "Kyohei",
@@ -724,10 +559,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/605906598",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Monika",
@@ -737,10 +569,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=IOvLtpN-JhM",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "桐815",
@@ -750,10 +579,7 @@
       "reasonForNonVerified": "Video only starts at the end of the golden room.",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1FK411L7Y8",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "ぶらすと",
@@ -763,10 +589,7 @@
       "reasonForNonVerified": "Incomplete video (missing 14:00-15:22)",
       "videoProof": true,
       "url": "https://www.youtube.com/playlist?list=PLEKY4s8jbJ3UFb5p8ln6jQUG-6-aUcU4g",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Ploist",
@@ -776,10 +599,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=m1_g6nrEw5w",
-      "keySkip": false,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["nks"]
     },
     {
       "name": "Novennial",
@@ -789,10 +609,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=2opmgDS5zbs",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "pisgood",
@@ -802,10 +619,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=Iq-0MwByslc",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "6.28",
@@ -815,10 +629,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/playlist?list=PLJKuDs25qokNoJ_NY3IzoUCDZ6UfgR50l",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "quadratic97",
@@ -828,10 +639,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=i6bmpaojYfs",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Bossman",
@@ -841,10 +649,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=xlgM_kHNrSM",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "danesky",
@@ -854,10 +659,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.nicovideo.jp/watch/sm36904465",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "Slons",
@@ -867,10 +669,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=a7x49ZdRnOE",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Soapi",
@@ -880,10 +679,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtu.be/dAH_7dxEa5s",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "Jin_Gaster",
@@ -893,10 +689,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=mRRzpG_uUgA",
-      "keySkip": false,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double", "nks"]
     },
     {
       "name": "Aroxon",
@@ -906,10 +699,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=wfihP2-zcO8",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Vamp",
@@ -919,10 +709,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtu.be/GSXZIv7-gY8",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "EldritchBerry",
@@ -932,10 +719,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=4Dzae2AVDTA",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 1
+      "flags": ["pre202", "double"]
     },
     {
       "name": "执着owo",
@@ -945,10 +729,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1XK411p7Qx",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "KC",
@@ -958,10 +739,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=P494K6y2vE4",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Norah",
@@ -971,10 +749,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/659552556",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "JayJay",
@@ -984,10 +759,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=0hN0Dc6GSDA",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Aegis_1",
@@ -997,10 +769,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1Mf4y1R7kf",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "无情的1up机器",
@@ -1010,10 +779,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV17C4y1h7tC",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "F4697",
@@ -1023,10 +789,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/682438883",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Sow",
@@ -1036,10 +799,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=7Fw_epBDys4",
-      "keySkip": false,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 1
+      "flags": ["pre202", "nks"]
     },
     {
       "name": "Joe Po",
@@ -1049,10 +809,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=BmSk5vK6plI",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "0mengyi0",
@@ -1062,10 +819,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1b54y197tY?p=26",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "wantarou",
@@ -1075,10 +829,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=1np4Eoi4hgw",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "DollyDeKuva",
@@ -1088,10 +839,7 @@
       "reasonForNonVerified": "No video, just screenshot of stats. Claims to have 180+ hours on a different save.",
       "videoProof": false,
       "url": "https://www.reddit.com/r/celestegame/comments/i1gs7a/i_did_it_i_completed_the_game/",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "CC-ss",
@@ -1101,10 +849,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1bv41167Lc",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 1
+      "flags": ["pre202"]
     },
     {
       "name": "TyKim",
@@ -1114,10 +859,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=3i7094qW90w",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "Xplosives",
@@ -1127,10 +869,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=82ekDA5UWG0",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "soc0609",
@@ -1140,10 +879,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=8Ttm3sHklQw",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Kiiview",
@@ -1153,10 +889,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtu.be/i3V3rUyGaug",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "Pyrolescent",
@@ -1166,10 +899,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtu.be/yZhzmq53sXQ",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "Plandiss",
@@ -1179,10 +909,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=swx-ogInyh0",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Lugei",
@@ -1192,10 +919,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=h_-HiKuEY60",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Yoshi",
@@ -1205,10 +929,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtu.be/UdwwJy-2ymM",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "黑月KING",
@@ -1218,10 +939,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1CZ4y1K7Qb",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "VestingBarbecue",
@@ -1231,10 +949,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/719470263",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "优雅只与爱相关",
@@ -1244,10 +959,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1Jt4y1S7dD",
-      "keySkip": false,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["nks"]
     },
     {
       "name": "七海椋",
@@ -1257,10 +969,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1Ry4y1C7qt",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 0
+      "flags": ["not202"]
     },
     {
       "name": "Ezel",
@@ -1270,10 +979,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=_M6YlCasdU4",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "LuhxEn",
@@ -1283,10 +989,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=-XYi6sz0_z8",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 0
+      "flags": ["not202"]
     },
     {
       "name": "Jellopuff",
@@ -1296,10 +999,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://twitter.com/LiquidJellopuff/status/1300822700118536194",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Eliss V.",
@@ -1309,10 +1009,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=5NkJNreG82E",
-      "keySkip": false,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["nks"]
     },
     {
       "name": "minecire",
@@ -1322,10 +1019,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://mne.cx/Videos/farewell%20golden.mp4",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "noetmon",
@@ -1335,10 +1029,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=-T-DMYg441o",
-      "keySkip": false,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["nks"]
     },
     {
       "name": "CANADIAN",
@@ -1348,10 +1039,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=96AOQC7a-3E",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 0
+      "flags": ["not202"]
     },
     {
       "name": "Ambrosiagong",
@@ -1361,10 +1049,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/732303128",
-      "keySkip": false,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["nks"]
     },
     {
       "name": "Superkell",
@@ -1374,10 +1059,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/playlist?list=PLdS53eIT_QOtRCObt71IFxOkokr-YBVdn",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Tadawara",
@@ -1387,10 +1069,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=Jen7LL90wjw",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "JTF98",
@@ -1400,10 +1079,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=VX05778-3dY",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 1
+      "flags": ["pre202"]
     },
     {
       "name": "Monkey D. Link",
@@ -1413,10 +1089,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=QRbQ7-JIick",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "tinyklein",
@@ -1426,10 +1099,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/737768618",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Stuttgarden",
@@ -1439,10 +1109,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/737768618",
-      "keySkip": false,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["nks"]
     },
     {
       "name": "ぽけさめ",
@@ -1452,10 +1119,7 @@
       "reasonForNonVerified": "Video once existed, but has been removed for unknown reasons.",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=Wuzkx-2CPwk",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "nashinashi",
@@ -1465,10 +1129,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=mi6hFkMdLO8",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Desereder",
@@ -1478,10 +1139,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=JxcQstEsoVY",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "jelloknifee",
@@ -1491,10 +1149,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=f4HUeV5BqVU",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "AprilSR",
@@ -1504,10 +1159,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=z_n7yPqYPhY",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Meercko",
@@ -1517,10 +1169,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=oOZO-KC0oaU",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "sladkoru",
@@ -1530,10 +1179,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=YtKEsw_Tx9M",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "febasguga",
@@ -1543,10 +1189,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://twitter.com/febasguga/status/1319081598986244096",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Domochar9",
@@ -1556,10 +1199,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/788616821",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "ParrotDash",
@@ -1569,10 +1209,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=vywMd3DPECo",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "GuardianRTz",
@@ -1582,10 +1219,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/794220879",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Hunyjoa",
@@ -1595,10 +1229,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=pSEQPU8Vo-A",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Croissant",
@@ -1608,10 +1239,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=V2DBj8CnwZw",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "FlyinPoulpus",
@@ -1621,10 +1249,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=UWzTUUupheM",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Klice",
@@ -1634,10 +1259,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=9mO6fcopJR0",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 1
+      "flags": ["pre202", "double"]
     },
     {
       "name": "CalebTheKing",
@@ -1647,10 +1269,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://twitter.com/CalebPeppiatt/status/1330257376075804672",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Ecl1psed",
@@ -1660,10 +1279,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/812891179",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "ekisacik",
@@ -1673,10 +1289,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/815059960",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "椋45",
@@ -1686,10 +1299,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1Ry4y1C7qt",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 1
+      "flags": ["pre202"]
     },
     {
       "name": "TrueGreen",
@@ -1699,10 +1309,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=1qFRCrXZr2g",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Nepuri",
@@ -1712,10 +1319,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtu.be/hbWq256JkWQ",
-      "keySkip": false,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["nks"]
     },
     {
       "name": "yawaworhtnb",
@@ -1725,10 +1329,7 @@
       "reasonForNonVerified": "Cannot verify if Variants/Assist was used, neither show a recording of the Switch itself playing back the footage.",
       "videoProof": true,
       "url": "https://www.reddit.com/r/celestegame/comments/k6kjha/that_close_call_at_the_start_made_me_scream_so/",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 1
+      "flags": ["pre202"]
     },
     {
       "name": "Kostucha",
@@ -1738,10 +1339,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=37LzzVZZQIE",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Merk",
@@ -1751,10 +1349,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=Bkm-CtrW07E",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Maistas",
@@ -1764,10 +1359,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=tO3hVy3U7cU",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "rafix",
@@ -1777,10 +1369,7 @@
       "reasonForNonVerified": "Video only shows recording from the Farewell room and onward. Though there were witnesses present via CelesteNet",
       "videoProof": true,
       "url": "https://streamable.com/pou8u9",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Natalie",
@@ -1790,10 +1379,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtu.be/cqYr-qqbYiE",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Kezzer",
@@ -1803,10 +1389,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=1coHhRS3zco",
-      "keySkip": false,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["nks"]
     },
     {
       "name": "Benny",
@@ -1816,10 +1399,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=fradf4vXXhs",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Lucho",
@@ -1829,10 +1409,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=bLCuXaMSOTA",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "aleph_null",
@@ -1842,10 +1419,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtu.be/jCBmA1EEhj4",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "TonyWizard",
@@ -1855,10 +1429,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtube.com/playlist?list=PLGWRFUBm_kcAoqTWn9blckyPn3csb3-NP",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "The Paprika Leaf",
@@ -1868,10 +1439,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=hwW6zSuc9YI",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 1
+      "flags": ["pre202"]
     },
     {
       "name": "kijin_14",
@@ -1881,10 +1449,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=zvR46oEFZ6M",
-      "keySkip": false,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["nks"]
     },
     {
       "name": "CaptainCarpensir",
@@ -1894,10 +1459,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=QmAQCkqenBo",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "ToddBevino",
@@ -1907,10 +1469,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=feQkk4EXUnc",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Forksu",
@@ -1920,10 +1479,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=_wt-6gaqpbI",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "蘇揚智",
@@ -1933,10 +1489,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=MblA3W3EoUM",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "SpKi",
@@ -1946,10 +1499,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "http://youtu.be/6LZc0nRkl3I",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Kingarthur",
@@ -1959,10 +1509,7 @@
       "reasonForNonVerified": "No video, just screenshot of stats.",
       "videoProof": false,
       "url": "local",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "PixelBlitz",
@@ -1972,10 +1519,7 @@
       "reasonForNonVerified": "No video, just screenshot of stats.",
       "videoProof": false,
       "url": "local",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "Tayashie",
@@ -1985,10 +1529,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "http://youtu.be/k9QdeHQYrVs",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Poncle",
@@ -1998,10 +1539,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "http://youtu.be/dQxVor0RFy0",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "白夜永昼_",
@@ -2011,10 +1549,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1cT4y1N7qE",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "aqwii",
@@ -2024,10 +1559,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "http://youtu.be/ck-x_4D-Pnc",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "oatmeal",
@@ -2037,10 +1569,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "http://youtu.be/_yx9x9jOoxw",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Soul ` Destiny",
@@ -2050,10 +1579,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/av331780469",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "gronxest",
@@ -2063,10 +1589,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/924004607",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "桦树ovo",
@@ -2076,10 +1599,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1FK4y1X78a",
-      "keySkip": false,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double", "nks"]
     },
     {
       "name": "节奏桑",
@@ -2089,10 +1609,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV16y4y1h7Y6",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "AntiTerrestrial",
@@ -2102,10 +1619,7 @@
       "reasonForNonVerified": "No video, just screenshot of stats.",
       "videoProof": false,
       "url": "local",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "ねりな",
@@ -2115,10 +1629,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=FA5O_XmuMKY",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "ranpigJP",
@@ -2128,10 +1639,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/934244266",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Fonkiun",
@@ -2141,10 +1649,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://twitter.com/FonkinC/status/1366837842777763840",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Eletrick",
@@ -2154,10 +1659,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=TQRyW4VtBpc",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "Klyx",
@@ -2167,10 +1669,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "http://youtu.be/ELgRkSamyyo",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 1
+      "flags": ["pre202"]
     },
     {
       "name": "2_Unofficial",
@@ -2180,10 +1679,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1gv411a7Su",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Niku",
@@ -2193,10 +1689,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=FA5O_XmuMKY",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "KahiModz",
@@ -2206,10 +1699,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=UUVSX-0Ca_Q",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "marz",
@@ -2219,10 +1709,7 @@
       "reasonForNonVerified": "Video only starts at the beginning of the golden room.",
       "videoProof": true,
       "url": "https://youtube.com/watch?v=MtrzM0n2yfY",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Wasp",
@@ -2232,10 +1719,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtu.be/GBdIO4U4Enc",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "mats the cat",
@@ -2245,10 +1729,7 @@
       "reasonForNonVerified": "No video, just picture of Switch at the end of the golden room.",
       "videoProof": false,
       "url": "local",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Runows",
@@ -2258,10 +1739,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=RqESsVPbimE",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "dadangerdan",
@@ -2271,10 +1749,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=9VtEuZ6Eins",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "bowewod",
@@ -2284,10 +1759,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=s6t6eH3cTQw",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Solomon",
@@ -2297,10 +1769,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=IntA9WaYVhg",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Athena Venny",
@@ -2310,10 +1779,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=EPEx54ClgIY",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "慎独QWQ",
@@ -2323,10 +1789,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/av845322461",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "LeSchoki",
@@ -2336,10 +1799,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=Mcp8-ncZMYc",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "蕴空之灵",
@@ -2349,10 +1809,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1CK4y1d7r5",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "SuperLan11",
@@ -2362,10 +1819,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=ExIt0g92q0k",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "juckter",
@@ -2375,10 +1829,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=LWgVwnPdxpM",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Nihlm",
@@ -2388,10 +1839,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtu.be/Siu7Q-YsXMo",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Kaijanmeyer",
@@ -2401,10 +1849,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtu.be/4__mm53fT7U",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Finn",
@@ -2414,10 +1859,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtu.be/5fPQrdGyCVw",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "園田",
@@ -2427,10 +1869,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=Q7r7mbKzNbU",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "0ta0ta",
@@ -2440,10 +1879,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=C3wfCE7qEFM",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "rex",
@@ -2453,10 +1889,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=r-ytOIJ-guw",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Vina",
@@ -2466,10 +1899,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=sPh5U-gzmbU",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "三思UwU",
@@ -2479,10 +1909,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1sU4y1L7nR",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Visability",
@@ -2492,10 +1919,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/1039140840",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "Asgord",
@@ -2505,10 +1929,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtu.be/LLQhuM9BXJU",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Thalant",
@@ -2518,10 +1939,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtube.com/watch?v=F12nTLjGVsw",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Handsome计数君",
@@ -2531,10 +1949,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1vf4y1t7Xa",
-      "keySkip": false,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["nks"]
     },
     {
       "name": "Nanashi",
@@ -2544,10 +1959,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1Ph411h7qs",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 0
+      "flags": ["not202"]
     },
     {
       "name": "Grady",
@@ -2557,10 +1969,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=S1iq6idaQSM",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Edvin",
@@ -2570,10 +1979,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtu.be/6gfmitJh_ZI",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 0
+      "flags": ["not202", "double"]
     },
     {
       "name": "NotPhobos",
@@ -2583,10 +1989,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtu.be/lBlO7NFcsIA",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Lyly",
@@ -2596,10 +1999,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=k8YI3puSTFs",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "te",
@@ -2609,10 +2009,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=YuZxcBvmbaQ",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "DJTom3",
@@ -2622,10 +2019,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtu.be/kZOwI_6z528",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "TSMadness",
@@ -2635,10 +2029,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtu.be/ebUIff8pQEg",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "YellowRelic",
@@ -2648,10 +2039,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtu.be/agb4nI4Gpyk",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "休如是",
@@ -2661,10 +2049,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1544y127yL",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Luqualizer",
@@ -2674,10 +2059,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=Iqd--NRfafw&t=8794s",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "哈綠",
@@ -2687,10 +2069,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=DFadavml_co",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "BrutalSword",
@@ -2700,10 +2079,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=PkC2HnMVptE",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "DiamondSplash",
@@ -2713,10 +2089,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=9J29KNJ6Ejg",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "White Small",
@@ -2726,10 +2099,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=dDjtMaqBk7c&pp=sAQA",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "npesta",
@@ -2739,10 +2109,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=ZMU4qIWYZvw",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "GryphonReborn",
@@ -2752,10 +2119,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=TyTsXMAxzOY",
-      "keySkip": false,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["nks"]
     },
     {
       "name": "Aevean Leeow",
@@ -2765,10 +2129,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=IwmxUuZFMfQ",
-      "keySkip": false,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["nks"]
     },
     {
       "name": "TomikaArome",
@@ -2778,10 +2139,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/1127265922",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Flarefin",
@@ -2791,10 +2149,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtu.be/Oj5wOGUwFVY",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "cousinAndrew",
@@ -2804,10 +2159,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/1127732542",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "potato",
@@ -2817,10 +2169,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=d_jYHbsRfYc",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "sgen",
@@ -2830,10 +2179,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=ePF9ufv1kHc",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "HJM",
@@ -2843,10 +2189,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1kL4y1Y7KU",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Cecily",
@@ -2856,10 +2199,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/1131745037",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Akino",
@@ -2869,10 +2209,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=EGOFN0A1BjI",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "Ana",
@@ -2882,10 +2219,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/1139442401",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "wuz179",
@@ -2895,10 +2229,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV19q4y1T72S",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Cuttleshock",
@@ -2908,10 +2239,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/1139848041",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "AWJ",
@@ -2921,10 +2249,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=ssTHRQO5E0g",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Keamua",
@@ -2934,10 +2259,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1mv41137B9",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 0
+      "flags": ["not202"]
     },
     {
       "name": "qtFruity",
@@ -2947,10 +2269,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=OFxIEFnaMu0",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Avengah",
@@ -2960,10 +2279,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=AlwNJvVriKE",
-      "keySkip": false,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["nks"]
     },
     {
       "name": "Thomas Dalton",
@@ -2973,10 +2289,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=oczB8yP7eF8",
-      "keySkip": false,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["nks"]
     },
     {
       "name": "ねりな",
@@ -2986,10 +2299,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://pastebin.com/QVRXfXH7",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Luv_Cocoa",
@@ -2999,10 +2309,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1eQ4y1671i",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "魄破坡",
@@ -3012,10 +2319,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1YU4y147Sm?spm_id_from=333.999.0.0",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Lizlazed",
@@ -3025,10 +2329,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=oyGdkiP2qLA",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Maivee",
@@ -3038,10 +2339,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/1172597254",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Frogslayer",
@@ -3051,10 +2349,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=xVzLnweQeAQ",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "grandeggplant",
@@ -3064,10 +2359,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=AKs7Gccr8IQ",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "vurofn",
@@ -3077,10 +2369,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1hR4y1J77W",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "viddie",
@@ -3090,10 +2379,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=naYN4BlslZQ",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "weklx",
@@ -3103,10 +2389,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1vv411u7EL",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "tp",
@@ -3116,10 +2399,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1WP4y1b7Ky",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 0
+      "flags": ["not202"]
     },
     {
       "name": "AdvancedStew",
@@ -3129,10 +2409,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/1188115456",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "mirrorcult",
@@ -3142,10 +2419,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=GZ-PfLWttZw",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Revi64",
@@ -3155,10 +2429,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=wWc060hmb0I",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "Solba1",
@@ -3168,10 +2439,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://twitter.com/Solba1_S1/status/1452297900747280384",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 1
+      "flags": ["pre202"]
     },
     {
       "name": "オリ",
@@ -3181,10 +2449,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=_D4oW7M-dRM",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Thrythe",
@@ -3194,10 +2459,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=kUdi6dgoQmI",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Blue Cardinal",
@@ -3207,10 +2469,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=pTpIcRrJeTI",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "姑苟",
@@ -3220,10 +2479,17 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1NF411Y7q9",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 1
+      "flags": ["pre202"]
+    },
+    {
+      "name": "Little",
+      "date": "2021-11-20",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=L1oMzXqtINA",
+      "flags": ["dts", "nks"]
     },
     {
       "name": "NotPhobos",
@@ -3233,10 +2499,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtube.com/watch?v=7vMvzTwOfn8",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "ComputerBadger",
@@ -3246,10 +2509,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=f1AB3iI4V08",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 0
+      "flags": ["not202"]
     },
     {
       "name": "Luv_Cicini",
@@ -3259,10 +2519,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV18S4y1R7Xh",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 0
+      "flags": ["not202"]
     },
     {
       "name": "Crazyme123",
@@ -3272,10 +2529,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=XFUaoR_txUI",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Troa",
@@ -3285,10 +2539,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=dYai6_7gVpA",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Snowy",
@@ -3298,10 +2549,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=7F4LhdPD9aI",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 0
+      "flags": ["not202"]
     },
     {
       "name": "4k88",
@@ -3311,10 +2559,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=ACyvuYO1NQI",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Rosalinor",
@@ -3324,10 +2569,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=DKFY_RvO3nE",
-      "keySkip": true,
-      "doubleGolden": true,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["double"]
     },
     {
       "name": "lin",
@@ -3337,10 +2579,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1eh411W7fa",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 1
+      "flags": ["pre202"]
     },
     {
       "name": "朽木白哉",
@@ -3350,10 +2589,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1N34y197sC",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "wallBO",
@@ -3363,10 +2599,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtube.com/watch?v=xXXt-Hevik8",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "ciclicl",
@@ -3376,10 +2609,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://youtu.be/HEASEKMDfxM?t=1641",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Frame3",
@@ -3389,10 +2619,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=os1l9XBmHQw",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Alex21",
@@ -3402,10 +2629,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=2jmn-DXI0j4",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "poogi",
@@ -3415,10 +2639,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=tNkpI5IoqNo",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Cleopatínea",
@@ -3428,10 +2649,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=lmMwxBWwIcQ",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "FirefanLP",
@@ -3441,10 +2659,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=C3hLNCKY3xA",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Maddo",
@@ -3454,10 +2669,17 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=ryCVsRfjJWo",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
+    },
+    {
+      "name": "tokikumo",
+      "date": "2022-01-08",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=BZZdKOCswnk",
+      "flags": ["dts"]
     },
     {
       "name": "RandomEevee",
@@ -3467,10 +2689,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=IKUOkcLI3VQ",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "蓝天白云XYZ",
@@ -3480,10 +2699,7 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.bilibili.com/video/BV1mq4y1c7xi?spm_id_from=333.999.0.0",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
     },
     {
       "name": "Kokasgui",
@@ -3493,10 +2709,17 @@
       "reasonForNonVerified": "",
       "videoProof": false,
       "url": "local",
-      "keySkip": false,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": ["nks"]
+    },
+    {
+      "name": "manbou_rubik",
+      "date": "2022-01-16",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=ffbAeoRsiA4",
+      "flags": ["dts"]
     },
     {
       "name": "Vicksy",
@@ -3506,10 +2729,97 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.twitch.tv/videos/1273839408",
-      "keySkip": true,
-      "doubleGolden": false,
-      "memeRun": false,
-      "got202": 2
+      "flags": []
+    },
+    {
+      "name": "notnot",
+      "date": "2022-01-27",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=uQc8G_JRteQ",
+      "flags": []
+    },
+    {
+      "name": "YellowLink10",
+      "date": "2022-01-28",
+      "platform": "Switch",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=0eVyLvHVwFU&list=PLR9-fFIyD6kdERXNQ9aLhcwqKQh572MHQ&index=1",
+      "flags": []
+    },
+    {
+      "name": "Kuojoh",
+      "date": "2022-01-28",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=Jo-z0LMvAqU",
+      "flags": ["not202"]
+    },
+    {
+      "name": "Xi_Zhu",
+      "date": "2022-01-29",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.bilibili.com/video/BV1fb4y1E7r1",
+      "flags": []
+    },
+    {
+      "name": "Juicebox Hero",
+      "date": "2022-01-29",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=AcCGU0Eh5Sw",
+      "flags": ["dts"]
+    },
+    {
+      "name": "BlockOfBudder",
+      "date": "2022-01-31",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=FajQLvAYWRU",
+      "flags": ["double", "nks"]
+    },
+    {
+      "name": "Smash Bandicoot",
+      "date": "2022-01-31",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=JRaUwF0yV3c",
+      "flags": ["double", "nks"]
+    },
+    {
+      "name": "Reinhardt",
+      "date": "2022-02-05",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://youtu.be/lpwm5Ozf4bE",
+      "flags": ["not202"]
+    },
+    {
+      "name": "Sumpthink",
+      "date": "2022-02-07",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=gyyBaWrKPzw",
+      "flags": []
     }
   ]
 }

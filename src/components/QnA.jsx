@@ -60,18 +60,13 @@ const QnA = () => {
   // GraphQL //
   const {
     goldenberry: { publicURL: goldberryURL },
+    dashTrigger: { publicURL: dashTriggerURL },
     gifImage: { publicURL: GifURL }
   } = useStaticQuery(graphql`
     query {
-      # Golden strawberry artwork
-      goldenberry: file(name: { eq: "golden-strawberry" }) {
-        publicURL
-      }
-
-      # Get URL of "You can do this" GIF
-      gifImage: file(name: { eq: "you-can-do-this" }) {
-        publicURL
-      }
+      goldenberry: file(name: { eq: "golden-strawberry" }) { publicURL }
+      dashTrigger: file(name: { eq: "dashTrigger" }) { publicURL }
+      gifImage: file(name: { eq: "you-can-do-this" }) { publicURL }
     }
   `)
 
@@ -155,6 +150,30 @@ const QnA = () => {
     ]
   }
 
+  // Details about DTS section
+  const dtsCards = {
+    className: "dts",
+    header: "What's the Dash Trigger Skip?",
+    postcards: [
+      {
+        rotateOffset: -3,
+        alignSelf: 'flex-start',
+        content: (<>
+          <p>In late 2021, a glitch was discovered known as the <a href="https://www.youtube.com/watch?v=al_3Wu27C4M&t=215s">Dash Trigger Skip</a>.</p>
+          <p>In a nutshell, performing this skip at the start of Farewell will allow the player to keep their 2 dashes throughout the majority of the level, significantly reducing the difficulty.</p>
+        </>)
+      },
+      {
+        rotateOffset: 2,
+        clockwise: false,
+        content: (<>
+          <p>This glitch can be done in normal play, so <b>a run is still valid</b> even when doing the DTS.</p>
+          <p>However, they will be hidden by default with a checkbox; as this greatly facilitates Farewell, the main roadblock to the 202 achievement.</p>
+        </>)
+      }
+    ]
+  }
+
   // "This is really hard" section content
   const encouragementCards = {
     className: "encouragement",
@@ -162,6 +181,7 @@ const QnA = () => {
     postcards: [
       {
         rotateOffset: -4,
+        alignSelf: 'flex-end',
         content: (<>
           <p>Yeah...I won't sugarcoat it, this <em>is</em> a really difficult challenge.</p>
           <p>There's a reason why so few have managed to overcome it, & it's because of that difficulty that I wanted to commemorate those players. It takes a lot of patience & effort to go so far.</p>
@@ -208,6 +228,7 @@ const QnA = () => {
     <Container>
       <Section {...aboutCards}/>
       <Section {...participateCards}/>
+      <Section {...dtsCards}/>
       <Section {...encouragementCards}/>
       <Section {...thankYouCards}/>
       <SwitchInfoModal set={setShowInfoModal} show={showInfoModal}/>

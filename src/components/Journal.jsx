@@ -325,6 +325,7 @@ const Journal = () => {
   const [showLegendModal, setShowLegendModal] = useState(false)
   const [showNon202Entries, setShowNon202Entries] = useState(false)
   const [showVerifiedEntries, setShowVerifiedEntries] = useState(false)
+  const [showDTSEntries, setShowDTSEntries] = useState(false)
   const [currentURL, setCurrentURL] = useState("")
 
   // Hooks //
@@ -376,7 +377,8 @@ const Journal = () => {
     keyImage: { publicURL: keyURL },
     moonberryImage: { publicURL: moonberryURL },
     eenoxImage: { publicURL: eenoxURL },
-    ghostberryImage: { publicURL: ghostberryURL }
+    ghostberryImage: { publicURL: ghostberryURL },
+    dashTriggerImage: { publicURL: dashTriggerURL }
   } = useStaticQuery(graphql`
     query {
       # Get last updated date
@@ -396,10 +398,7 @@ const Journal = () => {
           reasonForNonVerified
           videoProof
           url
-          keySkip
-          doubleGolden
-          memeRun
-          got202
+          flags
         }
       }
 
@@ -412,53 +411,19 @@ const Journal = () => {
       }
 
       # Get image URLs
-      journalImage: file(name: { eq: "journal" }) {
-        publicURL
-      }
-
-      titleImage: file(name: { eq: "title-smear" }) {
-        publicURL
-      }
-
-      pageImage: file(name: { eq: "page" }) {
-        publicURL
-      }
-
-      goldberryImage: file(name: { eq: "goldberry" }) {
-        publicURL
-      }
-
-      silverberryImage: file(name: { eq: "silverberry" }) {
-        publicURL
-      }
-
-      bronzeberryImage: file(name: { eq: "bronzeberry" }) {
-        publicURL
-      }
-
-      videoImage: file(name: { eq: "video" }) {
-        publicURL
-      }
-
-      screenshotImage: file(name: { eq: "screenshot" }) {
-        publicURL
-      }
-
-      keyImage: file(name: { eq: "key" }) {
-        publicURL
-      }
-
-      moonberryImage: file(name: { eq: "moonberry" }) {
-        publicURL
-      }
-
-      eenoxImage: file(name: { eq: "eenox" }) {
-        publicURL
-      }
-
-      ghostberryImage: file(name: { eq: "ghostberry" }) {
-        publicURL
-      }
+      journalImage: file(name: { eq: "journal" }) { publicURL }
+      titleImage: file(name: { eq: "title-smear" }) { publicURL }
+      pageImage: file(name: { eq: "page" }) { publicURL }
+      goldberryImage: file(name: { eq: "goldberry" }) { publicURL }
+      silverberryImage: file(name: { eq: "silverberry" }) { publicURL }
+      bronzeberryImage: file(name: { eq: "bronzeberry" }) { publicURL }
+      videoImage: file(name: { eq: "video" }) { publicURL }
+      screenshotImage: file(name: { eq: "screenshot" }) { publicURL }
+      keyImage: file(name: { eq: "key" }) { publicURL }
+      moonberryImage: file(name: { eq: "moonberry" }) { publicURL }
+      eenoxImage: file(name: { eq: "eenox" }) { publicURL }
+      ghostberryImage: file(name: { eq: "ghostberry" }) { publicURL }
+      dashTriggerImage: file(name: { eq: "dashTrigger" }) { publicURL }
     }
   `)
 
@@ -467,12 +432,17 @@ const Journal = () => {
 
   // Filter out screenshot entries when necessary
   if (!showVerifiedEntries) {
-    conquerors = conquerors.filter(({ verified }) => verified)
+    conquerors = conquerors.filter(c => c.verified)
   }
 
   // Filter out non-202 entries when necessary
   if (!showNon202Entries) {
-    conquerors = conquerors.filter(({ got202 }) => got202)
+    conquerors = conquerors.filter(c => !c.flags.includes('not202'))
+  }
+
+  // Filter out DTS runs when necessary
+  if (!showDTSEntries) {
+    conquerors = conquerors.filter(c => !c.flags.includes('dts'))
   }
 
   // Functions //
@@ -500,46 +470,26 @@ const Journal = () => {
     window.open(url, "_blank")
   }
 
-  // Format a placement string depending on rank
-  const getPlacement = rank => {
-    let placement
+  const getPlacement = (rank) => {
+    if (rank >= 10 && rank <= 19) { return `${rank}th`; }
+    if (rank % 10 === 1) { return `${rank}st`; }
+    if (rank % 10 === 2) { return `${rank}nd`; }
+    if (rank % 10 === 3) { return `${rank}rd`; }
+    return `${rank}th`;
+  }
 
-    if (rank >= 10 && rank <= 19) {
-      placement = <Place>{rank}th</Place>
-    } else if (rank % 10 === 1) {
-      placement = (
-        <>
-          {rank === 1 && <Medal src={goldberryURL} alt="First place"/>}
-          <Place>{rank}st</Place>
-        </>
-      )
-    } else if (rank % 10 === 2) {
-      placement = (
-        <>
-          {rank === 2 && <Medal src={silverberryURL} alt="Second place"/>}
-          <Place>{rank}nd</Place>
-        </>
-      )
-    } else if (rank % 10 === 3) {
-      placement = (
-        <>
-          {rank === 3 && <Medal src={bronzeberryURL} alt="Third place"/>}
-          <Place>{rank}rd</Place>
-        </>
-      )
-    } else {
-      placement = <Place>{rank}th</Place>
-    }
-
-    return <Rank>{placement}</Rank>
+  const getConqRowClass = (verified, isNot202) => {
+    if (!verified) { return 'non-verified'; }
+    if (isNot202) { return 'alt'; }
+    return '';
   }
 
   // Get table of conquerors
   const getConquerorTable = () => {
     let count = 0
 
-    return (
-      conquerors.map(({
+    return conquerors.map((c, i) => {
+      const {
         name,
         date,
         platform,
@@ -547,63 +497,71 @@ const Journal = () => {
         reasonForNonVerified,
         videoProof,
         url,
-        keySkip,
-        doubleGolden,
-        memeRun,
-        got202
-      }, i) => {
-        let placement
-        if (got202) {
-          count++
-          placement = getPlacement(count)
-        } else {
-          placement = <Place>-</Place>
-        }
-
-        let rowClassName;
-        if (!verified) {
-          rowClassName = 'non-verified';
-        } else if (!got202) {
-          rowClassName = 'alt';
-        } else {
-          rowClassName = '';
-        }
-
-        return (
-          <tr className={rowClassName} key={i} onClick={() => videoProof ? setCurrentURL(url) : openScreenshot(url, name)}>
-            <td>{placement}</td>
-            {isTablet ? (
-              <td>
-                <p><Name>{name}{!verified && <Tooltip><b>Reason:</b> {reasonForNonVerified}</Tooltip>}</Name> - <em>{platform}</em></p>
-                <p>{date}</p>
-              </td>
-            ) : (
-              <>
-                <td><Name>{name}{!verified && <Tooltip><b>Reason:</b> {reasonForNonVerified}</Tooltip>}</Name></td>
-                <td>{date}</td>
-                <td>{platform}</td>
-              </>
-            )}
+        flags
+      } = c;
+      const isNot202 = flags.includes('not202');
+      const isPre202 = flags.includes('pre202');
+      const noKeySkip = flags.includes('nks');
+      const isDouble = flags.includes('double');
+      const isMeme = flags.includes('meme');
+      const dashTriggerSkip = flags.includes('dts');
+      const placement = isNot202 ? '-' : getPlacement(++count);
+      const rowClassName = getConqRowClass(verified, isNot202);
+      return (
+        <tr
+          className={rowClassName}
+          key={i}
+          onClick={() => videoProof ? setCurrentURL(url) : openScreenshot(url, name)}
+        >
+          <td>
+            <Rank>
+              {count === 1 && <Medal src={goldberryURL} alt="First place"/>}
+              {count === 2 && <Medal src={silverberryURL} alt="Second place"/>}
+              {count === 3 && <Medal src={bronzeberryURL} alt="Third place"/>}
+              {placement}
+            </Rank>
+          </td>
+          {isTablet ? (
             <td>
-              <IconsWrapper>
-                <MedalsWrapper>
-                  {got202 === 1 && <Medal src={ghostberryURL} alt="Pre-202 run"/>}
-                  {doubleGolden && <Medal src={moonberryURL} alt="Double golden!"/>}
-                  {!keySkip && <Medal src={keyURL} alt="No key skip!"/>}
-                  {memeRun && <Medal src={eenoxURL} alt="Meme run...why"/>}
-                </MedalsWrapper>
-                {videoProof ? (
-                  <Medal src={videoURL} alt="Video proof"/>
-                ) : (
-                  <Medal src={screenshotURL} alt="Screenshot proof"/>
-                )}
-              </IconsWrapper>
+              <p><Name>{name}{!verified && <Tooltip><b>Reason:</b> {reasonForNonVerified}</Tooltip>}</Name> - <em>{platform}</em></p>
+              <p>{date}</p>
             </td>
-          </tr>
-        )
-      })
-    )
+          ) : (
+            <>
+              <td><Name>{name}{!verified && <Tooltip><b>Reason:</b> {reasonForNonVerified}</Tooltip>}</Name></td>
+              <td>{date}</td>
+              <td>{platform}</td>
+            </>
+          )}
+          <td>
+            <IconsWrapper>
+              <MedalsWrapper>
+                {isPre202 && <Medal src={ghostberryURL} alt="Pre-202 run"/>}
+                {isDouble && <Medal src={moonberryURL} alt="Double golden!"/>}
+                {noKeySkip && <Medal src={keyURL} alt="No key skip!"/>}
+                {isMeme && <Medal src={eenoxURL} alt="Meme run...why"/>}
+                {dashTriggerSkip && <Medal src={dashTriggerURL} alt="Dash Trigger skip!"/>}
+              </MedalsWrapper>
+              {videoProof ? (
+                <Medal src={videoURL} alt="Video proof"/>
+              ) : (
+                <Medal src={screenshotURL} alt="Screenshot proof"/>
+              )}
+            </IconsWrapper>
+          </td>
+        </tr>
+      )
+    })
   }
+
+  const getAsteriskText = () => {
+    const elements = [];
+    if (showVerifiedEntries) { elements.push('unverified') }
+    if (showDTSEntries) { elements.push('DTS') }
+    return `*(including ${elements.join(' & ')} entries)`;
+  }
+
+  const showAsterisk = showVerifiedEntries || showDTSEntries;
 
   return (
     <>
@@ -621,8 +579,10 @@ const Journal = () => {
             </Table>
           </TableWrapper>
           <Total>
-            <p>To this day, only <b style={{ color: colors.red }}>{conquerors.filter(({ got202 }) => got202).length}</b> have conquered every strawberry{showVerifiedEntries && "*"}</p>
-            {showVerifiedEntries && <p style={{ fontSize: ".6em", fontStyle: "italic", opacity: .8 }}>*(including unverified entries)</p>}
+            <p>
+              To this day, only <b style={{ color: colors.red }}>{conquerors.filter(c => !c.flags.includes('not202')).length}</b> have conquered every strawberry{showAsterisk && "*"}
+            </p>
+            {showAsterisk && <p style={{ fontSize: ".6em", fontStyle: "italic", opacity: .8 }}>{getAsteriskText()}</p>}
           </Total>
           <Footnote>
             <FootnoteDiv>
@@ -638,6 +598,13 @@ const Journal = () => {
                 <label htmlFor="showScreenshots">
                   <i className={showVerifiedEntries ? 'fas fa-check-square' : 'far fa-square'} style={{ marginRight: '0.5em' }}></i>
                   <span>Show unverified entries</span>
+                </label>
+              </Checkbox>
+              <Checkbox>
+                <input id="showDTS" type="checkbox" checked={showDTSEntries} onChange={() => setShowDTSEntries(!showDTSEntries)}/>
+                <label htmlFor="showDTS">
+                  <i className={showDTSEntries ? 'fas fa-check-square' : 'far fa-square'} style={{ marginRight: '0.5em' }}></i>
+                  <span>Show runs with DTS</span>
                 </label>
               </Checkbox>
             </FootnoteDiv>

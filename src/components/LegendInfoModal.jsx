@@ -54,32 +54,17 @@ const LegendInfoModal = ({ setCurrentURL, ...rest }) => {
     keyImage: { publicURL: keyURL },
     moonberryImage: { publicURL: moonberryURL },
     eenoxImage: { publicURL: eenoxURL },
-    ghostberryImage: { publicURL: ghostberryURL }
+    ghostberryImage: { publicURL: ghostberryURL },
+    dashTriggerImage: { publicURL: dashTriggerURL }
   } = useStaticQuery(graphql`
     query {
-      videoImage: file(name: { eq: "video" }) {
-        publicURL
-      }
-
-      screenshotImage: file(name: { eq: "screenshot" }) {
-        publicURL
-      }
-
-      keyImage: file(name: { eq: "key" }) {
-        publicURL
-      }
-
-      moonberryImage: file(name: { eq: "moonberry" }) {
-        publicURL
-      }
-
-      eenoxImage: file(name: { eq: "eenox" }) {
-        publicURL
-      }
-
-      ghostberryImage: file(name: { eq: "ghostberry" }) {
-        publicURL
-      }
+      videoImage: file(name: { eq: "video" }) { publicURL }
+      screenshotImage: file(name: { eq: "screenshot" }) { publicURL }
+      keyImage: file(name: { eq: "key" }) { publicURL }
+      moonberryImage: file(name: { eq: "moonberry" }) { publicURL }
+      eenoxImage: file(name: { eq: "eenox" }) { publicURL }
+      ghostberryImage: file(name: { eq: "ghostberry" }) { publicURL }
+      dashTriggerImage: file(name: { eq: "dashTrigger" }) { publicURL }
     }
   `)
 
@@ -117,6 +102,11 @@ const LegendInfoModal = ({ setCurrentURL, ...rest }) => {
             <td className="icon"><Medal src={keyURL} alt="No key skip"/></td>
             <td><p>No key skip</p></td>
             <td className="details"><p>Complete Power Source without skipping</p></td>
+          </tr>
+          <tr>
+            <td className="icon"><Medal src={dashTriggerURL} alt="Dash trigger skip"/></td>
+            <td><p>Dash Trigger Skip</p></td>
+            <td className="details"><p>Execute the dash trigger skip (check FAQ for more details)</p></td>
           </tr>
           <tr>
             <td className="icon"><Medal src={eenoxURL} alt="Meme run"/></td>
