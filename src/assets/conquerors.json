@@ -123,7 +123,7 @@
     {
       "name": "Zangetsx",
       "date": "2019-10-19",
-      "platform": "PS4",
+      "platform": "PlayStation",
       "verified": true,
       "reasonForNonVerified": "",
       "videoProof": true,
@@ -434,7 +434,7 @@
     {
       "name": "DonTonberry",
       "date": "2020-03-28",
-      "platform": "PS4",
+      "platform": "PlayStation",
       "verified": true,
       "reasonForNonVerified": "",
       "videoProof": true,
@@ -1404,7 +1404,7 @@
     {
       "name": "Lucho",
       "date": "2020-12-24",
-      "platform": "PS4",
+      "platform": "PlayStation",
       "verified": true,
       "reasonForNonVerified": "",
       "videoProof": true,
@@ -2819,6 +2819,236 @@
       "reasonForNonVerified": "",
       "videoProof": true,
       "url": "https://www.youtube.com/watch?v=gyyBaWrKPzw",
+      "flags": []
+    },
+    {
+      "name": "James Bond",
+      "date": "2022-02-11",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=8bsqvnKqp8Q",
+      "flags": []
+    },
+    {
+      "name": "koverlord",
+      "date": "2022-02-13",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=Poblcfq3lxc",
+      "flags": []
+    },
+    {
+      "name": "트컬트",
+      "date": "2022-02-14",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.twitch.tv/videos/1297443137",
+      "flags": []
+    },
+    {
+      "name": "dark",
+      "date": "2022-02-14",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=IlcOuRZpwms",
+      "flags": ["not202"]
+    },
+    {
+      "name": "Dyst0p",
+      "date": "2022-02-22",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=Oa4Wuk0rSXY",
+      "flags": []
+    },
+    {
+      "name": "catlop",
+      "date": "2022-02-26",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=Tn5o63LMIbk",
+      "flags": ["double", "nks"]
+    },
+    {
+      "name": "Lingo",
+      "date": "2022-02-26",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=d7ibDfnAUtI",
+      "flags": ["not202"]
+    },
+    {
+      "name": "enen enen",
+      "date": "2022-02-28",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=BX2JHp0u8r4",
+      "flags": []
+    },
+    {
+      "name": "Suerisp",
+      "date": "2022-03-04",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.bilibili.com/video/BV1f44y1T7Vd",
+      "flags": []
+    },
+    {
+      "name": "柠檬喵",
+      "date": "2022-03-12",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.bilibili.com/video/BV14Z4y1z7AK",
+      "flags": []
+    },
+    {
+      "name": "Hiss",
+      "date": "2022-03-17",
+      "platform": "Switch",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=kGSo1V_ZIGU",
+      "flags": []
+    },
+    {
+      "name": "bi御坂li",
+      "date": "2022-03-18",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.bilibili.com/video/BV1AZ4y167w5",
+      "flags": []
+    },
+    {
+      "name": "Flangoo",
+      "date": "2022-03-21",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=1f5QWMEdFJE&t=103s",
+      "flags": []
+    },
+    {
+      "name": "azaazazaaz",
+      "date": "2022-03-22",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.bilibili.com/video/BV1hb4y1p7ji",
+      "flags": []
+    },
+    {
+      "name": "quietmason",
+      "date": "2022-03-24",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=XAcHz51tdIM",
+      "flags": []
+    },
+    {
+      "name": "Unnamed",
+      "date": "2022-03-26",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=Q6sccsmdN64",
+      "flags": ["not202"]
+    },
+    {
+      "name": "MooNieu",
+      "date": "2022-03-28",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=vyoLMJbzdGw",
+      "flags": []
+    },
+    {
+      "name": "Awre Leven",
+      "date": "2022-03-29",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=Tt-QaWw0qoM",
+      "flags": []
+    },
+    {
+      "name": "aggressivets",
+      "date": "2022-03-30",
+      "platform": "Linux",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://diode.zone/w/iupeRyH4UPcE9CHNNLaHzp",
+      "flags": ["not202"]
+    },
+    {
+      "name": "rose",
+      "date": "2022-03-31",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=lx2gY9ajYQk",
+      "flags": []
+    },
+    {
+      "name": "Aquatic Doggo",
+      "date": "2022-04-04",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.youtube.com/watch?v=lx2gY9ajYQk",
+      "flags": []
+    },
+    {
+      "name": "ninz",
+      "date": "2022-04-04",
+      "platform": "PC",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://www.twitch.tv/videos/1446769372",
+      "flags": []
+    },
+    {
+      "name": "Neon",
+      "date": "2022-04-11",
+      "platform": "PlayStation",
+      "verified": true,
+      "reasonForNonVerified": "",
+      "videoProof": true,
+      "url": "https://youtu.be/RSoUm98_zbM",
       "flags": []
     }
   ]

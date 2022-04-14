@@ -233,6 +233,10 @@ const milestoneHistory = [
     date: 'Nov 28, 2021',
     milestone: <p><Span color={colors.yelloworange} bold>225</Span> players have achieved 202!</p>
   },
+  {
+    date: 'Feb 13, 2022',
+    milestone: <p><Span color={colors.yelloworange}>250</Span> players have achieved 202!</p>
+  }
 ]
 
 const Milestones = () => {
