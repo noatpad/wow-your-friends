@@ -3757,18 +3757,6 @@
             ]
         },
         {
-            "name": "tirednwired",
-            "date": "2022-08-28",
-            "platform": "PC",
-            "verified": true,
-            "reasonForNonVerified": "",
-            "videoProof": true,
-            "url": "https://www.youtube.com/watch?v=uzXTDI942mE",
-            "flags": [
-                "not202"
-            ]
-        },
-        {
             "name": "Emerald",
             "date": "2022-08-31",
             "platform": "PC",
@@ -3842,14 +3830,14 @@
         },
         {
             "name": "popop614",
-            "date": "2022-09-15",
+            "date": "2022-09-18",
             "platform": "PC",
             "verified": true,
             "reasonForNonVerified": "",
             "videoProof": true,
             "url": "https://youtu.be/qiuPhH9lfbg",
             "flags": [
-                "not202"
+                "pre202"
             ]
         },
         {
@@ -3912,6 +3900,18 @@
             "url": "https://youtu.be/2hQzc3wbsL4",
             "flags": [
                 "double"
+            ]
+        },
+        {
+            "name": "tirednwired",
+            "date": "2022-08-28",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=uzXTDI942mE",
+            "flags": [
+                "pre202"
             ]
         },
         {
