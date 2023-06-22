@@ -115,18 +115,13 @@ const Footer = () => {
         <Glow id="strawberry-glow"/>
       </Strawberry>
       <IconsDiv>
-        <a className="reddit-icon" href="https://www.reddit.com/user/TammyDanny" target="_blank" rel="noopener noreferrer" aria-label="Visit /u/TammyDanny on Reddit">
-          <Icon
-            className="reddit-icon fab fa-reddit-alien"
-            onMouseEnter={() => hoverAnim(true, "reddit-icon", colors.reddit)}
-            onMouseLeave={() => hoverAnim(false, "reddit-icon", colors.reddit)}/>
-        </a>
         <a className="twitter-icon" href="https://twitter.com/noatpad" target="_blank" rel="noopener noreferrer" aria-label="Visit @noatpad on Twitter">
           <Icon
             className="twitter-icon fab fa-twitter"
             onMouseEnter={() => hoverAnim(true, "twitter-icon", colors.twitter)}
             onMouseLeave={() => hoverAnim(false, "twitter-icon", colors.twitter)}/>
         </a>
+
         <a className="github-icon" href="https://github.com/noatpad/wow-your-friends" target="_blank" rel="noopener noreferrer" aria-label="Visit the GitHub repository">
           <Icon
             className="github-icon fab fa-github"
@@ -134,7 +129,7 @@ const Footer = () => {
             onMouseLeave={() => hoverAnim(false, "github-icon", colors.github)}/>
         </a>
       </IconsDiv>
-      <p>A website made by a clueless danny</p>
+      <p>a website made by noatpad</p>
       <Footnote>Open sourced on GitHub | Hosted on Netlify</Footnote>
     </Container>
   )
