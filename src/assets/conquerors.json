@@ -3515,6 +3515,19 @@
             ]
         },
         {
+            "name": "brackets",
+            "date": "2023-06-15",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtube.com/watch?v=Y8m3AQyGM-E",
+            "flags": [
+                "dts",
+                "double"
+            ]
+        },
+        {
             "name": "CosineMilk",
             "date": "2022-06-19",
             "platform": "PC",
@@ -3745,6 +3758,16 @@
             "flags": []
         },
         {
+            "name": "Crifzer",
+            "date": "2022-08-25",
+            "platform": "Mac",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "",
+            "flags": []
+        },
+        {
             "name": "18ml",
             "date": "2022-08-26",
             "platform": "PC",
@@ -3969,6 +3992,1117 @@
             "flags": [
                 "double"
             ]
+        },
+        {
+            "name": "Reptiliqua",
+            "date": "2022-11-10",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=tu94ZF2asJg",
+            "flags": []
+        },
+        {
+            "name": "BS_KNK",
+            "date": "2022-11-13",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtu.be/HC4qV01yuC4",
+            "flags": [
+                "not202",
+                "double"
+            ]
+        },
+        {
+            "name": "Kit",
+            "date": "2022-11-14",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=tCyN8o2PONQ",
+            "flags": []
+        },
+        {
+            "name": "Cookie",
+            "date": "2022-11-16",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=GZVuNS175Ec",
+            "flags": []
+        },
+        {
+            "name": "staco",
+            "date": "2022-11-18",
+            "platform": "Mac",
+            "verified": false,
+            "reasonForNonVerified": "Video only shows recording from moments before collecting the berry. Couldn't record due to lag on Mac, but has multiple screenshots showing their stats.",
+            "videoProof": true,
+            "url": "https://cdn.discordapp.com/attachments/666337196952780810/1043402106264113152/FWG.mp4",
+            "flags": [
+                "double"
+            ]
+        },
+        {
+            "name": "Flamehaze",
+            "date": "2022-11-18",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtu.be/w4sYUe4XAlY",
+            "flags": []
+        },
+        {
+            "name": "noober",
+            "date": "2022-11-20",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=qyOlE2BhlwM",
+            "flags": [
+                "nks"
+            ]
+        },
+        {
+            "name": "VagrantXXI",
+            "date": "2022-11-22",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtu.be/zFGE0KwnWSM",
+            "flags": [
+                "nks"
+            ]
+        },
+        {
+            "name": "CoffeeCat",
+            "date": "2022-11-24",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "",
+            "flags": []
+        },
+        {
+            "name": "Chory",
+            "date": "2022-11-25",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=QquRIiP4WLs",
+            "flags": [
+                "nks"
+            ]
+        },
+        {
+            "name": "cow etc",
+            "date": "2022-11-27",
+            "platform": "Mac",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=pE1vEq7cB8s",
+            "flags": [
+                "nks"
+            ]
+        },
+        {
+            "name": "Apollo",
+            "date": "2022-12-01",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=V0E_U3bhFPk",
+            "flags": []
+        },
+        {
+            "name": "Karol0311",
+            "date": "2022-12-02",
+            "platform": "PlayStation",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=KtBp19OReZs",
+            "flags": []
+        },
+        {
+            "name": "TheHan",
+            "date": "2022-12-04",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.bilibili.com/video/BV13K41197PZ/?vd_source=9d063ec53cac27aa4949da1d56ba5e05",
+            "flags": ["not202"]
+        },
+        {
+            "name": "Ezherial",
+            "date": "2022-12-06",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=-baMq-BKHMs",
+            "flags": []
+        },
+        {
+            "name": "Hyllina",
+            "date": "2022-12-10",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=L5UQ50gt_hQ",
+            "flags": [
+                "nks"
+            ]
+        },
+        {
+            "name": "dabba",
+            "date": "2022-12-12",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=L5UQ50gt_hQ",
+            "flags": [
+                "double"
+            ]
+        },
+        {
+            "name": "呆萌蠢小火星 ",
+            "date": "2022-12-14",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.bilibili.com/video/BV1sA41197Ax/?vd_source=9d063ec53cac27aa4949da1d56ba5e05",
+            "flags": []
+        },
+        {
+            "name": "Archipelago",
+            "date": "2022-12-21",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=ND1fzq0NAc0",
+            "flags": []
+        },
+        {
+            "name": "Aurora Aquir",
+            "date": "2022-12-22",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=AaXIPHmi5Vk",
+            "flags": [
+                "double",
+                "pre202"
+            ]
+        },
+        {
+            "name": "Super Horse",
+            "date": "2022-12-23",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtu.be/mK60BJmQYME",
+            "flags": []
+        },
+        {
+            "name": "Daxterdax",
+            "date": "2022-12-24",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=MqkbCnaXnhA",
+            "flags": []
+        },
+        {
+            "name": "winter",
+            "date": "2022-12-24",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtu.be/aOuWUK-IMM4",
+            "flags": []
+        },
+        {
+            "name": "masrock9",
+            "date": "2022-12-26",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=8cYShjAfM4I",
+            "flags": []
+        },
+        {
+            "name": "WaterFireCraft",
+            "date": "2022-12-26",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=jj7AdhSchdo",
+            "flags": []
+        },
+        {
+            "name": "也许谈意义 ",
+            "date": "2022-12-29",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtu.be/LL9TD3Xls6g",
+            "flags": []
+        },
+        {
+            "name": "DevilCharlotte",
+            "date": "2022-12-30",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtu.be/LL9TD3Xls6g",
+            "flags": []
+        },
+        {
+            "name": "ducknt",
+            "date": "2023-01-03",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.bilibili.com/video/BV1QW4y1V7JM/",
+            "flags": []
+        },
+        {
+            "name": "Mr_Hecc",
+            "date": "2023-01-03",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtu.be/MhkQI2CuZt4",
+            "flags": [
+                "double"
+            ]
+        },
+        {
+            "name": "Nao",
+            "date": "2023-01-04",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=iNCx53x2fLg",
+            "flags": [
+                "nks"
+            ]
+        },
+        {
+            "name": "Kero",
+            "date": "2023-01-07",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtu.be/DKNcHv3kt7M",
+            "flags": []
+        },
+        {
+            "name": "dgvsdgtx",
+            "date": "2023-01-10",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.bilibili.com/video/BV1sG4y1y7rk/",
+            "flags": []
+        },
+        {
+            "name": "_dan",
+            "date": "2023-01-11",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=VS9UZbeeo70&",
+            "flags": []
+        },
+        {
+            "name": "Kimero",
+            "date": "2023-01-14",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=za7wcSrKPBE",
+            "flags": [
+                "not202"
+            ]
+        },
+        {
+            "name": "caqdas",
+            "date": "2023-01-18",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=PEXohYr8VQ4",
+            "flags": [
+                "double"
+            ]
+        },
+        {
+            "name": "Morgarathus",
+            "date": "2023-01-18",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=3f3VzgJ9Hps",
+            "flags": [
+                "nks"
+            ]
+        },
+        {
+            "name": "ClumCube",
+            "date": "2023-01-19",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtu.be/Aq7UcslhppE",
+            "flags": [
+                "not202"
+            ]
+        },
+        {
+            "name": "JoaquinS",
+            "date": "2023-01-20",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=ncvDfraoGhM",
+            "flags": [
+                "pre202"
+            ]
+        },
+        {
+            "name": "妖怪八度",
+            "date": "2023-01-24",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.bilibili.com/video/BV1Md4y1W7xr/",
+            "flags": []
+        },
+        {
+            "name": "kriegueur",
+            "date": "2023-01-25",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=6yJOQ6cYoZk",
+            "flags": [
+                "not202"
+            ]
+        },
+        {
+            "name": "slinky",
+            "date": "2023-02-05",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=GLH6QhLTBbM",
+            "flags": [
+                "not202"
+            ]
+        },
+        {
+            "name": "Elli",
+            "date": "2023-02-05",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=f4kpxtnfmJI",
+            "flags": [
+                "not202"
+            ]
+        },
+        {
+            "name": "toneblock",
+            "date": "2023-02-05",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=E8ISwMnV37M",
+            "flags": [
+                "not202"
+            ]
+        },
+        {
+            "name": "NCG",
+            "date": "2023-02-10",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=tpQjtgzoWgg",
+            "flags": []
+        },
+        {
+            "name": "BedrockBaby",
+            "date": "2023-02-12",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=3G_6VQsP3k4",
+            "flags": []
+        },
+        {
+            "name": "Browi",
+            "date": "2023-02-14",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=HE_kH9UvCJk",
+            "flags": []
+        },
+        {
+            "name": "spooooky",
+            "date": "2023-02-16",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtu.be/mYR1_BUC52Q",
+            "flags": []
+        },
+        {
+            "name": "Marciie",
+            "date": "2023-02-18",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=7zI11P4bQ24&t=13s",
+            "flags": []
+        },
+        {
+            "name": "Mulmania",
+            "date": "2023-02-20",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=Y1TOY3iNLdE",
+            "flags": [
+                "nks"
+            ]
+        },
+        {
+            "name": "Dama",
+            "date": "2023-02-20",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.twitch.tv/videos/1744666782",
+            "flags": []
+        },
+        {
+            "name": "Virtue",
+            "date": "2023-02-21",
+            "platform": "Xbox",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=0W_sOFHiBkY",
+            "flags": []
+        },
+        {
+            "name": "conski",
+            "date": "2023-02-27",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=HB03B_zzjEs",
+            "flags": []
+        },
+        {
+            "name": "Autumn",
+            "date": "2023-03-04",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=Zl992yFANRM",
+            "flags": []
+        },
+        {
+            "name": "一纸情书沁雨入梦 ",
+            "date": "2023-03-10",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.bilibili.com/video/BV1qg4y1b7L9/",
+            "flags": []
+        },
+        {
+            "name": "Friskiest",
+            "date": "2023-03-13",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=5s5ul602gG0",
+            "flags": [
+                "dts"
+            ]
+        },
+        {
+            "name": "Anyon314",
+            "date": "2023-03-15",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.bilibili.com/video/BV19k4y1b7Pz/",
+            "flags": []
+        },
+        {
+            "name": "cos65535",
+            "date": "2023-03-16",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=kYmehfxc7m8",
+            "flags": []
+        },
+        {
+            "name": "TreeHauzXVI",
+            "date": "2023-03-19",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=GBc_eRKf1xs",
+            "flags": []
+        },
+        {
+            "name": "deesoff",
+            "date": "2023-03-19",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=0tjsVqMG9jw",
+            "flags": [
+                "double"
+            ]
+        },
+        {
+            "name": "NippleNick",
+            "date": "2023-03-20",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=-o62IJ7vNZg",
+            "flags": [
+                "nks"
+            ]
+        },
+        {
+            "name": "ashley",
+            "date": "2023-03-20",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=Q6LCzHTlT20",
+            "flags": []
+        },
+        {
+            "name": "Theo_Under_Stars",
+            "date": "2023-03-21",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.bilibili.com/video/BV1Fm4y1k7Jx/",
+            "flags": [
+                "dts"
+            ]
+        },
+        {
+            "name": "s116",
+            "date": "2023-03-22",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.bilibili.com/video/BV1cY4y1Q7ZS/",
+            "flags": []
+        },
+        {
+            "name": "laozh4",
+            "date": "2023-03-30",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.bilibili.com/video/BV1mX4y1R7bV/",
+            "flags": []
+        },
+        {
+            "name": "Ferq",
+            "date": "2023-03-31",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtu.be/TABBm3HYoY8",
+            "flags": [
+                "nks"
+            ]
+        },
+        {
+            "name": "olc",
+            "date": "2023-04-07",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=HUzMKtU5e48",
+            "flags": []
+        },
+        {
+            "name": "岭山风许",
+            "date": "2023-04-10",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.bilibili.com/video/BV1rg4y1M7m5/",
+            "flags": []
+        },
+        {
+            "name": "cheezysf",
+            "date": "2023-04-14",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=XdT_BjAqQvg",
+            "flags": [
+                "nks"
+            ]
+        },
+        {
+            "name": "StrikeHero",
+            "date": "2023-04-16",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtu.be/NtIewdIIZKo",
+            "flags": [
+                "nks"
+            ]
+        },
+        {
+            "name": "Saplonily",
+            "date": "2023-04-18",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.bilibili.com/video/BV1pL411v7HB/",
+            "flags": []
+        },
+        {
+            "name": "abst",
+            "date": "2023-04-20",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=VIFCZZOlS1M",
+            "flags": []
+        },
+        {
+            "name": "ELfox513",
+            "date": "2023-04-21",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=ssuhXPkaTf0",
+            "flags": []
+        },
+        {
+            "name": "辐光",
+            "date": "2023-04-24",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.bilibili.com/video/BV1ua4y1V7Sa",
+            "flags": [
+                "nks"
+            ]
+        },
+        {
+            "name": "Sealio",
+            "date": "2023-04-28",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtu.be/H4R0mbyiMAQ",
+            "flags": [
+                "double"
+            ]
+        },
+        {
+            "name": "Vermillion",
+            "date": "2023-05-02",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=4rX-le92jgg",
+            "flags": []
+        },
+        {
+            "name": "GoatySandwich",
+            "date": "2023-05-06",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=2pqHWiTt6kg",
+            "flags": []
+        },
+        {
+            "name": "愁几菌",
+            "date": "2023-05-10",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.bilibili.com/video/BV1fg4y157Xj/",
+            "flags": []
+        },
+        {
+            "name": "Keehle",
+            "date": "2023-05-11",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtu.be/SwJMYuaQHKg",
+            "flags": []
+        },
+        {
+            "name": "Cdog",
+            "date": "2023-05-13",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=6CtZMk4B06Q",
+            "flags": []
+        },
+        {
+            "name": "ssqwpola",
+            "date": "2023-05-13",
+            "platform": "PC",
+            "verified": false,
+            "reasonForNonVerified": "Video is private. Could not review it myself, but this run is on the Farewell Golden Collectors' List",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=JWd9NNRq7kg",
+            "flags": [
+                "nks"
+            ]
+        },
+        {
+            "name": "Riki97",
+            "date": "2023-05-13",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.bilibili.com/video/BV1Tm4y1C7BZ/",
+            "flags": [
+                "nks",
+                "pre202"
+            ]
+        },
+        {
+            "name": "sersh",
+            "date": "2023-05-14",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.twitch.tv/videos/1819787604?collection=ykZxWUz1ORfWcA",
+            "flags": []
+        },
+        {
+            "name": "Gelforce",
+            "date": "2023-05-14",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtu.be/POiZFzsGJbg",
+            "flags": [
+                "not202"
+            ]
+        },
+        {
+            "name": "valk",
+            "date": "2023-05-15",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=nK8kUAoF9hc",
+            "flags": []
+        },
+        {
+            "name": "RedSlay9",
+            "date": "2023-05-18",
+            "platform": "Switch",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtu.be/PSmI6A7UGuU",
+            "flags": []
+        },
+        {
+            "name": "kiseta",
+            "date": "2023-05-23",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=-7RRItv7bSo",
+            "flags": []
+        },
+        {
+            "name": "so25",
+            "date": "2023-05-24",
+            "platform": "Switch",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://twitter.com/so1969342635/status/1661386443447492614",
+            "flags": []
+        },
+        {
+            "name": "Lolo38",
+            "date": "2023-05-25",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtu.be/uMAMn8BACFE",
+            "flags": []
+        },
+        {
+            "name": "世纪末の雨",
+            "date": "2023-05-29",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.bilibili.com/video/BV1tu411s7w3/",
+            "flags": [
+                "not202"
+            ]
+        },
+        {
+            "name": "optimize_2",
+            "date": "2023-05-31",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.bilibili.com/video/BV1f8411Z7uf/",
+            "flags": [
+                "pre202"
+            ]
+        },
+        {
+            "name": "Ella",
+            "date": "2023-06-01",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtu.be/-BeHQ5Y2oBo",
+            "flags": []
+        },
+        {
+            "name": "violet",
+            "date": "2023-06-06",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=Yj1jNX7gD6Q",
+            "flags": [
+                "nks"
+            ]
+        },
+        {
+            "name": "乖乖茉宝",
+            "date": "2023-06-06",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.bilibili.com/video/BV1aV4y127Y7/",
+            "flags": [
+                "nks"
+            ]
+        },
+        {
+            "name": "Silverstrawb",
+            "date": "2023-06-06",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtu.be/Po8_fjrICPw",
+            "flags": []
+        },
+        {
+            "name": "春暮Q",
+            "date": "2023-06-08",
+            "platform": "Mac",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.bilibili.com/video/BV1zh4y1G76Z",
+            "flags": []
+        },
+        {
+            "name": "GPM0011",
+            "date": "2023-06-11",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtu.be/UTwjuRKOQao",
+            "flags": []
+        },
+        {
+            "name": "François Gaudreault",
+            "date": "2023-06-12",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtu.be/6RLVrOpjl0M",
+            "flags": []
+        },
+        {
+            "name": "schnippi",
+            "date": "2023-06-12",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.youtube.com/watch?v=IaT17nNebnM",
+            "flags": [
+                "not202"
+            ]
+        },
+        {
+            "name": "该胀号涉黄已封禁 ",
+            "date": "2023-06-13",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.bilibili.com/video/BV14z4y1e7fz/",
+            "flags": []
+        },
+        {
+            "name": "光怪陆离的付雪",
+            "date": "2023-06-14",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://www.bilibili.com/video/BV1pj411X79S/",
+            "flags": []
+        },
+        {
+            "name": "AshleyTheAsteroid",
+            "date": "2023-06-14",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtu.be/Yn5jXS8qcYQ",
+            "flags": [
+                "not202"
+            ]
+        },
+        {
+            "name": "Le Fay",
+            "date": "2023-06-20",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtu.be/9aRVSrhyEqw",
+            "flags": []
+        },
+        {
+            "name": "HexaCach",
+            "date": "2023-06-20",
+            "platform": "PC",
+            "verified": true,
+            "reasonForNonVerified": "",
+            "videoProof": true,
+            "url": "https://youtu.be/glwXX8lQN98",
+            "flags": []
         }
     ]
 }

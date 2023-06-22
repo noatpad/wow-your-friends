@@ -254,6 +254,18 @@ const milestoneHistory = [
     date: 'Nov 4, 2022',
     milestone: <p><Span color={colors.yelloworange}>325</Span> players have achieved 202!</p>,
     message: <p>Fun fact: this milestone also lands on my birthday, heheh</p>
+  },
+  {
+    date: 'Dec 26, 2022',
+    milestone: <p><Span color={colors.yelloworange}>350</Span> players have achieved 202!</p>
+  },
+  {
+    date: 'Mar 15, 2023',
+    milestone: <p><Span color={colors.yelloworange}>375</Span> players have achieved 202!</p>
+  },
+  {
+    date: 'May 15, 2023',
+    milestone: <p><Span color={colors.yelloworange} bold>400</Span> players have achieved 202!</p>
   }
 ]
 
