@@ -138,11 +138,11 @@ const QnA = () => {
         rotateOffset: -5,
         content: (<>
           <p>Once you have that, upload your proof to a public space like <Span color={colors.red}>YouTube</Span>.</p>
-          <p>Then send me a message on <Span color={colors.reddit}><a href="https://www.reddit.com/message/compose/?to=TammyDanny&subject=I%20got%20the%20golden%20berry!" target="_blank" rel="noopener noreferrer" style={{ color: "inherit"}}>Reddit</a></Span>, <Span color={colors.twitter}><a href="https://twitter.com/noatpad" target="_blank" rel="noopener noreferrer" style={{ color: "inherit"}}>Twitter</a></Span>, or through <Span color={colors.github}><a href="https://github.com/noatpad/wow-your-friends/issues" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>GitHub Issues</a></Span> with a link to your proof & a celebratory message!</p>
+          <p>Then send me a DM on <Span color={colors.twitter}><a href="https://twitter.com/noatpad" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>Twitter</a></Span>, ping/DM me on <Span color={colors.discord}><a href="https://discord.gg/celeste" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>Discord <em>(@notepad)</em></a></Span> through the Celestecord, <Span color={colors.github}><a href="https://github.com/noatpad/wow-your-friends/issues" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>GitHub Issues</a></Span>.</p>
           <p>If everything checks out, welcome to the list~</p>
           <FlexCenter>
-            <a href="https://www.reddit.com/message/compose/?to=TammyDanny&subject=I%20got%20the%20golden%20berry!" target="_blank" rel="noopener noreferrer" aria-label="Compose a reddit private message to /u/TammyDanny"><Icon className="fab fa-reddit" color={colors.reddit}/></a>
             <a href="https://twitter.com/noatpad" target="_blank" rel="noopener noreferrer" aria-label="Visit @noatpad on Twitter"><Icon className="fab fa-twitter" color={colors.twitter}/></a>
+            <a href="https://discord.gg/celeste" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}><Icon className="fab fa-discord" color={colors.discord}/></a>
             <a href="https://github.com/noatpad/wow-your-friends/issues" target="_blank" rel="noopener noreferrer" aria-label="Visit the Issues section of the repository in GitHub"><Icon className="fab fa-github" color={colors.github}/></a>
           </FlexCenter>
         </>)
@@ -214,7 +214,7 @@ const QnA = () => {
         clockwise: false,
         content: (
           <ul>
-            <li><Span color={colors.reddit}>/u/DJTom3</Span> for originally maintaining an insanely detailed record of these players <a href="https://docs.google.com/spreadsheets/d/1FesTb6qkgMz-dCn7YdioRydToWSQNTg1axFEIHU4FF8" target="_blank" rel="noopener noreferrer">here</a>, as it's my primary source of information.</li>
+            <li><b>DJTom3</b> for initially maintaining an insanely detailed record of these players <a href="https://docs.google.com/spreadsheets/d/1FesTb6qkgMz-dCn7YdioRydToWSQNTg1axFEIHU4FF8" target="_blank" rel="noopener noreferrer">here</a>, as it's my primary source of information.</li>
             <li><Span color={colors.purple2}>celeste#5555</Span>, <Span color={colors.purple2}>PixelBlitz#0308</Span>, & <Span color={colors.purple2}>Lugei#2004</Span> as the active maintainers of the list above.</li>
             <li>The <Span color={colors.skyblue2}>Celeste dev team</Span> for creating such a fantastic game to play through.</li>
             <li>All the players on this list for going above and beyond to complete such a task.</li>
