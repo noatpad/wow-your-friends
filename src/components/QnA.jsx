@@ -214,8 +214,8 @@ const QnA = () => {
         clockwise: false,
         content: (
           <ul>
-            <li><b>DJTom3</b> for initially maintaining an insanely detailed record of these players <a href="https://docs.google.com/spreadsheets/d/1FesTb6qkgMz-dCn7YdioRydToWSQNTg1axFEIHU4FF8" target="_blank" rel="noopener noreferrer">here</a>, as it's my primary source of information.</li>
-            <li><Span color={colors.purple2}>celeste#5555</Span>, <Span color={colors.purple2}>PixelBlitz#0308</Span>, & <Span color={colors.purple2}>Lugei#2004</Span> as the active maintainers of the list above.</li>
+            <li><Span color={colors.discord}>@DJTom3</Span> for initially maintaining the <a href="https://docs.google.com/spreadsheets/d/1FesTb6qkgMz-dCn7YdioRydToWSQNTg1axFEIHU4FF8" target="_blank" rel="noopener noreferrer">Farewell Golden Collectors' List</a>, as it's my primary source of information.</li>
+            <li><Span color={colors.discord}>@mystral_fox</Span> as the active maintainer of this list.</li>
             <li>The <Span color={colors.skyblue2}>Celeste dev team</Span> for creating such a fantastic game to play through.</li>
             <li>All the players on this list for going above and beyond to complete such a task.</li>
           </ul>
