@@ -138,7 +138,7 @@ const QnA = () => {
         rotateOffset: -5,
         content: (<>
           <p>Once you have that, upload your proof to a public space like <Span color={colors.red}>YouTube</Span>.</p>
-          <p>Then send me a DM on <Span color={colors.twitter}><a href="https://twitter.com/noatpad" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>Twitter</a></Span>, ping/DM me on <Span color={colors.discord}><a href="https://discord.gg/celeste" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>Discord <em>(@notepad)</em></a></Span> through the Celestecord, <Span color={colors.github}><a href="https://github.com/noatpad/wow-your-friends/issues" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>GitHub Issues</a></Span>.</p>
+          <p>Then send me a DM on <Span color={colors.twitter}><a href="https://twitter.com/noatpad" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>Twitter</a></Span>, ping/DM me on <Span color={colors.discord}><a href="https://discord.gg/celeste" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>Discord <em>(@notepad)</em></a></Span> through the Celestecord, or submit your run through <Span color={colors.github}><a href="https://github.com/noatpad/wow-your-friends/issues" target="_blank" rel="noopener noreferrer" style={{ color: "inherit" }}>GitHub Issues</a></Span>.</p>
           <p>If everything checks out, welcome to the list~</p>
           <FlexCenter>
             <a href="https://twitter.com/noatpad" target="_blank" rel="noopener noreferrer" aria-label="Visit @noatpad on Twitter"><Icon className="fab fa-twitter" color={colors.twitter}/></a>
