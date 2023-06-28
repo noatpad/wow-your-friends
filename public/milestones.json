@@ -1,0 +1,181 @@
+[
+  {
+    "date": "2019-09-09",
+    "type": "special",
+    "text": "Celeste: Farewell was released!",
+    "message": "The journey to 202 begins..."
+  },
+  {
+    "date": "2019-09-12",
+    "type": "first",
+    "platform": "PC",
+    "firstPlace": true
+  },
+  {
+    "date": "2019-10-16",
+    "type": "threshold",
+    "count": 10,
+    "message": "We got a streak going!"
+  },
+  {
+    "date": "2019-10-19",
+    "type": "first",
+    "platform": "Playstation"
+  },
+  {
+    "date": "2019-11-11",
+    "type": "special",
+    "text": "Wow Your Friends launched!"
+  },
+  {
+    "date": "2019-12-14",
+    "type": "first",
+    "platform": "Mac"
+  },
+  {
+    "date": "2019-12-25",
+    "type": "sameday",
+    "count": 3,
+    "message": "Now that's a Christmas miracle if I ever saw one"
+  },
+  {
+    "date": "2019-12-28",
+    "type": "first",
+    "platform": "Switch"
+  },
+  {
+    "date": "2020-01-25",
+    "type": "threshold",
+    "count": 25
+  },
+  {
+    "date": "2020-01-30",
+    "type": "first",
+    "platform": "Xbox"
+  },
+  {
+    "date": "2020-05-01",
+    "type": "threshold",
+    "count": 50,
+    "message": "Half to a hundred, keep it up!"
+  },
+  {
+    "date": "2020-06-23",
+    "type": "first",
+    "platform": "Linux"
+  },
+  {
+    "date": "2020-08-04",
+    "type": "threshold",
+    "count": 75
+  },
+  {
+    "date": "2020-09-04",
+    "type": "anniversary",
+    "year": 1,
+    "message": "A whole year since it all began..."
+  },
+  {
+    "date": "2020-09-16",
+    "type": "threshold",
+    "count": 100,
+    "message": "What a wild rush of determination to behold. /n Y'all are amazing, & I commend you all for your efforts~"
+  },
+  {
+    "date": "2020-12-23",
+    "type": "threshold",
+    "count": 125
+  },
+  {
+    "date": "2021-03-12",
+    "type": "threshold",
+    "count": 150
+  },
+  {
+    "date": "2021-05-24",
+    "type": "timeframe",
+    "count": 5,
+    "hours": 24
+  },
+  {
+    "date": "2021-05-29",
+    "type": "timeframe",
+    "count": 5,
+    "hours": 16
+  },
+  {
+    "date": "2021-07-04",
+    "type": "threshold",
+    "count": 175
+  },
+  {
+    "date": "2021-07-11",
+    "type": "special",
+    "text": "DJTom3, the original Farewell golden list maintainer before Wow Your Friends, had at long last gotten 202!",
+    "message": "How wild to finally see this journey reach its end. Mad props to ya, man! Now wait for me so I can join the club too ;)"
+  },
+  {
+    "date": "2021-09-05",
+    "type": "threshold",
+    "count": 200
+  },
+  {
+    "date": "2021-09-05",
+    "type": "threshold",
+    "count": 202,
+    "message": "How poetic that we got one player for each berry right before the 2nd anniversary..."
+  },
+  {
+    "date": "2021-09-09",
+    "type": "anniversary",
+    "year": 2,
+    "message": "Last year, we were just shy of 100 players. Now we beat even the 202-mark by the second year. Wild."
+  },
+  {
+    "date": "2021-11-28",
+    "type": "threshold",
+    "count": 225
+  },
+  {
+    "date": "2022-02-13",
+    "type": "threshold",
+    "count": 250
+  },
+  {
+    "date": "2022-05-18",
+    "type": "threshold",
+    "count": 275
+  },
+  {
+    "date": "2022-07-16",
+    "type": "threshold",
+    "count": 300
+  },
+  {
+    "date": "2022-09-09",
+    "type": "anniversary",
+    "year": 3,
+    "message": "Easily surpassed 300 before the 3rd year! The pace is picking up..."
+  },
+  {
+    "date": "2022-11-04",
+    "type": "threshold",
+    "count": 325,
+    "message": "Right on my birthday too, heheheh"
+  },
+  {
+    "date": "2022-12-26",
+    "type": "threshold",
+    "count": 350
+  },
+  {
+    "date": "2023-03-15",
+    "type": "threshold",
+    "count": 375
+  },
+  {
+    "date": "2023-05-15",
+    "type": "threshold",
+    "count": 400
+  }
+]
