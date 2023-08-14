@@ -6987,6 +6987,19 @@
     "flags": []
   },
   {
+    "name": "Scrubz",
+    "date": "2023-08-05",
+    "platform": "PC",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/HaG9HRZwKww"
+    },
+    "flags": ["dts"]
+  },
+  {
     "name": "lafa",
     "date": "2023-08-07",
     "platform": "PlayStation",
