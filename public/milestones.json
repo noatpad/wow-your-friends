@@ -177,5 +177,21 @@
     "date": "2023-05-15",
     "type": "threshold",
     "count": 400
+  },
+  {
+    "date": "2023-06-20",
+    "type": "special",
+    "text": "Someone accidentally completed Farewell deathless without the berry?!",
+    "message": "I literally had to change the underlying structure of these records for this. I legit did not expect this to ever happen."
+  },
+  {
+    "date": "2023-07-01",
+    "type": "threshold",
+    "count": 425
+  },
+  {
+    "date": "2023-08-07",
+    "type": "threshold",
+    "count": 450
   }
 ]
