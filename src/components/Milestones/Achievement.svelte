@@ -32,6 +32,8 @@
         {achievement.count} players achieved 202 on the same day!
       {:else if achievement.type === 'timeframe'}
         {achievement.count} players got 202 within <b>{achievement.hours}</b> hours!
+      {:else if achievement.type === 'streak'}
+        <b>{achievement.days}</b> consecutive days where at least one player got the golden berry!
       {:else if achievement.type === 'anniversary'}
         Farewell's {getOrdinalNumber(achievement.year)} anniversary!
       {:else if achievement.type === 'special'}

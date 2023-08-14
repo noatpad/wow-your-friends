@@ -27,6 +27,11 @@ interface TimeFrameMilestone extends BaseMilestone {
   hours: number
 }
 
+interface StreakMilestone extends BaseMilestone {
+  type: 'streak',
+  days: number
+}
+
 interface SpecialMilestone extends BaseMilestone {
   type: 'special',
   text: string
@@ -37,4 +42,4 @@ interface AnniversaryMilestone extends BaseMilestone {
   year: number
 }
 
-export type Milestone = ThresholdMilestone | FirstMilestone | SameDayMilestone | TimeFrameMilestone | SpecialMilestone | AnniversaryMilestone;
+export type Milestone = ThresholdMilestone | FirstMilestone | SameDayMilestone | TimeFrameMilestone | StreakMilestone | SpecialMilestone | AnniversaryMilestone;

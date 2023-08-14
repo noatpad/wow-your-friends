@@ -181,13 +181,24 @@
   {
     "date": "2023-06-20",
     "type": "special",
-    "text": "Someone accidentally completed Farewell deathless without the berry?!",
+    "text": "Someone accidentally completed Farewell deathless without the golden berry?!",
     "message": "I literally had to change the underlying structure of these records for this. I legit did not expect this to ever happen."
   },
   {
     "date": "2023-07-01",
     "type": "threshold",
     "count": 425
+  },
+  {
+    "date": "2023-07-10",
+    "type": "streak",
+    "days": 11
+  },
+  {
+    "date": "2023-07-25",
+    "type": "streak",
+    "days": 9,
+    "message": "Big streaks this month, whoa"
   },
   {
     "date": "2023-08-07",
