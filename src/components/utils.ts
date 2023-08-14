@@ -1,10 +1,10 @@
 import { DateTime } from 'luxon';
 
-export const getToday = () => DateTime.now().toLocaleString(DateTime.DATE_MED);
-
 export const formatDate = (dateStr: string): string => (
   DateTime.fromISO(dateStr).toLocaleString(DateTime.DATE_MED)
 );
+
+export const getToday = (): string => formatDate(process.env.UPDATE_DATE);
 
 // DateTime objects implement #valueOf using their timestamp, so it is possible to directly compare them with comparators
 // https://moment.github.io/luxon/docs/manual/math.html#comparing-datetimes
