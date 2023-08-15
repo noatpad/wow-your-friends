@@ -1,4 +1,4 @@
-export type Platform = 'PC' | 'Mac' | 'Linux' | 'Playstation' | 'Xbox' | 'Switch';
+export type Platform = 'Windows' | 'Mac' | 'Linux' | 'Playstation' | 'Xbox' | 'Switch';
 export type Flag = 'double' | 'nks' | 'dts' | 'meme' | 'not202' | 'pre202';
 export type ProofType = 'video' | 'screenshot';
 
