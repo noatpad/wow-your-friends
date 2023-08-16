@@ -3,14 +3,11 @@
   import AnswerCard from "./AnswerCard.svelte";
   import Color from "../shared/Color.svelte";
   import YouCanDoThis from "./YouCanDoThis.svelte";
-  import SwitchInfoModal from "./SwitchInfoModal.svelte";
   import BrandIcon from "../shared/BrandIcon.svelte";
 
   import breakpoint from "../breakpoint";
-  import { keyActivateCb } from "../utils";
 
   const linkIconProps = { color: true, height: '2.5em', width: '2.5em' };
-  let showModal = false;
 
   $: mobile = ($breakpoint === 'mobile');
 </script>
@@ -36,25 +33,21 @@
       <p><em>Seriously, that ain't easy.</em></p>
     </AnswerCard>
     <AnswerCard side="left" tilt={-4} index={2}>
-      <p>The only thing needed from you is proof of you collecting Farewell's <Color c="yellow">golden strawberry</Color> in a recorded video. This video must show the whole run from start to finish, with no <Color c="celeste">Assist</Color> or <Color c="celeste">Variants</Color> mode.</p>
-      <p><em>Can't record the whole run because you play on a Switch?</em></p>
-      <!-- svelte-ignore a11y-missing-attribute -->
-      <a
-        role="button"
-        on:click={() => (showModal = true)}
-        on:keydown|preventDefault ={keyActivateCb(() => (showModal = true))}
-        tabindex="0"
-      >
-        There's an alternative!
-      </a>
+      <p>The only thing needed from you is proof of you collecting Farewell's <Color c="yellow">golden strawberry</Color> in a recorded video from start to finish.</p>
+      <p>Follow <a href="https://docs.google.com/spreadsheets/d/1FesTb6qkgMz-dCn7YdioRydToWSQNTg1axFEIHU4FF8/edit?pli=1#gid=1759333998" target="_blank" rel="noopener noreferrer">these guidelines</a> from the FWGC spreadsheet, as my criteria for verifying runs are the same as these.</p>
     </AnswerCard>
     <AnswerCard side="right" tilt={4} index={3}>
       <p>If you're unable to record your run, you can still submit a screenshot of your stats as proof, but due to how this can be exploited, you'll be listed as an <em>unverified</em> entry.</p>
       <p>Players under this category will have their entries hidden by default on the list.</p>
     </AnswerCard>
-    <AnswerCard tilt={-1} index={4}>
-      <p>Once you have that, upload your proof to a place like <Color c="red">YouTube</Color>.</p>
-      <p>Then send me a DM on <a href="http://twitter.com/noatpad" target="_blank" rel="noopener noreferrer"><Color c="twitter">Twitter</Color></a>, ping/DM me on the <a href="https://discord.gg/celeste" target="_blank" rel="noopener noreferrer"><Color c="discord">Celeste Discord (@notepad)</Color></a>, or submit your run through <a href="https://github.com/noatpad/wow-your-friends/issues" target="_blank" rel="noopener noreferrer"><Color c="github">GitHub Issues</Color></a>.</p>
+    <AnswerCard tilt={2} index={4}>
+      <p>Then submit your run to the <a href="https://docs.google.com/spreadsheets/d/1FesTb6qkgMz-dCn7YdioRydToWSQNTg1axFEIHU4FF8/edit?pli=1#gid=571489394" target="_blank" rel="noopener noreferrer">FWGC list</a>!</p>
+      <p>I have a script that runs every Saturday that adds newly verified runs on that spreadsheet that apply as 202 runs (after I review them, of course)</p>
+      <p class="whoops">(I've had a bad streak of procrastination when updating this list over the years, so this will help me keep it up to date, ahah...)</p>
+    </AnswerCard>
+    <AnswerCard tilt={-2} index={5}>
+      <p>You can also contact me directly to add your entry here too!</p>
+      <p>Send me a DM on <a href="http://twitter.com/noatpad" target="_blank" rel="noopener noreferrer"><Color c="twitter">Twitter</Color></a>, ping/DM me on the <a href="https://discord.gg/celeste" target="_blank" rel="noopener noreferrer"><Color c="discord">Celeste Discord (@notepad)</Color></a>, or submit your run through <a href="https://github.com/noatpad/wow-your-friends/issues" target="_blank" rel="noopener noreferrer"><Color c="github">GitHub Issues</Color></a>.</p>
       <p>If everything checks out, welcome to the list!</p>
       <div class="icon-links" class:mobile>
         <a href="http://twitter.com/noatpad" target="_blank" rel="noopener noreferrer">
@@ -116,11 +109,15 @@
     {/if}
   </Question>
 </section>
-<SwitchInfoModal bind:show={showModal} />
 
 <style lang="scss">
   p + p {
     margin-top: 0.4em;
+  }
+
+  p.whoops {
+    font-style: italic;
+    font-size: 0.6em;
   }
 
   .art-image {
