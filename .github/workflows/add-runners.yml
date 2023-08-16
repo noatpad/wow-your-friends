@@ -1,0 +1,43 @@
+name: add-runners
+run-name: Adding new runners to Wow Your Friends
+
+on:
+  schedule:
+    - cron: '0 8 * * SAT'
+  workflow_dispatch:
+
+defaults:
+  run:
+    working-directory: ./updater
+
+jobs:
+  add-runners:
+    name: Add runners
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+
+      - name: Set up Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18
+
+      - name: Install packages
+        run: npm install
+
+      - name: Add runners to list
+        env:
+          GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+        run: npm start
+
+      - name: Get current date
+        run: echo "date=$(date +'%Y-%m-%d')" >> $GITHUB_ENV
+
+      - name: Create PR
+        uses: peter-evans/create-pull-request@v5
+        with:
+          title: Add new runners as of ${{ env.date }}
+          body: Automatic PR to update the list with new runners as of last week
+          commit-message: Add new runners
+          branch: create-pull-request/add-runners
+          delete-branch: true
