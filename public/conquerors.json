@@ -6567,7 +6567,9 @@
       "type": "video",
       "url": "https://www.twitch.tv/videos/1851089591"
     },
-    "flags": ["not202"]
+    "flags": [
+      "not202"
+    ]
   },
   {
     "name": "reduci4",
@@ -6580,7 +6582,9 @@
       "type": "video",
       "url": "https://www.bilibili.com/video/BV1Go4y1P794/"
     },
-    "flags": ["not202"]
+    "flags": [
+      "not202"
+    ]
   },
   {
     "name": "yippiy.txt",
@@ -6606,7 +6610,9 @@
       "type": "video",
       "url": "https://youtu.be/qKe8XgGGHv8"
     },
-    "flags": ["not202"]
+    "flags": [
+      "not202"
+    ]
   },
   {
     "name": "Vireth",
@@ -6671,7 +6677,9 @@
       "type": "video",
       "url": "https://youtu.be/lOqkAmTH5IQ"
     },
-    "flags": ["nks"]
+    "flags": [
+      "nks"
+    ]
   },
   {
     "name": "MoNoDi",
@@ -6737,7 +6745,9 @@
       "type": "video",
       "url": "https://youtu.be/XvoqjqgMcVU"
     },
-    "flags": ["double"]
+    "flags": [
+      "double"
+    ]
   },
   {
     "name": "我只是路过",
@@ -6750,7 +6760,9 @@
       "type": "video",
       "url": "https://www.bilibili.com/video/BV1Bs4y1679M/"
     },
-    "flags": ["not202"]
+    "flags": [
+      "not202"
+    ]
   },
   {
     "name": "susposter",
@@ -6763,7 +6775,9 @@
       "type": "video",
       "url": "https://youtu.be/lEMb_5NxzE4?t=1797"
     },
-    "flags": ["double"]
+    "flags": [
+      "double"
+    ]
   },
   {
     "name": "Alyx666",
@@ -6815,7 +6829,9 @@
       "type": "video",
       "url": "https://www.bilibili.com/video/BV1zu4y1S73r/"
     },
-    "flags": ["not202"]
+    "flags": [
+      "not202"
+    ]
   },
   {
     "name": "Sir Jiggle",
@@ -6880,7 +6896,9 @@
       "type": "video",
       "url": "https://youtu.be/hNr8ozfJUfE"
     },
-    "flags": ["double"]
+    "flags": [
+      "double"
+    ]
   },
   {
     "name": "Mejoris",
@@ -6971,7 +6989,9 @@
       "type": "video",
       "url": "https://www.youtube.com/watch?v=nVqo19m5CwM"
     },
-    "flags": ["not202"]
+    "flags": [
+      "not202"
+    ]
   },
   {
     "name": "lzj_luobo233",
@@ -6997,7 +7017,9 @@
       "type": "video",
       "url": "https://youtu.be/HaG9HRZwKww"
     },
-    "flags": ["dts"]
+    "flags": [
+      "dts"
+    ]
   },
   {
     "name": "lafa",
@@ -7049,7 +7071,9 @@
       "type": "video",
       "url": "https://www.youtube.com/watch?v=VpEd4ynn4Wk"
     },
-    "flags": ["not202"]
+    "flags": [
+      "not202"
+    ]
   },
   {
     "name": "JWhitePWC",
@@ -7114,7 +7138,9 @@
       "type": "video",
       "url": "https://www.youtube.com/watch?v=SPACdVACsGA&t=11s"
     },
-    "flags": ["double"]
+    "flags": [
+      "double"
+    ]
   },
   {
     "name": "Virot2",
@@ -7126,6 +7152,255 @@
     "proof": {
       "type": "video",
       "url": "https://youtu.be/9KB_Xg4S-do"
+    },
+    "flags": []
+  },
+  {
+    "name": "Zotomon",
+    "date": "2021-04-24",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": false,
+      "url": "https://youtube.com/watch?v=g-dPCAnakEQ&feature=share"
+    },
+    "flags": []
+  },
+  {
+    "name": "发豆芽428",
+    "date": "2021-08-10",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": false,
+      "url": "https://www.bilibili.com/video/BV1Qg411L79V"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "a jojo weeb",
+    "date": "2021-08-22",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": false,
+      "url": "https://www.youtube.com/watch?v=Cbq0C0WQEUA"
+    },
+    "flags": [
+      "pre202"
+    ]
+  },
+  {
+    "name": "switcab",
+    "date": "2021-11-10",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": false,
+      "url": "https://www.bilibili.com/video/BV1NF411Y7q9?spm_id_from=333.999.0.0"
+    },
+    "flags": [
+      "pre202"
+    ]
+  },
+  {
+    "name": "QueueZee",
+    "date": "2022-02-06",
+    "platform": "Mac OS",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": false,
+      "url": "https://www.youtube.com/watch?v=7JrHSREQf40"
+    },
+    "flags": []
+  },
+  {
+    "name": "Jankmo",
+    "date": "2022-02-24",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": false,
+      "url": "https://www.youtube.com/watch?v=ZrL4PafNWyw"
+    },
+    "flags": []
+  },
+  {
+    "name": "筱辰",
+    "date": "2022-04-03",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": false,
+      "url": "https://www.bilibili.com/video/BV1T5411D74f?spm_id_from=333.999.0.0"
+    },
+    "flags": []
+  },
+  {
+    "name": "PS太郎",
+    "date": "2022-06-08",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": false,
+      "url": "https://www.youtube.com/watch?v=YCFmTkhX0ZM"
+    },
+    "flags": []
+  },
+  {
+    "name": "8Nirp",
+    "date": "2022-06-29",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": false,
+      "url": "https://www.youtube.com/watch?v=RITOaOnYOp0"
+    },
+    "flags": []
+  },
+  {
+    "name": "jun",
+    "date": "2022-07-12",
+    "platform": "Switch",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": false,
+      "url": "https://www.youtube.com/watch?v=LFTS0HSVKYc"
+    },
+    "flags": []
+  },
+  {
+    "name": "ごられ",
+    "date": "2022-07-12",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": false,
+      "url": "https://www.youtube.com/watch?v=MzKq-wZMpjc"
+    },
+    "flags": []
+  },
+  {
+    "name": "Nimu",
+    "date": "2022-10-29",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": false,
+      "url": "https://www.youtube.com/watch?v=i8EKASJbOyc"
+    },
+    "flags": [
+      "double"
+    ]
+  },
+  {
+    "name": "Igrmi",
+    "date": "2023-01-03",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": false,
+      "url": "https://www.youtube.com/watch?v=Uzie4WZe5xc"
+    },
+    "flags": []
+  },
+  {
+    "name": "10PercentPig",
+    "date": "2023-01-13",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": false,
+      "url": "https://www.youtube.com/watch?v=WjfZPB3T8UU"
+    },
+    "flags": []
+  },
+  {
+    "name": "没出息的触手菌",
+    "date": "2023-04-10",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": false,
+      "url": "https://www.bilibili.com/video/BV1zu411V71Q/"
+    },
+    "flags": [
+      "not202",
+      "nks"
+    ]
+  },
+  {
+    "name": "おむらいす",
+    "date": "2023-04-13",
+    "platform": "Switch",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": false,
+      "url": "https://www.youtube.com/watch?v=kWx-kRO4fMI"
+    },
+    "flags": [
+      "nks"
+    ]
+  },
+  {
+    "name": "エントリヒ",
+    "date": "2023-05-05",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": false,
+      "url": "https://www.youtube.com/watch?v=QtkmQLcnvXo"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "sikusiku",
+    "date": "2023-06-10",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": false,
+      "url": "https://www.twitch.tv/videos/1842686784"
     },
     "flags": []
   }
