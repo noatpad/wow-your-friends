@@ -1,5 +1,5 @@
-name: add-runners
-run-name: Adding new runners to Wow Your Friends
+name: runner-update
+run-name: Create PR for adding new runners
 
 on:
   schedule:
