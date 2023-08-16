@@ -23,9 +23,12 @@
 
   let showLegendModal = false;
 
+  const sortConquerors = () => { allConquerors.sort((a, b) => sortByDate(a.date, b.date)) }
+
   onMount(async () => {
     const response = await fetch('/conquerors.json');
     allConquerors = (await response.json()) as NewConqueror[];
+    sortConquerors();
   });
 
   $: if (allConquerors.length) {
@@ -36,7 +39,7 @@
         (showDTS || !c.flags.includes('dts'))
       ))
     );
-    allConquerors.sort((a, b) => sortByDate(a.date, b.date));
+    sortConquerors();
 
     let count = 0;
     filteredConquerors = filtered.map((c) => ({
