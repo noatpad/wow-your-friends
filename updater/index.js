@@ -30,7 +30,7 @@ const getNewRunnersFromSheet = async (sheetId, currentRunners) => {
     const { hyperlink, note } = cell;
     const date = DateTime.fromFormat(runner.get('Date Achieved'), 'DDD').toFormat("y-MM-dd");
     const platform = standardSheet.getCellByA1(`${PLATFORM_COL}${runner.rowNumber}`).value;
-    const proofType = ['.png', '.jpg'].some((ext) => hyperlink?.endsWith(ext));
+    const proofType = ['.png', '.jpg'].some((ext) => hyperlink?.endsWith(ext)) ? 'screenshot' : 'video';
     const flags = [];
     if (runner.get('Total number of entries')?.startsWith('202 on')) flags.push('pre202');
     else if (runner.get('Was not 202')) flags.push('not202');
