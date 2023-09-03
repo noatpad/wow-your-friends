@@ -12,5 +12,6 @@ export const aliases = {
   'azaaz': 'azaazazaaz',
   'ComfyMedi': 'Mario24',
   'AGoatSandwich': 'GoatySandwich',
-  'NPH': 'Noph'
+  'NPH': 'Noph',
+  'aleph_null': 'Ayalyn'
 };
