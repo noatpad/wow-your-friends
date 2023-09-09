@@ -7509,5 +7509,88 @@
       "url": "https://www.youtube.com/watch?v=N2i7Dv9hDXo"
     },
     "flags": []
+  },
+  {
+    "name": "Ayalyn",
+    "date": "2020-12-24",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/jCBmA1EEhj4"
+    },
+    "flags": []
+  },
+  {
+    "name": "wunjo",
+    "date": "2023-09-03",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/V4JAqnb2Ak4"
+    },
+    "flags": []
+  },
+  {
+    "name": "peble",
+    "date": "2023-09-04",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=OSrCFKchH2Y"
+    },
+    "flags": []
+  },
+  {
+    "name": "Vanilla Popcorn",
+    "date": "2023-09-05",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/vak18WZ61ZU?si=UIbsd-TmUgDrt4Tk"
+    },
+    "flags": [
+      "double",
+      "nks"
+    ]
+  },
+  {
+    "name": "搜狐绝尘",
+    "date": "2023-09-06",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1N8411B7Az/"
+    },
+    "flags": []
+  },
+  {
+    "name": "Kirr12",
+    "date": "2023-09-06",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.twitch.tv/videos/1918606399"
+    },
+    "flags": [
+      "double"
+    ]
   }
 ]
