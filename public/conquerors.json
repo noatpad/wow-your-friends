@@ -7579,5 +7579,48 @@
     "flags": [
       "double"
     ]
+  },
+  {
+    "name" : "CaioMD",
+    "date": "2023-09-07",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/QKOiFQoSbS8"
+    },
+    "flags": []
+  },
+  {
+    "name": "hyper",
+    "date": "2023-09-08",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=m7q3e-j23i4"
+    },
+    "flags": [
+      "double"
+    ]
+  },
+  {
+    "name": "Arioksu2",
+    "date": "2023-09-12",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/pAqwNoD4sw4"
+    },
+    "flags": [
+      "double"
+    ]
   }
 ]
