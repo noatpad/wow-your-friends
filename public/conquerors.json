@@ -7511,19 +7511,6 @@
     "flags": []
   },
   {
-    "name": "Ayalyn",
-    "date": "2020-12-24",
-    "platform": "Windows",
-    "verified": {
-      "value": true
-    },
-    "proof": {
-      "type": "video",
-      "url": "https://youtu.be/jCBmA1EEhj4"
-    },
-    "flags": []
-  },
-  {
     "name": "wunjo",
     "date": "2023-09-03",
     "platform": "Windows",
