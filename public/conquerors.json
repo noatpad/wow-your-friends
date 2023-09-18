@@ -7609,21 +7609,6 @@
     ]
   },
   {
-    "name": "Arioksu2",
-    "date": "2023-09-12",
-    "platform": "Windows",
-    "verified": {
-      "value": true
-    },
-    "proof": {
-      "type": "video",
-      "url": "https://youtu.be/pAqwNoD4sw4"
-    },
-    "flags": [
-      "double"
-    ]
-  },
-  {
     "name": "Arioksu",
     "date": "2023-09-12",
     "platform": "Windows",
@@ -7652,7 +7637,7 @@
     "flags": []
   },
   {
-    "name": "鸽子型拖更盐酸",
+    "name": "Chlorie",
     "date": "2023-09-15",
     "platform": "Windows",
     "verified": {
