@@ -7581,7 +7581,7 @@
     ]
   },
   {
-    "name" : "CaioMD",
+    "name": "CaioMD",
     "date": "2023-09-07",
     "platform": "Windows",
     "verified": {
@@ -7609,7 +7609,7 @@
     ]
   },
   {
-    "name": "Arioksu2",
+    "name": "Arioksu",
     "date": "2023-09-12",
     "platform": "Windows",
     "verified": {
@@ -7618,6 +7618,47 @@
     "proof": {
       "type": "video",
       "url": "https://youtu.be/pAqwNoD4sw4"
+    },
+    "flags": [
+      "double"
+    ]
+  },
+  {
+    "name": "whatsGravity",
+    "date": "2023-09-14",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=kG4_azW0K7w"
+    },
+    "flags": []
+  },
+  {
+    "name": "Chlorie",
+    "date": "2023-09-15",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1e34y1P7P1/"
+    },
+    "flags": []
+  },
+  {
+    "name": "Provoxin",
+    "date": "2023-09-15",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/nXev3rsW4YQ"
     },
     "flags": [
       "double"
