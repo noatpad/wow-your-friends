@@ -7663,5 +7663,131 @@
     "flags": [
       "double"
     ]
+  },
+  {
+    "name": "Paradox_bones",
+    "date": "2021-02-08",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1cT4y1N7qE"
+    },
+    "flags": []
+  },
+  {
+    "name": "SwiftIRL",
+    "date": "2023-07-21",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/aaKTDfhycqQ"
+    },
+    "flags": []
+  },
+  {
+    "name": "鸽子型拖更盐酸",
+    "date": "2023-09-15",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1e34y1P7P1/"
+    },
+    "flags": []
+  },
+  {
+    "name": "CVZen",
+    "date": "2023-09-17",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=jQyn6q-Xm7o"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "dark city",
+    "date": "2023-09-17",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/tl8qD6-7VIM?si=GpyK18hVF7laeEDJ"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "Tomycarmo3",
+    "date": "2023-09-18",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=nX_okn-ptVU"
+    },
+    "flags": []
+  },
+  {
+    "name": "Majoog",
+    "date": "2023-09-19",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=VwcSPBXh440"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "Dyc8verde",
+    "date": "2023-09-19",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=ZWZx67VQLy8"
+    },
+    "flags": [
+      "nks"
+    ]
+  },
+  {
+    "name": "BusinessCow123",
+    "date": "2023-09-19",
+    "platform": "Windows",
+    "verified": {
+      "value": false,
+      "note": "game crashed in the golden room, returned and redid the room to finish the run"
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=10LUlvFiiqU"
+    },
+    "flags": []
   }
 ]
