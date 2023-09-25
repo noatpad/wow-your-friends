@@ -7637,7 +7637,7 @@
     "flags": []
   },
   {
-    "name": "Chlorie",
+    "name": "鸽子型拖更盐酸",
     "date": "2023-09-15",
     "platform": "Windows",
     "verified": {
@@ -7662,6 +7662,135 @@
     },
     "flags": [
       "double"
+    ]
+  },
+  {
+    "name": "SwiftIRL",
+    "date": "2023-07-21",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/aaKTDfhycqQ"
+    },
+    "flags": []
+  },
+  {
+    "name": "CVZen",
+    "date": "2023-09-17",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=jQyn6q-Xm7o"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "dark city",
+    "date": "2023-09-17",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/tl8qD6-7VIM?si=GpyK18hVF7laeEDJ"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "Tomycarmo3",
+    "date": "2023-09-18",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=nX_okn-ptVU"
+    },
+    "flags": []
+  },
+  {
+    "name": "Majoog",
+    "date": "2023-09-19",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=VwcSPBXh440"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "Dyc8verde",
+    "date": "2023-09-19",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=ZWZx67VQLy8"
+    },
+    "flags": [
+      "nks"
+    ]
+  },
+  {
+    "name": "BusinessCow123",
+    "date": "2023-09-19",
+    "platform": "Windows",
+    "verified": {
+      "value": true,
+      "note": "Game crashed in the golden room. Debugged into the golden room with the golden berry to complete the run"
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=10LUlvFiiqU"
+    },
+    "flags": []
+  },
+  {
+    "name": "socha",
+    "date": "2023-09-22",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=5Lyvf-AfvRc"
+    },
+    "flags": []
+  },
+  {
+    "name": "patxs",
+    "date": "2023-09-23",
+    "platform": "Windows",
+    "verified": {
+      "value": true,
+      "note": "Video ends right before the golden collect and the final badeline boost, due to a recording script with a bug"
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=kAiVNLJTcPE"
+    },
+    "flags": [
+      "not202"
     ]
   }
 ]
