@@ -7637,7 +7637,7 @@
     "flags": []
   },
   {
-    "name": "Chlorie",
+    "name": "鸽子型拖更盐酸",
     "date": "2023-09-15",
     "platform": "Windows",
     "verified": {
@@ -7665,19 +7665,6 @@
     ]
   },
   {
-    "name": "Paradox_bones",
-    "date": "2021-02-08",
-    "platform": "Windows",
-    "verified": {
-      "value": true
-    },
-    "proof": {
-      "type": "video",
-      "url": "https://www.bilibili.com/video/BV1cT4y1N7qE"
-    },
-    "flags": []
-  },
-  {
     "name": "SwiftIRL",
     "date": "2023-07-21",
     "platform": "Windows",
@@ -7687,19 +7674,6 @@
     "proof": {
       "type": "video",
       "url": "https://youtu.be/aaKTDfhycqQ"
-    },
-    "flags": []
-  },
-  {
-    "name": "鸽子型拖更盐酸",
-    "date": "2023-09-15",
-    "platform": "Windows",
-    "verified": {
-      "value": true
-    },
-    "proof": {
-      "type": "video",
-      "url": "https://www.bilibili.com/video/BV1e34y1P7P1/"
     },
     "flags": []
   },
@@ -7781,13 +7755,42 @@
     "date": "2023-09-19",
     "platform": "Windows",
     "verified": {
-      "value": false,
-      "note": "game crashed in the golden room, returned and redid the room to finish the run"
+      "value": true,
+      "note": "Game crashed in the golden room. Debugged into the golden room with the golden berry to complete the run"
     },
     "proof": {
       "type": "video",
       "url": "https://www.youtube.com/watch?v=10LUlvFiiqU"
     },
     "flags": []
+  },
+  {
+    "name": "socha",
+    "date": "2023-09-22",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=5Lyvf-AfvRc"
+    },
+    "flags": []
+  },
+  {
+    "name": "patxs",
+    "date": "2023-09-23",
+    "platform": "Windows",
+    "verified": {
+      "value": true,
+      "note": "Video ends right before the golden collect and the final badeline boost, due to a recording script with a bug"
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=kAiVNLJTcPE"
+    },
+    "flags": [
+      "not202"
+    ]
   }
 ]

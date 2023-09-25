@@ -13,5 +13,7 @@ export const aliases = {
   'ComfyMedi': 'Mario24',
   'AGoatSandwich': 'GoatySandwich',
   'NPH': 'Noph',
-  'Ayalyn': 'aleph_null'
+  'Ayalyn': 'aleph_null',
+  'Paradox_bones': '白夜永昼',
+  'Chlorie': '鸽子型拖更盐酸'
 };
