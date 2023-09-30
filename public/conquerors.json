@@ -7792,5 +7792,71 @@
     "flags": [
       "not202"
     ]
+  },
+  {
+    "name": "大毛664",
+    "date": "2023-09-23",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video"
+    },
+    "flags": []
+  },
+  {
+    "name": "adcanada",
+    "date": "2023-09-24",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=LVgYMUk9Rr4"
+    },
+    "flags": []
+  },
+  {
+    "name": "Aguid_Einzbern",
+    "date": "2023-09-24",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1Yp4y1w7BV"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "P3RL",
+    "date": "2023-09-25",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/kiSUKw8Ude8"
+    },
+    "flags": []
+  },
+  {
+    "name": "Pincii",
+    "date": "2023-09-29",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=aphPmZxX4u4"
+    },
+    "flags": []
   }
 ]
