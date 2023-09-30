@@ -7801,7 +7801,8 @@
       "value": true
     },
     "proof": {
-      "type": "video"
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1Sm4y157oM/"
     },
     "flags": []
   },
