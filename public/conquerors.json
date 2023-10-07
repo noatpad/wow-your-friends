@@ -7859,5 +7859,57 @@
       "url": "https://www.youtube.com/watch?v=aphPmZxX4u4"
     },
     "flags": []
+  },
+  {
+    "name": "Harry Biz",
+    "date": "2023-09-29",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/rhjq1sM1v-w?t=6900"
+    },
+    "flags": []
+  },
+  {
+    "name": "Anguigui",
+    "date": "2023-09-30",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=QCioFOZTXM0"
+    },
+    "flags": []
+  },
+  {
+    "name": "Kip",
+    "date": "2023-10-02",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=kpiBBW_FvYA"
+    },
+    "flags": []
+  },
+  {
+    "name": "Varkhan",
+    "date": "2023-10-04",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/nIzlvGe7j-c?si=G95x_Whr-6T1icg8"
+    },
+    "flags": []
   }
 ]
