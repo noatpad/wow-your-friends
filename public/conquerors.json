@@ -7911,5 +7911,35 @@
       "url": "https://youtu.be/nIzlvGe7j-c?si=G95x_Whr-6T1icg8"
     },
     "flags": []
+  },
+  {
+    "name": "67754970164",
+    "date": "2023-10-09",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1xN4y1Z7sR/"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "sssxxxx__",
+    "date": "2023-10-09",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1sz4y1F7VF/"
+    },
+    "flags": [
+      "not202"
+    ]
   }
 ]
