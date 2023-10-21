@@ -7942,5 +7942,46 @@
     "flags": [
       "not202"
     ]
+  },
+  {
+    "name": "Kasokuzo",
+    "date": "2023-09-06",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=36RzCgiio5s"
+    },
+    "flags": []
+  },
+  {
+    "name": "Heyoo_slight",
+    "date": "2023-10-13",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1Qw411z7me/?p=1"
+    },
+    "flags": []
+  },
+  {
+    "name": "Azulia",
+    "date": "2023-10-14",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=RnRv1C0sySI"
+    },
+    "flags": [
+      "nks"
+    ]
   }
 ]
