@@ -7484,7 +7484,7 @@
   },
   {
     "name": "chromos",
-    "date": "2023-08-28",
+    "date": "2023-09-09",
     "platform": "Windows",
     "verified": {
       "value": true
@@ -7494,7 +7494,7 @@
       "url": "https://youtu.be/sNcKdvfWyUc"
     },
     "flags": [
-      "not202"
+      "pre202"
     ]
   },
   {
@@ -7680,7 +7680,7 @@
   },
   {
     "name": "CVZen",
-    "date": "2023-09-17",
+    "date": "2023-10-11",
     "platform": "Windows",
     "verified": {
       "value": true
@@ -7690,7 +7690,7 @@
       "url": "https://www.youtube.com/watch?v=jQyn6q-Xm7o"
     },
     "flags": [
-      "not202"
+      "pre202"
     ]
   },
   {
@@ -7723,7 +7723,7 @@
   },
   {
     "name": "Majoog",
-    "date": "2023-09-19",
+    "date": "2023-10-09",
     "platform": "Windows",
     "verified": {
       "value": true
@@ -7733,7 +7733,7 @@
       "url": "https://www.youtube.com/watch?v=VwcSPBXh440"
     },
     "flags": [
-      "not202"
+      "pre202"
     ]
   },
   {
