@@ -1295,7 +1295,7 @@
     ]
   },
   {
-    "name": "白皇Sword",
+    "name": "黑月Sword",
     "date": "2020-08-23",
     "platform": "Windows",
     "verified": {
@@ -1338,8 +1338,8 @@
     ]
   },
   {
-    "name": "七海椋",
-    "date": "2020-08-30",
+    "name": "Nanami Chiaki",
+    "date": "2020-11-25",
     "platform": "Windows",
     "verified": {
       "value": true
@@ -1349,7 +1349,7 @@
       "url": "https://www.bilibili.com/video/BV1Ry4y1C7qt"
     },
     "flags": [
-      "not202"
+      "pre202"
     ]
   },
   {
@@ -2181,7 +2181,7 @@
     "flags": []
   },
   {
-    "name": "Soul丶命运",
+    "name": "Farewell命运",
     "date": "2021-02-21",
     "platform": "Windows",
     "verified": {
@@ -7537,7 +7537,7 @@
     "flags": []
   },
   {
-    "name": "Vanilla Popcorn",
+    "name": "Josh",
     "date": "2023-09-05",
     "platform": "Windows",
     "verified": {
@@ -7985,78 +7985,6 @@
     ]
   },
   {
-    "name": "黑月Sword",
-    "date": "2020-08-23",
-    "platform": "Windows",
-    "verified": {
-      "value": true
-    },
-    "proof": {
-      "type": "video",
-      "url": "https://www.bilibili.com/video/BV1CZ4y1K7Qb"
-    },
-    "flags": []
-  },
-  {
-    "name": "Nanami Chiaki",
-    "date": "2020-08-30",
-    "platform": "Windows",
-    "verified": {
-      "value": true
-    },
-    "proof": {
-      "type": "video",
-      "url": "https://www.bilibili.com/video/BV1Ry4y1C7qt"
-    },
-    "flags": [
-      "pre202"
-    ]
-  },
-  {
-    "name": "Farewell命运",
-    "date": "2021-02-21",
-    "platform": "Windows",
-    "verified": {
-      "value": true
-    },
-    "proof": {
-      "type": "video",
-      "url": "https://www.bilibili.com/video/av331780469"
-    },
-    "flags": []
-  },
-  {
-    "name": "Josh",
-    "date": "2023-09-05",
-    "platform": "Windows",
-    "verified": {
-      "value": true
-    },
-    "proof": {
-      "type": "video",
-      "url": "https://youtu.be/vak18WZ61ZU?si=UIbsd-TmUgDrt4Tk"
-    },
-    "flags": [
-      "double",
-      "nks"
-    ]
-  },
-  {
-    "name": "Thriyf",
-    "date": "2023-10-08",
-    "platform": "Windows",
-    "verified": {
-      "value": true
-    },
-    "proof": {
-      "type": "video",
-      "url": "https://www.youtube.com/watch?v=4OpCIndimno"
-    },
-    "flags": [
-      "not202"
-    ]
-  },
-  {
     "name": "Fonikiki",
     "date": "2023-10-21",
     "platform": "Windows",
@@ -8139,7 +8067,7 @@
   },
   {
     "name": "-Undefined-",
-    "date": "2023-11-01",
+    "date": "2023-11-05",
     "platform": "Windows",
     "verified": {
       "value": true
@@ -8236,7 +8164,7 @@
     },
     "proof": {
       "type": "video",
-      "url": "https://www.bilibili.com/video/BV19w411s7BE/https://www.bilibili.com/video/BV19w411s7BE/"
+      "url": "https://www.bilibili.com/video/BV19w411s7BE/"
     },
     "flags": []
   },
@@ -8295,19 +8223,16 @@
     "flags": []
   },
   {
-    "name": "Fasolka199",
-    "date": "2023-11-15",
+    "name": "Ruhok",
+    "date": "2023-11-16",
     "platform": "Windows",
     "verified": {
       "value": true
     },
     "proof": {
       "type": "video",
-      "url": "https://discord.com/channels/403698615446536203/666337196952780810/1174427482976423996"
+      "url": "https://youtu.be/u0il5QB-wQY?si=GHt0ZeIyH4t76tH3"
     },
-    "flags": [
-      "double",
-      "dts"
-    ]
+    "flags": []
   }
 ]
