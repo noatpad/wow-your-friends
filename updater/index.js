@@ -5,8 +5,6 @@ import path from 'path';
 import { DateTime } from 'luxon';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 
-import { aliases } from './usernames.js';
-
 const DOC_ID = '1FesTb6qkgMz-dCn7YdioRydToWSQNTg1axFEIHU4FF8';
 const STANDARD_SHEET_ID = '583834938';
 const DTS_SHEET_ID = '162176771';
@@ -24,7 +22,7 @@ const getNewRunnersFromSheet = async (sheetId, currentRunners) => {
   const newRunners = [];
   for (const runner of rows) {
     const name = runner.get('Player').trim();
-    if (currentRunners.has(name) || aliases[name]) continue;
+    if (currentRunners.has(name)) continue;
 
     const cell = standardSheet.getCellByA1(`${PLAYER_COL}${runner.rowNumber}`);
     const { hyperlink, note } = cell;
