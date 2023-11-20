@@ -1295,7 +1295,7 @@
     ]
   },
   {
-    "name": "白皇Sword",
+    "name": "黑月Sword",
     "date": "2020-08-23",
     "platform": "Windows",
     "verified": {
@@ -1338,8 +1338,8 @@
     ]
   },
   {
-    "name": "椋Kaede",
-    "date": "2020-08-30",
+    "name": "Nanami Chiaki",
+    "date": "2020-11-25",
     "platform": "Windows",
     "verified": {
       "value": true
@@ -1349,7 +1349,7 @@
       "url": "https://www.bilibili.com/video/BV1Ry4y1C7qt"
     },
     "flags": [
-      "not202"
+      "pre202"
     ]
   },
   {
@@ -2181,7 +2181,7 @@
     "flags": []
   },
   {
-    "name": "Soul丶命运",
+    "name": "Farewell命运",
     "date": "2021-02-21",
     "platform": "Windows",
     "verified": {
@@ -7484,7 +7484,7 @@
   },
   {
     "name": "chromos",
-    "date": "2023-08-28",
+    "date": "2023-09-09",
     "platform": "Windows",
     "verified": {
       "value": true
@@ -7494,7 +7494,7 @@
       "url": "https://youtu.be/sNcKdvfWyUc"
     },
     "flags": [
-      "not202"
+      "pre202"
     ]
   },
   {
@@ -7537,7 +7537,7 @@
     "flags": []
   },
   {
-    "name": "Vanilla Popcorn",
+    "name": "Josh",
     "date": "2023-09-05",
     "platform": "Windows",
     "verified": {
@@ -7680,7 +7680,7 @@
   },
   {
     "name": "CVZen",
-    "date": "2023-09-17",
+    "date": "2023-10-11",
     "platform": "Windows",
     "verified": {
       "value": true
@@ -7690,7 +7690,7 @@
       "url": "https://www.youtube.com/watch?v=jQyn6q-Xm7o"
     },
     "flags": [
-      "not202"
+      "pre202"
     ]
   },
   {
@@ -7723,7 +7723,7 @@
   },
   {
     "name": "Majoog",
-    "date": "2023-09-19",
+    "date": "2023-10-09",
     "platform": "Windows",
     "verified": {
       "value": true
@@ -7733,7 +7733,7 @@
       "url": "https://www.youtube.com/watch?v=VwcSPBXh440"
     },
     "flags": [
-      "not202"
+      "pre202"
     ]
   },
   {
@@ -7983,5 +7983,256 @@
     "flags": [
       "nks"
     ]
+  },
+  {
+    "name": "Fonikiki",
+    "date": "2023-10-21",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=5eWSJF8DJU0"
+    },
+    "flags": [
+      "not202",
+      "double"
+    ]
+  },
+  {
+    "name": "MynaBlack",
+    "date": "2023-10-27",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1nj411e7cx/"
+    },
+    "flags": []
+  },
+  {
+    "name": "sphericat",
+    "date": "2023-10-27",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=eYn3yuxVupg"
+    },
+    "flags": []
+  },
+  {
+    "name": "Klengthird",
+    "date": "2023-10-27",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1kc411Z7TY/"
+    },
+    "flags": []
+  },
+  {
+    "name": "几禾学家",
+    "date": "2023-10-28",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1by4y1A7nw/"
+    },
+    "flags": []
+  },
+  {
+    "name": "Superb_Cricket",
+    "date": "2023-10-30",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.twitch.tv/videos/1964496728"
+    },
+    "flags": []
+  },
+  {
+    "name": "-Undefined-",
+    "date": "2023-11-05",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=0fNJ9xpJ9Dk"
+    },
+    "flags": [
+      "pre202"
+    ]
+  },
+  {
+    "name": "Arctic Fire",
+    "date": "2023-11-01",
+    "platform": "Playstation",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=h1RuNfrm8aE"
+    },
+    "flags": [
+      "not202",
+      "nks"
+    ]
+  },
+  {
+    "name": "鸽子鲨",
+    "date": "2023-11-02",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1ty4y1c7Wx/"
+    },
+    "flags": [
+      "not202",
+      "nks"
+    ]
+  },
+  {
+    "name": "foreverkurome",
+    "date": "2023-11-02",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=rzVEF59njd4"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "Brst",
+    "date": "2023-11-05",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=6dWquwNRxcA"
+    },
+    "flags": []
+  },
+  {
+    "name": "Thriyf",
+    "date": "2023-11-05",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/4OpCIndimno?t=2845"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "可以嘛可以嘛可以嘛",
+    "date": "2023-11-08",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV19w411s7BE/"
+    },
+    "flags": []
+  },
+  {
+    "name": "哈飞MEru",
+    "date": "2023-11-10",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1Tw411W7zc/"
+    },
+    "flags": []
+  },
+  {
+    "name": "だれ",
+    "date": "2023-11-10",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=78-IhfSUY2A"
+    },
+    "flags": []
+  },
+  {
+    "name": "燐燐的键盘",
+    "date": "2023-11-12",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1Eg4y1Q7oc/"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "SenselessSpirit",
+    "date": "2023-11-12",
+    "platform": "Linux",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=UynCpFuXrrk"
+    },
+    "flags": []
+  },
+  {
+    "name": "Ruhok",
+    "date": "2023-11-16",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/u0il5QB-wQY?si=GHt0ZeIyH4t76tH3"
+    },
+    "flags": []
   }
 ]
