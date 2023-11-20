@@ -204,5 +204,21 @@
     "date": "2023-08-07",
     "type": "threshold",
     "count": 450
+  },
+  {
+    "date": "2023-08-26",
+    "type": "threshold",
+    "count": 475
+  },
+  {
+    "date": "2023-09-09",
+    "type": "anniversary",
+    "year": 4,
+    "message": "The pace is unreal as we cross the 4th anniversary mark with almost 500 conquerors!"
+  },
+  {
+    "date": "2023-10-02",
+    "type": "threshold",
+    "count": 500
   }
 ]
