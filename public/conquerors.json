@@ -8588,6 +8588,19 @@
     ]
   },
   {
+    "name": "Spookytober",
+    "date": "2024-01-08",
+    "platform": "PC",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=qC1XwI0iJ5M"
+    },
+    "flags": []
+  },
+  {
     "name": "Yamy",
     "date": "2024-01-09",
     "platform": "Windows",
@@ -8601,5 +8614,62 @@
     "flags": [
       "nks"
     ]
+  },
+  {
+    "name": "Aubrey",
+    "date": "2024-01-10",
+    "platform": "PC",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=07TDxIrayuc"
+    },
+    "flags": []
+  },
+  {
+    "name": "Sp00ph",
+    "date": "2024-01-12",
+    "platform": "PC",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/NjHVltlBpOw"
+    },
+    "flags": []
+  },
+  {
+    "name": "SoulAdor",
+    "date": "2024-01-18",
+    "platform": "PC",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=wswkcsFbrIc"
+    },
+    "flags": [
+      "double",
+      "nks",
+      "not202"
+    ]
+  },
+  {
+    "name": "Sienna",
+    "date": "2024-01-18",
+    "platform": "PC",
+    "verified": {
+      "value": false,
+      "note": "No video, just screenshot of stats. However they have a history of attempts in the Celestecord."
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://cdn.discordapp.com/attachments/666337196952780810/1197634447135211632/image.png?ex=65bbfaff&is=65a985ff&hm=b4462c4339f9b4351dbf9c74ad28ec6658084cd2a267aa7962138e52e3826fa7&"
+    },
+    "flags": []
   }
 ]
