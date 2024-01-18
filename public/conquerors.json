@@ -583,7 +583,7 @@
     "flags": []
   },
   {
-    "name": "NPH",
+    "name": "Noph",
     "date": "2020-03-16",
     "platform": "Windows",
     "verified": {
@@ -1224,6 +1224,21 @@
     "flags": []
   },
   {
+    "name": "JTF98",
+    "date": "2020-08-09",
+    "platform": "Linux",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=VX05778-3dY"
+    },
+    "flags": [
+      "pre202"
+    ]
+  },
+  {
     "name": "Kiiview",
     "date": "2020-08-11",
     "platform": "Windows",
@@ -1482,7 +1497,7 @@
     "flags": []
   },
   {
-    "name": "唯笑",
+    "name": "Tadawara",
     "date": "2020-09-07",
     "platform": "Windows",
     "verified": {
@@ -7508,7 +7523,9 @@
       "type": "video",
       "url": "https://www.youtube.com/watch?v=N2i7Dv9hDXo"
     },
-    "flags": []
+    "flags": [
+      "pre202"
+    ]
   },
   {
     "name": "wunjo",
@@ -7705,7 +7722,7 @@
       "url": "https://youtu.be/tl8qD6-7VIM?si=GpyK18hVF7laeEDJ"
     },
     "flags": [
-      "not202"
+      "pre202"
     ]
   },
   {
@@ -7748,7 +7765,8 @@
       "url": "https://www.youtube.com/watch?v=ZWZx67VQLy8"
     },
     "flags": [
-      "nks"
+      "nks",
+      "pre202"
     ]
   },
   {
@@ -8092,7 +8110,7 @@
       "url": "https://www.youtube.com/watch?v=h1RuNfrm8aE"
     },
     "flags": [
-      "not202",
+      "pre202",
       "nks"
     ]
   },
@@ -8138,7 +8156,9 @@
       "type": "video",
       "url": "https://www.youtube.com/watch?v=6dWquwNRxcA"
     },
-    "flags": []
+    "flags": [
+      "pre202"
+    ]
   },
   {
     "name": "Thriyf",
@@ -8232,6 +8252,429 @@
     "proof": {
       "type": "video",
       "url": "https://youtu.be/u0il5QB-wQY?si=GHt0ZeIyH4t76tH3"
+    },
+    "flags": []
+  },
+  {
+    "name": "Lamacedoine2a",
+    "date": "2023-06-16",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=KHa6gGNjGR0"
+    },
+    "flags": []
+  },
+  {
+    "name": "Jubberr",
+    "date": "2023-10-01",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/yp4ndTnwzfw"
+    },
+    "flags": []
+  },
+  {
+    "name": "Fasolka199",
+    "date": "2023-11-15",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/CTRpKMH3qaw?t=298"
+    },
+    "flags": [
+      "double",
+      "dts"
+    ]
+  },
+  {
+    "name": "Zyra",
+    "date": "2023-11-15",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.twitch.tv/videos/1978312639"
+    },
+    "flags": [
+      "double"
+    ]
+  },
+  {
+    "name": "Trinitioss",
+    "date": "2023-11-20",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=L9h_8_Ce2io"
+    },
+    "flags": []
+  },
+  {
+    "name": "无火Zzz",
+    "date": "2023-11-21",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1MC4y1P7EM/"
+    },
+    "flags": [
+      "nks"
+    ]
+  },
+  {
+    "name": "DeltaPhantom",
+    "date": "2023-11-23",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/5104g24YhU4?si=LKhRuKCnGzcVc2Cc"
+    },
+    "flags": []
+  },
+  {
+    "name": "Orion",
+    "date": "2023-11-25",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=dEytyLTdcHc"
+    },
+    "flags": []
+  },
+  {
+    "name": "Kermeep",
+    "date": "2023-11-27",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=pcPZcCgYscg"
+    },
+    "flags": [
+      "not202",
+      "double"
+    ]
+  },
+  {
+    "name": "天梨莎拉",
+    "date": "2023-11-29",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1Uw4118744/"
+    },
+    "flags": []
+  },
+  {
+    "name": "Hydra",
+    "date": "2023-11-29",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.twitch.tv/videos/1990893594"
+    },
+    "flags": []
+  },
+  {
+    "name": "Graggy",
+    "date": "2023-12-01",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/CAnlFgMDgXQ"
+    },
+    "flags": [
+      "double"
+    ]
+  },
+  {
+    "name": "落叶吖Zzz",
+    "date": "2023-12-04",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1mN4y1e7Ne/"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "Bisemy",
+    "date": "2023-12-06",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=2heO2RabeI8"
+    },
+    "flags": []
+  },
+  {
+    "name": "O5DZ",
+    "date": "2023-12-09",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1Lu4y1G7z1/"
+    },
+    "flags": [
+      "nks"
+    ]
+  },
+  {
+    "name": "乖乖茉宝",
+    "date": "2023-12-09",
+    "platform": "PC",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1Dw411b7r5/"
+    },
+    "flags": []
+  },
+  {
+    "name": "Lord Of Cheeses",
+    "date": "2023-12-16",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=Rdkrh0LOR2E"
+    },
+    "flags": [
+      "double"
+    ]
+  },
+  {
+    "name": "呆呆一点也不笨",
+    "date": "2023-12-21",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video"
+    },
+    "flags": []
+  },
+  {
+    "name": "Dihui",
+    "date": "2023-12-27",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=iY9OamikEV4"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "Feetballer",
+    "date": "2023-12-29",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://drive.google.com/file/d/1CR60U6wc9xZ_XC7D9H2TP4CrLhqs40ts/view"
+    },
+    "flags": []
+  },
+  {
+    "name": "danderline",
+    "date": "2023-12-31",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1Ge411S7Cw/?spm_id_from=333.999.0.0&vd_source=c1e9647931475e3b84fabc4685d533a9"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "Jr. Wolf",
+    "date": "2023-12-31",
+    "platform": "Mac",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/Rm2dR5RBfU0?si=FhEKZRYsdadw2qFi"
+    },
+    "flags": [
+      "not202",
+      "double"
+    ]
+  },
+  {
+    "name": "Pita",
+    "date": "2024-01-02",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/GemmV0abZ_Q"
+    },
+    "flags": []
+  },
+  {
+    "name": "呆呆一点也不笨",
+    "date": "2024-01-07",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1tK4y167Pg/"
+    },
+    "flags": [
+      "double"
+    ]
+  },
+  {
+    "name": "Spookytober",
+    "date": "2024-01-08",
+    "platform": "PC",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=qC1XwI0iJ5M"
+    },
+    "flags": []
+  },
+  {
+    "name": "Yamy",
+    "date": "2024-01-09",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=BbBsCtOYV9Q"
+    },
+    "flags": [
+      "nks"
+    ]
+  },
+  {
+    "name": "Aubrey",
+    "date": "2024-01-10",
+    "platform": "PC",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=07TDxIrayuc"
+    },
+    "flags": []
+  },
+  {
+    "name": "Sp00ph",
+    "date": "2024-01-12",
+    "platform": "PC",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/NjHVltlBpOw"
+    },
+    "flags": []
+  },
+  {
+    "name": "SoulAdor",
+    "date": "2024-01-18",
+    "platform": "PC",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=wswkcsFbrIc"
+    },
+    "flags": [
+      "double",
+      "nks",
+      "not202"
+    ]
+  },
+  {
+    "name": "Sienna",
+    "date": "2024-01-18",
+    "platform": "PC",
+    "verified": {
+      "value": false,
+      "note": "No video, just screenshot of stats. However they have a history of attempts in the Celestecord."
+    },
+    "proof": {
+      "type": "screenshot",
+      "url": "https://cdn.discordapp.com/attachments/666337196952780810/1197634447135211632/image.png?ex=65bbfaff&is=65a985ff&hm=b4462c4339f9b4351dbf9c74ad28ec6658084cd2a267aa7962138e52e3826fa7&"
     },
     "flags": []
   }
