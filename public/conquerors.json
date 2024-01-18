@@ -8673,7 +8673,7 @@
       "note": "No video, just screenshot of stats. However they have a history of attempts in the Celestecord."
     },
     "proof": {
-      "type": "video",
+      "type": "screenshot",
       "url": "https://cdn.discordapp.com/attachments/666337196952780810/1197634447135211632/image.png?ex=65bbfaff&is=65a985ff&hm=b4462c4339f9b4351dbf9c74ad28ec6658084cd2a267aa7962138e52e3826fa7&"
     },
     "flags": []
