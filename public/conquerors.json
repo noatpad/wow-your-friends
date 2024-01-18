@@ -583,7 +583,7 @@
     "flags": []
   },
   {
-    "name": "NPH",
+    "name": "Noph",
     "date": "2020-03-16",
     "platform": "Windows",
     "verified": {
@@ -1224,6 +1224,21 @@
     "flags": []
   },
   {
+    "name": "JTF98",
+    "date": "2020-08-09",
+    "platform": "Linux",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=VX05778-3dY"
+    },
+    "flags": [
+      "pre202"
+    ]
+  },
+  {
     "name": "Kiiview",
     "date": "2020-08-11",
     "platform": "Windows",
@@ -1482,7 +1497,7 @@
     "flags": []
   },
   {
-    "name": "唯笑",
+    "name": "Tadawara",
     "date": "2020-09-07",
     "platform": "Windows",
     "verified": {
@@ -8236,32 +8251,6 @@
     "flags": []
   },
   {
-    "name": "Noph",
-    "date": "2020-03-16",
-    "platform": "Windows",
-    "verified": {
-      "value": true
-    },
-    "proof": {
-      "type": "video",
-      "url": "https://www.youtube.com/watch?v=8lLhuWkC2Hg"
-    },
-    "flags": []
-  },
-  {
-    "name": "Tadawara",
-    "date": "2020-09-07",
-    "platform": "Windows",
-    "verified": {
-      "value": true
-    },
-    "proof": {
-      "type": "video",
-      "url": "https://www.youtube.com/watch?v=Jen7LL90wjw"
-    },
-    "flags": []
-  },
-  {
     "name": "Lamacedoine2a",
     "date": "2023-06-16",
     "platform": "Windows",
@@ -8472,6 +8461,19 @@
     ]
   },
   {
+    "name": "乖乖茉宝",
+    "date": "2023-12-09",
+    "platform": "PC",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1Dw411b7r5/"
+    },
+    "flags": []
+  },
+  {
     "name": "Lord Of Cheeses",
     "date": "2023-12-16",
     "platform": "Windows",
@@ -8480,7 +8482,7 @@
     },
     "proof": {
       "type": "video",
-      "url": "https://www.youtube.com/watch?v=Rdkrh0LOR2E&ab_channel=CheeseVideoDump"
+      "url": "https://www.youtube.com/watch?v=Rdkrh0LOR2E"
     },
     "flags": [
       "double"
@@ -8544,7 +8546,7 @@
   {
     "name": "Jr. Wolf",
     "date": "2023-12-31",
-    "platform": "Mac OS",
+    "platform": "Mac",
     "verified": {
       "value": true
     },
