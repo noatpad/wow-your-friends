@@ -1497,19 +1497,6 @@
     "flags": []
   },
   {
-    "name": "Tadawara",
-    "date": "2020-09-07",
-    "platform": "Windows",
-    "verified": {
-      "value": true
-    },
-    "proof": {
-      "type": "video",
-      "url": "https://www.youtube.com/watch?v=Jen7LL90wjw"
-    },
-    "flags": []
-  },
-  {
     "name": "JTF98",
     "date": "2020-09-09",
     "platform": "Linux",
@@ -9053,21 +9040,6 @@
     },
     "flags": [
       "nks"
-    ]
-  },
-  {
-    "name": "NPH",
-    "date": "2021-10-18",
-    "platform": "Windows",
-    "verified": {
-      "value": true
-    },
-    "proof": {
-      "type": "video",
-      "url": "https://www.youtube.com/watch?v=loBpX5Y9FMg"
-    },
-    "flags": [
-      "dts"
     ]
   }
 ]
