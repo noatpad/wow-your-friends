@@ -22,7 +22,8 @@ const getNewRunnersFromSheet = async (sheetId, currentRunners) => {
   const newRunners = [];
   for (const runner of rows) {
     const name = runner.get('Player').trim();
-    if (currentRunners.has(name)) continue;
+    // Edge case: Tadawara is a duplicate entry in the FWG list, skip that one
+    if (currentRunners.has(name) || name === 'Tadawara') continue;
 
     const cell = standardSheet.getCellByA1(`${PLAYER_COL}${runner.rowNumber}`);
     const { hyperlink, note } = cell;
