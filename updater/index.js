@@ -11,6 +11,28 @@ const DTS_SHEET_ID = '162176771';
 const PLAYER_COL = 'C';
 const PLATFORM_COL = 'F';
 
+const DUPLICATE_ENTRIES = {
+  '唯笑': 'Tadawara',
+  'Noph': 'NPH'
+};
+
+class TwoWayMap {
+  constructor(map) {
+    this.map = map;
+    this.reverseMap = {};
+    for (const key in map) this.reverseMap[map[key]] = key;
+  }
+  get(key) { return this.map[key] || this.reverseMap[key]; }
+}
+
+const duplicateEntryMap = new TwoWayMap(DUPLICATE_ENTRIES);
+
+// Edge case checker for duplicate entries in the FWG list under different names
+const isDuplicateEntry = (runners, name) => {
+  const dup = duplicateEntryMap.get(name);
+  return dup || runners.has(dup);
+};
+
 const getNewRunnersFromSheet = async (sheetId, currentRunners) => {
   const standardSheet = doc.sheetsById[sheetId];
   const rows = await standardSheet.getRows({ offset: 1 });
@@ -22,8 +44,7 @@ const getNewRunnersFromSheet = async (sheetId, currentRunners) => {
   const newRunners = [];
   for (const runner of rows) {
     const name = runner.get('Player').trim();
-    // Edge case: Tadawara is a duplicate entry in the FWG list, skip that one
-    if (currentRunners.has(name) || name === 'Tadawara') continue;
+    if (currentRunners.has(name) || isDuplicateEntry(currentRunners, name)) continue;
 
     const cell = standardSheet.getCellByA1(`${PLAYER_COL}${runner.rowNumber}`);
     const { hyperlink, note } = cell;
