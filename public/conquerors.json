@@ -9043,19 +9043,6 @@
     ]
   },
   {
-    "name": "Tadawara",
-    "date": "2020-09-07",
-    "platform": "Windows",
-    "verified": {
-      "value": true
-    },
-    "proof": {
-      "type": "video",
-      "url": "https://www.youtube.com/watch?v=Jen7LL90wjw"
-    },
-    "flags": []
-  },
-  {
     "name": "Chara",
     "date": "2023-12-29",
     "platform": "Windows",
@@ -9360,21 +9347,6 @@
     },
     "flags": [
       "not202"
-    ]
-  },
-  {
-    "name": "NPH",
-    "date": "2021-10-18",
-    "platform": "Windows",
-    "verified": {
-      "value": true
-    },
-    "proof": {
-      "type": "video",
-      "url": "https://www.youtube.com/watch?v=loBpX5Y9FMg"
-    },
-    "flags": [
-      "dts"
     ]
   }
 ]
