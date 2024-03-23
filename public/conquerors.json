@@ -9348,5 +9348,20 @@
     "flags": [
       "not202"
     ]
+  },
+  {
+    "name": "Memfy",
+    "date": "2022-10-13",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/2hQzc3wbsL4"
+    },
+    "flags": [
+      "double"
+    ]
   }
 ]
