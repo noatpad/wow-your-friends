@@ -9348,5 +9348,47 @@
     "flags": [
       "not202"
     ]
+  },
+  {
+    "name": "Geometrical",
+    "date": "2024-03-21",
+    "platform": "PC",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/pQ8qz8HPVJM?si=ywNA8tdBPJBBSaQt"
+    },
+    "flags": []
+  },
+  {
+    "name": "Quote",
+    "date": "2024-03-23",
+    "platform": "PC",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/yKrWLtntZSs?si=T8vewm7QyQIsOuxS"
+    },
+    "flags": []
+  },
+  {
+    "name": "Mann",
+    "date": "2024-03-30",
+    "platform": "PC",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/ij1MGZkwFkU?si=76JM2g0sNbdF1y-V"
+    },
+    "flags": [
+      "nks",
+      "double"
+    ]
   }
 ]
