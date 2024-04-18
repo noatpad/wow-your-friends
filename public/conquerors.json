@@ -279,7 +279,7 @@
   {
     "name": "DrDimentio",
     "date": "2019-12-14",
-    "platform": "Mac",
+    "platform": "Mac OS",
     "verified": {
       "value": true
     },
@@ -935,7 +935,7 @@
   {
     "name": "Soapi",
     "date": "2020-05-27",
-    "platform": "Mac",
+    "platform": "Mac OS",
     "verified": {
       "value": true
     },
@@ -2198,7 +2198,7 @@
   {
     "name": "gronxest",
     "date": "2021-02-22",
-    "platform": "Mac",
+    "platform": "Mac OS",
     "verified": {
       "value": true
     },
@@ -4834,7 +4834,7 @@
   {
     "name": "Crifzer",
     "date": "2022-08-25",
-    "platform": "Mac",
+    "platform": "Mac OS",
     "verified": {
       "value": true
     },
@@ -5191,7 +5191,7 @@
   {
     "name": "staco",
     "date": "2022-11-18",
-    "platform": "Mac",
+    "platform": "Mac OS",
     "verified": {
       "value": false,
       "note": "Video only shows recording from moments before collecting the berry. Couldn't record due to lag on Mac, but has multiple screenshots showing their stats."
@@ -5278,7 +5278,7 @@
   {
     "name": "cow etc",
     "date": "2022-11-27",
-    "platform": "Mac",
+    "platform": "Mac OS",
     "verified": {
       "value": true
     },
@@ -6439,7 +6439,7 @@
   {
     "name": "春暮Q",
     "date": "2023-06-08",
-    "platform": "Mac",
+    "platform": "Mac OS",
     "verified": {
       "value": true
     },
@@ -7145,7 +7145,7 @@
   {
     "name": "Virot2",
     "date": "2023-08-13",
-    "platform": "Mac",
+    "platform": "Mac OS",
     "verified": {
       "value": true
     },
@@ -8088,7 +8088,7 @@
   {
     "name": "Arctic Fire",
     "date": "2023-11-01",
-    "platform": "Playstation",
+    "platform": "PlayStation",
     "verified": {
       "value": true
     },
@@ -8456,7 +8456,7 @@
   {
     "name": "乖乖茉宝",
     "date": "2023-12-09",
-    "platform": "PC",
+    "platform": "Windows",
     "verified": {
       "value": true
     },
@@ -8539,7 +8539,7 @@
   {
     "name": "Jr. Wolf",
     "date": "2023-12-31",
-    "platform": "Mac",
+    "platform": "Mac OS",
     "verified": {
       "value": true
     },
@@ -8583,7 +8583,7 @@
   {
     "name": "Spookytober",
     "date": "2024-01-08",
-    "platform": "PC",
+    "platform": "Windows",
     "verified": {
       "value": true
     },
@@ -8611,7 +8611,7 @@
   {
     "name": "Aubrey",
     "date": "2024-01-10",
-    "platform": "PC",
+    "platform": "Windows",
     "verified": {
       "value": true
     },
@@ -8624,7 +8624,7 @@
   {
     "name": "Sp00ph",
     "date": "2024-01-12",
-    "platform": "PC",
+    "platform": "Windows",
     "verified": {
       "value": true
     },
@@ -8637,7 +8637,7 @@
   {
     "name": "SoulAdor",
     "date": "2024-01-18",
-    "platform": "PC",
+    "platform": "Windows",
     "verified": {
       "value": true
     },
@@ -8654,7 +8654,7 @@
   {
     "name": "Sienna",
     "date": "2024-01-18",
-    "platform": "PC",
+    "platform": "Windows",
     "verified": {
       "value": true
     },
@@ -9239,7 +9239,7 @@
   {
     "name": "it4doriis_",
     "date": "2024-03-02",
-    "platform": "Playstation",
+    "platform": "PlayStation",
     "verified": {
       "value": true
     },
@@ -9336,7 +9336,7 @@
   },
   {
     "name": "Nano",
-    "date": "2024-03-11",
+    "date": "2024-04-12",
     "platform": "Windows",
     "verified": {
       "value": true
@@ -9346,13 +9346,13 @@
       "url": "https://youtu.be/21wmsFr8U6A?si=E79-Bj48O_eRtBib"
     },
     "flags": [
-      "not202"
+      "pre202"
     ]
   },
   {
     "name": "Geometrical",
     "date": "2024-03-21",
-    "platform": "PC",
+    "platform": "Windows",
     "verified": {
       "value": true
     },
@@ -9365,7 +9365,7 @@
   {
     "name": "Quote",
     "date": "2024-03-23",
-    "platform": "PC",
+    "platform": "Windows",
     "verified": {
       "value": true
     },
@@ -9394,7 +9394,7 @@
   {
     "name": "Finatinho",
     "date": "2024-03-31",
-    "platform": "PC",
+    "platform": "Windows",
     "verified": {
       "value": true
     },
@@ -9403,5 +9403,36 @@
       "url": "https://www.youtube.com/watch?v=HuXaii_chY4"
     },
     "flags": []
+  },
+  {
+    "name": "向晚大魔王",
+    "date": "2024-04-05",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/PkRstMjHOwk?si=5wGGHEidooNZevsL"
+    },
+    "flags": [
+      "dts"
+    ]
+  },
+  {
+    "name": "Lubo",
+    "date": "2024-04-16",
+    "platform": "Windows",
+    "verified": {
+      "value": true,
+      "note": "It shows that the golden berry was the 191th berry collected, but it is in fact the final berry collected. A deleted previous save had the remaining berries collected, and there is video proof of the player getting other notable berries that aren't seen as collected in the journal"
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=b4BPK-O4zX0"
+    },
+    "flags": [
+      "nks"
+    ]
   }
 ]
