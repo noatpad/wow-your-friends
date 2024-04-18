@@ -9425,7 +9425,7 @@
     "platform": "PC",
     "verified": {
       "value": true,
-      "note": "It shows that the golden berry was the 191th berry collected, but it is in fact the final berry collected, as a deleted previous save. There is video proof of the player getting other notable berries that aren't seen as collected in the journal"
+      "note": "It shows that the golden berry was the 191th berry collected, but it is in fact the final berry collected. A deleted previous save had the remaining berries collected, and there is video proof of the player getting other notable berries that aren't seen as collected in the journal"
     },
     "proof": {
       "type": "video",
