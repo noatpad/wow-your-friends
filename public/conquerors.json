@@ -9434,5 +9434,21 @@
     "flags": [
       "nks"
     ]
+  },
+  {
+    "name": "nai",
+    "date": "2024-04-16",
+    "platform": "Switch",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://twitter.com/KiwiBeqr/status/1780447757393592600"
+    },
+    "flags": [
+      "nks",
+      "double"
+    ]
   }
 ]
