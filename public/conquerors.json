@@ -9336,7 +9336,7 @@
   },
   {
     "name": "Nano",
-    "date": "2024-03-11",
+    "date": "2024-04-12",
     "platform": "Windows",
     "verified": {
       "value": true
@@ -9346,7 +9346,7 @@
       "url": "https://youtu.be/21wmsFr8U6A?si=E79-Bj48O_eRtBib"
     },
     "flags": [
-      "not202"
+      "pre202"
     ]
   },
   {
@@ -9403,5 +9403,36 @@
       "url": "https://www.youtube.com/watch?v=HuXaii_chY4"
     },
     "flags": []
+  },
+  {
+    "name": "向晚大魔王",
+    "date": "2024-04-05",
+    "platform": "PC",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/PkRstMjHOwk?si=5wGGHEidooNZevsL"
+    },
+    "flags": [
+      "dts"
+    ]
+  },
+  {
+    "name": "Lubo",
+    "date": "2024-04-16",
+    "platform": "PC",
+    "verified": {
+      "value": true,
+      "note": "It shows that the golden berry was the 191th berry collected, but it is in fact the final berry collected, as a deleted previous save. There is video proof of the player getting other notable berries that aren't seen as collected in the journal"
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=b4BPK-O4zX0"
+    },
+    "flags": [
+      "nks"
+    ]
   }
 ]
