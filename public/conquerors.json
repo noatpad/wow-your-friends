@@ -9237,6 +9237,21 @@
     "flags": []
   },
   {
+    "name": "Moladan",
+    "date": "2024-03-01",
+    "platform": "Linux",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=--uwjBBY-q4"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
     "name": "it4doriis_",
     "date": "2024-03-02",
     "platform": "PlayStation",
