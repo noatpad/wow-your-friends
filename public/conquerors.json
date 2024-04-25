@@ -9500,7 +9500,8 @@
       "value": true
     },
     "proof": {
-      "type": "video"
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1bJ4m187Ns/"
     },
     "flags": []
   },
