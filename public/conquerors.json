@@ -9465,5 +9465,255 @@
       "nks",
       "double"
     ]
+  },
+  {
+    "name": "无聊的Asaki",
+    "date": "2024-03-05",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1iS421w7ww/"
+    },
+    "flags": []
+  },
+  {
+    "name": "调和不是调谐",
+    "date": "2024-03-16",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1SK421x7kn"
+    },
+    "flags": []
+  },
+  {
+    "name": "Eternal丶坚果",
+    "date": "2024-03-17",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1bJ4m187Ns/"
+    },
+    "flags": []
+  },
+  {
+    "name": "maeve",
+    "date": "2024-03-27",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=c8tWsN2gv_M"
+    },
+    "flags": []
+  },
+  {
+    "name": "Luna",
+    "date": "2024-03-31",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=Tbhf4KRRkIs"
+    },
+    "flags": [
+      "double"
+    ]
+  },
+  {
+    "name": "FancyFurret",
+    "date": "2024-04-01",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=LO2z1n1i5Ao"
+    },
+    "flags": []
+  },
+  {
+    "name": "shijiuwan",
+    "date": "2024-04-04",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1xK421h7sA/"
+    },
+    "flags": []
+  },
+  {
+    "name": "Rebekka",
+    "date": "2024-04-05",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=bHiTdF_pv84"
+    },
+    "flags": []
+  },
+  {
+    "name": "TFIBB",
+    "date": "2024-04-05",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/yNa22lcq_Bk"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "bims",
+    "date": "2024-04-07",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=UzwBRmNQzJ4&t=0s"
+    },
+    "flags": []
+  },
+  {
+    "name": "Mikshul",
+    "date": "2024-04-07",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=-R84etv88-Y"
+    },
+    "flags": []
+  },
+  {
+    "name": "以诚Die人的小海",
+    "date": "2024-04-09",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1yD421W7wm/"
+    },
+    "flags": []
+  },
+  {
+    "name": "纯情lv",
+    "date": "2024-04-11",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV14A4m1F7Bi/"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "orion",
+    "date": "2024-04-11",
+    "platform": "Switch",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=8L4kG0_QFsc"
+    },
+    "flags": []
+  },
+  {
+    "name": "_ψ_",
+    "date": "2024-04-16",
+    "platform": "Switch",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/rRnmCHf4m_Q?t=6817"
+    },
+    "flags": [
+      "nks"
+    ]
+  },
+  {
+    "name": "RedStarfruit",
+    "date": "2024-04-16",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/ZhctbHCaGWo"
+    },
+    "flags": [
+      "double"
+    ]
+  },
+  {
+    "name": "Hachimoku",
+    "date": "2024-04-17",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=9SN9js19FTw"
+    },
+    "flags": [
+      "not202",
+      "double"
+    ]
+  },
+  {
+    "name": "BlockOG",
+    "date": "2024-04-13",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/URLztSlj_GQ"
+    },
+    "flags": [
+      "not202",
+      "dts"
+    ]
   }
 ]
