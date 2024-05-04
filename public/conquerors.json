@@ -9715,5 +9715,88 @@
       "not202",
       "dts"
     ]
+  },
+  {
+    "name": "AstralightSky",
+    "date": "2024-04-18",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/EKw4HkCynrY?t=46"
+    },
+    "flags": []
+  },
+  {
+    "name": "zserf",
+    "date": "2024-04-20",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=5XI1DNZuMQE"
+    },
+    "flags": [
+      "not202",
+      "nks"
+    ]
+  },
+  {
+    "name": "Anonymous Gamer",
+    "date": "2024-04-21",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/SpIuaBNaXiI?t=178"
+    },
+    "flags": []
+  },
+  {
+    "name": "OS",
+    "date": "2024-04-24",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/wsU3-GhNNDg"
+    },
+    "flags": []
+  },
+  {
+    "name": "Lit towel",
+    "date": "2024-04-25",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/4yvXCobNA5s"
+    },
+    "flags": []
+  },
+  {
+    "name": "Pluttergub",
+    "date": "2024-04-28",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=7BcY4BH5dxY"
+    },
+    "flags": [
+      "not202"
+    ]
   }
 ]
