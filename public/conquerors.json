@@ -9411,13 +9411,16 @@
     "date": "2024-03-31",
     "platform": "Windows",
     "verified": {
-      "value": true
+      "value": true,
+      "note": "Double berry was obtained in a later run on May 22, 2024"
     },
     "proof": {
       "type": "video",
       "url": "https://www.youtube.com/watch?v=HuXaii_chY4"
     },
-    "flags": []
+    "flags": [
+      "double"
+    ]
   },
   {
     "name": "向晚大魔王",
