@@ -10382,5 +10382,18 @@
     "flags": [
       "dts"
     ]
+  },
+  {
+    "name": "Probatus",
+    "date": "2024-07-07",
+    "platform": "PC",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/lbhLsvKhEQo"
+    },
+    "flags": []
   }
 ]
