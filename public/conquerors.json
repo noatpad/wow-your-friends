@@ -10647,7 +10647,7 @@
   },
   {
     "name": "paper2222",
-    "date": "2024-08-19",
+    "date": "2024-08-14",
     "platform": "Windows",
     "verified": {
       "value": true
@@ -10657,6 +10657,21 @@
       "url": "https://www.youtube.com/watch?v=l8v6ddQirEw"
     },
     "flags": []
+  },
+  {
+    "name": "KuromeStyle",
+    "date": "2024-08-16",
+    "platform": "Windows",
+    "verified": {
+      "value": "true"
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=Gtlg_3Tlqm0"
+    },
+    "flags": [
+      "double"
+    ]
   },
   {
     "name": "Alvarogm25",
