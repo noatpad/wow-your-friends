@@ -10629,5 +10629,46 @@
     "flags": [
       "not202"
     ]
+  },
+  {
+    "name": "SakoARS",
+    "date": "2024-08-03",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=PZv-P6EMODs"
+    },
+    "flags": [
+      "double"
+    ]
+  },
+  {
+    "name": "paper2222",
+    "date": "2024-08-19",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=l8v6ddQirEw"
+    },
+    "flags": []
+  },
+  {
+    "name": "Alvarogm25",
+    "date": "2024-08-27",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=Wi5G_Yy5-Fs"
+    },
+    "flags": []
   }
 ]
