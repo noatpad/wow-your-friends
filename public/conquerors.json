@@ -10685,5 +10685,436 @@
       "url": "https://www.youtube.com/watch?v=Wi5G_Yy5-Fs"
     },
     "flags": []
+  },
+  {
+    "name": "leadkite",
+    "date": "2020-11-11",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=9mO6fcopJR0"
+    },
+    "flags": [
+      "pre202"
+    ]
+  },
+  {
+    "name": "PandoraGreen",
+    "date": "2023-08-19",
+    "platform": "Linux",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/P5SZC0NAz4k"
+    },
+    "flags": []
+  },
+  {
+    "name": "CanYouDont",
+    "date": "2023-08-20",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/RgVQieCowfo"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "Etis",
+    "date": "2024-02-14",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=5InMg-mjKX4"
+    },
+    "flags": []
+  },
+  {
+    "name": "Woofbot",
+    "date": "2024-07-01",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1ZU8ReXECZ/"
+    },
+    "flags": []
+  },
+  {
+    "name": "Lecitronvert",
+    "date": "2024-07-12",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=qL4MK9wBtDo"
+    },
+    "flags": []
+  },
+  {
+    "name": "Cychlo",
+    "date": "2024-07-15",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=HRrOWt8n8_c"
+    },
+    "flags": []
+  },
+  {
+    "name": "NachoWizard",
+    "date": "2024-07-28",
+    "platform": "Switch",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://discord.com/channels/403698615446536203/666337196952780810/1267309851449757706"
+    },
+    "flags": []
+  },
+  {
+    "name": "ShadowNevio",
+    "date": "2024-07-30",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/GNLlRzVrLm0?si=VmqfgvWdpsMg7y9v"
+    },
+    "flags": []
+  },
+  {
+    "name": "sliced spud",
+    "date": "2024-07-30",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=-n7NhN5i7ic"
+    },
+    "flags": []
+  },
+  {
+    "name": "Valent",
+    "date": "2024-07-31",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/2a43g39dDY0"
+    },
+    "flags": [
+      "not202",
+      "nks"
+    ]
+  },
+  {
+    "name": "xathexa",
+    "date": "2024-08-05",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=cadtK3M16xg"
+    },
+    "flags": [
+      "nks"
+    ]
+  },
+  {
+    "name": "Cryztalyzed",
+    "date": "2024-08-08",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=XqZdJGMn6gA"
+    },
+    "flags": []
+  },
+  {
+    "name": "Chepedukduks",
+    "date": "2024-08-10",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=cFMdjNMbFL0"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "James",
+    "date": "2024-08-12",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/iyogcJceWQg"
+    },
+    "flags": []
+  },
+  {
+    "name": "CricketLord",
+    "date": "2024-08-14",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=DvXYYkpdOk8"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "Niko",
+    "date": "2024-08-14",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=t6qHRZvlIN4"
+    },
+    "flags": [
+      "double"
+    ]
+  },
+  {
+    "name": "SharZz",
+    "date": "2024-08-16",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/z4xSXlt9sww?t=477"
+    },
+    "flags": []
+  },
+  {
+    "name": "Bread",
+    "date": "2024-08-18",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/R3Op_M47hik?si=IDRYgNbBDWkcGWCE"
+    },
+    "flags": [
+      "double"
+    ]
+  },
+  {
+    "name": "the_real_mayo",
+    "date": "2024-08-19",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/0eC0DS-G9R4"
+    },
+    "flags": [
+      "double"
+    ]
+  },
+  {
+    "name": "furretstonks",
+    "date": "2024-08-20",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video"
+    },
+    "flags": []
+  },
+  {
+    "name": "Dumpling",
+    "date": "2024-08-20",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=kwPJc9Eaq_Y"
+    },
+    "flags": [
+      "not202",
+      "double"
+    ]
+  },
+  {
+    "name": "tuobang",
+    "date": "2024-08-22",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV167WGepE1R/"
+    },
+    "flags": [
+      "nks"
+    ]
+  },
+  {
+    "name": "Axoluna",
+    "date": "2024-08-23",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/21bDnDVo4uI?si=LZICFi4NC1MNfog6"
+    },
+    "flags": []
+  },
+  {
+    "name": "Lipo",
+    "date": "2024-08-24",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/xpkeRsmksvE"
+    },
+    "flags": []
+  },
+  {
+    "name": "SgtMcPippo",
+    "date": "2024-08-26",
+    "platform": "Switch",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://x.com/Pippoooo_M/status/1828027134943596758"
+    },
+    "flags": []
+  },
+  {
+    "name": "Dorito0910",
+    "date": "2024-08-26",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=Os1zHXHRVXA"
+    },
+    "flags": []
+  },
+  {
+    "name": "Alvaro",
+    "date": "2024-08-27",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=Wi5G_Yy5-Fs"
+    },
+    "flags": []
+  },
+  {
+    "name": "Mixto83",
+    "date": "2024-08-27",
+    "platform": "Switch",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/irm_2T-WGIU"
+    },
+    "flags": []
+  },
+  {
+    "name": "Cinnamon",
+    "date": "2024-08-28",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=2BSw8MkeV1k"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "Hallodielaat",
+    "date": "2024-07-29",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=1ayXhDNeNVc"
+    },
+    "flags": [
+      "double",
+      "dts"
+    ]
   }
 ]
