@@ -3842,7 +3842,7 @@
     ]
   },
   {
-    "name": "Smash Bandicoot",
+    "name": "DJNickyNick",
     "date": "2022-01-31",
     "platform": "Windows",
     "verified": {
@@ -3852,10 +3852,7 @@
       "type": "video",
       "url": "https://www.youtube.com/watch?v=JRaUwF0yV3c"
     },
-    "flags": [
-      "double",
-      "nks"
-    ]
+    "flags": []
   },
   {
     "name": "Reinhardt",
