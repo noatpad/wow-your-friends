@@ -10671,19 +10671,6 @@
     ]
   },
   {
-    "name": "Alvarogm25",
-    "date": "2024-08-27",
-    "platform": "Windows",
-    "verified": {
-      "value": true
-    },
-    "proof": {
-      "type": "video",
-      "url": "https://www.youtube.com/watch?v=Wi5G_Yy5-Fs"
-    },
-    "flags": []
-  },
-  {
     "name": "leadkite",
     "date": "2020-11-11",
     "platform": "Windows",
@@ -11082,7 +11069,10 @@
       "type": "video",
       "url": "https://www.youtube.com/watch?v=Wi5G_Yy5-Fs"
     },
-    "flags": []
+    "flags": [
+      "double",
+      "nks"
+    ]
   },
   {
     "name": "Mixto83",
