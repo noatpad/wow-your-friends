@@ -11643,7 +11643,7 @@
   },
   {
     "name": "Ivypool",
-    "date": "2024-09-27",
+    "date": "2024-12-16",
     "platform": "Windows",
     "verified": {
       "value": true
@@ -11653,7 +11653,7 @@
       "url": "https://youtu.be/6HpVXK9N8Kc"
     },
     "flags": [
-      "not202",
+      "pre202",
       "double",
       "nks"
     ]
