@@ -11039,7 +11039,8 @@
     "date": "2024-08-24",
     "platform": "Windows",
     "verified": {
-      "value": true
+      "value": true,
+      "note": "Only has a partial recording showing the ending segment, but is verified on the FWG list."
     },
     "proof": {
       "type": "video",
@@ -11126,6 +11127,19 @@
     "flags": [
       "not202"
     ]
+  },
+  {
+    "name": "かなパン",
+    "date": "2024-08-29",
+    "platform": "PC",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/v3XUbrKCG2k"
+    },
+    "flags": []
   },
   {
     "name": "Summer",
