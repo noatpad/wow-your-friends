@@ -10149,7 +10149,7 @@
   },
   {
     "name": "boingo_n",
-    "date": "2024-05-30",
+    "date": "2024-09-14",
     "platform": "Windows",
     "verified": {
       "value": true
@@ -10159,7 +10159,7 @@
       "url": "https://www.youtube.com/watch?v=C5cyHN9mHAk"
     },
     "flags": [
-      "not202"
+      "pre202"
     ]
   },
   {
