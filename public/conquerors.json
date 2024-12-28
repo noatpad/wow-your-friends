@@ -12119,5 +12119,18 @@
       "double",
       "dts"
     ]
+  },
+  {
+    "name": "Smash Bandicoot",
+    "date": "2022-01-31",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=JRaUwF0yV3c"
+    },
+    "flags": []
   }
 ]
