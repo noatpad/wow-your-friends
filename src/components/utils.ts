@@ -1,8 +1,7 @@
-import { DateTime } from 'luxon';
+import { DateTime } from "luxon";
 
-export const formatDate = (dateStr: string): string => (
-  DateTime.fromISO(dateStr).toLocaleString(DateTime.DATE_MED)
-);
+export const formatDate = (dateStr: string): string =>
+  DateTime.fromISO(dateStr).toLocaleString(DateTime.DATE_MED);
 
 export const getToday = (): string => formatDate(process.env.UPDATE_DATE);
 
@@ -14,16 +13,21 @@ export const sortByDate = (a: string, b: string): number => {
   return aDate < bDate ? -1 : aDate > bDate ? 1 : 0;
 };
 
-export const getOrdinalNumber = (x: number): string => {
-  if (x >= 4 && x <= 19) return `${x}th`;
+export const getOrdinalSuffix = (x: number): string => {
+  if (x % 100 >= 11 && x % 100 <= 13) return "th";
+
   switch (x % 10) {
-    case 1: return `${x}st`;
-    case 2: return `${x}nd`;
-    case 3: return `${x}rd`;
-    default: return `${x}th`;
+    case 1:
+      return "st";
+    case 2:
+      return "nd";
+    case 3:
+      return "rd";
+    default:
+      return "th";
   }
 };
 
 export const keyActivateCb = (cb: Function) => (e: KeyboardEvent) => {
-  if (['Enter', ' '].includes(e.key)) cb();
+  if (["Enter", " "].includes(e.key)) cb();
 };

@@ -2,7 +2,7 @@
   import type { Milestone } from "./Milestones";
   import Color from "../shared/Color.svelte";
 
-  import { formatDate, getOrdinalNumber } from "../utils";
+  import { formatDate, getOrdinalSuffix } from "../utils";
   import breakpoint from "../breakpoint";
 
   export let achievement: Milestone;
@@ -35,7 +35,7 @@
       {:else if achievement.type === 'streak'}
         <b>{achievement.days}</b> consecutive days where at least one player got the golden berry!
       {:else if achievement.type === 'anniversary'}
-        Farewell's {getOrdinalNumber(achievement.year)} anniversary!
+        Farewell's {achievement.year}<sup>{getOrdinalSuffix(achievement.year)}</sup> anniversary!
       {:else if achievement.type === 'special'}
         {achievement.text}
       {/if}

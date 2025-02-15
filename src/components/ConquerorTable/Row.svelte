@@ -35,17 +35,19 @@
   </td>
   {#if shortenRow}
     <td>
-      <p class:note={verified.note} use:tooltip={verified.note}>{name}</p>
-      <p>{date} - {platform}</p>
+      <div>
+        <p class:note={verified.note} use:tooltip={verified.note}>{name}</p>
+        <p class="detail">{date} · {platform}</p>
+      </div>
     </td>
   {:else}
     <td class:note={verified.note} use:tooltip={verified.note}>
       {name}
     </td>
-    <td>
+    <td class="detail">
       {formattedDate}
     </td>
-    <td>
+    <td class="detail">
       {platform}
     </td>
   {/if}
@@ -76,8 +78,14 @@
 
   td {
     padding: 0.4em;
-    text-align: center;
+    :first-child {
+      min-width: 6em;
+    }
   }
 
   .note::after { content: '*' }
+
+  .detail {
+    font-size: 0.75em;
+  }
 </style>

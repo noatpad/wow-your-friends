@@ -225,5 +225,10 @@
     "date": "2024-05-11",
     "type": "threshold",
     "count": 600
+  },
+  {
+    "date": "2024-10-01",
+    "type": "first",
+    "platform": "Android"
   }
 ]
