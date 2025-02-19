@@ -3718,7 +3718,7 @@
     "date": "2022-01-16",
     "platform": "Windows",
     "verified": {
-      "value": true
+      "value": false
     },
     "proof": {
       "type": "screenshot",
@@ -10383,7 +10383,7 @@
   {
     "name": "Probatus",
     "date": "2024-07-07",
-    "platform": "PC",
+    "platform": "Windows",
     "verified": {
       "value": true
     },
