@@ -12119,5 +12119,1110 @@
       "double",
       "dts"
     ]
+  },
+  {
+    "name": "Smash Bandicoot",
+    "date": "2022-01-31",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=JRaUwF0yV3c"
+    },
+    "flags": []
+  },
+  {
+    "name": "cbftes",
+    "date": "2024-08-31",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1tnnoeEEKa?buvid=XX2A1172A2947864CA3551F7D441B0F2F6DD0&from_spmid=main.space.0.0&is_story_h5=false&mid=yYQTOB3MqlEuhnal56566Q%3D%3D&plat_id=116&share_from=ugc&share_medium=android&share_plat=android&share_session_id=7d99be7f-1c22-47b8-84b1-c511f62f0c04&share_source=COPY&share_tag=s_i&spmid=united.player-video-detail.0.0&timestamp=1736717939&unique_k=Kx0vztP&up_id=398036546"
+    },
+    "flags": []
+  },
+  {
+    "name": "烟雨独行客",
+    "date": "2024-10-28",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1xT1jYGEZ9/"
+    },
+    "flags": []
+  },
+  {
+    "name": "mzmzmz",
+    "date": "2024-11-11",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/P51FK_KroSI?si=b6XiTPqaUHZLVTXu"
+    },
+    "flags": [
+      "nks"
+    ]
+  },
+  {
+    "name": "Pirilon78",
+    "date": "2024-11-12",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/BeKOSwCVFBE"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "raghav",
+    "date": "2024-11-14",
+    "platform": "Switch",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://twitter.com/raggymandaggy/status/1848159006038135122"
+    },
+    "flags": []
+  },
+  {
+    "name": "Tom Dollars",
+    "date": "2024-11-16",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=JWudPuumP04"
+    },
+    "flags": []
+  },
+  {
+    "name": "Azzo",
+    "date": "2024-11-16",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/pzuN736ahik?si=OUNOlU4hXb_ckGc_"
+    },
+    "flags": []
+  },
+  {
+    "name": "Luka Milic",
+    "date": "2024-11-19",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=I2BfM7BvPNs"
+    },
+    "flags": []
+  },
+  {
+    "name": "Gyrestio",
+    "date": "2024-11-25",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=LvGX4z8phQk"
+    },
+    "flags": []
+  },
+  {
+    "name": "Krekker",
+    "date": "2024-12-01",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/CbQPyp0t8Bs"
+    },
+    "flags": []
+  },
+  {
+    "name": "Aloakirby",
+    "date": "2024-12-05",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=TT4oesy3DLE"
+    },
+    "flags": []
+  },
+  {
+    "name": "lunoryx",
+    "date": "2024-12-07",
+    "platform": "Mac OS",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/PCrwvYKmxnM"
+    },
+    "flags": [
+      "double"
+    ]
+  },
+  {
+    "name": "BobeeBil",
+    "date": "2024-12-08",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=aGO4c2DeSDg&t=4s"
+    },
+    "flags": []
+  },
+  {
+    "name": "ecchou",
+    "date": "2024-12-12",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/2M0s0k4gadQ"
+    },
+    "flags": [
+      "double"
+    ]
+  },
+  {
+    "name": "SuperStein",
+    "date": "2024-12-15",
+    "platform": "Linux",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/y-5hH09bYQw"
+    },
+    "flags": [
+      "double",
+      "nks"
+    ]
+  },
+  {
+    "name": "Pretzelcatgirl",
+    "date": "2024-12-19",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/ORhhtavU8gU"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "Pa7_",
+    "date": "2024-12-22",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1ZQCTYYEvk/"
+    },
+    "flags": []
+  },
+  {
+    "name": "AAMM",
+    "date": "2024-12-22",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=IEyNLaGTD2U"
+    },
+    "flags": []
+  },
+  {
+    "name": "Dudeyeahh",
+    "date": "2024-12-24",
+    "platform": "Switch",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/Sh32fwarCeA?si=fPN_nURLfQwW5BKu"
+    },
+    "flags": []
+  },
+  {
+    "name": "Ruby Jade",
+    "date": "2024-12-26",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=HygHOdNZh5M"
+    },
+    "flags": []
+  },
+  {
+    "name": "Xaver",
+    "date": "2024-12-30",
+    "platform": "Switch",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/Lq11loh4u7I?si=cChce29NrVRPCmYp"
+    },
+    "flags": []
+  },
+  {
+    "name": "Pablo NR",
+    "date": "2025-01-03",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=sJ5YWlklbLU&ab_channel=PabloNR"
+    },
+    "flags": []
+  },
+  {
+    "name": "NPException",
+    "date": "2025-01-04",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/UtCn_k1Ufys"
+    },
+    "flags": []
+  },
+  {
+    "name": "nyx",
+    "date": "2025-01-06",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/HGSwDxQBj40"
+    },
+    "flags": [
+      "not202",
+      "double"
+    ]
+  },
+  {
+    "name": "Gorganim",
+    "date": "2025-01-06",
+    "platform": "Switch",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/JQGsDIRTG8g?si=sODwKkIgE8zycy4N"
+    },
+    "flags": [
+      "double"
+    ]
+  },
+  {
+    "name": "Joshvq",
+    "date": "2025-01-09",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/rZRA-PG02Wk?si=GYAf9NSrmsc0vB2l"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "Anas_391",
+    "date": "2025-01-10",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/HlYGqFwEajc?si=V6F6PjaS-C8cXW5E"
+    },
+    "flags": []
+  },
+  {
+    "name": "div",
+    "date": "2025-01-11",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/5zkIZ03NjLA"
+    },
+    "flags": [
+      "double"
+    ]
+  },
+  {
+    "name": "ilsebor",
+    "date": "2025-01-12",
+    "platform": "Xbox",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.twitch.tv/videos/2351952887"
+    },
+    "flags": []
+  },
+  {
+    "name": "Qentiko",
+    "date": "2025-01-18",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.twitch.tv/videos/2355898869"
+    },
+    "flags": []
+  },
+  {
+    "name": "logis",
+    "date": "2025-01-19",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/nVO-INY54O8"
+    },
+    "flags": []
+  },
+  {
+    "name": "mismatchedfox",
+    "date": "2025-01-19",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=Sly7g9mrhZs"
+    },
+    "flags": []
+  },
+  {
+    "name": "Stormy",
+    "date": "2025-01-22",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=HNBXRtet4zA"
+    },
+    "flags": []
+  },
+  {
+    "name": "Ludboy",
+    "date": "2025-01-24",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=An758Pkh2Ns"
+    },
+    "flags": []
+  },
+  {
+    "name": "OtiWolf",
+    "date": "2025-01-24",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/gLvSPelNA74"
+    },
+    "flags": []
+  },
+  {
+    "name": "Halledo",
+    "date": "2025-01-26",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/0W_Ge_BtoeA?si=Yf8_72KYGtFGkqzn"
+    },
+    "flags": []
+  },
+  {
+    "name": "Clover",
+    "date": "2025-01-28",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.twitch.tv/videos/2365932772"
+    },
+    "flags": []
+  },
+  {
+    "name": "Stupspider",
+    "date": "2025-01-31",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=2s2vg8oWykQ"
+    },
+    "flags": [
+      "not202",
+      "nks"
+    ]
+  },
+  {
+    "name": "evelyncubes",
+    "date": "2025-02-03",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=TNwBh3XbXtg"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "Brhum",
+    "date": "2025-02-06",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/0QESRB8qWGU?si=UIuF1lwsIaytqG1D"
+    },
+    "flags": []
+  },
+  {
+    "name": "Hikari_吸酱",
+    "date": "2025-02-10",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.bilibili.com/video/BV1CcNoeTERa"
+    },
+    "flags": []
+  },
+  {
+    "name": "ditto_resverie",
+    "date": "2025-02-14",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/xY1223x5Y6o"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "Hanjo8787",
+    "date": "2025-02-15",
+    "platform": "Switch",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/9p-AM8JRKfg?si=y84Y3bqEo2-jhcCR"
+    },
+    "flags": [
+      "double",
+      "nks"
+    ]
+  },
+  {
+    "name": "Kaleb_22",
+    "date": "2025-02-18",
+    "platform": "Mac OS",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/X-3DLn33cBQ"
+    },
+    "flags": []
+  },
+  {
+    "name": "skullslashed",
+    "date": "2025-02-19",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=ItG_K15XqVk&t=1s"
+    },
+    "flags": []
+  },
+  {
+    "name": "rubiks37",
+    "date": "2025-02-20",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/Usp6uonLQXY"
+    },
+    "flags": [
+      "double"
+    ]
+  },
+  {
+    "name": "Soapy _",
+    "date": "2025-02-20",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=yR8mxnXIHBs"
+    },
+    "flags": [
+      "nks"
+    ]
+  },
+  {
+    "name": "rua",
+    "date": "2025-02-21",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/i4RzjidQW-c?si=JhZAslNqNf1qGecs"
+    },
+    "flags": []
+  },
+  {
+    "name": "Solal",
+    "date": "2025-02-21",
+    "platform": "Switch",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video"
+    },
+    "flags": []
+  },
+  {
+    "name": "SirCule",
+    "date": "2025-02-22",
+    "platform": "Switch",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/XHsjMZP59Qw?si=ynxuBcVCRo-k6L8Z"
+    },
+    "flags": [
+      "nks"
+    ]
+  },
+  {
+    "name": "yuu",
+    "date": "2025-02-22",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/V8DzhszBoY4"
+    },
+    "flags": [
+      "nks"
+    ]
+  },
+  {
+    "name": "TNT",
+    "date": "2025-02-25",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=t0x08HBih1c"
+    },
+    "flags": [
+      "nks"
+    ]
+  },
+  {
+    "name": "nightilis",
+    "date": "2025-02-28",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/DUnbho9KZYo"
+    },
+    "flags": []
+  },
+  {
+    "name": "Morilix7",
+    "date": "2025-02-28",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/noj_3g6qksk"
+    },
+    "flags": [
+      "double"
+    ]
+  },
+  {
+    "name": "July",
+    "date": "2025-03-02",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=5u8dPVfPbRA"
+    },
+    "flags": []
+  },
+  {
+    "name": "Martino",
+    "date": "2025-03-03",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/wB8r0_eR9lg"
+    },
+    "flags": []
+  },
+  {
+    "name": "hacky",
+    "date": "2025-03-05",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=oXqRXXK0GgU"
+    },
+    "flags": []
+  },
+  {
+    "name": "cameryn",
+    "date": "2025-03-06",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=_MJeHOi2wxc"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "DordMord",
+    "date": "2025-03-06",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/6tMBx18oNho?si=VitIYdlPWRfp18to"
+    },
+    "flags": []
+  },
+  {
+    "name": "Seren",
+    "date": "2025-03-06",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.twitch.tv/videos/2398650195"
+    },
+    "flags": []
+  },
+  {
+    "name": "Keir",
+    "date": "2025-03-07",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=Nm2dediQRR8"
+    },
+    "flags": []
+  },
+  {
+    "name": "Heka",
+    "date": "2025-03-14",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/0FLz4J-fmvU"
+    },
+    "flags": [
+      "nks"
+    ]
+  },
+  {
+    "name": "SpeedySnake",
+    "date": "2025-03-15",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/C-2pSkffXCk"
+    },
+    "flags": [
+      "double"
+    ]
+  },
+  {
+    "name": "Silspend",
+    "date": "2025-03-15",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=4CCHUPZr3FI"
+    },
+    "flags": [
+      "double"
+    ]
+  },
+  {
+    "name": "Joelipad66",
+    "date": "2025-03-16",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=jg0PlKFjYPc"
+    },
+    "flags": []
+  },
+  {
+    "name": "Dexy",
+    "date": "2025-03-20",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/PqABkiC5oZY"
+    },
+    "flags": [
+      "not202",
+      "double"
+    ]
+  },
+  {
+    "name": "sno_",
+    "date": "2025-03-23",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=4FRJu625RQY"
+    },
+    "flags": [
+      "nks"
+    ]
+  },
+  {
+    "name": "ThrowOut",
+    "date": "2025-03-23",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.twitch.tv/videos/2406855155"
+    },
+    "flags": []
+  },
+  {
+    "name": "anura",
+    "date": "2025-03-24",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtube.com/watch?v=UYYAz4nCrmM&si=uWlHmY0fYJvubM_A"
+    },
+    "flags": []
+  },
+  {
+    "name": "PurpleCheese",
+    "date": "2025-03-24",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://m.youtube.com/watch?v=WuFkz64RSM4"
+    },
+    "flags": [
+      "not202"
+    ]
+  },
+  {
+    "name": "Excess10n",
+    "date": "2025-03-28",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/vPpuFUAR0M4"
+    },
+    "flags": []
+  },
+  {
+    "name": "LiorLight",
+    "date": "2025-03-31",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=yUJ5KmQEeMo"
+    },
+    "flags": [
+      "double",
+      "nks"
+    ]
+  },
+  {
+    "name": "DarkSamuraii",
+    "date": "2025-04-01",
+    "platform": "Playstation",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/UlU-ZVfOeCo?si=y8hxn_OToKecE_4Q"
+    },
+    "flags": []
+  },
+  {
+    "name": "Nogard",
+    "date": "2025-04-06",
+    "platform": "Switch",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://www.youtube.com/watch?v=3_wvADqBQoE"
+    },
+    "flags": []
+  },
+  {
+    "name": "AmberBolt",
+    "date": "2025-04-08",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/OwZOQPnMpBE"
+    },
+    "flags": []
+  },
+  {
+    "name": "pieguy",
+    "date": "2025-04-08",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/L3B-I4hLGWE"
+    },
+    "flags": []
+  },
+  {
+    "name": "NES00033",
+    "date": "2025-04-10",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/S1s3aGo0It0"
+    },
+    "flags": [
+      "nks"
+    ]
+  },
+  {
+    "name": "Namakemono Aho",
+    "date": "2025-04-12",
+    "platform": "Linux",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/81x6kQFdaIU?si=sr__z4-wt_sIZTQh"
+    },
+    "flags": []
+  },
+  {
+    "name": "Furiz",
+    "date": "2025-04-07",
+    "platform": "Windows",
+    "verified": {
+      "value": true
+    },
+    "proof": {
+      "type": "video",
+      "url": "https://youtu.be/1WuzW0XGfLc"
+    },
+    "flags": [
+      "dts"
+    ]
   }
 ]
